@@ -1,0 +1,1124 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+   <param name="FrameName" value="right">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="FC.IVM Assembly">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Namespaces">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="FC.IVM.Forms Namespace">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms_namespace.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Classes">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="CreateAreaItem">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.CreateAreaItem.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.CreateAreaItem.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.CreateAreaItem_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="CreateAreaItem Constructor">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.CreateAreaItem~_ctor.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Properties">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.CreateAreaItem_properties.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Instance Property">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.CreateAreaItem~Instance.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Instance_Area2 Property">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.CreateAreaItem~Instance_Area2.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Instance_Area3 Property">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.CreateAreaItem~Instance_Area3.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="frm_IVM_Area_Layout">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Methods">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout_methods.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="DefaultZoomLevel Method">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~DefaultZoomLevel.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="GetDataFromDB Method">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~GetDataFromDB.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="OnBeforeFormLoad Method">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~OnBeforeFormLoad.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="SetFullStatus Method">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~SetFullStatus.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="SetStatusUnFull Method">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~SetStatusUnFull.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Update Method">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~Update.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="UpdateItemMap Method">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~UpdateItemMap.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="ZoomToFitAllVectorLayers Method">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~ZoomToFitAllVectorLayers.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Properties">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout_properties.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Layer Property">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~Layer.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="MapControl Property">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~MapControl.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="frm_IVM_Rollback">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.frm_IVM_Rollback.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.frm_IVM_Rollback.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.frm_IVM_Rollback_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Methods">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.frm_IVM_Rollback_methods.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="GetTentativeTransacData Method">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.frm_IVM_Rollback~GetTentativeTransacData.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="LayoutAreaItem">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.LayoutAreaItem.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.LayoutAreaItem.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.LayoutAreaItem_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="LayoutAreaItem Constructor">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.LayoutAreaItem~_ctor.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Properties">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.LayoutAreaItem_properties.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Capacity Property">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.LayoutAreaItem~Capacity.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Font Property">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.LayoutAreaItem~Font.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="ID Property">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.LayoutAreaItem~ID.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Label Property">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.LayoutAreaItem~Label.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Lat Property">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.LayoutAreaItem~Lat.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Lon Property">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.LayoutAreaItem~Lon.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Name Property">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.LayoutAreaItem~Name.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Tag Property">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.LayoutAreaItem~Tag.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Fields">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.LayoutAreaItem_fields.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="privateLabel Field">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.LayoutAreaItem~privateLabel.html">
+     </OBJECT>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="MapItemFactory">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.MapItemFactory.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.MapItemFactory.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.MapItemFactory_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Methods">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.MapItemFactory_methods.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="InitializeItem Method">
+        <param name="Local" value="FC.IVM~FC.IVM.Forms.MapItemFactory~InitializeItem.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+</UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="FC.IVM.IVMClass Namespace">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM~FC.IVM.IVMClass_namespace.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Classes">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Item">
+        <param name="Local" value="FC.IVM~FC.IVM.IVMClass.Item.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM~FC.IVM.IVMClass.Item.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="FC.IVM~FC.IVM.IVMClass.Item_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Item Constructor">
+        <param name="Local" value="FC.IVM~FC.IVM.IVMClass.Item~_ctor.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Properties">
+        <param name="Local" value="FC.IVM~FC.IVM.IVMClass.Item_properties.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="AutoNumber Property">
+        <param name="Local" value="FC.IVM~FC.IVM.IVMClass.Item~AutoNumber.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="ColumnName Property">
+        <param name="Local" value="FC.IVM~FC.IVM.IVMClass.Item~ColumnName.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="ColumnName2 Property">
+        <param name="Local" value="FC.IVM~FC.IVM.IVMClass.Item~ColumnName2.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="DataType Property">
+        <param name="Local" value="FC.IVM~FC.IVM.IVMClass.Item~DataType.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="ID Property">
+        <param name="Local" value="FC.IVM~FC.IVM.IVMClass.Item~ID.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="isEdit Property">
+        <param name="Local" value="FC.IVM~FC.IVM.IVMClass.Item~isEdit.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Memo Property">
+        <param name="Local" value="FC.IVM~FC.IVM.IVMClass.Item~Memo.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="PackageSize Property">
+        <param name="Local" value="FC.IVM~FC.IVM.IVMClass.Item~PackageSize.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+</UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="FC.IVM.PopupForms Namespace">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms_namespace.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Classes">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="frm_IVM_Custom_Form_Num_Key">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Custom_Form_Num_Key.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Custom_Form_Num_Key.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Custom_Form_Num_Key_members.html">
+     </OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="frm_IVM_Popup_Mat_Properties">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Methods">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties_methods.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="GetDataBalingSealProperties Method">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties~GetDataBalingSealProperties.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="GetDataMatProperties Method">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties~GetDataMatProperties.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="GetDataTransferPointProperties Method">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties~GetDataTransferPointProperties.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="frm_IVM_Popup_Material_Info">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Info.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Info.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Info_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="frm_IVM_Popup_Material_Info Constructor">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Info~_ctor.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Methods">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Info_methods.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Dispose Method">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Info~Dispose.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Dispose(Boolean) Method">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Info~Dispose(Boolean).html">
+     </OBJECT>
+</UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="frm_IVM_Popup_Material_Manage">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Methods">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage_methods.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="GetGroupAreaInfo Method">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage~GetGroupAreaInfo.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="GetSubAreaINVDataSet Method">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage~GetSubAreaINVDataSet.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="GetTarketSubAreaDataSet Method">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage~GetTarketSubAreaDataSet.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="GetWPInfo Method">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage~GetWPInfo.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Properties">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage_properties.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="SearchLookUpEdit1View Property">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage~SearchLookUpEdit1View.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Fields">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage_fields.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="_fieldID Field">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage~_fieldID.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="_GroupID Field">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage~_GroupID.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="_MaterialSourceID Field">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage~_MaterialSourceID.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="_materialTypeId Field">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage~_materialTypeId.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="_PUserID Field">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage~_PUserID.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="_siteName Field">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage~_siteName.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="_ToDo Field">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage~_ToDo.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="dt_Destination Field">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage~dt_Destination.html">
+     </OBJECT>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="frm_IVM_Popup_Num_Key">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Num_Key.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Num_Key.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Num_Key_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="frm_IVM_Popup_Num_Key Constructor">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Num_Key~_ctor.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Methods">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Num_Key_methods.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Dispose Method">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Num_Key~Dispose.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Dispose(Boolean) Method">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Num_Key~Dispose(Boolean).html">
+     </OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="OnBeforeFormLoad Method">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Num_Key~OnBeforeFormLoad.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="OnClickClear Method">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Num_Key~OnClickClear.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="OnClickCustomButton Method">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Num_Key~OnClickCustomButton.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="OnClickReload Method">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Num_Key~OnClickReload.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="OnClickSave Method">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Num_Key~OnClickSave.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Fields">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Num_Key_fields.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="MatQTY Field">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Num_Key~MatQTY.html">
+     </OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Events">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Num_Key_events.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="OnPassData Event">
+        <param name="Local" value="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Num_Key~OnPassData_EV.html">
+     </OBJECT>
+</UL>
+</UL>
+</UL>
+</UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="FC.IVM.Bus Assembly">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM.Bus.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Namespaces">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="FC.IVM.Bus.Modules Namespace">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules_namespace.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Classes">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="mod_IVM_center">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_center.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_center.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_center_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Methods">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_center_methods.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="TestInsert Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_center~TestInsert.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="mod_IVM_DB">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Methods">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB_methods.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="func_IVM_Get_Area_Data_By_GroupID Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB~func_IVM_Get_Area_Data_By_GroupID.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="func_IVM_Get_Area_Data_By_ParentID Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB~func_IVM_Get_Area_Data_By_ParentID.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="func_IVM_Get_Area_Info Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB~func_IVM_Get_Area_Info.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="func_IVM_Get_ChildStorageData Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB~func_IVM_Get_ChildStorageData.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="func_IVM_Get_LasUpdateData Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB~func_IVM_Get_LasUpdateData.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="func_IVM_Get_Material_Properties Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB~func_IVM_Get_Material_Properties.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="func_IVM_Get_Tentative_Data Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB~func_IVM_Get_Tentative_Data.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="func_IVM_Get_WeightTicketData Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB~func_IVM_Get_WeightTicketData.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="func_IVM_Get_WP_Info Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB~func_IVM_Get_WP_Info.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="func_IVM_Getmaterial Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB~func_IVM_Getmaterial.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="func_IVM_MoveStockTemp Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB~func_IVM_MoveStockTemp.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="func_IVM_Rollback_Tentative_Data Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB~func_IVM_Rollback_Tentative_Data.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="func_IVM_UnloadTruckToTemp_1859 Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB~func_IVM_UnloadTruckToTemp_1859.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="func_IVM_UpdateStorageFullFlag Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB~func_IVM_UpdateStorageFullFlag.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="func_View_IVM_Contractor_1954 Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB~func_View_IVM_Contractor_1954.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Properties">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB_properties.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Get_Curr_DB_Time Property">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_DB~Get_Curr_DB_Time.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="mod_IVM_Map_Function">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Map_Function.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Map_Function.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Map_Function_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Methods">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Map_Function_methods.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="calRangeColor Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Map_Function~calRangeColor.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="CreateColorizer Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Map_Function~CreateColorizer.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="CreateLayerStatus Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Map_Function~CreateLayerStatus.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="CreateLegend Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Map_Function~CreateLegend.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="CreateOverlay Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Map_Function~CreateOverlay.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="createUnloadImportItem Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Map_Function~createUnloadImportItem.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="createUnloadLocalItem Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Map_Function~createUnloadLocalItem.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="GetSumAreaWeight Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Map_Function~GetSumAreaWeight.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="getZoomLavel Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Map_Function~getZoomLavel.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="HideLayerItems Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Map_Function~HideLayerItems.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="prePareInfo Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Map_Function~prePareInfo.html">
+     </OBJECT>
+<UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="prePareMatInfo Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Map_Function~prePareMatInfo.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="mod_IVM_Utility">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Utility.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Utility.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Members">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Utility_members.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Methods">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Utility_methods.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="CreateFonts Method">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Utility~CreateFonts.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Properties">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Utility_properties.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="FontsCollection Property">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Utility~FontsCollection.html">
+     </OBJECT>
+<UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Fields">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Utility_fields.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="fontsCollection_Renamed Field">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Utility~fontsCollection_Renamed.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="frm_Name Field">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Utility~frm_Name.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="isEdit Field">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Utility~isEdit.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="lastTime Field">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Utility~lastTime.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="tmpBalingSealProperties Field">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Utility~tmpBalingSealProperties.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="tmpContractorProperties Field">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Utility~tmpContractorProperties.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="tmpMatProperties Field">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Utility~tmpMatProperties.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="tmpTransferPointProperties Field">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Utility~tmpTransferPointProperties.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="tmpUnloadPackSize Field">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Utility~tmpUnloadPackSize.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="tmpUnloadQuantity Field">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Utility~tmpUnloadQuantity.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="UID Field">
+        <param name="Local" value="FC.IVM.Bus~FC.IVM.Bus.Modules.mod_IVM_Utility~UID.html">
+     </OBJECT>
+</UL>
+</UL>
+</UL>
+</UL>
+</UL>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="IVM Database Database">
+        <param name="Local" value="IVM Database_db.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="IVM Database_db.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Schemas">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="dbo Schema">
+        <param name="Local" value="IVM Database_db~s-dbo.html">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Overview">
+        <param name="Local" value="IVM Database_db~s-dbo.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Views">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="dbo.View_IVM_Contractor_1954 View">
+        <param name="Local" value="IVM Database_db~s-dbo~v-View_IVM_Contractor_1954.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="dbo.view_IVM_StorageLastUpdate_1928 View">
+        <param name="Local" value="IVM Database_db~s-dbo~v-view_IVM_StorageLastUpdate_1928.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="dbo.View_IVM_TruckProperties_2456 View">
+        <param name="Local" value="IVM Database_db~s-dbo~v-View_IVM_TruckProperties_2456.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="dbo.View_IVM_WastePlantList_2148 View">
+        <param name="Local" value="IVM Database_db~s-dbo~v-View_IVM_WastePlantList_2148.html">
+     </OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Stored Procedures">
+     </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="dbo.proc_IVM_ChildStorageData_1726 Stored Procedure">
+        <param name="Local" value="IVM Database_db~s-dbo~p-proc_IVM_ChildStorageData_1726.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="dbo.proc_IVM_GetUnloadTruck_1862 Stored Procedure">
+        <param name="Local" value="IVM Database_db~s-dbo~p-proc_IVM_GetUnloadTruck_1862.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="dbo.proc_IVM_insertTblTicket Stored Procedure">
+        <param name="Local" value="IVM Database_db~s-dbo~p-proc_IVM_insertTblTicket.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="dbo.proc_IVM_InventoryBalanceTentative_2566 Stored Procedure">
+        <param name="Local" value="IVM Database_db~s-dbo~p-proc_IVM_InventoryBalanceTentative_2566.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="dbo.proc_IVM_MoveStockTemp_1847 Stored Procedure">
+        <param name="Local" value="IVM Database_db~s-dbo~p-proc_IVM_MoveStockTemp_1847.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="dbo.proc_IVM_PrimaryStorage_1664 Stored Procedure">
+        <param name="Local" value="IVM Database_db~s-dbo~p-proc_IVM_PrimaryStorage_1664.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="dbo.proc_IVM_RollBack_1894 Stored Procedure">
+        <param name="Local" value="IVM Database_db~s-dbo~p-proc_IVM_RollBack_1894.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="dbo.proc_IVM_TentativeTransaction_2398 Stored Procedure">
+        <param name="Local" value="IVM Database_db~s-dbo~p-proc_IVM_TentativeTransaction_2398.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="dbo.proc_IVM_UnloadTruckToTemp_1859 Stored Procedure">
+        <param name="Local" value="IVM Database_db~s-dbo~p-proc_IVM_UnloadTruckToTemp_1859.html">
+     </OBJECT>
+<LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="dbo.proc_IVM_UpdateStorageFullFlag_1776 Stored Procedure">
+        <param name="Local" value="IVM Database_db~s-dbo~p-proc_IVM_UpdateStorageFullFlag_1776.html">
+     </OBJECT>
+</UL>
+</UL>
+</UL>
+</UL>
+
+</UL>
+</BODY></HTML>

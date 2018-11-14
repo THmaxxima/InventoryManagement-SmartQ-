@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FC.IVM", "FC.IVM\FC.IVM.vbproj", "{DA90680F-D986-4CAF-B832-A0E382ED2B43}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FC.IVM.Bus", "FC.IVM.Bus\FC.IVM.Bus.vbproj", "{8EC5AEBB-24CE-4ECE-BBA6-96442DFE0DF9}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FC.IVM.Resource", "FC.IVM.Resource\FC.IVM.Resource.vbproj", "{223F7F58-002A-48F4-9721-7BF21532E517}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "X10", "X10\X10.vbproj", "{04FF2372-08A5-465E-BE84-110D5685CEB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA90680F-D986-4CAF-B832-A0E382ED2B43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA90680F-D986-4CAF-B832-A0E382ED2B43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA90680F-D986-4CAF-B832-A0E382ED2B43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA90680F-D986-4CAF-B832-A0E382ED2B43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EC5AEBB-24CE-4ECE-BBA6-96442DFE0DF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EC5AEBB-24CE-4ECE-BBA6-96442DFE0DF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EC5AEBB-24CE-4ECE-BBA6-96442DFE0DF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EC5AEBB-24CE-4ECE-BBA6-96442DFE0DF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{223F7F58-002A-48F4-9721-7BF21532E517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{223F7F58-002A-48F4-9721-7BF21532E517}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{223F7F58-002A-48F4-9721-7BF21532E517}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{223F7F58-002A-48F4-9721-7BF21532E517}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04FF2372-08A5-465E-BE84-110D5685CEB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04FF2372-08A5-465E-BE84-110D5685CEB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04FF2372-08A5-465E-BE84-110D5685CEB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04FF2372-08A5-465E-BE84-110D5685CEB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://forward-consult.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FC.IVM.Bus\\FC.IVM.Bus.vbproj
+		SccProjectName1 = IVM/FC.IVM.Bus
+		SccLocalPath1 = FC.IVM.Bus
+		SccProjectUniqueName2 = FC.IVM.Resource\\FC.IVM.Resource.vbproj
+		SccProjectName2 = IVM/FC.IVM.Resource
+		SccLocalPath2 = FC.IVM.Resource
+		SccProjectUniqueName3 = FC.IVM\\FC.IVM.vbproj
+		SccProjectName3 = IVM/FC.IVM
+		SccLocalPath3 = FC.IVM
+		SccProjectUniqueName4 = X10\\X10.vbproj
+		SccProjectName4 = IVM/X10
+		SccLocalPath4 = X10
+	EndGlobalSection
+EndGlobal

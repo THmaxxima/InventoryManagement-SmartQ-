@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentFile Version="2010" Moniker="&lt;Database Name=&quot;IVM Database&quot; DatabaseType=&quot;SqlServer&quot;&gt;&#xD;&#xA;  &lt;UserName&gt;sa&lt;/UserName&gt;&#xD;&#xA;  &lt;ServerInstance&gt;MAX_FC&lt;/ServerInstance&gt;&#xD;&#xA;  &lt;Database&gt;MPlanx&lt;/Database&gt;&#xD;&#xA;  &lt;SqlServerAuthenticationMode&gt;SqlServer&lt;/SqlServerAuthenticationMode&gt;&#xD;&#xA;  &lt;Password&gt;Oi+1D/R6FqbArauSleeGQQ==&lt;/Password&gt;&#xD;&#xA;&lt;/Database&gt;" DocType="DX.DB" IsLocalizationDisabled="false">
+  <RelatedProject>documentation_IVM.dxp</RelatedProject>
+  <State>
+    <Attributes>
+      <Attribute key="scrollPosition" valuetype="integer">651</Attribute>
+    </Attributes>
+  </State>
+  <LastSelectedItem>IVM Database_db~s-dbo~v-View_IVM_WastePlantList_2148</LastSelectedItem>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_ChildStorageData_1726">
+    <summary ChangeDateTime="2018-08-02T07:28:10.2227243Z">Sub area data.</summary>
+    <returns ChangeDateTime="2018-08-02T07:28:10.2227243Z">รายละเอียดของพื้นที่กองเก็บย่อย ในแต่ละลาน</returns>
+    <notes ChangeDateTime="2018-07-19T10:26:51.8113235Z">Test note</notes>
+    <new_content_item_type ChangeDateTime="2018-07-19T10:27:06.2227724Z">Test new content</new_content_item_type>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_ChildStorageData_1726~a-@GroupID">
+    <param ChangeDateTime="2018-07-19T10:24:04.1011779Z">รหัสของ Parent area</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_ChildStorageData_1726~a-@FieldStorageID">
+    <param ChangeDateTime="2018-07-19T10:24:04.1011779Z">รหัสของลาน</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~v-View_IVM_Contractor_1954">
+    <summary ChangeDateTime="2018-08-02T07:17:15.0675939Z">View for show contractors data.</summary>
+    <remarks ChangeDateTime="2018-08-03T08:03:07.1281362Z">แสดงรายชื่อผู้รับเหมาทั้งหมด</remarks>
+  </item>
+  <item qn="IVM Database_db~s-dbo~v-view_IVM_StorageLastUpdate_1928">
+    <summary ChangeDateTime="2018-08-02T07:20:32.9624007Z">View for return last datetime update data in database.</summary>
+    <remarks ChangeDateTime="2018-08-02T07:20:32.9624007Z">คืนค่า วัน/เวลา ล่าสุด ที่มีการ ทำงานกับข้อมูลในฐานข้อมูล</remarks>
+  </item>
+  <item qn="IVM Database_db~s-dbo~v-View_IVM_TruckProperties_2456">
+    <summary ChangeDateTime="2018-08-02T07:24:43.62312Z">View for return unload properties.</summary>
+    <remarks ChangeDateTime="2018-08-02T07:25:01.8318594Z">&lt;P&gt;1. ชนิดวัตถุดิบ (Post, Pre, Mixed, Non-FSC,FSC-100%,FSC-MIXED,FSC-CW) &lt;/P&gt;
+&lt;P&gt;2. ตรวจสอบซีลโรงอัด (มีถูกต้อง, มีไม่ถูกต้อง, ไม่มี)&lt;/P&gt;
+&lt;P&gt;3. จุดขนถ่าย (ใน, นอก) &lt;/P&gt;</remarks>
+  </item>
+  <item qn="IVM Database_db~s-dbo~v-View_IVM_WastePlantList_2148">
+    <summary ChangeDateTime="2018-08-02T07:25:54.5034666Z">View for return WP. data.</summary>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_GetUnloadTruck_1862">
+    <summary ChangeDateTime="2018-08-02T07:30:18.5117851Z">Weight ticket data.</summary>
+    <returns ChangeDateTime="2018-08-02T07:30:18.5117851Z">ข้อมูลตั๋วชั่ง ทั้งหมด (ในประเทศ, นำเข้า)</returns>
+    <remarks ChangeDateTime="2018-08-02T07:30:18.5117851Z">แสดง 100 รายการล่าสุด</remarks>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_insertTblTicket">
+    <summary ChangeDateTime="2018-08-02T07:33:52.1274597Z">Insert unload data into table in database.</summary>
+    <remarks ChangeDateTime="2018-08-02T07:33:52.1274597Z">บันทึกข้อมูล การทำรายการ Unload.</remarks>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_insertTblTicket~a-@TicketTruck">
+    <param ChangeDateTime="2018-08-02T07:33:52.1274597Z">ตั๋วชั่ง</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_insertTblTicket~a-@UnloadFromTruckData">
+    <param ChangeDateTime="2018-08-02T07:33:52.1274597Z">ข้อมูลพื้นที่จัดเก็บปลายทาง</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_InventoryBalanceTentative_2566">
+    <summary ChangeDateTime="2018-08-02T07:35:03.267281Z">Report data.</summary>
+    <returns ChangeDateTime="2018-08-02T07:35:03.267281Z">ข้อมูลรายงาน ยอดคงเหลือเยื่อและกระดาษ</returns>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_MoveStockTemp_1847">
+    <summary ChangeDateTime="2018-08-02T07:37:12.048625Z">To do job move inventory from area to another area.</summary>
+    <remarks ChangeDateTime="2018-08-02T07:37:12.0496597Z">บันทึกข้อมูล การ ย้าย/ตัดจ่าย วัตถุดิบ</remarks>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_MoveStockTemp_1847~a-@SourceStorageID">
+    <param ChangeDateTime="2018-08-02T07:37:12.048625Z">พื้นที่ต้นทาง</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_MoveStockTemp_1847~a-@DestinationStorageID">
+    <param ChangeDateTime="2018-08-02T07:37:12.0496597Z">พื้นที่ปลายทาง</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_MoveStockTemp_1847~a-@MaterialID">
+    <param ChangeDateTime="2018-08-02T07:37:12.0496597Z">วัตถุดิบ</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_MoveStockTemp_1847~a-@Amount">
+    <param ChangeDateTime="2018-08-02T07:37:12.0496597Z">จำนวน</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_MoveStockTemp_1847~a-@UserID">
+    <param ChangeDateTime="2018-08-02T07:37:12.0496597Z">ผู้ทำรายการ</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_PrimaryStorage_1664">
+    <summary ChangeDateTime="2018-08-02T07:38:09.3456108Z">Group of Storage.</summary>
+    <returns ChangeDateTime="2018-08-02T07:38:09.3456108Z">Retun as Group of Storage.</returns>
+    <remarks ChangeDateTime="2018-08-02T07:38:09.3456108Z">ข้อมูล กลุ่มของพื้นที่กองเก็บ</remarks>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_RollBack_1894">
+    <summary ChangeDateTime="2018-08-02T07:40:01.8793092Z">In case user unload truck and change later because of something wrong. This can be done only or truck that was unloaded and not yet confirm in MPlan.</summary>
+    <remarks ChangeDateTime="2018-08-02T07:40:01.8813043Z">&lt;P&gt;ประเภทการทำรายการ&lt;/P&gt;
+&lt;P&gt;1= Unload from truck, 2=From Movement&lt;/P&gt;</remarks>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_RollBack_1894~a-@ReferenceID">
+    <param ChangeDateTime="2018-08-02T07:40:01.8793092Z">รหัสอ้างอิงข้อมูล</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_RollBack_1894~a-@RollBackTypeID">
+    <param ChangeDateTime="2018-08-02T07:40:01.8793092Z">ประเภทการทำรายการ</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_RollBack_1894~a-@UserID">
+    <param ChangeDateTime="2018-08-02T07:40:01.8793092Z">ผู้ทำรายการ</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_TentativeTransaction_2398">
+    <summary ChangeDateTime="2018-08-02T07:41:03.3687136Z">Show tentative transaction of unload and movement stock to buffer&lt;FONT color=#008080&gt;ใ&lt;/FONT&gt;</summary>
+    <returns ChangeDateTime="2018-08-02T07:41:03.3687136Z">ข้อมูลการทำรายการ ที่ยังไม่ถูกคอนเฟิร์ม</returns>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_TentativeTransaction_2398~a-@UserID">
+    <param ChangeDateTime="2018-08-02T07:41:03.3687136Z">ผู้ทำรายการ</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_UnloadTruckToTemp_1859">
+    <summary ChangeDateTime="2018-08-02T07:43:12.8702907Z">&lt;P&gt;Unload from Truck into storage.&lt;/P&gt;
+&lt;P&gt;To unload amount from truck into storage buffer table which another user will confirm on next day. &lt;/P&gt;</summary>
+    <remarks ChangeDateTime="2018-08-02T07:44:25.171233Z">ข้อมูลการทำรายการ Unload วัตถุดิบ ที่ยังไม่ได้ทำการคอนเฟิร์ม</remarks>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_UnloadTruckToTemp_1859~a-@TicketTruck">
+    <param ChangeDateTime="2018-08-02T07:44:25.171233Z">ตั๋วชั่ง</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_UnloadTruckToTemp_1859~a-@DestStorage">
+    <param ChangeDateTime="2018-08-02T07:44:25.171233Z">พื้นที่ปลายทาง</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_UnloadTruckToTemp_1859~a-@UserID">
+    <param ChangeDateTime="2018-08-02T07:44:25.171233Z">ผู้ทำรายการ</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_UpdateStorageFullFlag_1776">
+    <summary ChangeDateTime="2018-08-02T07:47:06.3765043Z">&lt;P&gt;Config area status.&lt;/P&gt;
+&lt;P&gt;-Enable&lt;/P&gt;
+&lt;P&gt;-Disable&lt;/P&gt;</summary>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_UpdateStorageFullFlag_1776~a-@StorageGroupID">
+    <param ChangeDateTime="2018-08-02T07:47:06.3765043Z">พื้นที่กองเก็บ</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_UpdateStorageFullFlag_1776~a-@IsFull">
+    <param ChangeDateTime="2018-08-02T07:47:06.3765043Z">สถาะ (0=ว่าง, 1=เต็ม)</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_UpdateStorageFullFlag_1776~a-@UserID">
+    <param ChangeDateTime="2018-08-02T07:47:06.3765043Z">ผู้ทำรายการ</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_GetUnloadTruck_1862~a-@MaterialTypeID">
+    <param ChangeDateTime="2018-08-02T07:48:17.3930005Z">ประเภทของวัตถุดิบ(ในประเทศ, นำเข้า)</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~p-proc_IVM_GetUnloadTruck_1862~a-@UserID">
+    <param ChangeDateTime="2018-08-02T07:48:17.3930005Z">ผู้ทำรายการ</param>
+  </item>
+  <item qn="IVM Database_db~s-dbo~v-View_IVM_Contractor_1954~c-Name">
+    <summary ChangeDateTime="2018-08-03T08:03:07.1281362Z">ชื่อผู้รับเหมา</summary>
+  </item>
+  <item qn="IVM Database_db~s-dbo~v-view_IVM_StorageLastUpdate_1928~c-LatestUpdateDate">
+    <summary ChangeDateTime="2018-08-03T08:03:42.2145855Z">วัน/เวลา ล่าสุดที่มีการอัพเดทข้อมูลในฐานข้อมูล</summary>
+  </item>
+  <item qn="IVM Database_db~s-dbo~v-View_IVM_TruckProperties_2456~c-Category">
+    <summary ChangeDateTime="2018-08-03T08:05:46.9811112Z">ชนิดวัตถุดิบ</summary>
+  </item>
+  <item qn="IVM Database_db~s-dbo~v-View_IVM_TruckProperties_2456~c-Value">
+    <summary ChangeDateTime="2018-08-03T08:05:46.9811112Z">ชื่อชนิด</summary>
+  </item>
+  <item qn="IVM Database_db~s-dbo~v-View_IVM_TruckProperties_2456~c-Sequence">
+    <summary ChangeDateTime="2018-08-03T08:05:46.9811112Z">ค่า</summary>
+  </item>
+  <item qn="IVM Database_db~s-dbo~v-View_IVM_WastePlantList_2148~c-StorageID">
+    <summary ChangeDateTime="2018-08-03T08:06:36.2498606Z">รหัส</summary>
+  </item>
+  <item qn="IVM Database_db~s-dbo~v-View_IVM_WastePlantList_2148~c-StorageName">
+    <summary ChangeDateTime="2018-08-03T08:06:36.2498606Z">ชื่อ</summary>
+  </item>
+  <item qn="IVM Database_db~s-dbo~v-View_IVM_WastePlantList_2148~c-ParentStorageID">
+    <summary ChangeDateTime="2018-08-03T08:06:36.2498606Z">ลาน</summary>
+  </item>
+  <Filters>
+    <DX.DB>
+      <IsExtendedPropertyContentVisible>true</IsExtendedPropertyContentVisible>
+      <IsSourceCommentsVisible>true</IsSourceCommentsVisible>
+    </DX.DB>
+  </Filters>
+  <Filters>
+    <CONTENTSTORECOMMON>
+      <IsIncludedItemsOnly>true</IsIncludedItemsOnly>
+    </CONTENTSTORECOMMON>
+    <CONTENTSTORELOCALIZATION>
+      <IsPrimaryLocaleContentPreviewEnabled>true</IsPrimaryLocaleContentPreviewEnabled>
+    </CONTENTSTORELOCALIZATION>
+  </Filters>
+</ContentFile>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FC.IVM.Resource
+</name>
+</assembly>
+<members>
+<member name="T:FC.IVM.Resource.My.Resources.GlobalResource">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:FC.IVM.Resource.My.Resources.GlobalResource.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:FC.IVM.Resource.My.Resources.GlobalResource.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:FC.IVM.Resource.My.Resources.GlobalResource.CloseForm">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FC.IVM.Resource.My.Resources.GlobalResource.CloseForm1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FC.IVM.Resource.My.Resources.GlobalResource.import_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FC.IVM.Resource.My.Resources.GlobalResource.Information_Icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FC.IVM.Resource.My.Resources.GlobalResource.logistic_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FC.IVM.Resource.My.Resources.GlobalResource.sberes_301_8_48x48x32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FC.IVM.Resource.My.Resources.GlobalResource.Synchronize_Icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FC.IVM.Resource.My.Resources.GlobalResource.Synchronize_Icon1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FC.IVM.Resource.My.Resources.GlobalResource.Synchronize_Icon2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FC.IVM.Resource.My.Resources.GlobalResource.Test">
+<summary>
+  Looks up a localized string similar to Test.
+</summary>
+</member>
+<member name="T:FC.IVM.Resource.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:FC.IVM.Resource.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:FC.IVM.Resource.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+</members>
+</doc>

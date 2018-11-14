@@ -1,0 +1,671 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FC.IVM
+</name>
+</assembly>
+<members>
+<member name="T:FC.IVM.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:FC.IVM.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:FC.IVM.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:FC.IVM.Forms.frm_IVM_Rollback">
+ <summary>Windows form use to rollback tentative data.</summary>
+ <remarks>หน้าจอสำหรับแก้ไขข้อมูล การ Unload, ย้าย, ตัดจ่าย วัตถุดิบ</remarks>
+</member>
+<member name="E:FC.IVM.Forms.frm_IVM_Rollback.OnPassData">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Rollback.userAccessSite">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Rollback.idOfField">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Rollback.tmpTapAction">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Rollback.DS_Tentative_Unload_Data">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Rollback.DT_Tentative_Unload_Data">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Rollback.DT_Tentative_Movement_Data">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Rollback.OnBeforeFormLoad(System.Object)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Rollback.OnClickClear(FC.MainWinApp.EnumMainFormShowMessageType@,System.String@,System.String@)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Rollback.OnClickCustomButton(System.String,FC.MainWinApp.EnumMainFormShowMessageType@,System.String@,System.String@)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Rollback.OnClickReload(FC.MainWinApp.EnumMainFormShowMessageType@,System.String@,System.String@)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Rollback.OnClickSave(FC.MainWinApp.EnumMainFormShowMessageType@,System.String@,System.String@)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Rollback.frm_IVM_Rollback_Load(System.Object,System.EventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Rollback.initLookupDestinationArea">
+ <summary>Prepare material data for fill into lookup editor</summary>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Rollback.GetTentativeTransacData">
+ <summary>Get tentative data from database.</summary>
+ <remarks>Fill into dataset and datatable</remarks>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Rollback.cboSite_EditValueChanged(System.Object,System.EventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Rollback.btnRollbackData_Click(System.Object,System.EventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Rollback.LayoutControlGroupUnload_Shown(System.Object,System.EventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Rollback.LayoutControlGroupMovement_Shown(System.Object,System.EventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Rollback.DeleteSelectedRows(DevExpress.XtraGrid.Views.Grid.GridView)">
+ <exclude />
+</member>
+<member name="T:FC.IVM.Forms.LayoutAreaItem">
+ <summary>Class default area mapitem property.</summary>
+</member>
+<member name="P:FC.IVM.Forms.LayoutAreaItem.Label">
+ <summary>Area label use to display on main layout</summary>
+</member>
+<member name="P:FC.IVM.Forms.LayoutAreaItem.Lat">
+ <summary>Position X</summary>
+</member>
+<member name="P:FC.IVM.Forms.LayoutAreaItem.Lon">
+ <summary>Position Y</summary>
+</member>
+<member name="P:FC.IVM.Forms.LayoutAreaItem.Tag">
+ <summary>Default area color</summary>
+</member>
+<member name="P:FC.IVM.Forms.LayoutAreaItem.Capacity">
+ <summary>Capacity for each area</summary>
+</member>
+<member name="P:FC.IVM.Forms.LayoutAreaItem.ID">
+ <summary>Area ID</summary>
+</member>
+<member name="P:FC.IVM.Forms.LayoutAreaItem.Name">
+ <summary>Area name</summary>
+</member>
+<member name="P:FC.IVM.Forms.LayoutAreaItem.Font">
+ <summary>Default font use to display area information</summary>
+</member>
+<member name="T:FC.IVM.Forms.CreateAreaItem">
+ <summary>Class default for draw object area mapitem.</summary>
+</member>
+<member name="P:FC.IVM.Forms.CreateAreaItem.Instance">
+ <summary>Return object mapitem arear 1</summary>
+</member>
+<member name="P:FC.IVM.Forms.CreateAreaItem.Instance_Area2">
+ <summary>Return object mapitem arear 2</summary>
+</member>
+<member name="P:FC.IVM.Forms.CreateAreaItem.Instance_Area3">
+ <summary>Return object mapitem arear 3</summary>
+</member>
+<member name="T:FC.IVM.Forms.frm_IVM_Area_Layout">
+ <summary>
+   <para style="PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 0px 0px 40px; LINE-HEIGHT: 1.15; PADDING-RIGHT: 0px; TEXT-INDENT: 0pt">
+     <u>
+       <strong>หน้าจอหลัก Main Layout (frm_IVM_Area_Layout)</strong>
+     </u>
+   </para>
+   <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+     <para>
+       <span style="FONT-SIZE: 16px; FONT-FAMILY: &quot;Segoe UI&quot;; COLOR: rgb(0,0,0); FONT-STYLE: normal">เป็นชื่อที่ใช้เรียกแทน frm_IVM_Main_Layout</span>
+     </para>
+   </blockquote>
+   <para style="FONT-SIZE: 14px; FONT-FAMILY: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); PADDING-BOTTOM: 0px; FONT-STYLE: normal; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 0px 12px; LETTER-SPACING: normal; LINE-HEIGHT: 1.15; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial" align="left">
+     <span style="FONT-SIZE: 16px; FONT-FAMILY: &quot;Segoe UI&quot;; FONT-WEIGHT: bold; COLOR: rgb(0,0,0)">ฟังก์ชั่นหลักของฟอร์ม frm_IVM_Main_Layout</span>
+   </para>
+   <para style="FONT-SIZE: 14px; FONT-FAMILY: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); PADDING-BOTTOM: 0px; FONT-STYLE: normal; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 0px 12px; LETTER-SPACING: normal; LINE-HEIGHT: 1.15; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial" align="left"></para>
+   <para dir="ltr" align="left">
+     <span style="FONT-SIZE: 16px; FONT-FAMILY: &quot;Segoe UI&quot;; COLOR: rgb(0,0,0); FONT-STYLE: normal">1. Unload material : เป็นกระบวนการ
+ การรับวัตถุติบเข้าสู่ พื้นที่จัดเก็บในแต่ละลาน แบ่งออกเป็น 2 ประเภท ได้แก่</span>
+   </para>
+   <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+     <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+       <para align="left">
+         <span style="FONT-SIZE: 16px; FONT-FAMILY: &quot;Segoe UI&quot;; COLOR: rgb(0,0,0); FONT-STYLE: normal">1.1 Unload domistic</span>
+       </para>
+       <para align="left">
+         <span style="FONT-SIZE: 16px; FONT-FAMILY: &quot;Segoe UI&quot;; COLOR: rgb(0,0,0); FONT-STYLE: normal">
+           <span style="FONT-SIZE: 16px; FONT-FAMILY: &quot;Segoe UI&quot;; COLOR: rgb(0,0,0); FONT-STYLE: normal">1.2 Unload import</span>
+         </span>
+       </para>
+     </blockquote>
+   </blockquote>
+   <para align="left">
+     <span style="FONT-SIZE: 16px; FONT-FAMILY: &quot;Segoe UI&quot;; COLOR: rgb(0,0,0); FONT-STYLE: normal">2. ย้าย วัตถุดิบ : เป็นกระบวนการ ย้ายวัตถุดิบ
+ จากพื้นที่จัดเก็บต้นทาง (Souce area) ไปยังอีกพื้นที่จัดเก็บปลายทาง (Distination) ภายในลานเดียวกัน.</span>
+   </para>
+   <para align="left">
+     <span style="FONT-SIZE: 16px; FONT-FAMILY: &quot;Segoe UI&quot;; COLOR: rgb(0,0,0); FONT-STYLE: normal">3. ตัดจ่าย วัตถุดิบ : เป็นกระบวนการ
+ นำวัตถุดิบจากพื้นที่จัด<span style="FONT-SIZE: 16px; FONT-FAMILY: &quot;Segoe UI&quot;; COLOR: rgb(0,0,0); FONT-STYLE: normal">เก็บไดๆ ในพื้นที่จัดเก็บ
+ ไปเข้าสู่กระบวนการการผลิต (WP).</span></span>
+   </para>
+   <para align="left"></para>
+ </summary>
+</member>
+<member name="E:FC.IVM.Forms.frm_IVM_Area_Layout.OnPassData">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.OnBeforeFormLoad(System.Object)">
+ <summary>ฟังก์ชั่น ของ X10 ฟังก์ชั่นนี้จะถูกเรียกใช้ก่อน Form load</summary>
+ <param name="param">ID ของแต่ละลาน กำหนดโดย X10 (Manu management)</param>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.OnClickClear(FC.MainWinApp.EnumMainFormShowMessageType@,System.String@,System.String@)">
+ <exclude />
+ <excludetoc />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.OnClickCustomButton(System.String,FC.MainWinApp.EnumMainFormShowMessageType@,System.String@,System.String@)">
+ <exclude />
+ <excludetoc />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.OnClickReload(FC.MainWinApp.EnumMainFormShowMessageType@,System.String@,System.String@)">
+ <exclude />
+ <excludetoc />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.OnClickSave(FC.MainWinApp.EnumMainFormShowMessageType@,System.String@,System.String@)">
+ <exclude />
+ <excludetoc />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.idOfField">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.adapter">
+ <summary>Mapitem ListSourceDataAdapter</summary>
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.itemsLayer">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.itemsLayerStatus">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.allItemsRec">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.timer">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.Pcapacity">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.AID">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.AName">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.zoom_lavel">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.iIndex_detail">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.iIname">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.icount1">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.tmpid">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.tmp_area_name">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.tmp_mat_name">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.tmp_balance">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.tmp_weight">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.tmp_capacity">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.tmp_capacity_status">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.tmp_last_transac">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.tmp_inuse">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.tmp_sumcapacity">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.tmp_transac_status">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.tmp_inuse_status">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.str">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.currentLocation">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.iRowArea">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.iAreaCount">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.DT_Area_Info">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.MatTypeID">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.UnloadLocalTypeID">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.UnloadImportTypeID">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.FUPD">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.iChk">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.AreaWeight">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Forms.frm_IVM_Area_Layout.currentTime">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.#ctor">
+ <exclude />
+ <excludetoc />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.InitializeMap">
+ <summary>
+   <para>Create a map control and add it to the form.</para>
+   <para>Generate a data storage for the layer.</para>
+   <para>Create a colorizer for the layer.</para>
+   <para>Create a legend forthe layer.</para>
+ </summary>
+</member>
+<member name="P:FC.IVM.Forms.frm_IVM_Area_Layout.MapControl">
+ <summary>Return mapcontrol.</summary>
+</member>
+<member name="P:FC.IVM.Forms.frm_IVM_Area_Layout.Layer">
+ <summary>Return object VectorItemsLayer in mapcontrol layer 0.</summary>
+</member>
+<member name="P:FC.IVM.Forms.frm_IVM_Area_Layout.VectorLayer">
+ <summary>Return object VectorItemsLayer in mapcontrol layer 1.</summary>
+</member>
+<member name="P:FC.IVM.Forms.frm_IVM_Area_Layout.ItemStorage">
+ <summary>Return object ItemStorage in mapcontrol layer 1.</summary>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.UpdateItemMap">
+ <summary>คิวรี่ข้อมูลของพื้นที่กองเก็บของแต่ละลานมากำหนดค่า ให้กับ Mapitem.</summary>
+ <remarks>
+   <para>-Area ID</para>
+   <para>-Area Name</para>
+   <para>-Full status</para>
+   <para>-Capacity</para>
+   <para></para>
+ </remarks>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.mapControl1_DrawMapItem(System.Object,DevExpress.XtraMap.DrawMapItemEventArgs)">
+ <summary>คิวรี่ข้อมูลของพื้นที่กองเก็บของแต่ละลานมากำหนดค่า ให้กับ Mapitem vectorItemsLayer และกำหนดสีของเส้นกรอบเป็นสีเทา สำหรับ Area ที่ Isfull = True.</summary>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.mapControl1_ViewPortChange(System.Object,DevExpress.XtraMap.ViewportChangedEventArgs)">
+ <summary>เช็ค Zoom level ของแต่ละลาน ในหน้า Main layout เพื่อกำหนด Action operation</summary>
+ <remarks>
+   <para>Zoom level 1 = Unload, ตัดจ่าย, ย้าย วัตถุดิบ</para>
+   <para>Zoom level 2 = แสดงเมนูสำหรับ Set disable/enable area</para>
+   <para>Zoom level 3 = เรียก Popup form สำหรับแสดงรายละเอียดของวัตถุดิบที่จัดเก็บไว้ใน พื้นที่ทั้งหมด</para>
+   <para></para>
+ </remarks>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.MapItemClick(System.Object,DevExpress.XtraMap.MapItemClickEventArgs)">
+ <summary>Open from for management material when zoom level = 1</summary>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.frmPopupSubArea_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+ <summary>เมื่อปิด Popup form จะทำการคิวรี่ข้อมูลจากฐานข้อมูลมาเก็บไว้ใน Datatable เพื่ออัพเดทการแสดงผล Mapitem ให้เป็นปัจจุบัน.</summary>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.ZoomToFitAllVectorLayers">
+ <summary>ทำหน้าที่จัดการ การแสดงผลหน้าจอ พื้นที่กองเก็บของแต่ละลานให้พอดีกับหน้าจอ และเก็บค่า Object mapitem ทั้งหมดไว้เพื่อใช้งานในโปรเซสอื่นๆ</summary>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.CreateMenu(DevExpress.XtraMap.MapItemClickEventArgs)">
+ <summary>สร้างเมนูสำหรับกำหนดให้ พื้นที่กองเก็บ มีสถานะ ว่าง หรือเต็ม</summary>
+ <param name="e">Object area mapitem</param>
+ <remarks>จะแสดงเมนู ตอนคลิ๊ก Area ใน Zoom level 2</remarks>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.mapControl1_MapItemClick(System.Object,DevExpress.XtraMap.MapItemClickEventArgs)">
+ <summary>เรียกใช้ฟังก์ชั่นในการสร้าง เมนู กรณีที่ Object ID &lt;&gt; 1 and 2</summary>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.VectorItemsLayer_DataLoaded(System.Object,DevExpress.XtraMap.DataLoadedEventArgs)">
+ <summary>
+   <para>Prepare mapcontrol with default config values.</para>
+   <para>Draw icon for show material information that store in each area.</para>
+   <para></para>
+ </summary>
+ <param name="sender">Object area mapitem.</param>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.mapControl1_MouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+ <summary>เรียกใช้งาน ตอนคลิกไอคอน Default zoom ในหน้า Main layout</summary>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.DefaultZoomLevel">
+ <summary>เป็นฟังก์ชั่น สำหรับ จัดการแสดงผล พื้นที่ต่างๆ ของแต่ละ ลาน ให้พอดีกับหน้าจอ.</summary>
+ <remarks>เรียกใช้ตอน คลิกที่เมนู ลาน แต่ละลาน</remarks>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.GetClickedOverlayItem(DevExpress.XtraMap.MapHitInfo)">
+ <exclude />
+ <excludetoc />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.ResetMinMaxZoomLevel(DevExpress.XtraMap.MapControl)">
+ <summary>เป็นฟังก์ชั่น สำหรับ Reset ของการซูม mapcontrol.</summary>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.SetMinMaxZoomLevel(DevExpress.XtraMap.MapControl)">
+ <summary>เป็นฟังก์ชั่น สำหรับ Set default zoom mapcontrol.</summary>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.CreateStorageInformation(DevExpress.XtraMap.GeoPoint,System.String,System.String,System.Int32)">
+ <summary>Return Object Storagemapitem in mapcontrol.</summary>
+ <param name="location">Item position</param>
+ <param name="name">Object name</param>
+ <param name="path">Image path</param>
+ <param name="index">Image index</param>
+ <returns>DevExpress.XtraMap.MapItem</returns>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.GetDataFromDB">
+ <summary>
+   <para>ฟังก์ชั่น สำหรับ Query ข้อมูลจากฐานข้อมูล มาแสดงผล ในกรณี ที่ข้อมูลมีการอัพเดทข้อมูล จากโปรเซสต่างๆ.</para>
+   <para>-Update area data.</para>
+   <para>-Update field total weight.</para>
+ </summary>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.GetSummaryAreaData">
+ <summary>คิวรี่ข้อมูลของลานจากฐานข้อมูลมาเก็บไว้ใน Datatable</summary>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.frm_IVM_Area_Layout_Load(System.Object,System.EventArgs)">
+ <summary>เริ่มต้นการทำงาน คิวรี่ข้อมูลต่างๆ จากฐานข้อมูล มาเก็บไว้ใน Datatable เพื่อใช้ในโปรเซส อื่นๆ ต่อไป.</summary>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.SetFullStatus(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+ <summary>ฟังก์ชั่น สำหรับ กำหนดให้พื้นที่จัดเก็บไดๆ มีสถานะ "เต็ม" เพื่อไม่ให้สามารถ ย้ายวัตถุดิบ หรือ Unload  เข้าในพื้นที่ได้</summary>
+ <param name="sender">Mapitem area object that need to set disable</param>
+ <remarks>จะแสดงเมนู ตอนคลิก Area ใน Zoom level 2</remarks>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.SetStatusUnFull(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+ <summary>ฟังก์ชั่น สำหรับ กำหนดให้พื้นที่จัดเก็บไดๆ มีสถานะ "ว่าง" เพื่อให้สามารถ ย้ายวัตถุดิบ หรือ Unload เข้าในพื้นที่ได้</summary>
+ <param name="sender">Mapitem area object that need to set disable</param>
+ <remarks>จะแสดงเมนู ตอนคลิก Area ใน Zoom level 2</remarks>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.OnTimedEvent(System.Object,System.EventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.Update">
+ <summary>เช็คอัพเดทข้อมูลจากฐานข้อมูล ทุกๆ 20 วินาที ถ้าข้อมูลมีการเปลี่ยนแปลง จะทำการคิวรี่ข้อมูลแล้วทำการแสดงผลในระบบต่อไป.</summary>
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.OnVisibleChanged(System.EventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.Start">
+ <exclude />
+ <excludetoc />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.Stop">
+ <exclude />
+ <excludetoc />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.OnDispose(System.Boolean)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Forms.frm_IVM_Area_Layout.frm_IVM_Area_Layout_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+ <summary>เมื่อปิดฟอร์ม จะทำการเคลียร์ค่าตัวแปรต่างๆในระบบ</summary>
+</member>
+<member name="T:FC.IVM.Forms.MapItemFactory">
+ <summary>คลาส สำหรับ สร้าง Default object MapRectangle</summary>
+</member>
+<member name="M:FC.IVM.Forms.MapItemFactory.InitializeItem(DevExpress.XtraMap.MapItem,System.Object)">
+ <param name="item">Mapitem</param>
+</member>
+<member name="T:FC.IVM.IVMClass.Item">
+ <summary>คลาสสำหรับ Binding data souce custom popup form</summary>
+</member>
+<member name="P:FC.IVM.IVMClass.Item.ColumnName">
+ <summary>Database field name</summary>
+</member>
+<member name="P:FC.IVM.IVMClass.Item.PackageSize">
+ <summary>Material package size</summary>
+</member>
+<member name="T:FC.IVM.PopupForms.frm_IVM_Popup_Material_Info">
+ <summary>หน้าจอสำหรับแสดงรายละเอียดของวัตถุดิบ ที่จัดเก็บไว้ในพื้นที่</summary>
+ <remarks>จะเรียกใช้งานได้ ในหน้าจอ Mainlayout zoom level 3</remarks>
+</member>
+<member name="F:FC.IVM.PopupForms.frm_IVM_Popup_Material_Info._GroupID">
+ <exclude />
+</member>
+<member name="F:FC.IVM.PopupForms.frm_IVM_Popup_Material_Info._DT_MatInfo">
+ <exclude />
+</member>
+<member name="E:FC.IVM.PopupForms.frm_IVM_Popup_Material_Info.OnPassData">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Info.OnBeforeFormLoad(System.Object)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Info.OnClickClear(FC.MainWinApp.EnumMainFormShowMessageType@,System.String@,System.String@)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Info.OnClickCustomButton(System.String,FC.MainWinApp.EnumMainFormShowMessageType@,System.String@,System.String@)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Info.OnClickReload(FC.MainWinApp.EnumMainFormShowMessageType@,System.String@,System.String@)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Info.OnClickSave(FC.MainWinApp.EnumMainFormShowMessageType@,System.String@,System.String@)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Info.setParam(System.Int32,System.Data.DataTable)">
+ <exclude />
+</member>
+<member name="T:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage">
+ <summary>
+   <para>หน้าจอ สำหรับการจัดการข้อมูลวัตถุดิบของแต่ละลาน</para>
+   <para>-Unload</para>
+   <para>-ย้าย</para>
+   <para>-ตัดจ่าย</para>
+ </summary>
+</member>
+<member name="E:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.OnPassData">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.OnBeforeFormLoad(System.Object)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.OnClickClear(FC.MainWinApp.EnumMainFormShowMessageType@,System.String@,System.String@)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.OnClickCustomButton(System.String,FC.MainWinApp.EnumMainFormShowMessageType@,System.String@,System.String@)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.OnClickReload(FC.MainWinApp.EnumMainFormShowMessageType@,System.String@,System.String@)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.OnClickSave(FC.MainWinApp.EnumMainFormShowMessageType@,System.String@,System.String@)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.#ctor">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.SetGridFont(DevExpress.XtraGrid.GridControl,System.Drawing.Font)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.Prepare_Grid_Movement_Souce">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.GridViewMoveMentDetail_ShowingPopupEditForm(System.Object,DevExpress.XtraGrid.Views.Grid.ShowingPopupEditFormEventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.EditForm_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.InitData">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.frm_IVM_Popup_Material_Manage_Load(System.Object,System.EventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.GridViewMoveMentDetail_ValidateRow(System.Object,DevExpress.XtraGrid.Views.Base.ValidateRowEventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.GridViewMoveMentDetail_InvalidRowException(System.Object,DevExpress.XtraGrid.Views.Base.InvalidRowExceptionEventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.SearchMaterial_EditValueChanged(System.Object,System.EventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.GridViewMoveMentDetail_EditFormPrepared(System.Object,DevExpress.XtraGrid.Views.Grid.EditFormPreparedEventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.RemoveRow(System.Object,DevExpress.XtraEditors.Controls.ButtonPressedEventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.GridViewMoveMentDetail_ShowingEditor(System.Object,System.ComponentModel.CancelEventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.GridViewMoveMentDetail_RowCountChanged(System.Object,System.EventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.frmPopupNumKey_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.onScreenKeyboard">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.GridControlSouceArea_ProcessGridKey(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.GridControlWP_ProcessGridKey(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.gridControlDestGroupArea_ProcessGridKey(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.GridControlDestSubArea_ProcessGridKey(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.btnClose_Click(System.Object,System.EventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage.frm_IVM_Popup_Mat_Properties_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+ <exclude />
+</member>
+<member name="T:FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties">
+ <summary>ฟอร์มสำหรับเลือก คุณสมบัติของการ Unload วัตถุดิบ</summary>
+</member>
+<member name="E:FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties.OnPassData">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties.OnBeforeFormLoad(System.Object)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties.OnClickClear(FC.MainWinApp.EnumMainFormShowMessageType@,System.String@,System.String@)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties.OnClickCustomButton(System.String,FC.MainWinApp.EnumMainFormShowMessageType@,System.String@,System.String@)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties.OnClickReload(FC.MainWinApp.EnumMainFormShowMessageType@,System.String@,System.String@)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties.OnClickSave(FC.MainWinApp.EnumMainFormShowMessageType@,System.String@,System.String@)">
+ <exclude />
+</member>
+<member name="F:FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties.dt">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties.#ctor">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties.GetDataMatProperties">
+ <summary>Get material properties data from database fill into datatable.</summary>
+ <returns>Datatable of material properties</returns>
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties.GetDataTransferPointProperties">
+ <summary>Get transferpoint properties data from database fill into datatable.</summary>
+ <returns>Datatable of transferpoint properties</returns>
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties.GetDataBalingSealProperties">
+ <summary>Get balingseal data from database fill into datatable.</summary>
+ <returns>Datatable of balingseal properties</returns>
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties.initLookupContractor">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties.btnOK_Click(System.Object,System.EventArgs)">
+ <summary>ปุ่มสำหรับเลือก คุณสมบัติในการ Unload</summary>
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties.GridLookUpMatProperties_EditValueChanged(System.Object,System.EventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties.GridLookUpBalingSeal_EditValueChanged(System.Object,System.EventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties.GridLookUpTransferPoint_EditValueChanged(System.Object,System.EventArgs)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties.GridLookUpContractor_EditValueChanged(System.Object,System.EventArgs)">
+ <exclude />
+</member>
+<member name="T:FC.IVM.PopupForms.frm_IVM_Popup_Num_Key">
+ <summary>Windows form สำหรับอำนวยความสะดวกในการป้อนตัวเลข</summary>
+ <remarks>
+   <para>ใช้งานในโปรเซส Unload วัตถุดิบ</para>
+ </remarks>
+</member>
+<member name="T:FC.IVM.PopupForms.frm_IVM_Custom_Form_Num_Key">
+ <summary>
+   <para>Custom popup form สำหรับอำนวยความสะดวกในการป้อนข้อมูลประเภท ตัวเลข สำหรับใช้งานบน แทปเลต.</para>
+   <para></para>
+ </summary>
+ <example>
+ ใช้งานในโปรเซส ย้าย, ตัดจ่าย วัตถุดิบ
+ </example>
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Custom_Form_Num_Key.#ctor(System.Collections.Generic.List{FC.IVM.IVMClass.Item},System.String[],System.Drawing.Font,System.Data.DataTable,System.Int32)">
+ <param name="inColumns">ชื่อ คอลัมน์ สำหรับการ Insert data (Bind column)</param>
+ <param name="inDefaultFont">Font for use in this form.</param>
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Custom_Form_Num_Key.press_num(System.Object,System.EventArgs)">
+ <summary>Display button value.</summary>
+</member>
+<member name="M:FC.IVM.PopupForms.frm_IVM_Custom_Form_Num_Key.lookUpEdit1_EditValueChanged(System.Object,System.EventArgs)">
+ <summary>Set material package size.</summary>
+</member>
+</members>
+</doc>

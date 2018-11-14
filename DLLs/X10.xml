@@ -1,0 +1,998 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+X10
+</name>
+</assembly>
+<members>
+<member name="T:X10.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:X10.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:X10.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:X10.PrintRibbonControllerResources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ClosePreview">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ClosePreviewLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_Customize">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_CustomizeLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_Document">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_DocumentMap">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_DocumentMapLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_EditPageHF">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_EditPageHFLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ExportCsv">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ExportCsvLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ExportFile">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ExportFileLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ExportGraphic">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ExportGraphicLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ExportHtm">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ExportHtmLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ExportMht">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ExportMhtLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ExportPdf">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ExportPdfLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ExportRtf">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ExportRtfLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ExportTxt">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ExportTxtLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ExportXls">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ExportXlsLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ExportXlsx">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ExportXlsxLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_FillBackground">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_FillBackgroundLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_Find">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_FindLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_HandTool">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_Magnifier">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_MultiplePages">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_MultiplePagesLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_Open">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_OpenLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PageMargins">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PageMarginsLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PageMarginsModerate">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PageMarginsNarrow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PageMarginsNormal">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PageMarginsWide">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PageOrientation">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PageOrientationLandscape">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PageOrientationLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PageOrientationPortrait">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PageSetupDialog">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PaperKind_A3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PaperKind_A4">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PaperKind_A5">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PaperKind_A6">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PaperKind_Executive">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PaperKind_Legal">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PaperKind_Letter">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PaperKind_Tabloid">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PaperSize">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PaperSizeLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_Parameters">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ParametersLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_Pointer">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_Print">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PrintDirect">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PrintDirectLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PrintLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PrintSetup">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_PrintSetupLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_Save">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_SaveLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_Scale">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ScaleLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_SendCsv">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_SendCsvLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_SendFile">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_SendFileLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_SendGraphic">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_SendGraphicLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_SendMht">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_SendMhtLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_SendPdf">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_SendPdfLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_SendRtf">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_SendRtfLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_SendTxt">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_SendTxtLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_SendXls">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_SendXlsLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_SendXlsx">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_SendXlsxLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ShowFirstPage">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ShowFirstPageLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ShowLastPage">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ShowLastPageLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ShowNextPage">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ShowNextPageLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ShowPrevPage">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ShowPrevPageLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_Watermark">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_WatermarkLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_Zoom">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ZoomIn">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ZoomInLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ZoomLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ZoomOut">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.PrintRibbonControllerResources.RibbonPrintPreview_ZoomOutLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:X10.XRDesignRibbonControllerResources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_AlignBottom">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_AlignHorizontalCenters">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_AlignLeft">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_AlignRight">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_AlignToGrid">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_AlignTop">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_AlignVerticalCenters">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_BackColor">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_BringToFront">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_CenterHorizontally">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_CenterVertically">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_Copy">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_CopyLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_Cut">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_CutLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_Edit">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_Exit">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_ExitLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_Font">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_FontBold">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_FontItalic">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_FontUnderline">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_ForeColor">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_HorizSpaceConcatenate">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_HorizSpaceDecrease">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_HorizSpaceIncrease">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_HorizSpaceMakeEqual">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlBackward">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlBackwardLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlFind">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlFindLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlForward">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlForwardLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlHome">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlHomeLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlRefresh">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlRefreshLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlStop">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlStopLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_JustifyCenter">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_JustifyJustify">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_JustifyLeft">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_JustifyRight">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_NewReport">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_NewReportLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_NewReportWizard">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_NewReportWizardLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_OpenFile">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_OpenFileLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_Paste">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_PasteLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_Redo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_RedoLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_Report">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_SaveAll">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_SaveAllLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_SaveFile">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_SaveFileAs">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_SaveFileAsLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_SaveFileLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_Scripts">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_ScriptsLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_SendToBack">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_SizeToControl">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_SizeToControlHeight">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_SizeToControlWidth">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_SizeToGrid">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_Undo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_UndoLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_VertSpaceConcatenate">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_VertSpaceDecrease">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_VertSpaceIncrease">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_VertSpaceMakeEqual">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_Windows">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_WindowsLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_Zoom">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_ZoomIn">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_ZoomInLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_ZoomLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_ZoomOut">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:X10.XRDesignRibbonControllerResources.RibbonUserDesigner_ZoomOutLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+</members>
+</doc>

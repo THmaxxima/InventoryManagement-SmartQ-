@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentFile Version="2010" Moniker="..\FC.IVM\bin\Debug\FC.IVM.dll" DocType="DX.NET" IsLocalizationDisabled="true">
+  <RelatedProject>documentation_IVM.dxp</RelatedProject>
+  <State>
+    <Attributes>
+      <Attribute key="scrollPosition" valuetype="integer">0</Attribute>
+      <Attribute key="i-toggle-section-collapsed-i-protectedProperties-section-heading" valuetype="string">true</Attribute>
+      <Attribute key="i-toggle-section-collapsed-i-protectedMethods-section-heading" valuetype="string">true</Attribute>
+      <Attribute key="checkbox-unchecked-i-inherited-checkbox" valuetype="string">true</Attribute>
+      <Attribute key="checkbox-unchecked-i-protected-checkbox" valuetype="string">true</Attribute>
+      <Attribute key="i-toggle-section-collapsed-i-inheritance-section-heading" valuetype="string">true</Attribute>
+      <Attribute key="checkbox-unchecked-i-CPP2005-language-checkbox" valuetype="string">true</Attribute>
+      <Attribute key="checkbox-unchecked-i-CS-language-checkbox" valuetype="string">true</Attribute>
+      <Attribute key="i-toggle-section-collapsed-i-publicFields-section-heading" valuetype="string">true</Attribute>
+      <Attribute key="i-toggle-section-collapsed-i-publicProperties-section-heading" valuetype="string">true</Attribute>
+      <Attribute key="i-toggle-section-collapsed-i-publicEvents-section-heading" valuetype="string">true</Attribute>
+      <Attribute key="i-toggle-section-collapsed-i-protectedFields-section-heading" valuetype="string">true</Attribute>
+    </Attributes>
+  </State>
+  <LastSelectedItem></LastSelectedItem>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~Dispose(Boolean)">
+    <exclude ChangeDateTime="2018-07-19T07:37:50.74805Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~Stop">
+    <exclude ChangeDateTime="2018-07-19T07:38:05.3471461Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~_ctor">
+    <exclude ChangeDateTime="2018-07-19T07:45:45.4192496Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Rollback~Dispose(Boolean)">
+    <exclude ChangeDateTime="2018-07-19T07:47:00.6574944Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Rollback~OnBeforeFormLoad">
+    <exclude ChangeDateTime="2018-07-19T07:47:10.8055422Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Rollback~OnClickClear">
+    <exclude ChangeDateTime="2018-07-19T07:47:17.2367572Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Rollback~OnClickCustomButton">
+    <exclude ChangeDateTime="2018-07-19T07:47:19.2087505Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Rollback~OnClickReload">
+    <exclude ChangeDateTime="2018-07-19T07:47:22.4782545Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Rollback~OnClickSave">
+    <exclude ChangeDateTime="2018-07-19T07:47:25.0107874Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Rollback~_ctor">
+    <exclude ChangeDateTime="2018-07-19T07:49:12.2797486Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Rollback~OnPassData_EV">
+    <exclude ChangeDateTime="2018-07-19T07:49:31.0058061Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.LayoutAreaItem~privatecapacity">
+    <exclude ChangeDateTime="2018-07-19T07:50:29.0891558Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~ItemStorage">
+    <exclude ChangeDateTime="2018-07-19T07:59:00.6752951Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Rollback~Dispose">
+    <exclude ChangeDateTime="2018-07-19T08:00:00.900726Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.MapItemFactory~_ctor">
+    <exclude ChangeDateTime="2018-07-19T08:02:07.4022876Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Rollback~GetTentativeTransacData">
+    <summary ChangeDateTime="2018-07-19T08:22:11.2518106Z">คิวรี่ข้อมูล Tentative transaction data จากฐานข้อมูลมาแสดงผลใน Gridview</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Custom_Form_Num_Key~_ctor">
+    <exclude ChangeDateTime="2018-07-19T08:22:50.6589695Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Custom_Form_Num_Key~_ctor:dataTable">
+    <param ChangeDateTime="2018-07-19T08:24:50.7391228Z">ข้อมูลของ Material package ที่ได้จากการคิวรี่ในฐานข้อมูล</param>
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties~_ctor">
+    <exclude ChangeDateTime="2018-07-19T08:25:56.6126936Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties~Dispose">
+    <exclude ChangeDateTime="2018-07-19T08:26:11.131841Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties~OnClickReload">
+    <exclude ChangeDateTime="2018-07-19T08:26:23.761957Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties~OnClickSave">
+    <exclude ChangeDateTime="2018-07-19T08:26:26.9127742Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties~OnClickCustomButton">
+    <exclude ChangeDateTime="2018-07-19T08:26:29.8465559Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties~OnClickClear">
+    <exclude ChangeDateTime="2018-07-19T08:26:32.3567046Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties~OnBeforeFormLoad">
+    <exclude ChangeDateTime="2018-07-19T08:26:35.0172202Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties~OnPassData_EV">
+    <exclude ChangeDateTime="2018-07-19T08:27:22.9619554Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties~GetDataBalingSealProperties">
+    <summary ChangeDateTime="2018-07-19T08:31:23.5002124Z">Unload seal properties</summary>
+    <remarks ChangeDateTime="2018-07-19T08:32:00.1842412Z">&lt;P&gt;มี ถูกต้อง&lt;/P&gt;
+&lt;P&gt;มี ไม่ถูกต้อง&lt;/P&gt;
+&lt;P&gt;ไม่มี&lt;/P&gt;</remarks>
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties~GetDataMatProperties">
+    <summary ChangeDateTime="2018-07-19T08:31:23.5002124Z">Unload material type properties</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Mat_Properties~GetDataTransferPointProperties">
+    <summary ChangeDateTime="2018-07-19T08:31:23.5002124Z">Unload tranfer point properties</summary>
+    <remarks ChangeDateTime="2018-07-19T08:32:31.7738894Z">&lt;P&gt;ใน&lt;/P&gt;
+&lt;P&gt;นอก&lt;/P&gt;</remarks>
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage~Wow64DisableWow64FsRedirection">
+    <exclude ChangeDateTime="2018-07-19T09:18:08.3367852Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage~Wow64EnableWow64FsRedirection">
+    <exclude ChangeDateTime="2018-07-19T09:18:11.1447607Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage~Dispose">
+    <exclude ChangeDateTime="2018-07-19T09:20:35.4082946Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage~InitializeComponent">
+    <exclude ChangeDateTime="2018-07-19T09:20:40.9791196Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms_namespace">
+    <summary ChangeDateTime="2018-07-19T09:23:14.7708988Z">Windows form project</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.IVMClass_namespace">
+    <summary ChangeDateTime="2018-07-19T09:23:14.7708988Z">Windows class project</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms_namespace">
+    <summary ChangeDateTime="2018-07-19T09:23:14.7708988Z">Windows popup form project</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage~btnProperties_Click">
+    <exclude ChangeDateTime="2018-07-19T09:26:58.7710556Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage~btnSave_Click">
+    <exclude ChangeDateTime="2018-07-19T09:27:01.3632109Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Popup_Material_Manage~layoutViewDestGroupArea_CardClick">
+    <exclude ChangeDateTime="2018-07-19T09:27:17.0512868Z" />
+  </item>
+  <Filters>
+    <CONTENTSTORECOMMON>
+      <IsIncludedItemsOnly>true</IsIncludedItemsOnly>
+    </CONTENTSTORECOMMON>
+    <CONTENTSTORELOCALIZATION>
+      <IsPrimaryLocaleContentPreviewEnabled>true</IsPrimaryLocaleContentPreviewEnabled>
+    </CONTENTSTORELOCALIZATION>
+    <DX.NETCONTENTSTOREFILTER>
+      <ShowProtectedMembers>false</ShowProtectedMembers>
+      <ShowProtectedFriendMembers>false</ShowProtectedFriendMembers>
+      <ShowFriendMembers>false</ShowFriendMembers>
+      <ShowPrivateMembers>false</ShowPrivateMembers>
+      <ShowInheritedMembers>false</ShowInheritedMembers>
+      <IsSourceCodeContentVisible>false</IsSourceCodeContentVisible>
+    </DX.NETCONTENTSTOREFILTER>
+  </Filters>
+</ContentFile>

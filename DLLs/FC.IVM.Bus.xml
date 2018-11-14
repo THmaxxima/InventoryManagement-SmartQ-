@@ -1,0 +1,251 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FC.IVM.Bus
+</name>
+</assembly>
+<members>
+<member name="T:FC.IVM.Bus.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:FC.IVM.Bus.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:FC.IVM.Bus.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:FC.IVM.Bus.Modules.mod_IVM_DB">
+ <summary>Module for management database</summary>
+ <remarks>ฟังก์ชั่นสำหรับ บริหารจัดการข้อมูล ในฐานข้อมูล</remarks>
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_DB.DXSchedulerDataset">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_DB.AppointmentDataAdapter">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_DB.ResourceDataAdapter">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_DB.DXSchedulerConn">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_DB.IDReader">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_DB.AreaReaderDataAdapter">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_DB.func_IVM_Get_Area_Info(System.Int32)">
+ <summary>ฟังก์ชั่นแสดงข้อมูลของ Group area ในแต่ละลาน</summary>
+ <param name="FieldID">รหัสลาน</param>
+ <returns>Datatable : Group area detail data</returns>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_DB.func_IVM_Get_WP_Info(System.Int32)">
+ <summary>Function use to get WP. detail data</summary>
+ <param name="FieldID">รหัสลาน</param>
+ <returns>Datatable : WP. Information</returns>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_DB.func_IVM_Get_ChildStorageData(System.Int32,System.Int32)">
+ <summary>ฟังก์ชั่นแสดงข้อมูลของ Sub area ในแต่ละลาน</summary>
+ <param name="GroupID">รหัสพื้นที่ย่อย</param>
+ <param name="FieldID">รหัสลาน</param>
+ <returns>Datatable : Sub area detail data</returns>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_DB.func_IVM_Get_WeightTicketData(System.Int32,System.String)">
+ <summary>ฟังก์ชั่น สำหรับแสดงข้อมูลรายละเอียดตั๋วชั่ง</summary>
+ <param name="MatTypeID">ประเภทของวัตถุดิบ</param>
+ <param name="UserID">รหัสผู้ใช้งาน</param>
+ <remarks>ประเภทของวัตถุดิบ : 1 ในประเทศ 2 นำเข้า</remarks>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_DB.func_View_IVM_Contractor_1954">
+ <summary>ฟังก์ชั่น สำหรับแสดงข้อมูล ชื่อผู้รับเหมา</summary>
+ <returns>Datatable : Contractor name</returns>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_DB.func_IVM_Getmaterial">
+ <summary>ฟังก์ชั่นสำหรับแสดงชื่อของวัตถุดิบ</summary>
+ <returns>Datatable : Material ID, Name</returns>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_DB.func_IVM_MoveStockTemp(System.Int32,System.Int32,System.Int32,System.Double,System.Int32)">
+ <summary>ฟังก์ชั่น สำหรับการย้าย/ตัดจ่าย วัตถุดิบ</summary>
+ <param name="SourceTypeID">พื้นที่ต้นทาง</param>
+ <param name="DestTypeID">พื้นที่ปลายทาง</param>
+ <param name="MaterialID">รหัสวัตถุดิบ</param>
+ <param name="Amount">จำนวน</param>
+ <param name="UserID">รหัสผู้ใช้งาน</param>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_DB.func_IVM_UnloadTruckToTemp_1859(System.String,System.Decimal,System.Int32,System.String,System.Int32,DevExpress.XtraGrid.Views.Grid.GridView,System.String,System.String,System.String)">
+ <summary>ฟังก์ชั่น สำหรับบันทึกข้อมูลการ Unload วัตถุดิบ</summary>
+ <param name="Ticket">ตั๋วชั่ง</param>
+ <param name="Amount">จำนวน</param>
+ <param name="MatID">รหัสวัตถุดิบ</param>
+ <param name="ContractName">ชื่อผู้รับเหมา</param>
+ <param name="UserID">รหัสผู้ใช้งาน</param>
+ <param name="viewUnloadData">รายละเอียดวัตถุดิบ</param>
+ <param name="MatCategory">กลุ่มวัตถุดิบ</param>
+ <param name="BalingSeal">Balingseal status</param>
+ <param name="TransferPoint">จุดขนส่ง</param>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_DB.func_IVM_UpdateStorageFullFlag(System.Int32,System.Int32,System.Int32)">
+ <summary>Function use to set disable/enable area</summary>
+ <param name="StorageID">รหัสพื้นที่</param>
+ <param name="Status">สถานะ</param>
+ <param name="UserID">รหัสผู้ใช้งาน</param>
+ <remarks>Status : 1 Disable ,2 Enable</remarks>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_DB.func_IVM_Get_LasUpdateData">
+ <summary>ฟังก์ชั่น สำหรับแสดง วัน/เวลา ที่มีการอัพเดทข้อมูลล่าสุดในฐานข้อมูล</summary>
+ <returns>Datetime : Last update time</returns>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_DB.func_IVM_Get_Material_Properties">
+ <summary>Function use to get material properties</summary>
+ <returns>Datatable : Material properties</returns>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_DB.func_IVM_Get_Tentative_Data">
+ <summary>Function use to get tentative transaction data</summary>
+ <returns>Datatable : Tentative data</returns>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_DB.func_IVM_Get_Area_Data_By_ParentID(System.Int32)">
+ <summary>ฟังก์ชั่นแสดงชื่อพื้นที่กองเก็บ</summary>
+ <param name="ParentStorageID">Group area ID</param>
+ <returns>Datatable : Area name</returns>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_DB.func_IVM_Get_Area_Data_By_GroupID(System.Int32)">
+ <summary>ฟังก์ชั่นแสดงชื่อพื้นที่กองเก็บ</summary>
+ <param name="GroupID">รหัสของพื้นที่กองเก็บในแต่ละลาน</param>
+ <returns>Datatable : Area name</returns>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_DB.func_IVM_Rollback_Tentative_Data(System.Int32,System.Int32,System.Int32)">
+ <summary>Function use to rollback tentative transaction data</summary>
+ <param name="Ref_ID">Data ID</param>
+ <param name="Transac_Type">Transaction type</param>
+ <param name="UserID">User ID</param>
+ <remarks>Transaction type : 1 Unload ,2 Movement</remarks>
+</member>
+<member name="P:FC.IVM.Bus.Modules.mod_IVM_DB.Get_Curr_DB_Time">
+ <summary>ฟังก์ชั่น สำหรับ แสดง วัน/เวลา ของเครื่อง Server</summary>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_DB.func_IVM_Get_Site_Name">
+ <exclude />
+</member>
+<member name="T:FC.IVM.Bus.Modules.mod_IVM_Map_Function">
+ <summary>Module for management object mapcontrol</summary>
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_Map_Function.tmpIDForStatus">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_Map_Function.tmpMapItemForStatus">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_Map_Function.CapacityST">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_Map_Function.colors_ST">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_Map_Function.overlay_Renamed">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_Map_Function.backImage_Renamed">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_Map_Function.closeImage_Renamed">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_Map_Function.mapcontrolName_Renamed">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_Map_Function.mapcontrolClose_Form">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_Map_Function.overlayMessage">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_Map_Function.imageOverlay">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_Map_Function.infoOverlay">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_Map_Function.imageItem">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_Map_Function.itemValue">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_Map_Function.itemsNames">
+ <exclude />
+</member>
+<member name="F:FC.IVM.Bus.Modules.mod_IVM_Map_Function.itemsInfo">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_Map_Function.HideLayerItems(DevExpress.XtraMap.VectorItemsLayer,System.String,System.String)">
+ <summary>Function use to hide map layer item</summary>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_Map_Function.UpdateFullIcon(DevExpress.XtraMap.MapItem,System.Boolean)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_Map_Function.CreateLegend(DevExpress.XtraMap.MapItemsLayerBase,System.Int32)">
+ <summary>Function use to create map legend</summary>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_Map_Function.createUnloadLocalItem(DevExpress.XtraMap.MapCustomElement,System.Int32)">
+ <summary>Function use to create icon unload local</summary>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_Map_Function.createUnloadImportItem(DevExpress.XtraMap.MapCustomElement,System.Int32)">
+ <summary>Function use to create icon unload import</summary>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_Map_Function.getZoomLavel(DevExpress.XtraMap.MapControl)">
+ <summary>Function use to get mapcontrol zoom level</summary>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_Map_Function.calRangeColor(System.Double)">
+ <summary>ฟังก์ชั่น สำหรับแสดงสี ของสถานะพื้นที่กองเก็บ</summary>
+ <param name="capacity">Capacity of area</param>
+ <remarks>0 : 0-24<see cref="!: 25-49">, 1 </see>, 2 : 50-74<see cref="!: 75-99">, 3 </see>, 4 : &gt;=100%</remarks>
+ <returns>Integer</returns>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_Map_Function.GetSumAreaWeight(System.Int32)">
+ <summary>ฟังก์ชั่น สำหรับ แสดงน้ำหนักวัตถุดิบรวม ของแต่ละลาน</summary>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_Map_Function.CreateOverlay(DevExpress.XtraMap.MapControl,System.DateTime,System.Int32)">
+ <summary>Function use to create map overlay</summary>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_Map_Function.SetInfoMessage(System.String)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_Map_Function.prePareInfo(System.String,System.Double)">
+ <summary>Function use to show area inuse capacity</summary>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_Map_Function.genStorageMatDetailData(System.Data.DataTable)">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_Map_Function.prePareMatInfo(System.String,System.String,System.Double,System.Double)">
+ <summary>Function use to show material detail data in each area</summary>
+</member>
+<member name="P:FC.IVM.Bus.Modules.mod_IVM_Map_Function.Overlay">
+ <exclude />
+</member>
+<member name="P:FC.IVM.Bus.Modules.mod_IVM_Map_Function.BackImage">
+ <exclude />
+</member>
+<member name="P:FC.IVM.Bus.Modules.mod_IVM_Map_Function.MapName">
+ <exclude />
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_Map_Function.GetOverlays">
+ <exclude />
+</member>
+<member name="T:FC.IVM.Bus.Modules.mod_IVM_Utility">
+ <summary>Utility function</summary>
+</member>
+<member name="M:FC.IVM.Bus.Modules.mod_IVM_Utility.CreateFonts">
+ <summary>Function use to set fonts</summary>
+</member>
+</members>
+</doc>

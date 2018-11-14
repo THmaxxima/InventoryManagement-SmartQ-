@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationWorkspace>
+  <RecentItems>
+    <RecentItem Key="cb6efbbd-aa67-4ad4-81a9-ae7e6e699a1b.-" IsPinned="false" Type="Innovasys.ContentAuthoring.Topics.RecentTopic" Assembly="Innovasys.ContentAuthoring.Topics">
+      <HandlerName>TOPICS</HandlerName>
+      <Category>Topics</Category>
+    </RecentItem>
+    <RecentItem Key="StyleSheetEditor|stylesheets\Title.css" IsPinned="false" Type="Innovasys.ContentAuthoring.StyleSheetEditor.RecentStyleSheet" Assembly="Innovasys.ContentAuthoring.StyleSheetEditor">
+      <HandlerName>STYLESHEETEDITOR</HandlerName>
+      <Category>StyleSheets</Category>
+    </RecentItem>
+    <RecentItem Key="StyleSheetEditor|stylesheets\customstyles.css" IsPinned="false" Type="Innovasys.ContentAuthoring.StyleSheetEditor.RecentStyleSheet" Assembly="Innovasys.ContentAuthoring.StyleSheetEditor">
+      <HandlerName>STYLESHEETEDITOR</HandlerName>
+      <Category>StyleSheets</Category>
+    </RecentItem>
+    <RecentItem Key="IVM Database.dxc.-" IsPinned="false" Type="Innovasys.DocumentX.ContentFiles.RecentContentFile" Assembly="Innovasys.DocumentX.ContentFiles">
+      <HandlerName>CONTENT FILES</HandlerName>
+      <Category>Content Files</Category>
+    </RecentItem>
+    <RecentItem Key="FC.IVM.dxc.-" IsPinned="false" Type="Innovasys.DocumentX.ContentFiles.RecentContentFile" Assembly="Innovasys.DocumentX.ContentFiles">
+      <HandlerName>CONTENT FILES</HandlerName>
+      <Category>Content Files</Category>
+    </RecentItem>
+    <RecentItem Key="FC.IVM.Bus.dxc.-" IsPinned="false" Type="Innovasys.DocumentX.ContentFiles.RecentContentFile" Assembly="Innovasys.DocumentX.ContentFiles">
+      <HandlerName>CONTENT FILES</HandlerName>
+      <Category>Content Files</Category>
+    </RecentItem>
+  </RecentItems>
+  <ProjectProfileApplicationPlugin DesignTimeProjectProfile="6b2cfb6d-7340-49af-9cfb-d31ec7a4a0d5" DesignTimeProjectLocale="-" />
+</ApplicationWorkspace>

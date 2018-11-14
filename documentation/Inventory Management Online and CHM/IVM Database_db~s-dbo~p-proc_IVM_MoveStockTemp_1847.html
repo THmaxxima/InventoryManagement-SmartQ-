@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="IsTemplateFileFeatureEnabled" name="Responsive" format="<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />" --><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%LocalItemTitle%%</title>" --><title>dbo.proc_IVM_MoveStockTemp_1847 Stored Procedure</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ItemTitleNoQuotes%%""/>" --><meta name="Title" content=""/><!--DXMETADATA end-->    
+    
+
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/chm.mshc/jquery-1.7.2.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/chm.mshc/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/chm.mshc/jquery-ui-1.8.18.custom.css"></link><!--DXMETADATA end-->
+	
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-db" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-db/css/chm.mshc/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-db" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-db/dx.db.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-db/dx.db.mshv1.css"" data-responsive-mobile=""template/packages/core-db/dx.db.mobile.css"" data-responsive-tablet=""template/packages/core-db/dx.db.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-db/css/dx.db.css"  data-mshv2-stylesheet="/template/packages/core-db/dx.db.mshv2.css" data-mshv1-stylesheet="/template/packages/core-db/dx.db.mshv1.css" data-responsive-mobile="template/packages/core-db/dx.db.mobile.css" data-responsive-tablet="template/packages/core-db/dx.db.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-db" filetype="script"--><script src="template/packages/plugins-db/script/chm.mshc/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-db" filetype="script"--><script src="template/packages/core-db/script/dx.db.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="IVM Database_db~s-dbo~p-proc_IVM_MoveStockTemp_1847"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="To do job move inventory from area to another area." /><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.ContentType" content="Reference" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/Title.css"></link>
+    <link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+
+    <!--DXMETADATA start type="CustomHeadContent" --><!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+    <div id="i-header-content" class="i-header-content">
+        <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->Inventory Management (FC.IVM)<!--DXMETADATA end--></div>
+        <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="LocalItemTitle" -->dbo.proc_IVM_MoveStockTemp_1847 Stored Procedure<!--DXMETADATA end--></div></div>
+    </div>
+    <div id="i-after-header-content" class="i-after-header-content">
+        <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+        <!--DXMETADATA start type="IsWebOutputRootPageLinkEnabled" format="<a href='#' class="i-page-link" class="i-view-in-frame-link" title='$$VIEW_WITH_NAVIGATION_TOOLS_TIP$$' style='display: none' data-root-page='%%WebOutputRootPage%%%%OutputFileExtension%%' target='_top'>$$VIEW_WITH_NAVIGATION_TOOLS_TEXT$$</a>" --><!--DXMETADATA end-->
+    </div>
+    <!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container"><table><tr><td>
+<a href="IVM Database_db.html">IVM Database Database</a>
+ > <a href="IVM Database_db~s-dbo.html">dbo Schema</a>
+ : dbo.proc_IVM_MoveStockTemp_1847 Stored Procedure</td></tr></table></div><!--DXMETADATA end -->
+    
+    
+    <div id="i-body-content" class="i-body-content">
+        <!--DXMETADATA start type="Description" source="Item" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=description,caption=$$Description$$%%<div class=""i-description-content"">%%description%%</div></div>" --><div class="i-section-heading" id="i-description-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Description</span></div><div id="i-description-section-content" class="i-section-content"><div class="i-description-content">To do job move inventory from area to another area.</div></div><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="PROPERTY_LIST" namespace="property" source="Item" filter="" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=properties,caption=$$properties$$%%%%filtereditemlist%%</div>" --><div class="i-section-heading" id="i-properties-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Properties</span></div><div id="i-properties-section-content" class="i-section-content"><table class="i-property-list">
+<tr><td>Creation Date</td><td>25/06/2018 14:25:08</td></tr>
+<tr><td>Encrypted</td><td><img src="template/packages/core-db/images/boolean-false.gif"/></td></tr>
+<tr><td>Ansi Nulls</td><td><img src="template/packages/core-db/images/boolean-true.gif"/></td></tr>
+</table></div><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="PARAMETER_LIST" namespace="parameter" source="Item" filter="" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=parameters,caption=$$parameters$$%%%%filtereditemlist%%</div>" --><div class="i-section-heading" id="i-parameters-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Parameters</span></div><div id="i-parameters-section-content" class="i-section-content"><table class="i-column-list"><tr><th>Parameter</th><th NOWRAP>Direction</th><th NOWRAP>Description</th><th NOWRAP>Data Type</th><th NOWRAP>Size</th></tr>
+<tr><td class="i-link">@SourceStorageID</td><td>In</td><td class="i-description">พื้นที่ต้นทาง</td><td>Integer</td><td>4</td></tr>
+<tr><td class="i-link">@DestinationStorageID</td><td>In</td><td class="i-description">พื้นที่ปลายทาง</td><td>Integer</td><td>4</td></tr>
+<tr><td class="i-link">@MaterialID</td><td>In</td><td class="i-description">วัตถุดิบ</td><td>Integer</td><td>4</td></tr>
+<tr><td class="i-link">@Amount</td><td>In</td><td class="i-description">จำนวน</td><td>Double</td><td>9</td></tr>
+<tr><td class="i-link">@UserID</td><td>In</td><td class="i-description">ผู้ทำรายการ</td><td>Integer</td><td>4</td></tr>
+<tr><td class="i-link">@RETURN_VALUE</td><td>Return Value</td><td class="i-description">&nbsp;</td><td>Integer</td><td>4</td></tr>
+</table></div><!--DXMETADATA end -->
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##RETURNS" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=returns,caption=$$Return_Type$$%%<p>%%comment%%</p></div>" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##REMARKS" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=remarks,caption=$$Remarks$$%%<p>%%comment%%</p></div>" --><div class="i-section-heading" id="i-remarks-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Remarks</span></div><div id="i-remarks-section-content" class="i-section-content"><p>บันทึกข้อมูล การ ย้าย/ตัดจ่าย วัตถุดิบ</p></div><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="PROCEDURE_PERMISSIONS" namespace="user" source="Item" filter="type=permissions" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=userpermissions,caption=$$user$$ $$permissions$$%%%%filtereditemlist%%</div>" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="PROCEDURE_PERMISSIONS" namespace="role" source="Item" filter="type=permissions" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=rolepermissions,caption=$$role$$ $$permissions$$%%%%filtereditemlist%%</div>" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="DEPENDENCY_LIST" namespace="child item" source="Item" filter="type=children" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=children,caption=""$$dependent_child$$""%%%%filtereditemlist%%</div>" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="DEPENDENCY_LIST" namespace="child item" source="Item" filter="type=parent" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=parents,caption=""$$dependent_parent$$""%%%%filtereditemlist%%</div>" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="Source" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=source,caption=$$ProcedureSource$$%%<table class="i-sql-source" border=0 cellpadding=0><tr><td><CODE>%%Source%%</CODE></td></tr></table></div>" --><div class="i-section-heading" id="i-source-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Procedure Source Code</span></div><div id="i-source-section-content" class="i-section-content"><table class="i-sql-source" border=0 cellpadding=0><tr><td><CODE><pre><span style="color: #008080; ">-- =============================================
+-- Author:        Yuthapong Wongtharua
+-- Create date: 29 Jan 2018
+-- Description:    To do job move inventory from area to another area
+/*
+    Objective: create first for project 4.0 will call this proc to move stock to temp area and wait next day for confirm
+    30 Apr 2018: Correct bug that it must see amount in buffer as source amount also.
+    25 Jun 2018: Use StockDate in place of Insert date for movement
+*/</span>
+<span style="color: #008080; ">-- =============================================
+</span><span style="color: #0000FF; ">CREATE</span> <span style="color: #0000FF; ">PROCEDURE</span> proc_IVM_MoveStockTemp_1847
+    <span style="color: #008000; ">@SourceStorageID</span> <span style="color: #0000FF; ">Int</span>,
+    <span style="color: #008000; ">@DestinationStorageID</span> <span style="color: #0000FF; ">Int</span>,
+    <span style="color: #008000; ">@MaterialID</span> <span style="color: #0000FF; ">Int</span>,
+    <span style="color: #008000; ">@Amount</span> <span style="color: #0000FF; ">float</span>, <span style="color: #008080; ">-- just in case to use with other type than waste paper
+</span>    <span style="color: #008000; ">@UserID</span> <span style="color: #0000FF; ">Int</span>
+<span style="color: #0000FF; ">AS</span>
+
+<span style="color: #0000FF; ">BEGIN</span>
+
+    <span style="color: #0000FF; ">SET</span> NOCOUNT <span style="color: #0000FF; ">ON</span>;
+    <span style="color: #0000FF; ">Declare</span> <span style="color: #008000; ">@JobName</span> <span style="color: #0000FF; ">varchar</span>(<span style="color: #800000; font-weight: bold; ">50</span>)<span style="color: #808080; ">=</span><span style="color: #FF0000; ">'MoveStockInField'</span>
+    <span style="color: #0000FF; ">Declare</span> <span style="color: #008000; ">@StorageType_Area</span> <span style="color: #0000FF; ">int</span><span style="color: #808080; ">=</span><span style="color: #800000; font-weight: bold; ">1</span>;
+    <span style="color: #0000FF; ">Declare</span> <span style="color: #008000; ">@StorageType_Plant</span> <span style="color: #0000FF; ">int</span><span style="color: #808080; ">=</span><span style="color: #800000; font-weight: bold; ">2</span>;
+
+    <span style="color: #0000FF; ">Declare</span> <span style="color: #008000; ">@SourceTypeID</span> <span style="color: #0000FF; ">Int</span>;
+    <span style="color: #0000FF; ">Declare</span> <span style="color: #008000; ">@DestTypeID</span> <span style="color: #0000FF; ">Int</span>;
+    <span style="color: #0000FF; ">Declare</span> <span style="color: #008000; ">@UnitWeight</span> <span style="color: #0000FF; ">float</span>;
+    <span style="color: #0000FF; ">Declare</span> <span style="color: #008000; ">@MoveWeight</span> <span style="color: #0000FF; ">float</span>;
+    <span style="color: #0000FF; ">Declare</span> <span style="color: #008000; ">@StatusID_Create</span> <span style="color: #0000FF; ">Int</span><span style="color: #808080; ">=</span><span style="color: #800000; font-weight: bold; ">1</span>;
+    <span style="color: #0000FF; ">Declare</span> <span style="color: #008000; ">@MinStockDate</span> <span style="color: #0000FF; ">Datetime</span>;
+
+    <span style="color: #008080; ">/* Weight will be used as average weight always
+    */</span>
+    <span style="color: #0000FF; ">exec</span> proc_WriteProcessLog <span style="color: #008000; ">@JobName</span>,<span style="color: #FF0000; ">'Start'</span>,<span style="color: #800000; font-weight: bold; ">0</span>,<span style="color: #800000; font-weight: bold; ">3</span>,<span style="color: #008000; ">@UserID</span>;
+ValidationProcess:
+    <span style="color: #008080; ">-- StorageType validation
+</span>    <span style="color: #0000FF; ">Select</span> <span style="color: #008000; ">@SourceTypeID</span><span style="color: #808080; ">=</span>m.MaterialTypeID
+    <span style="color: #0000FF; ">From</span> MT_StorageArea m
+    <span style="color: #0000FF; ">where</span> m.id<span style="color: #808080; ">=</span><span style="color: #008000; ">@SourceStorageID</span>
+    
+    <span style="color: #0000FF; ">exec</span> proc_WriteProcessLog <span style="color: #008000; ">@JobName</span>,<span style="color: #FF0000; ">'Check Storage type'</span>,<span style="color: #800000; font-weight: bold; ">0</span>,<span style="color: #800000; font-weight: bold; ">3</span>,<span style="color: #008000; ">@UserID</span>;
+    <span style="color: #0000FF; ">If</span> <span style="color: #008000; ">@SourceTypeID</span><span style="color: #808080; ">=</span><span style="color: #008000; ">@StorageType_Plant</span> 
+        <span style="color: #0000FF; ">Begin</span>
+            <span style="color: #0000FF; ">exec</span> proc_WriteProcessLog <span style="color: #008000; ">@JobName</span>,<span style="color: #FF0000; ">'Source storage cannot be plant'</span>,<span style="color: #800000; font-weight: bold; ">0</span>,<span style="color: #800000; font-weight: bold; ">3</span>,<span style="color: #008000; ">@UserID</span>;
+            <span style="color: #0000FF; ">RaisError</span>(<span style="color: #FF0000; ">'Source Storage cannot be Plant'</span>,<span style="color: #800000; font-weight: bold; ">11</span>,<span style="color: #800000; font-weight: bold; ">11</span>)
+            <span style="color: #0000FF; ">Return</span>
+        <span style="color: #0000FF; ">End</span>
+
+    <span style="color: #0000FF; ">Select</span> <span style="color: #008000; ">@DestTypeID</span><span style="color: #808080; ">=</span>m.MaterialTypeID
+    <span style="color: #0000FF; ">From</span> MT_StorageArea m
+    <span style="color: #0000FF; ">where</span> m.id<span style="color: #808080; ">=</span><span style="color: #008000; ">@DestinationStorageID</span>
+
+    <span style="color: #008080; ">-- Source amount validation ... if it is enough to move
+</span>    <span style="color: #0000FF; ">exec</span> proc_WriteProcessLog <span style="color: #008000; ">@JobName</span>,<span style="color: #FF0000; ">'Source amount validation'</span>,<span style="color: #800000; font-weight: bold; ">0</span>,<span style="color: #800000; font-weight: bold; ">3</span>,<span style="color: #008000; ">@UserID</span>;
+    <span style="color: #0000FF; ">if</span> <span style="color: #808080; ">not</span> <span style="color: #808080; ">exists</span>(<span style="color: #0000FF; ">Select</span> <span style="color: #800000; font-weight: bold; ">1</span> <span style="color: #0000FF; ">From</span> DT_StorageAreaMaterial d
+                <span style="color: #0000FF; ">where</span> d.StorageID<span style="color: #808080; ">=</span><span style="color: #008000; ">@SourceStorageID</span> <span style="color: #808080; ">and</span> d.MaterialID<span style="color: #808080; ">=</span><span style="color: #008000; ">@MaterialID</span>
+                <span style="color: #0000FF; ">Group</span> <span style="color: #0000FF; ">by</span> d.StorageID,d.MaterialID
+                <span style="color: #0000FF; ">Having</span> <span style="color: #FF00FF; ">sum</span>(d.CurrentQty) <span style="color: #808080; ">&gt;=</span> <span style="color: #008000; ">@Amount</span>)
+        <span style="color: #0000FF; ">If</span> <span style="color: #808080; ">not</span> <span style="color: #808080; ">exists</span>(<span style="color: #0000FF; ">Select</span> <span style="color: #800000; font-weight: bold; ">1</span> <span style="color: #0000FF; ">from</span> DT_StorageAreaMaterialBuffer d
+                     <span style="color: #0000FF; ">where</span> d.DestinationStorageID <span style="color: #808080; ">=</span><span style="color: #008000; ">@SourceStorageID</span> <span style="color: #808080; ">and</span> d.MaterialID <span style="color: #808080; ">=</span> <span style="color: #008000; ">@MaterialID</span>)
+            <span style="color: #0000FF; ">begin</span>
+                <span style="color: #0000FF; ">RaisError</span>(<span style="color: #FF0000; ">'Source Inventory is not enough to move'</span>,<span style="color: #800000; font-weight: bold; ">11</span>,<span style="color: #800000; font-weight: bold; ">11</span>)
+                <span style="color: #0000FF; ">Return</span>
+            <span style="color: #0000FF; ">end</span>
+AggregateInventory:
+    <span style="color: #008080; ">-- Actual inventory and buffer must be combined to get overall inventory to move
+</span>    <span style="color: #0000FF; ">Declare</span> <span style="color: #008000; ">@DTInventory</span> <span style="color: #0000FF; ">Table</span>(ID <span style="color: #0000FF; ">Integer</span> <span style="color: #FF00FF; ">identity</span>,StorageID <span style="color: #0000FF; ">Int</span>,MaterialID <span style="color: #0000FF; ">Int</span>,Bale <span style="color: #0000FF; ">float</span>,<span style="color: #FF0000; ">[Weight]</span> <span style="color: #0000FF; ">float</span>,StockDate <span style="color: #0000FF; ">datetime</span>)    
+    <span style="color: #0000FF; ">Insert</span> <span style="color: #0000FF; ">into</span> <span style="color: #008000; ">@DTInventory</span> (StorageID ,MaterialID ,Bale,<span style="color: #FF0000; ">[Weight]</span>,StockDate )
+    <span style="color: #0000FF; ">Select</span>  Inv.StorageID ,Inv.MaterialID ,<span style="color: #FF00FF; ">SUM</span>(Inv.Amount) <span style="color: #0000FF; ">as</span> Amount,<span style="color: #FF00FF; ">SUM</span>(inv.<span style="color: #FF0000; ">[Weight]</span>) <span style="color: #0000FF; ">as</span> <span style="color: #FF0000; ">[Weight]</span>,<span style="color: #FF00FF; ">MIN</span>(Inv.MinStockDate) <span style="color: #0000FF; ">as</span> StockDate
+    <span style="color: #0000FF; ">From</span> 
+        (<span style="color: #0000FF; ">Select</span> d.StorageID ,d.MaterialID,<span style="color: #FF00FF; ">Sum</span>(d.CurrentQty) <span style="color: #0000FF; ">as</span> Amount,<span style="color: #FF00FF; ">sum</span>(d.CurrentWgt) <span style="color: #0000FF; ">as</span> <span style="color: #FF0000; ">[Weight]</span>
+        ,<span style="color: #FF00FF; ">MIN</span>(<span style="color: #FF00FF; ">Isnull</span>(d.StockDate,d.InsertDate)) <span style="color: #0000FF; ">as</span> MinStockDate
+        <span style="color: #0000FF; ">From</span> DT_StorageAreaMaterial d
+        <span style="color: #0000FF; ">where</span> d.MaterialID <span style="color: #808080; ">=</span><span style="color: #008000; ">@MaterialID</span> 
+        <span style="color: #808080; ">and</span> d.StorageID <span style="color: #808080; ">=</span> <span style="color: #008000; ">@SourceStorageID</span> 
+        <span style="color: #0000FF; ">Group</span> <span style="color: #0000FF; ">by</span> d.StorageID,d.MaterialID
+        <span style="color: #0000FF; ">Union</span> <span style="color: #808080; ">All</span> <span style="color: #008080; ">-- add move in
+</span>        <span style="color: #0000FF; ">Select</span> d.DestinationStorageID,d.MaterialID,<span style="color: #FF00FF; ">Sum</span>(d.Amount) <span style="color: #0000FF; ">as</span> Amount,<span style="color: #FF00FF; ">Sum</span>(d.<span style="color: #FF0000; ">[Weight]</span>) <span style="color: #0000FF; ">as</span> <span style="color: #FF0000; ">[Weight]</span>
+        ,<span style="color: #FF00FF; ">MIN</span>(<span style="color: #FF00FF; ">Isnull</span>(d.StockDate,d.InsertDate)) <span style="color: #0000FF; ">as</span> MinStockDate
+        <span style="color: #0000FF; ">From</span> DT_StorageAreaMaterialBuffer d
+        <span style="color: #0000FF; ">where</span> d.DestinationStorageID <span style="color: #808080; ">=</span><span style="color: #008000; ">@SourceStorageID</span> 
+        <span style="color: #808080; ">and</span> d.MaterialID <span style="color: #808080; ">=</span> <span style="color: #008000; ">@MaterialID</span> 
+        <span style="color: #808080; ">and</span> d.StatusID <span style="color: #808080; ">=</span><span style="color: #800000; font-weight: bold; ">1</span>
+        <span style="color: #0000FF; ">Group</span> <span style="color: #0000FF; ">by</span> d.DestinationStorageID ,d.MaterialID 
+        <span style="color: #0000FF; ">Union</span> <span style="color: #808080; ">All</span> <span style="color: #008080; ">-- deduct move out
+</span>        <span style="color: #0000FF; ">Select</span> d.SourceStorageID,d.MaterialID,<span style="color: #FF00FF; ">Sum</span>(d.Amount)<span style="color: #808080; ">*</span>(<span style="color: #808080; ">-</span><span style="color: #800000; font-weight: bold; ">1</span>) <span style="color: #0000FF; ">as</span> Amount,<span style="color: #FF00FF; ">Sum</span>(d.<span style="color: #FF0000; ">[Weight]</span>)<span style="color: #808080; ">*</span>(<span style="color: #808080; ">-</span><span style="color: #800000; font-weight: bold; ">1</span>) <span style="color: #0000FF; ">as</span> <span style="color: #FF0000; ">[Weight]</span>
+        ,<span style="color: #FF00FF; ">MIN</span>(<span style="color: #FF00FF; ">Isnull</span>(d.StockDate,d.InsertDate)) <span style="color: #0000FF; ">as</span> MinStockDate
+        <span style="color: #0000FF; ">From</span> DT_StorageAreaMaterialBuffer d
+        <span style="color: #0000FF; ">where</span> d.SourceStorageID <span style="color: #808080; ">=</span><span style="color: #008000; ">@SourceStorageID</span> 
+        <span style="color: #808080; ">and</span> d.MaterialID <span style="color: #808080; ">=</span> <span style="color: #008000; ">@MaterialID</span> 
+        <span style="color: #808080; ">and</span> d.StatusID <span style="color: #808080; ">=</span><span style="color: #800000; font-weight: bold; ">1</span>
+        <span style="color: #0000FF; ">Group</span> <span style="color: #0000FF; ">by</span> d.SourceStorageID ,d.MaterialID ) Inv
+    <span style="color: #0000FF; ">Group</span> <span style="color: #0000FF; ">by</span> Inv.StorageID,Inv.MaterialID 
+    <span style="color: #0000FF; ">Having</span> <span style="color: #FF00FF; ">SUM</span>(inv.<span style="color: #FF0000; ">[Weight]</span>) <span style="color: #808080; ">&gt;</span><span style="color: #800000; font-weight: bold; ">0</span> ;
+
+    <span style="color: #0000FF; ">Declare</span> <span style="color: #008000; ">@AvaiBale</span> <span style="color: #0000FF; ">float</span>
+    <span style="color: #0000FF; ">Declare</span> <span style="color: #008000; ">@TotalRec</span> <span style="color: #0000FF; ">Int</span>
+    <span style="color: #0000FF; ">select</span> <span style="color: #008000; ">@TotalRec</span> <span style="color: #808080; ">=</span> <span style="color: #FF00FF; ">COUNT</span>(d.id)
+    <span style="color: #0000FF; ">From</span> <span style="color: #008000; ">@DTInventory</span> d;
+    <span style="color: #0000FF; ">If</span> <span style="color: #008000; ">@TotalRec</span> <span style="color: #808080; ">=</span><span style="color: #800000; font-weight: bold; ">0</span> 
+            <span style="color: #0000FF; ">begin</span>
+                <span style="color: #0000FF; ">RaisError</span>(<span style="color: #FF0000; ">'Source Inventory is not enough to move'</span>,<span style="color: #800000; font-weight: bold; ">11</span>,<span style="color: #800000; font-weight: bold; ">11</span>)
+                <span style="color: #0000FF; ">Return</span>
+            <span style="color: #0000FF; ">end</span>
+    <span style="color: #0000FF; ">else</span>
+        <span style="color: #0000FF; ">begin</span>
+            <span style="color: #0000FF; ">Select</span> <span style="color: #008000; ">@AvaiBale</span> <span style="color: #808080; ">=</span> d.Bale ,<span style="color: #008000; ">@MinStockDate</span> <span style="color: #808080; ">=</span> d.StockDate 
+            <span style="color: #0000FF; ">From</span> <span style="color: #008000; ">@DTInventory</span> d
+            <span style="color: #0000FF; ">If</span> <span style="color: #008000; ">@AvaiBale</span> <span style="color: #808080; ">&lt;</span> <span style="color: #008000; ">@Amount</span> 
+                <span style="color: #0000FF; ">begin</span>
+                    <span style="color: #0000FF; ">RaisError</span>(<span style="color: #FF0000; ">'Source Inventory is not enough to move'</span>,<span style="color: #800000; font-weight: bold; ">11</span>,<span style="color: #800000; font-weight: bold; ">11</span>)
+                    <span style="color: #0000FF; ">Return</span>
+                <span style="color: #0000FF; ">end</span>
+        <span style="color: #0000FF; ">end</span>
+    <span style="color: #008080; ">-- Find Average unit weight
+</span>    <span style="color: #0000FF; ">select</span> <span style="color: #008000; ">@UnitWeight</span> <span style="color: #808080; ">=</span> d.<span style="color: #FF0000; ">[Weight]</span><span style="color: #808080; ">/</span>d.Bale
+    <span style="color: #0000FF; ">From</span> <span style="color: #008000; ">@DTInventory</span> d
+    <span style="color: #0000FF; ">If</span> <span style="color: #008000; ">@UnitWeight</span> <span style="color: #0000FF; ">is</span> <span style="color: #0000FF; ">null</span> <span style="color: #808080; ">or</span> <span style="color: #008000; ">@UnitWeight</span> <span style="color: #808080; ">&lt;</span> <span style="color: #800000; font-weight: bold; ">0</span>
+        <span style="color: #0000FF; ">begin</span>
+            <span style="color: #0000FF; ">RaisError</span>(<span style="color: #FF0000; ">'Unit Weight has problem. Please check unit count of source storage'</span>,<span style="color: #800000; font-weight: bold; ">11</span>,<span style="color: #800000; font-weight: bold; ">11</span>)
+            <span style="color: #0000FF; ">Return</span>
+        <span style="color: #0000FF; ">end</span>
+
+    <span style="color: #0000FF; ">Set</span> <span style="color: #008000; ">@MoveWeight</span> <span style="color: #808080; ">=</span> <span style="color: #FF00FF; ">Round</span>(<span style="color: #008000; ">@Amount</span> <span style="color: #808080; ">*</span> <span style="color: #008000; ">@UnitWeight</span>,<span style="color: #800000; font-weight: bold; ">0</span>);
+
+MoveProcess:
+    <span style="color: #008080; ">/*
+        Selected storage will be saved at DT_StorageAreaMaterialbuffer with create status and wait for user to confirm in GUI
+    */</span>
+    <span style="color: #0000FF; ">exec</span> proc_WriteProcessLog <span style="color: #008000; ">@JobName</span>,<span style="color: #FF0000; ">'Insert request to DT_StorageAreaMaterialBuffer'</span>,<span style="color: #800000; font-weight: bold; ">0</span>,<span style="color: #800000; font-weight: bold; ">3</span>,<span style="color: #008000; ">@UserID</span>;
+    <span style="color: #0000FF; ">Declare</span> <span style="color: #008000; ">@BufferID</span> <span style="color: #0000FF; ">Int</span>
+    <span style="color: #0000FF; ">exec</span> X10_SP_GetNextID <span style="color: #FF0000; ">'DT_StorageAreaMaterialBuffer'</span>,<span style="color: #008000; ">@UserID</span>,<span style="color: #008000; ">@BufferID</span> Output;
+    <span style="color: #0000FF; ">Insert</span> <span style="color: #0000FF; ">into</span> DT_StorageAreaMaterialBuffer(ID,SourceStorageID,DestinationStorageID,MaterialID,Amount,<span style="color: #FF0000; ">[Weight]</span>
+                        ,StatusID,StockDate,InsertDate,UpDatedate,InsertUserID,UpdateUserID)
+    <span style="color: #0000FF; ">Values</span>(<span style="color: #008000; ">@BufferID</span>,<span style="color: #008000; ">@SourceStorageID</span>,<span style="color: #008000; ">@DestinationStorageID</span>,<span style="color: #008000; ">@MaterialID</span>,<span style="color: #008000; ">@Amount</span>,<span style="color: #008000; ">@MoveWeight</span>
+            ,<span style="color: #008000; ">@StatusID_Create</span>,<span style="color: #008000; ">@MinStockDate</span>,<span style="color: #FF00FF; ">Getdate</span>() ,<span style="color: #FF00FF; ">Getdate</span>(),<span style="color: #008000; ">@UserID</span>,<span style="color: #008000; ">@UserID</span>);
+
+    
+    <span style="color: #0000FF; ">Print</span> <span style="color: #FF0000; ">'Success'</span>
+
+<span style="color: #0000FF; ">END</span>
+</pre></CODE></td></tr></table></div><!--DXMETADATA end -->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORIZED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""$$See_Also$$%%designlist:tagidentifier=##SEEALSO,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class=dxh4>Related Objects</h4><p><a href="IVM Database_db~s-dbo.html">dbo Schema</a>
+<BR/><a href="IVM Database_db.html">IVM Database Database</a>
+</p>
+</div><!--DXMETADATA end-->
+        
+    </div>
+    <div id="i-footer-content" class="i-footer-content">
+        <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>&copy; 2018 All Rights Reserved.</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><a href="mailto:support@company.com?subject=Documentation Feedback: IVM Database_db~s-dbo~p-proc_IVM_MoveStockTemp_1847.html">Send comments</a> on this topic.<!--DXMETADATA end-->
+    </div>
+    
+
+    <!--DXMETADATA start type="IsNew" format="<script type=""text/javascript"">setIsNew = true;</script>" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="IsTemplateFileFeatureEnabled" name="Responsive" format="<script type=""text/javascript"">setIsResponsiveEnabled = true;</script>" --><!--DXMETADATA end-->
+    <script type="text/javascript">
+        $(function() {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.isNew = !(typeof setIsNew === "undefined");
+            documentInstance.isResponsiveEnabled = !(typeof setIsResponsiveEnabled === "undefined");
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

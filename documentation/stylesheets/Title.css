@@ -1,0 +1,12 @@
+﻿/* This StyleSheet contains custom styles for this project */
+
+
+/* Template Override Style Rule
+   Name: Project Title
+   Description: Project Title text
+*/
+.NewStyle
+{
+    font-size: medium;
+    font-weight: bold;
+}

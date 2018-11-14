@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentFile Version="2010" Moniker="..\FC.IVM\bin\Debug\FC.IVM.dll" DocType="DX.NET" IsLocalizationDisabled="false">
+  <RelatedProject>documentation.dxp</RelatedProject>
+  <State>
+    <Attributes />
+  </State>
+  <LastSelectedItem />
+  <item qn="FC.IVM~FC.IVM.Forms.LayoutAreaItem">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1679619Z">Class default area mapitem property.</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.LayoutAreaItem~Label">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1769357Z">Area label use to display on main layout</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.LayoutAreaItem~Lat">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1769357Z">Position X</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.LayoutAreaItem~Lon">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1769357Z">Position Y</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.LayoutAreaItem~Tag">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1769357Z">Default area color</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.LayoutAreaItem~Capacity">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1769357Z">Capacity for each area</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.LayoutAreaItem~ID">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1769357Z">Area ID</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.LayoutAreaItem~Name">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1769357Z">Area name</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.LayoutAreaItem~Font">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1769357Z">Default font use to display area information</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.CreateAreaItem">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1769357Z">Class default for draw object area mapitem.</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.CreateAreaItem~Instance">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1769357Z">Return object mapitem arear 1</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.CreateAreaItem~Instance_Area2">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1769357Z">Return object mapitem arear 2</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.CreateAreaItem~Instance_Area3">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1769357Z">Return object mapitem arear 3</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1779333Z">&lt;P style="PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 0px 0px 40px; LINE-HEIGHT: 1.15; PADDING-RIGHT: 0px; TEXT-INDENT: 0pt"&gt;&lt;u&gt;&lt;strong&gt;หน้าจอหลัก&lt;/strong&gt;&lt;/u&gt;&lt;/P&gt;&lt;blockquote style="MARGIN-RIGHT: 0px" dir="ltr"&gt;&lt;P&gt;&lt;span style="FONT-SIZE: 16px; FONT-FAMILY: &amp;quot;Segoe UI&amp;quot;; COLOR: rgb(0,0,0); FONT-STYLE: normal"&gt;&lt;span&gt;&lt;/span&gt; เป็นชื่อที่ใช้เรียกแทน
+     frm_IVM_Main_Layout&lt;/span&gt;&lt;/P&gt;&lt;/blockquote&gt;&lt;P style="FONT-SIZE: 14px; FONT-FAMILY: &amp;quot;Segoe UI&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, Verdana; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); PADDING-BOTTOM: 0px; FONT-STYLE: normal; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 0px 12px; LETTER-SPACING: normal; LINE-HEIGHT: 1.15; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial" align="left"&gt;&lt;span style="FONT-SIZE: 16px; FONT-FAMILY: &amp;quot;Segoe UI&amp;quot;; FONT-WEIGHT: bold; COLOR: rgb(0,0,0)"&gt;ฟังก์ชั่นหลักของฟอร์ม frm_IVM_Main_Layout&lt;/span&gt;&lt;/P&gt;&lt;P style="FONT-SIZE: 14px; FONT-FAMILY: &amp;quot;Segoe UI&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, Verdana; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); PADDING-BOTTOM: 0px; FONT-STYLE: normal; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 0px 12px; LETTER-SPACING: normal; LINE-HEIGHT: 1.15; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial" align="left"&gt;&lt;/P&gt;&lt;P dir="ltr" align="left"&gt;&lt;span style="FONT-SIZE: 16px; FONT-FAMILY: &amp;quot;Segoe UI&amp;quot;; COLOR: rgb(0,0,0); FONT-STYLE: normal"&gt;1. Unload material : เป็นกระบวนการ
+ การรับวัตถุติบเข้าสู่ พื้นที่จัดเก็บในแต่ละลาน แบ่งออกเป็น 2 ประเภท ได้แก่&lt;/span&gt;&lt;/P&gt;&lt;blockquote style="MARGIN-RIGHT: 0px" dir="ltr"&gt;&lt;blockquote style="MARGIN-RIGHT: 0px" dir="ltr"&gt;&lt;P align="left"&gt;&lt;span style="FONT-SIZE: 16px; FONT-FAMILY: &amp;quot;Segoe UI&amp;quot;; COLOR: rgb(0,0,0); FONT-STYLE: normal"&gt;1.1 Unload domistic&lt;/span&gt;&lt;/P&gt;&lt;P align="left"&gt;&lt;span style="FONT-SIZE: 16px; FONT-FAMILY: &amp;quot;Segoe UI&amp;quot;; COLOR: rgb(0,0,0); FONT-STYLE: normal"&gt;&lt;span style="FONT-SIZE: 16px; FONT-FAMILY: &amp;quot;Segoe UI&amp;quot;; COLOR: rgb(0,0,0); FONT-STYLE: normal"&gt;1.2 Unload import&lt;/span&gt;&lt;/span&gt;&lt;/P&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;P align="left"&gt;&lt;span style="FONT-SIZE: 16px; FONT-FAMILY: &amp;quot;Segoe UI&amp;quot;; COLOR: rgb(0,0,0); FONT-STYLE: normal"&gt;2. ย้าย วัตถุดิบ : เป็นกระบวนการ ย้ายวัตถุดิบ
+ จากพื้นที่จัดเก็บต้นทาง (Souce area) ไปยังอีกพื้นที่จัดเก็บปลายทาง (Distination) ภายในลานเดียวกัน.&lt;/span&gt;&lt;/P&gt;&lt;P align="left"&gt;&lt;span style="FONT-SIZE: 16px; FONT-FAMILY: &amp;quot;Segoe UI&amp;quot;; COLOR: rgb(0,0,0); FONT-STYLE: normal"&gt;3. ตัดจ่าย วัตถุดิบ : เป็นกระบวนการ
+ นำวัตถุดิบจากพื้นที่จัด&lt;span style="FONT-SIZE: 16px; FONT-FAMILY: &amp;quot;Segoe UI&amp;quot;; COLOR: rgb(0,0,0); FONT-STYLE: normal"&gt;เก็บไดๆ ในพื้นที่จัดเก็บ
+ ไปเข้าสู่กระบวนการการผลิต (WP).&lt;/span&gt;&lt;/span&gt;&lt;/P&gt;</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~OnPassData_EV">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1779333Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~OnBeforeFormLoad:param">
+    <param ChangeDateTime="2018-07-19T06:35:52.1859246Z">ID ของแต่ละลาน กำหนดโดย X10 (Manu management)</param>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~OnBeforeFormLoad">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1859246Z">ฟังก์ชั่น ของ X10 ฟังก์ชั่นนี้จะถูกเรียกใช้ก่อน Form load</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~OnClickClear">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1859246Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~OnClickCustomButton">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1859246Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~OnClickReload">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1859246Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~OnClickSave">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1859246Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~idOfField">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1869099Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~adapter">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1869099Z">Mapitem ListSourceDataAdapter</summary>
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1869099Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~itemsLayer">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1869099Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~itemsLayerStatus">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1869099Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~allItemsRec">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1869099Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~timer">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1869099Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~Pcapacity">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1879062Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~AID">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1879062Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~AName">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1879062Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~zoom_lavel">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1879062Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~iIndex_detail">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1879062Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~iIname">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1889041Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~icount1">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1889041Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~tmpid">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1889041Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~tmp_area_name">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1889041Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~tmp_mat_name">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1899009Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~tmp_balance">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1899009Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~tmp_weight">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1899009Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~tmp_capacity">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1899009Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~tmp_capacity_status">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1908984Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~tmp_last_transac">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1908984Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~tmp_inuse">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1908984Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~tmp_sumcapacity">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1908984Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~tmp_transac_status">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1918955Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~tmp_inuse_status">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1918955Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~str">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1918955Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~currentLocation">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1918955Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~iRowArea">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1918955Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~iAreaCount">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1928931Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~DT_Area_Info">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1928931Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~MatTypeID">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1928931Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~UnloadLocalTypeID">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1928931Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~UnloadImportTypeID">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1938902Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~FUPD">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1938902Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~iChk">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1938902Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~AreaWeight">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1938902Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~currentTime">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1938902Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~InitializeMap">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1948874Z">&lt;P&gt;Create a map control and add it to the form.&lt;/P&gt;&lt;P&gt;Generate a data storage for the layer.&lt;/P&gt;&lt;P&gt;Create a colorizer for the layer.&lt;/P&gt;&lt;P&gt;Create a legend forthe layer.&lt;/P&gt;</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~MapControl">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1948874Z">Return mapcontrol.</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~Layer">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1948874Z">Return object VectorItemsLayer in mapcontrol layer 0.</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~VectorLayer">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1948874Z">Return object VectorItemsLayer in mapcontrol layer 1.</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~ItemStorage">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1948874Z">Return object ItemStorage in mapcontrol layer 1.</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~UpdateItemMap">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1958857Z">คิวรี่ข้อมูลของพื้นที่กองเก็บของแต่ละลานมากำหนดค่า ให้กับ Mapitem.</summary>
+    <remarks ChangeDateTime="2018-07-19T06:35:52.1958857Z">&lt;P&gt;-Area ID&lt;/P&gt;&lt;P&gt;-Area Name&lt;/P&gt;&lt;P&gt;-Full status&lt;/P&gt;&lt;P&gt;-Capacity&lt;/P&gt;&lt;P&gt;&lt;/P&gt;</remarks>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~mapControl1_DrawMapItem">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1958857Z">คิวรี่ข้อมูลของพื้นที่กองเก็บของแต่ละลานมากำหนดค่า ให้กับ Mapitem vectorItemsLayer และกำหนดสีของเส้นกรอบเป็นสีเทา สำหรับ Area ที่ Isfull = True.</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~mapControl1_ViewPortChange">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1958857Z">เช็ค Zoom level ของแต่ละลาน ในหน้า Main layout เพื่อกำหนด Action operation</summary>
+    <remarks ChangeDateTime="2018-07-19T06:35:52.1958857Z">&lt;P&gt;Zoom level 1 = Unload, ตัดจ่าย, ย้าย วัตถุดิบ&lt;/P&gt;&lt;P&gt;Zoom level 2 = แสดงเมนูสำหรับ Set disable/enable area&lt;/P&gt;&lt;P&gt;Zoom level 3 = เรียก Popup form สำหรับแสดงรายละเอียดของวัตถุดิบที่จัดเก็บไว้ใน พื้นที่ทั้งหมด&lt;/P&gt;&lt;P&gt;&lt;/P&gt;</remarks>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~MapItemClick">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1958857Z">Open from for management material when zoom level = 1</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~frmPopupSubArea_FormClosed">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1958857Z">เมื่อปิด Popup form จะทำการคิวรี่ข้อมูลจากฐานข้อมูลมาเก็บไว้ใน Datatable เพื่ออัพเดทการแสดงผล Mapitem ให้เป็นปัจจุบัน.</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~ZoomToFitAllVectorLayers">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1958857Z">ทำหน้าที่จัดการ การแสดงผลหน้าจอ พื้นที่กองเก็บของแต่ละลานให้พอดีกับหน้าจอ และเก็บค่า Object mapitem ทั้งหมดไว้เพื่อใช้งานในโปรเซสอื่นๆ</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~CreateMenu:e">
+    <param ChangeDateTime="2018-07-19T06:35:52.1958857Z">Object area mapitem</param>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~CreateMenu">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1958857Z">สร้างเมนูสำหรับกำหนดให้ พื้นที่กองเก็บ มีสถานะ ว่าง หรือเต็ม</summary>
+    <remarks ChangeDateTime="2018-07-19T06:35:52.1958857Z">จะแสดงเมนู ตอนคลิ๊ก Area ใน Zoom level 2</remarks>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~mapControl1_MapItemClick">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1958857Z">เรียกใช้ฟังก์ชั่นในการสร้าง เมนู กรณีที่ Object ID &amp;lt;&amp;gt; 1 and 2</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~VectorItemsLayer_DataLoaded:sender">
+    <param ChangeDateTime="2018-07-19T06:35:52.1968828Z">Object area mapitem.</param>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~VectorItemsLayer_DataLoaded">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1968828Z">&lt;P&gt;Prepare mapcontrol with default config values.&lt;/P&gt;&lt;P&gt;Draw icon for show material information that store in each area.&lt;/P&gt;&lt;P&gt;&lt;/P&gt;</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~mapControl1_MouseUp">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1968828Z">เรียกใช้งาน ตอนคลิกไอคอน Default zoom ในหน้า Main layout</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~DefaultZoomLevel">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1968828Z">เป็นฟังก์ชั่น สำหรับ จัดการแสดงผล พื้นที่ต่างๆ ของแต่ละ ลาน ให้พอดีกับหน้าจอ.</summary>
+    <remarks ChangeDateTime="2018-07-19T06:35:52.1968828Z">เรียกใช้ตอน คลิกที่เมนู ลาน แต่ละลาน</remarks>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~GetClickedOverlayItem">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1968828Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~ResetMinMaxZoomLevel">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1968828Z">เป็นฟังก์ชั่น สำหรับ Reset ของการซูม mapcontrol.</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~SetMinMaxZoomLevel">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1968828Z">เป็นฟังก์ชั่น สำหรับ Set default zoom mapcontrol.</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~CreateStorageInformation:location">
+    <param ChangeDateTime="2018-07-19T06:35:52.1968828Z">Item position</param>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~CreateStorageInformation:name">
+    <param ChangeDateTime="2018-07-19T06:35:52.1968828Z">Object name</param>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~CreateStorageInformation:path">
+    <param ChangeDateTime="2018-07-19T06:35:52.1968828Z">Image path</param>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~CreateStorageInformation:index">
+    <param ChangeDateTime="2018-07-19T06:35:52.1968828Z">Image index</param>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~CreateStorageInformation">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1968828Z">Return Object Storagemapitem in mapcontrol.</summary>
+    <returns ChangeDateTime="2018-07-19T06:35:52.1968828Z">DevExpress.XtraMap.MapItem</returns>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~GetDataFromDB">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1968828Z">&lt;P&gt;ฟังก์ชั่น สำหรับ Query ข้อมูลจากฐานข้อมูล มาแสดงผล ในกรณี ที่ข้อมูลมีการอัพเดทข้อมูล จากโปรเซสต่างๆ.&lt;/P&gt;&lt;P&gt;-Update area data.&lt;/P&gt;&lt;P&gt;-Update field total weight.&lt;/P&gt;</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~GetSummaryAreaData">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1968828Z">คิวรี่ข้อมูลของลานจากฐานข้อมูลมาเก็บไว้ใน Datatable</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~frm_IVM_Area_Layout_Load">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1978799Z">เริ่มต้นการทำงาน คิวรี่ข้อมูลต่างๆ จากฐานข้อมูล มาเก็บไว้ใน Datatable เพื่อใช้ในโปรเซส อื่นๆ ต่อไป.</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~SetFullStatus:sender">
+    <param ChangeDateTime="2018-07-19T06:35:52.1978799Z">Mapitem area object that need to set disable</param>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~SetFullStatus">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1978799Z">ฟังก์ชั่น สำหรับ กำหนดให้พื้นที่จัดเก็บไดๆ มีสถานะ "เต็ม" เพื่อไม่ให้สามารถ ย้ายวัตถุดิบ หรือ Unload  เข้าในพื้นที่ได้</summary>
+    <remarks ChangeDateTime="2018-07-19T06:35:52.1978799Z">จะแสดงเมนู ตอนคลิก Area ใน Zoom level 2</remarks>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~SetStatusUnFull:sender">
+    <param ChangeDateTime="2018-07-19T06:35:52.1978799Z">Mapitem area object that need to set disable</param>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~SetStatusUnFull">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1978799Z">ฟังก์ชั่น สำหรับ กำหนดให้พื้นที่จัดเก็บไดๆ มีสถานะ "ว่าง" เพื่อให้สามารถ ย้ายวัตถุดิบ หรือ Unload เข้าในพื้นที่ได้</summary>
+    <remarks ChangeDateTime="2018-07-19T06:35:52.1978799Z">จะแสดงเมนู ตอนคลิก Area ใน Zoom level 2</remarks>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~OnTimedEvent">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1978799Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~Update">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1978799Z">เช็คอัพเดทข้อมูลจากฐานข้อมูล ทุกๆ 20 วินาที ถ้าข้อมูลมีการเปลี่ยนแปลง จะทำการคิวรี่ข้อมูลแล้วทำการแสดงผลในระบบต่อไป.</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~OnVisibleChanged">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1978799Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~Start">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1978799Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~OnDispose">
+    <exclude ChangeDateTime="2018-07-19T06:35:52.1978799Z" />
+  </item>
+  <item qn="FC.IVM~FC.IVM.Forms.frm_IVM_Area_Layout~frm_IVM_Area_Layout_FormClosed">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1978799Z">เมื่อปิดฟอร์ม จะทำการเคลียร์ค่าตัวแปรต่างๆในระบบ</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Custom_Form_Num_Key">
+    <summary ChangeDateTime="2018-07-19T06:35:52.1978799Z">&lt;P&gt;ป๊อบอัพฟอร์ม สำหรับอำนวยความสะดวกในการป้อนข้อมูลประเภท ตัวเลข สำหรับใช้งานบน แทปเลต.&lt;/P&gt;&lt;P&gt;&lt;/P&gt;</summary>
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Custom_Form_Num_Key~_ctor:inColumns">
+    <param ChangeDateTime="2018-07-19T06:35:52.2038675Z">ชื่อ คอลัมน์ สำหรับการ Insert data (Bind column)</param>
+  </item>
+  <item qn="FC.IVM~FC.IVM.PopupForms.frm_IVM_Custom_Form_Num_Key~_ctor:inDefaultFont">
+    <param ChangeDateTime="2018-07-19T06:35:52.2038675Z">Font for use in this form.</param>
+  </item>
+  <Filters />
+</ContentFile>

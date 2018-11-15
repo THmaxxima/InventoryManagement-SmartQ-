@@ -20,24 +20,25 @@
         'Do not modify it using the code editor.
         <System.Diagnostics.DebuggerStepThrough()>
         Private Sub InitializeComponent()
-            Dim SerializableAppearanceObject29 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject30 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject31 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject32 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject45 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject46 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject47 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject48 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject49 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject50 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject51 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject52 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject53 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject54 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject55 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject56 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_IVM_Rollback))
+            Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject3 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject4 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject5 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject6 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject7 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject8 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject9 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject10 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject11 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject12 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject13 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject14 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject15 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject16 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
             Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl()
+            Me.btnClose = New DevExpress.XtraEditors.SimpleButton()
             Me.btnRollbackData = New DevExpress.XtraEditors.SimpleButton()
             Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
             Me.GridControl_Movement_Tentative = New DevExpress.XtraGrid.GridControl()
@@ -76,12 +77,11 @@
             Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.LayoutControlItem6 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.LayoutControlItem7 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.EmptySpaceItem1 = New DevExpress.XtraLayout.EmptySpaceItem()
-            Me.btnClose = New DevExpress.XtraEditors.SimpleButton()
             Me.LayoutControlItem3 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.EmptySpaceItem2 = New DevExpress.XtraLayout.EmptySpaceItem()
             Me.EmptySpaceItem4 = New DevExpress.XtraLayout.EmptySpaceItem()
+            Me.LayoutControlItem7 = New DevExpress.XtraLayout.LayoutControlItem()
             CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.LayoutControl1.SuspendLayout()
             CType(Me.GridControl_Movement_Tentative, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -103,11 +103,11 @@
             CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.EmptySpaceItem2, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.EmptySpaceItem4, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
             'LayoutControl1
@@ -126,6 +126,19 @@
             Me.LayoutControl1.Size = New System.Drawing.Size(1290, 654)
             Me.LayoutControl1.TabIndex = 0
             Me.LayoutControl1.Text = "LayoutControl1"
+            '
+            'btnClose
+            '
+            Me.btnClose.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.btnClose.Appearance.Options.UseFont = True
+            Me.btnClose.Image = CType(resources.GetObject("btnClose.Image"), System.Drawing.Image)
+            Me.btnClose.Location = New System.Drawing.Point(1159, 18)
+            Me.btnClose.Name = "btnClose"
+            Me.btnClose.Size = New System.Drawing.Size(103, 40)
+            Me.btnClose.StyleController = Me.LayoutControl1
+            Me.btnClose.TabIndex = 36
+            Me.btnClose.Text = "Close"
+            Me.btnClose.Visible = False
             '
             'btnRollbackData
             '
@@ -169,8 +182,8 @@
             '
             Me.GridView_Movement_Tentative.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.GridView_Movement_Tentative.Appearance.HeaderPanel.Options.UseFont = True
-            Me.GridView_Movement_Tentative.Appearance.Row.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.GridView_Movement_Tentative.Appearance.Row.ForeColor = System.Drawing.Color.Blue
+            Me.GridView_Movement_Tentative.Appearance.Row.Font = New System.Drawing.Font("Tahoma", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.GridView_Movement_Tentative.Appearance.Row.ForeColor = System.Drawing.Color.Black
             Me.GridView_Movement_Tentative.Appearance.Row.Options.UseFont = True
             Me.GridView_Movement_Tentative.Appearance.Row.Options.UseForeColor = True
             Me.GridView_Movement_Tentative.Appearance.Row.Options.UseTextOptions = True
@@ -183,6 +196,7 @@
             Me.GridView_Movement_Tentative.GridControl = Me.GridControl_Movement_Tentative
             Me.GridView_Movement_Tentative.HorzScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Always
             Me.GridView_Movement_Tentative.Name = "GridView_Movement_Tentative"
+            Me.GridView_Movement_Tentative.OptionsSelection.EnableAppearanceFocusedCell = False
             Me.GridView_Movement_Tentative.OptionsSelection.MultiSelect = True
             Me.GridView_Movement_Tentative.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect
             Me.GridView_Movement_Tentative.OptionsView.ShowGroupPanel = False
@@ -204,6 +218,8 @@
             Me.GridColumn_SouceStorageID.ColumnEdit = Me.RepositoryItemLookUpEditSouce
             Me.GridColumn_SouceStorageID.FieldName = "SourceStorageID"
             Me.GridColumn_SouceStorageID.Name = "GridColumn_SouceStorageID"
+            Me.GridColumn_SouceStorageID.OptionsColumn.AllowEdit = False
+            Me.GridColumn_SouceStorageID.OptionsColumn.FixedWidth = True
             Me.GridColumn_SouceStorageID.Visible = True
             Me.GridColumn_SouceStorageID.VisibleIndex = 1
             Me.GridColumn_SouceStorageID.Width = 239
@@ -215,15 +231,15 @@
             Me.RepositoryItemLookUpEditSouce.Appearance.Options.UseFont = True
             Me.RepositoryItemLookUpEditSouce.Appearance.Options.UseForeColor = True
             Me.RepositoryItemLookUpEditSouce.AutoHeight = False
-            SerializableAppearanceObject29.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject29.Options.UseFont = True
-            SerializableAppearanceObject30.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject30.Options.UseFont = True
-            SerializableAppearanceObject31.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject31.Options.UseFont = True
-            SerializableAppearanceObject32.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject32.Options.UseFont = True
-            Me.RepositoryItemLookUpEditSouce.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, "", New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject29, SerializableAppearanceObject30, SerializableAppearanceObject31, SerializableAppearanceObject32, "", Nothing, Nothing, True)})
+            SerializableAppearanceObject1.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject1.Options.UseFont = True
+            SerializableAppearanceObject2.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject2.Options.UseFont = True
+            SerializableAppearanceObject3.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject3.Options.UseFont = True
+            SerializableAppearanceObject4.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject4.Options.UseFont = True
+            Me.RepositoryItemLookUpEditSouce.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, "", New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, True)})
             Me.RepositoryItemLookUpEditSouce.Name = "RepositoryItemLookUpEditSouce"
             Me.RepositoryItemLookUpEditSouce.NullText = "[ไม่พบ พื้นที่ในระบบ]"
             Me.RepositoryItemLookUpEditSouce.ReadOnly = True
@@ -234,6 +250,8 @@
             Me.GridColumn_Move_DestinationStorageID.ColumnEdit = Me.RepositoryItemLookUpEditSouce
             Me.GridColumn_Move_DestinationStorageID.FieldName = "DestinationStorageID"
             Me.GridColumn_Move_DestinationStorageID.Name = "GridColumn_Move_DestinationStorageID"
+            Me.GridColumn_Move_DestinationStorageID.OptionsColumn.AllowEdit = False
+            Me.GridColumn_Move_DestinationStorageID.OptionsColumn.FixedWidth = True
             Me.GridColumn_Move_DestinationStorageID.Visible = True
             Me.GridColumn_Move_DestinationStorageID.VisibleIndex = 2
             Me.GridColumn_Move_DestinationStorageID.Width = 239
@@ -244,6 +262,8 @@
             Me.GridColumn_MaterialID.ColumnEdit = Me.RepositoryItemLookUpEditMaterial
             Me.GridColumn_MaterialID.FieldName = "MaterialID"
             Me.GridColumn_MaterialID.Name = "GridColumn_MaterialID"
+            Me.GridColumn_MaterialID.OptionsColumn.AllowEdit = False
+            Me.GridColumn_MaterialID.OptionsColumn.FixedWidth = True
             Me.GridColumn_MaterialID.Visible = True
             Me.GridColumn_MaterialID.VisibleIndex = 3
             Me.GridColumn_MaterialID.Width = 337
@@ -255,15 +275,15 @@
             Me.RepositoryItemLookUpEditMaterial.Appearance.Options.UseFont = True
             Me.RepositoryItemLookUpEditMaterial.Appearance.Options.UseForeColor = True
             Me.RepositoryItemLookUpEditMaterial.AutoHeight = False
-            SerializableAppearanceObject45.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject45.Options.UseFont = True
-            SerializableAppearanceObject46.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject46.Options.UseFont = True
-            SerializableAppearanceObject47.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject47.Options.UseFont = True
-            SerializableAppearanceObject48.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject48.Options.UseFont = True
-            Me.RepositoryItemLookUpEditMaterial.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, "", New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject45, SerializableAppearanceObject46, SerializableAppearanceObject47, SerializableAppearanceObject48, "", Nothing, Nothing, True)})
+            SerializableAppearanceObject5.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject5.Options.UseFont = True
+            SerializableAppearanceObject6.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject6.Options.UseFont = True
+            SerializableAppearanceObject7.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject7.Options.UseFont = True
+            SerializableAppearanceObject8.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject8.Options.UseFont = True
+            Me.RepositoryItemLookUpEditMaterial.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, "", New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, SerializableAppearanceObject6, SerializableAppearanceObject7, SerializableAppearanceObject8, "", Nothing, Nothing, True)})
             Me.RepositoryItemLookUpEditMaterial.Name = "RepositoryItemLookUpEditMaterial"
             Me.RepositoryItemLookUpEditMaterial.ReadOnly = True
             '
@@ -272,6 +292,8 @@
             Me.GridColumn_Move_Amount.Caption = "จำนวน"
             Me.GridColumn_Move_Amount.FieldName = "Amount"
             Me.GridColumn_Move_Amount.Name = "GridColumn_Move_Amount"
+            Me.GridColumn_Move_Amount.OptionsColumn.AllowEdit = False
+            Me.GridColumn_Move_Amount.OptionsColumn.FixedWidth = True
             Me.GridColumn_Move_Amount.Visible = True
             Me.GridColumn_Move_Amount.VisibleIndex = 4
             Me.GridColumn_Move_Amount.Width = 120
@@ -281,9 +303,13 @@
             Me.GridColumn_Weight.Caption = "น้ำหนัก"
             Me.GridColumn_Weight.FieldName = "Weight"
             Me.GridColumn_Weight.Name = "GridColumn_Weight"
+            Me.GridColumn_Weight.OptionsColumn.AllowEdit = False
+            Me.GridColumn_Weight.OptionsColumn.FixedWidth = True
+            Me.GridColumn_Weight.OptionsFilter.AllowAutoFilter = False
+            Me.GridColumn_Weight.OptionsFilter.AllowFilter = False
             Me.GridColumn_Weight.Visible = True
             Me.GridColumn_Weight.VisibleIndex = 5
-            Me.GridColumn_Weight.Width = 107
+            Me.GridColumn_Weight.Width = 135
             '
             'GridColumn_Move_Insertdate
             '
@@ -376,15 +402,15 @@
             Me.RepositoryDestinationStorage.Appearance.Options.UseFont = True
             Me.RepositoryDestinationStorage.Appearance.Options.UseForeColor = True
             Me.RepositoryDestinationStorage.AutoHeight = False
-            SerializableAppearanceObject49.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject49.Options.UseFont = True
-            SerializableAppearanceObject50.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject50.Options.UseFont = True
-            SerializableAppearanceObject51.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject51.Options.UseFont = True
-            SerializableAppearanceObject52.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject52.Options.UseFont = True
-            Me.RepositoryDestinationStorage.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, "", New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject49, SerializableAppearanceObject50, SerializableAppearanceObject51, SerializableAppearanceObject52, "", Nothing, Nothing, True)})
+            SerializableAppearanceObject9.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject9.Options.UseFont = True
+            SerializableAppearanceObject10.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject10.Options.UseFont = True
+            SerializableAppearanceObject11.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject11.Options.UseFont = True
+            SerializableAppearanceObject12.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject12.Options.UseFont = True
+            Me.RepositoryDestinationStorage.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, "", New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject9, SerializableAppearanceObject10, SerializableAppearanceObject11, SerializableAppearanceObject12, "", Nothing, Nothing, True)})
             Me.RepositoryDestinationStorage.Name = "RepositoryDestinationStorage"
             Me.RepositoryDestinationStorage.NullText = "[พื้นที่ปลายทาง]"
             Me.RepositoryDestinationStorage.ReadOnly = True
@@ -442,15 +468,15 @@
             Me.cboSite.Properties.AppearanceReadOnly.Options.UseFont = True
             Me.cboSite.Properties.AppearanceReadOnly.Options.UseForeColor = True
             Me.cboSite.Properties.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFit
-            SerializableAppearanceObject53.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject53.Options.UseFont = True
-            SerializableAppearanceObject54.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject54.Options.UseFont = True
-            SerializableAppearanceObject55.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject55.Options.UseFont = True
-            SerializableAppearanceObject56.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject56.Options.UseFont = True
-            Me.cboSite.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, "", New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject53, SerializableAppearanceObject54, SerializableAppearanceObject55, SerializableAppearanceObject56, "", Nothing, Nothing, True)})
+            SerializableAppearanceObject13.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject13.Options.UseFont = True
+            SerializableAppearanceObject14.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject14.Options.UseFont = True
+            SerializableAppearanceObject15.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject15.Options.UseFont = True
+            SerializableAppearanceObject16.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject16.Options.UseFont = True
+            Me.cboSite.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, "", New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject13, SerializableAppearanceObject14, SerializableAppearanceObject15, SerializableAppearanceObject16, "", Nothing, Nothing, True)})
             Me.cboSite.Properties.NullText = "[เลือกลาน]"
             Me.cboSite.Properties.PopupFormSize = New System.Drawing.Size(300, 300)
             Me.cboSite.Properties.PopupSizeable = False
@@ -596,16 +622,6 @@
             Me.LayoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
             Me.LayoutControlItem2.TextVisible = False
             '
-            'LayoutControlItem7
-            '
-            Me.LayoutControlItem7.Control = Me.btnRollbackData
-            Me.LayoutControlItem7.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter
-            Me.LayoutControlItem7.Location = New System.Drawing.Point(444, 0)
-            Me.LayoutControlItem7.Name = "LayoutControlItem7"
-            Me.LayoutControlItem7.Size = New System.Drawing.Size(219, 52)
-            Me.LayoutControlItem7.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem7.TextVisible = False
-            '
             'EmptySpaceItem1
             '
             Me.EmptySpaceItem1.AllowHotTrack = False
@@ -613,19 +629,6 @@
             Me.EmptySpaceItem1.Name = "EmptySpaceItem1"
             Me.EmptySpaceItem1.Size = New System.Drawing.Size(478, 52)
             Me.EmptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
-            '
-            'btnClose
-            '
-            Me.btnClose.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.btnClose.Appearance.Options.UseFont = True
-            Me.btnClose.Image = CType(resources.GetObject("btnClose.Image"), System.Drawing.Image)
-            Me.btnClose.Location = New System.Drawing.Point(1159, 18)
-            Me.btnClose.Name = "btnClose"
-            Me.btnClose.Size = New System.Drawing.Size(103, 40)
-            Me.btnClose.StyleController = Me.LayoutControl1
-            Me.btnClose.TabIndex = 36
-            Me.btnClose.Text = "Close"
-            Me.btnClose.Visible = False
             '
             'LayoutControlItem3
             '
@@ -651,6 +654,16 @@
             Me.EmptySpaceItem4.Name = "EmptySpaceItem4"
             Me.EmptySpaceItem4.Size = New System.Drawing.Size(10, 52)
             Me.EmptySpaceItem4.TextSize = New System.Drawing.Size(0, 0)
+            '
+            'LayoutControlItem7
+            '
+            Me.LayoutControlItem7.Control = Me.btnRollbackData
+            Me.LayoutControlItem7.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter
+            Me.LayoutControlItem7.Location = New System.Drawing.Point(444, 0)
+            Me.LayoutControlItem7.Name = "LayoutControlItem7"
+            Me.LayoutControlItem7.Size = New System.Drawing.Size(219, 52)
+            Me.LayoutControlItem7.TextSize = New System.Drawing.Size(0, 0)
+            Me.LayoutControlItem7.TextVisible = False
             '
             'frm_IVM_Rollback
             '
@@ -682,11 +695,11 @@
             CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.EmptySpaceItem2, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.EmptySpaceItem4, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
 
         End Sub

@@ -113,9 +113,9 @@ Namespace Forms
             instance_Renamed.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 22, .Lon = -3, .Label = "C31", .Tag = Color.Blue, .Capacity = 0, .Name = "C31"})
             instance_Renamed.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 22, .Lon = 0, .Label = "C32", .Tag = Color.Blue, .Capacity = 0, .Name = "C32"})
 
-            instance_Renamed.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 22, .Lon = 3, .Label = "D8", .Tag = Color.Blue, .Capacity = 0, .Name = "D13"})
-            instance_Renamed.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 22, .Lon = 6, .Label = "D9", .Tag = Color.Blue, .Capacity = 0, .Name = "D14"})
-            instance_Renamed.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 22, .Lon = 9, .Label = "D10", .Tag = Color.Blue, .Capacity = 0, .Name = "D15"})
+            instance_Renamed.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 22, .Lon = 3, .Label = "D8", .Tag = Color.Blue, .Capacity = 0, .Name = "D8"})
+            instance_Renamed.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 22, .Lon = 6, .Label = "D9", .Tag = Color.Blue, .Capacity = 0, .Name = "D9"})
+            instance_Renamed.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 22, .Lon = 9, .Label = "D10", .Tag = Color.Blue, .Capacity = 0, .Name = "D10"})
             '++++++++++++++++++++++++++++++++++++++++++C,D 1 row++++++++++++++++++++++++++++++++++++++++++++++
             instance_Renamed.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 18, .Lon = -28, .Label = "C12", .Tag = Color.Blue, .Capacity = 0, .Name = "C12"})
             instance_Renamed.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 18, .Lon = -25, .Label = "C13", .Tag = Color.Blue, .Capacity = 0, .Name = "C13"})
@@ -129,9 +129,9 @@ Namespace Forms
             instance_Renamed.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 18, .Lon = -1, .Label = "C21", .Tag = Color.Blue, .Capacity = 0, .Name = "C21"})
             instance_Renamed.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 18, .Lon = 2, .Label = "C22", .Tag = Color.Blue, .Capacity = 0, .Name = "C22"})
 
-            instance_Renamed.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 18, .Lon = 5, .Label = "D5", .Tag = Color.Blue, .Capacity = 0, .Name = "D10"})
-            instance_Renamed.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 18, .Lon = 8, .Label = "D6", .Tag = Color.Blue, .Capacity = 0, .Name = "D11"})
-            instance_Renamed.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 18, .Lon = 11, .Label = "D7", .Tag = Color.Blue, .Capacity = 0, .Name = "D12"})
+            instance_Renamed.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 18, .Lon = 5, .Label = "D5", .Tag = Color.Blue, .Capacity = 0, .Name = "D5"})
+            instance_Renamed.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 18, .Lon = 8, .Label = "D6", .Tag = Color.Blue, .Capacity = 0, .Name = "D6"})
+            instance_Renamed.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 18, .Lon = 11, .Label = "D7", .Tag = Color.Blue, .Capacity = 0, .Name = "D7"})
             '++++++++++++++++++++++++++++++++++++++++++C,D 2 row++++++++++++++++++++++++++++++++++++++++++++++
             instance_Renamed.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 14, .Lon = -28, .Label = "C1", .Tag = Color.Blue, .Capacity = 0, .Name = "C1"})
             instance_Renamed.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 14, .Lon = -25, .Label = "C2", .Tag = Color.Blue, .Capacity = 0, .Name = "C2"})
@@ -323,7 +323,7 @@ Namespace Forms
             instance_Area_Item2.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 1, .Lon = 17, .Label = "F12", .Tag = Color.Blue, .Capacity = 0, .Name = "F12"})
             instance_Area_Item2.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 1, .Lon = 20, .Label = "F13", .Tag = Color.Blue, .Capacity = 0, .Name = "F13"})
             instance_Area_Item2.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 1, .Lon = 23, .Label = "F14", .Tag = Color.Blue, .Capacity = 0, .Name = "F14"})
-            instance_Area_Item2.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 1, .Lon = 26, .Label = "F16", .Tag = Color.Blue, .Capacity = 0, .Name = "F15"})
+            instance_Area_Item2.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 1, .Lon = 26, .Label = "F15", .Tag = Color.Blue, .Capacity = 0, .Name = "F15"})
             instance_Area_Item2.Add(New LayoutAreaItem() With {.ID = 0, .Lat = 1, .Lon = 29, .Label = "F16", .Tag = Color.Blue, .Capacity = 0, .Name = "F16"})
 
             '++++++++++++++++++++++++++++++++++++++++++End ลาน2+++++++++++++++++++++++++++++++++++++++++++++++++++++

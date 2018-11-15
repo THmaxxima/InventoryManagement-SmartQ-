@@ -143,109 +143,140 @@ Namespace PopupForms
         Sub InitData()
             Try
                 '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                GridControlSouceArea.DataSource = GetSubAreaINVDataSet()
                 GridControlWP.DataSource = GetWPInfo(CInt(_fieldID))
                 '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                 LayoutViewSouceArea.BeginUpdate()
 
                 If (_siteName = "UnloadImport" Or _siteName = "Unload") Then
 
-                    LayoutViewSouceArea.Columns.Clear()
+                    GridControlWeightTicket.DataSource = GetSubAreaINVDataSet()
+                    GridControlWeightTicket.Visible = True
+                    GridControlSouceArea.Visible = False
 
-                    Me.LayoutViewSouceArea.Appearance.Card.Font = New System.Drawing.Font("Tahoma", 11.0!)
-                    Me.LayoutViewSouceArea.Appearance.Card.Options.UseFont = True
-                    Me.LayoutViewSouceArea.Appearance.CardCaption.Font = New System.Drawing.Font("Tahoma", 16.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
-                    Me.LayoutViewSouceArea.Appearance.CardCaption.ForeColor = System.Drawing.Color.Blue
-                    Me.LayoutViewSouceArea.Appearance.CardCaption.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal
-                    Me.LayoutViewSouceArea.Appearance.CardCaption.Options.UseFont = True
-                    Me.LayoutViewSouceArea.Appearance.CardCaption.Options.UseForeColor = True
-                    Me.LayoutViewSouceArea.Appearance.CardCaption.Options.UseTextOptions = True
-                    Me.LayoutViewSouceArea.Appearance.CardCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-                    Me.LayoutViewSouceArea.Appearance.CardCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
-                    Me.LayoutViewSouceArea.Appearance.FieldCaption.Font = New System.Drawing.Font("Tahoma", 11.0!)
-                    Me.LayoutViewSouceArea.Appearance.FieldCaption.Options.UseFont = True
-                    Me.LayoutViewSouceArea.Appearance.FieldValue.Font = New System.Drawing.Font("Tahoma", 11.0!)
-                    Me.LayoutViewSouceArea.Appearance.FieldValue.ForeColor = System.Drawing.Color.Blue
-                    Me.LayoutViewSouceArea.Appearance.FieldValue.Options.UseFont = True
-                    Me.LayoutViewSouceArea.Appearance.FieldValue.Options.UseForeColor = True
-                    Me.LayoutViewSouceArea.Appearance.FieldValue.Options.UseTextOptions = True
-                    Me.LayoutViewSouceArea.Appearance.FieldValue.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-                    Me.LayoutViewSouceArea.Appearance.FieldValue.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
-                    Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.Font = New System.Drawing.Font("Tahoma", 16.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
-                    Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.FontStyleDelta = System.Drawing.FontStyle.Bold
-                    Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.ForeColor = System.Drawing.Color.Red
-                    Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.Options.UseFont = True
-                    Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.Options.UseForeColor = True
-                    Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.Options.UseTextOptions = True
-                    Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-                    Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
-                    Me.LayoutViewSouceArea.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 16.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
-                    Me.LayoutViewSouceArea.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Blue
-                    Me.LayoutViewSouceArea.Appearance.HeaderPanel.Options.UseFont = True
-                    Me.LayoutViewSouceArea.Appearance.HeaderPanel.Options.UseForeColor = True
-                    Me.LayoutViewSouceArea.Appearance.HeaderPanel.Options.UseTextOptions = True
-                    Me.LayoutViewSouceArea.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-                    Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.Font = New System.Drawing.Font("Tahoma", 16.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
-                    Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.ForeColor = System.Drawing.Color.Red
-                    Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.Options.UseFont = True
-                    Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.Options.UseForeColor = True
-                    Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.Options.UseTextOptions = True
-                    Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-                    Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
-                    Me.LayoutViewSouceArea.Appearance.SelectionFrame.Font = New System.Drawing.Font("Tahoma", 16.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
-                    Me.LayoutViewSouceArea.Appearance.SelectionFrame.ForeColor = System.Drawing.Color.Blue
-                    Me.LayoutViewSouceArea.Appearance.SelectionFrame.Options.UseFont = True
-                    Me.LayoutViewSouceArea.Appearance.SelectionFrame.Options.UseForeColor = True
-                    Me.LayoutViewSouceArea.Appearance.SelectionFrame.Options.UseTextOptions = True
-                    Me.LayoutViewSouceArea.Appearance.SelectionFrame.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-                    Me.LayoutViewSouceArea.CardCaptionFormat = "{4}"
-                    Me.LayoutViewSouceArea.CardHorzInterval = 2 'ระยะห่างระหว่าง การ์ด แนวนอน
-                    Me.LayoutViewSouceArea.CardMinSize = New System.Drawing.Size(300, 150)
-                    Me.LayoutViewSouceArea.CardVertInterval = 1 'ระยะห่างระหว่าง การ์ด แนวตั้ง
-                    Me.LayoutViewSouceArea.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.[False]
-                    Me.LayoutViewSouceArea.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.[False]
-                    Me.LayoutViewSouceArea.OptionsItemText.TextToControlDistance = 1
-                    Me.LayoutViewSouceArea.OptionsLayout.Columns.AddNewColumns = False
-                    Me.LayoutViewSouceArea.OptionsLayout.Columns.RemoveOldColumns = False
-                    Me.LayoutViewSouceArea.OptionsLayout.StoreAllOptions = True
-                    Me.LayoutViewSouceArea.OptionsLayout.StoreAppearance = True
-                    Me.LayoutViewSouceArea.OptionsLayout.StoreFormatRules = True
-                    Me.LayoutViewSouceArea.OptionsView.AllowHotTrackFields = False
-                    Me.LayoutViewSouceArea.OptionsView.AnimationType = DevExpress.XtraGrid.Views.Base.GridAnimationType.NeverAnimate
-                    Me.LayoutViewSouceArea.OptionsView.CardsAlignment = DevExpress.XtraGrid.Views.Layout.CardsAlignment.Near
-                    Me.LayoutViewSouceArea.OptionsView.ShowCardExpandButton = False
-                    Me.LayoutViewSouceArea.OptionsView.ShowCardLines = False
-                    Me.LayoutViewSouceArea.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never
-                    Me.LayoutViewSouceArea.OptionsView.ShowHeaderPanel = False
-                    Me.LayoutViewSouceArea.OptionsView.ViewMode = DevExpress.XtraGrid.Views.Layout.LayoutViewMode.MultiColumn
-                    Me.LayoutViewSouceArea.TemplateCard = Me.LayoutViewCard1
+                    LayoutViewWeightTicket.Columns(7).DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+                    LayoutViewWeightTicket.Columns(7).DisplayFormat.FormatString = "{0:n1}"
+                    LayoutViewWeightTicket.Columns(8).DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+                    LayoutViewWeightTicket.Columns(8).DisplayFormat.FormatString = "{0:n3}"
 
-                    Dim table As DataTable = CType(GridControlSouceArea.DataSource, DataTable)
-                    For i As Integer = 0 To table.Columns.Count - 1
-                        LayoutViewSouceArea.Columns.AddField(table.Columns(i).ColumnName)
-                        LayoutViewSouceArea.Columns(i).Visible = True
-                        Select Case table.Columns(i).ColumnName.ToString
-                            Case "PlateLicense"
-                                LayoutViewSouceArea.Columns(i).Visible = False
-                            Case "MaterialID"
-                                LayoutViewSouceArea.Columns(i).Visible = False
-                            Case "SupplierID"
-                                LayoutViewSouceArea.Columns(i).Visible = False
-                            Case "UnloadStation"
-                                LayoutViewSouceArea.Columns(i).Visible = False
-                            Case "MaterialSource"
-                                LayoutViewSouceArea.Columns(i).Visible = False
-                            Case "IsWeightOut"
-                                LayoutViewSouceArea.Columns(i).Visible = False
-                            Case "Quantity"
-                                LayoutViewSouceArea.Columns(i).DisplayFormat.FormatString = "N2"
-                        End Select
-                    Next i
+                    'LayoutViewSouceArea.BeginUpdate()
+                    'LayoutViewSouceArea.Columns.Clear()
 
+                    'Me.LayoutViewSouceArea.Appearance.Card.Font = New System.Drawing.Font("Tahoma", 11.0!)
+                    'Me.LayoutViewSouceArea.Appearance.Card.Options.UseFont = True
+                    'Me.LayoutViewSouceArea.Appearance.CardCaption.Font = New System.Drawing.Font("Tahoma", 15.0!, CType((System.Drawing.FontStyle.Regular), System.Drawing.FontStyle))
+                    'Me.LayoutViewSouceArea.Appearance.CardCaption.ForeColor = System.Drawing.Color.Blue
+                    'Me.LayoutViewSouceArea.Appearance.CardCaption.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal
+                    'Me.LayoutViewSouceArea.Appearance.CardCaption.Options.UseFont = True
+                    'Me.LayoutViewSouceArea.Appearance.CardCaption.Options.UseForeColor = True
+                    'Me.LayoutViewSouceArea.Appearance.CardCaption.Options.UseTextOptions = True
+                    'Me.LayoutViewSouceArea.Appearance.CardCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+                    'Me.LayoutViewSouceArea.Appearance.CardCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
+                    'Me.LayoutViewSouceArea.Appearance.FieldCaption.Font = New System.Drawing.Font("Tahoma", 11.0!)
+                    'Me.LayoutViewSouceArea.Appearance.FieldCaption.Options.UseFont = True
+                    'Me.LayoutViewSouceArea.Appearance.FieldValue.Font = New System.Drawing.Font("Tahoma", 11.0!)
+                    'Me.LayoutViewSouceArea.Appearance.FieldValue.ForeColor = System.Drawing.Color.Blue
+                    'Me.LayoutViewSouceArea.Appearance.FieldValue.Options.UseFont = True
+                    'Me.LayoutViewSouceArea.Appearance.FieldValue.Options.UseForeColor = True
+                    'Me.LayoutViewSouceArea.Appearance.FieldValue.Options.UseTextOptions = True
+                    'Me.LayoutViewSouceArea.Appearance.FieldValue.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+                    'Me.LayoutViewSouceArea.Appearance.FieldValue.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
+                    'Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.Font = New System.Drawing.Font("Tahoma", 15.0!, CType((System.Drawing.FontStyle.Regular), System.Drawing.FontStyle))
+                    'Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.FontStyleDelta = System.Drawing.FontStyle.Bold
+                    'Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.ForeColor = System.Drawing.Color.Blue
+                    'Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.Options.UseFont = True
+                    'Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.Options.UseForeColor = True
+                    'Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.Options.UseTextOptions = True
+                    'Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+                    'Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
+                    'Me.LayoutViewSouceArea.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 15.0!, CType((System.Drawing.FontStyle.Regular), System.Drawing.FontStyle))
+                    'Me.LayoutViewSouceArea.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Blue
+                    'Me.LayoutViewSouceArea.Appearance.HeaderPanel.Options.UseFont = True
+                    'Me.LayoutViewSouceArea.Appearance.HeaderPanel.Options.UseForeColor = True
+                    'Me.LayoutViewSouceArea.Appearance.HeaderPanel.Options.UseTextOptions = True
+                    'Me.LayoutViewSouceArea.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+                    'Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.Font = New System.Drawing.Font("Tahoma", 15.0!, CType((System.Drawing.FontStyle.Regular), System.Drawing.FontStyle))
+                    'Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.ForeColor = System.Drawing.Color.Blue
+                    'Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.Options.UseFont = True
+                    'Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.Options.UseForeColor = True
+                    'Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.Options.UseTextOptions = True
+                    'Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+                    'Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
+                    'Me.LayoutViewSouceArea.Appearance.SelectionFrame.Font = New System.Drawing.Font("Tahoma", 15.0!, CType((System.Drawing.FontStyle.Regular), System.Drawing.FontStyle))
+                    'Me.LayoutViewSouceArea.Appearance.SelectionFrame.ForeColor = System.Drawing.Color.Blue
+                    'Me.LayoutViewSouceArea.Appearance.SelectionFrame.Options.UseFont = True
+                    'Me.LayoutViewSouceArea.Appearance.SelectionFrame.Options.UseForeColor = True
+                    'Me.LayoutViewSouceArea.Appearance.SelectionFrame.Options.UseTextOptions = True
+                    'Me.LayoutViewSouceArea.Appearance.SelectionFrame.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+                    'Me.LayoutViewSouceArea.CardCaptionFormat = "{4}"
+                    'Me.LayoutViewSouceArea.CardHorzInterval = 0 'ระยะห่างระหว่าง การ์ด แนวนอน
+                    'Me.LayoutViewSouceArea.CardMinSize = New System.Drawing.Size(300, 180)
+                    'Me.LayoutViewSouceArea.CardVertInterval = 0 'ระยะห่างระหว่าง การ์ด แนวตั้ง
+                    'Me.LayoutViewSouceArea.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.[False]
+                    'Me.LayoutViewSouceArea.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.[False]
+                    'Me.LayoutViewSouceArea.OptionsItemText.TextToControlDistance = 1
+                    'Me.LayoutViewSouceArea.OptionsLayout.Columns.AddNewColumns = False
+                    'Me.LayoutViewSouceArea.OptionsLayout.Columns.RemoveOldColumns = False
+                    'Me.LayoutViewSouceArea.OptionsLayout.StoreAllOptions = True
+                    'Me.LayoutViewSouceArea.OptionsLayout.StoreAppearance = True
+                    'Me.LayoutViewSouceArea.OptionsLayout.StoreFormatRules = True
+                    'Me.LayoutViewSouceArea.OptionsView.AllowHotTrackFields = False
+                    'Me.LayoutViewSouceArea.OptionsBehavior.FocusLeaveOnTab = True
+                    'Me.LayoutViewSouceArea.OptionsFind.AlwaysVisible = True
+                    'Me.LayoutViewSouceArea.OptionsItemText.AlignMode = DevExpress.XtraGrid.Views.Layout.FieldTextAlignMode.AutoSize
+                    'Me.LayoutViewSouceArea.OptionsView.AnimationType = DevExpress.XtraGrid.Views.Base.GridAnimationType.NeverAnimate
+                    'Me.LayoutViewSouceArea.OptionsView.CardsAlignment = DevExpress.XtraGrid.Views.Layout.CardsAlignment.Near
+                    'Me.LayoutViewSouceArea.OptionsView.ShowCardExpandButton = False
+                    'Me.LayoutViewSouceArea.OptionsView.ShowCardLines = False
+                    'Me.LayoutViewSouceArea.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never
+                    'Me.LayoutViewSouceArea.OptionsView.ShowHeaderPanel = False
+                    'Me.LayoutViewSouceArea.OptionsView.ViewMode = DevExpress.XtraGrid.Views.Layout.LayoutViewMode.MultiColumn
+                    'Me.LayoutViewSouceArea.TemplateCard = Me.LayoutViewCard1
+
+
+                    ''*************************************************
+
+
+                    ''**************************************************
+                    'Dim table As DataTable = CType(GridControlSouceArea.DataSource, DataTable)
+                    'For i As Integer = 0 To table.Columns.Count - 1
+                    '    LayoutViewSouceArea.Columns.AddField(table.Columns(i).ColumnName)
+                    '    LayoutViewSouceArea.Columns(i).Visible = True
+
+                    '    Select Case table.Columns(i).ColumnName.ToString
+                    '        Case "PlateLicense"
+                    '            LayoutViewSouceArea.Columns(i).Visible = False
+                    '        Case "MaterialID"
+                    '            LayoutViewSouceArea.Columns(i).Visible = False
+                    '        Case "SupplierID"
+                    '            LayoutViewSouceArea.Columns(i).Visible = False
+                    '        Case "UnloadStation"
+                    '            LayoutViewSouceArea.Columns(i).Visible = False
+                    '        Case "MaterialSource"
+                    '            LayoutViewSouceArea.Columns(i).Visible = False
+                    '        Case "IsWeightOut"
+                    '            LayoutViewSouceArea.Columns(i).Visible = True
+                    '            LayoutViewSouceArea.Columns(i).Caption = "น้ำหนักต้นทาง"
+
+                    '        Case "Quantity"
+                    '            LayoutViewSouceArea.Columns(i).DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+                    '            LayoutViewSouceArea.Columns(i).DisplayFormat.FormatString = "{0:n1}"
+                    '        Case "MillWeight"
+                    '            LayoutViewSouceArea.Columns(i).DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+                    '            LayoutViewSouceArea.Columns(i).DisplayFormat.FormatString = "{0:n3}"
+                    '            'MillWeight
+                    '    End Select
+                    'Next i
+
+                    'LayoutViewSouceArea.EndUpdate()
                     '++++++++++ กรณี Unload จะไม่สามารถเลือก W.P. ได้ ++++++++++
                     txtquantity.ReadOnly = False
                     txtquantity.Enabled = True
                 Else
+                    GridControlSouceArea.DataSource = GetSubAreaINVDataSet()
+
+                    GridControlWeightTicket.Visible = False
+                    GridControlSouceArea.Visible = True
+
                     '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     Me.CheckShowAll.Visible = False
                     Me.btnProperties.Enabled = False
@@ -285,39 +316,8 @@ Namespace PopupForms
             Dim quantity As Decimal
             Try
                 rowind = CType(LayoutViewSouceArea.FocusedRowHandle, String)
-                If (_siteName = "UnloadImport" Or _siteName = "Unload") Then
-                    Dim Ticket As String
-                    Dim ReceiveDate As DateTime
-                    Dim PlateLicense As String
-                    Dim SupplierName As String
 
-                    Ticket = CType(LayoutViewSouceArea.GetFocusedRowCellValue("Ticket"), String)
-                    PlateLicense = CType(LayoutViewSouceArea.GetFocusedRowCellValue("PlateLicense"), String)
-                    ReceiveDate = CType(LayoutViewSouceArea.GetFocusedRowCellValue("ReceiveDate"), DateTime)
-                    SupplierName = CType(LayoutViewSouceArea.GetFocusedRowCellValue("SupplierName"), String)
-                    '+++++++++++++++++++ Binding Search lookupedit Mat +++++++++++++++++++++++++++
-                    BindingSearchMaterial()
-                    '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                    quantity = CType(LayoutViewSouceArea.GetFocusedRowCellValue("Quantity"), Decimal)
-                    'weight = CType(LayoutViewSouceArea.GetFocusedRowCellValue("MillWeight"), Double)
-                    weight = DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewSouceArea.GetFocusedRowCellValue("MillWeight"), 0)
-                    lblWeightTicket.Text = Ticket
-                    '++++++++++ Use for debug only +++++++++++++
-                    'Must to get ID from database.
-                    lblStroageID.Text = _MaterialSourceID.ToString
-                    '+++++++++++++++++++++++++++++++++++++++++++
-                    lblTicketID.Text = Ticket
-                    lblStroageName.Text = PlateLicense
-                    lblWeight.Text = weight.ToString("0.000")
-                    txtquantity.EditValue = quantity
-                    lblNetAmount.Text = quantity.ToString
-                    '+++++++ Cal weight per unit +++++
-                    WeightPUnit = weight / quantity
-                    '+++++++++++++ Lock object ++++++++++++++++++++
-                    UnLockObject()
-                    '++++++++++++++++++++++++++++++++++++++++++++++
-                Else
-                    Dim areaid As String
+                Dim areaid As String
                     Dim areaname As String
                     Dim matid As String
                     Dim matname As String
@@ -345,7 +345,7 @@ Namespace PopupForms
                     BindingSearchMaterial()
                     '+++++++++++++ Lock object ++++++++++++++++++++
                     LockObject()
-                End If
+
                 '++++++++++++++++++++ Clear ข้อมูล grid ก่อนการเลือกพื้นที่ใหม่ ++++++++++++++++++
                 If (GridViewMoveMentDetail.RowCount > 0) Then
                     Dim iCountRows As Integer
@@ -362,18 +362,25 @@ Namespace PopupForms
             End Try
         End Sub
         Private Sub BindingSearchMaterial()
-            Dim searchlookupmat As New SearchLookUpEdit
-            searchlookupmat = SearchMaterial
-            Dim matid As String
-            Dim matname As String
-            '+++++++++++++++++++ Binding Search lookupedit Mat +++++++++++++++++++++++++++
-            searchlookupmat.EditValue = LayoutViewSouceArea.GetFocusedRowCellValue("MaterialID")
-            searchlookupmat.SelectedText = LayoutViewSouceArea.GetFocusedRowCellValue("MaterialName").ToString
-            matid = CType(searchlookupmat.EditValue, String)
-            matname = searchlookupmat.SelectedText
-            lblMatID.Text = matid
-            lblMatName.Text = matname
-            '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            Try
+                Dim searchlookupmat As New SearchLookUpEdit
+                searchlookupmat = SearchMaterial
+                Dim matid As String
+                Dim matname As String
+                '+++++++++++++++++++ Binding Search lookupedit Mat +++++++++++++++++++++++++++
+                searchlookupmat.EditValue = LayoutViewWeightTicket.GetFocusedRowCellValue("MaterialID")
+                searchlookupmat.SelectedText = LayoutViewWeightTicket.GetFocusedRowCellValue("MaterialName").ToString
+                matid = CType(searchlookupmat.EditValue, String)
+                matname = searchlookupmat.SelectedText
+                lblMatID.Text = matid
+                lblMatName.Text = matname
+                '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            Catch ex As Exception
+                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [BindingSearchMaterial]")
+                Infolog.ShowExMessage(ex, FC.M.PSL_Win.MessageType.ErrorMessage)
+                ModMainApp.Log.Log4N("BindingSearchMaterial [Catch]").DebugFormat("Err := {0} ", ex.Message)
+            End Try
         End Sub
         Function GetGroupAreaInfo(ByVal FieldID As Integer) As DataTable
             Try
@@ -1070,5 +1077,57 @@ Namespace PopupForms
             End Try
         End Sub
 
+        Private Sub LayoutViewWeightTicket_CardClick(sender As Object, e As CardClickEventArgs) Handles LayoutViewWeightTicket.CardClick
+            Dim rowind As String
+            Dim quantity As Decimal
+            Try
+                rowind = CType(LayoutViewWeightTicket.FocusedRowHandle, String)
+
+                Dim Ticket As String
+                    Dim ReceiveDate As DateTime
+                    Dim PlateLicense As String
+                    Dim SupplierName As String
+
+                    Ticket = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("Ticket"), String)
+                    PlateLicense = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("PlateLicense"), String)
+                    ReceiveDate = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("ReceiveDate"), DateTime)
+                    SupplierName = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("SupplierName"), String)
+                    '+++++++++++++++++++ Binding Search lookupedit Mat +++++++++++++++++++++++++++
+                    BindingSearchMaterial()
+                    '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    quantity = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("Quantity"), Decimal)
+                    'weight = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("MillWeight"), Double)
+                    weight = DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewWeightTicket.GetFocusedRowCellValue("MillWeight"), 0)
+                    lblWeightTicket.Text = Ticket
+                    '++++++++++ Use for debug only +++++++++++++
+                    'Must to get ID from database.
+                    lblStroageID.Text = _MaterialSourceID.ToString
+                    '+++++++++++++++++++++++++++++++++++++++++++
+                    lblTicketID.Text = Ticket
+                    lblStroageName.Text = PlateLicense
+                    lblWeight.Text = weight.ToString("0.000")
+                    txtquantity.EditValue = quantity
+                    lblNetAmount.Text = quantity.ToString
+                    '+++++++ Cal weight per unit +++++
+                    WeightPUnit = weight / quantity
+                    '+++++++++++++ Lock object ++++++++++++++++++++
+                    UnLockObject()
+                '++++++++++++++++++++++++++++++++++++++++++++++
+
+                '++++++++++++++++++++ Clear ข้อมูล grid ก่อนการเลือกพื้นที่ใหม่ ++++++++++++++++++
+                If (GridViewMoveMentDetail.RowCount > 0) Then
+                    Dim iCountRows As Integer
+                    For iCountRows = 0 To GridViewMoveMentDetail.RowCount - 1
+                        GridViewMoveMentDetail.DeleteSelectedRows()
+                    Next iCountRows
+                End If
+                '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                Me.TabPane1.SelectNextPage()
+            Catch ex As Exception
+                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [LayoutViewWeightTicket_CardClick]")
+                Infolog.ShowExMessage(ex, FC.M.PSL_Win.MessageType.ErrorMessage)
+            End Try
+        End Sub
     End Class
 End Namespace

@@ -171,6 +171,12 @@
     <Compile Include="PopupForms\frm_IVM_Popup_Material_Info.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PopupForms\frm_IVM_Popup_Material_Manage.Designer.vb">
+      <DependentUpon>frm_IVM_Popup_Material_Manage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopupForms\frm_IVM_Popup_Material_Manage.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PopupForms\frm_IVM_Popup_Mat_Property.Designer.vb">
       <DependentUpon>frm_IVM_Popup_Mat_Property.vb</DependentUpon>
     </Compile>
@@ -206,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PopupForms\frm_IVM_Popup_Material_Info.resx">
       <DependentUpon>frm_IVM_Popup_Material_Info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopupForms\frm_IVM_Popup_Material_Manage.resx">
+      <DependentUpon>frm_IVM_Popup_Material_Manage.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PopupForms\frm_IVM_Popup_Mat_Property.resx">
       <DependentUpon>frm_IVM_Popup_Mat_Property.vb</DependentUpon>

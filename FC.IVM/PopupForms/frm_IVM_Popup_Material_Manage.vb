@@ -71,6 +71,8 @@ Namespace PopupForms
         Private weight As Double = 0
         Private WeightPUnit As Double = 0
 
+        Dim LayoutViewRename As New LayoutView
+
         Declare Function Wow64DisableWow64FsRedirection Lib "kernel32" (ByRef oldvalue As Long) As Boolean
         Declare Function Wow64EnableWow64FsRedirection Lib "kernel32" (ByRef oldvalue As Long) As Boolean
         Private osk As String = "C:\Windows\System32\osk.exe"
@@ -153,126 +155,19 @@ Namespace PopupForms
                     GridControlWeightTicket.Visible = True
                     GridControlSouceArea.Visible = False
 
-                    LayoutViewWeightTicket.Columns(7).DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
-                    LayoutViewWeightTicket.Columns(7).DisplayFormat.FormatString = "{0:n1}"
-                    LayoutViewWeightTicket.Columns(8).DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
-                    LayoutViewWeightTicket.Columns(8).DisplayFormat.FormatString = "{0:n3}"
+                    LayoutViewRename = LayoutViewWeightTicket
+                    LayoutViewRename.Columns(7).DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+                    LayoutViewRename.Columns(7).DisplayFormat.FormatString = "{0:n1}"
+                    LayoutViewRename.Columns(8).DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+                    LayoutViewRename.Columns(8).DisplayFormat.FormatString = "{0:n3}"
 
-                    'LayoutViewSouceArea.BeginUpdate()
-                    'LayoutViewSouceArea.Columns.Clear()
-
-                    'Me.LayoutViewSouceArea.Appearance.Card.Font = New System.Drawing.Font("Tahoma", 11.0!)
-                    'Me.LayoutViewSouceArea.Appearance.Card.Options.UseFont = True
-                    'Me.LayoutViewSouceArea.Appearance.CardCaption.Font = New System.Drawing.Font("Tahoma", 15.0!, CType((System.Drawing.FontStyle.Regular), System.Drawing.FontStyle))
-                    'Me.LayoutViewSouceArea.Appearance.CardCaption.ForeColor = System.Drawing.Color.Blue
-                    'Me.LayoutViewSouceArea.Appearance.CardCaption.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal
-                    'Me.LayoutViewSouceArea.Appearance.CardCaption.Options.UseFont = True
-                    'Me.LayoutViewSouceArea.Appearance.CardCaption.Options.UseForeColor = True
-                    'Me.LayoutViewSouceArea.Appearance.CardCaption.Options.UseTextOptions = True
-                    'Me.LayoutViewSouceArea.Appearance.CardCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-                    'Me.LayoutViewSouceArea.Appearance.CardCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
-                    'Me.LayoutViewSouceArea.Appearance.FieldCaption.Font = New System.Drawing.Font("Tahoma", 11.0!)
-                    'Me.LayoutViewSouceArea.Appearance.FieldCaption.Options.UseFont = True
-                    'Me.LayoutViewSouceArea.Appearance.FieldValue.Font = New System.Drawing.Font("Tahoma", 11.0!)
-                    'Me.LayoutViewSouceArea.Appearance.FieldValue.ForeColor = System.Drawing.Color.Blue
-                    'Me.LayoutViewSouceArea.Appearance.FieldValue.Options.UseFont = True
-                    'Me.LayoutViewSouceArea.Appearance.FieldValue.Options.UseForeColor = True
-                    'Me.LayoutViewSouceArea.Appearance.FieldValue.Options.UseTextOptions = True
-                    'Me.LayoutViewSouceArea.Appearance.FieldValue.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-                    'Me.LayoutViewSouceArea.Appearance.FieldValue.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
-                    'Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.Font = New System.Drawing.Font("Tahoma", 15.0!, CType((System.Drawing.FontStyle.Regular), System.Drawing.FontStyle))
-                    'Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.FontStyleDelta = System.Drawing.FontStyle.Bold
-                    'Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.ForeColor = System.Drawing.Color.Blue
-                    'Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.Options.UseFont = True
-                    'Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.Options.UseForeColor = True
-                    'Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.Options.UseTextOptions = True
-                    'Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-                    'Me.LayoutViewSouceArea.Appearance.FocusedCardCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
-                    'Me.LayoutViewSouceArea.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 15.0!, CType((System.Drawing.FontStyle.Regular), System.Drawing.FontStyle))
-                    'Me.LayoutViewSouceArea.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Blue
-                    'Me.LayoutViewSouceArea.Appearance.HeaderPanel.Options.UseFont = True
-                    'Me.LayoutViewSouceArea.Appearance.HeaderPanel.Options.UseForeColor = True
-                    'Me.LayoutViewSouceArea.Appearance.HeaderPanel.Options.UseTextOptions = True
-                    'Me.LayoutViewSouceArea.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-                    'Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.Font = New System.Drawing.Font("Tahoma", 15.0!, CType((System.Drawing.FontStyle.Regular), System.Drawing.FontStyle))
-                    'Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.ForeColor = System.Drawing.Color.Blue
-                    'Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.Options.UseFont = True
-                    'Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.Options.UseForeColor = True
-                    'Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.Options.UseTextOptions = True
-                    'Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-                    'Me.LayoutViewSouceArea.Appearance.SelectedCardCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
-                    'Me.LayoutViewSouceArea.Appearance.SelectionFrame.Font = New System.Drawing.Font("Tahoma", 15.0!, CType((System.Drawing.FontStyle.Regular), System.Drawing.FontStyle))
-                    'Me.LayoutViewSouceArea.Appearance.SelectionFrame.ForeColor = System.Drawing.Color.Blue
-                    'Me.LayoutViewSouceArea.Appearance.SelectionFrame.Options.UseFont = True
-                    'Me.LayoutViewSouceArea.Appearance.SelectionFrame.Options.UseForeColor = True
-                    'Me.LayoutViewSouceArea.Appearance.SelectionFrame.Options.UseTextOptions = True
-                    'Me.LayoutViewSouceArea.Appearance.SelectionFrame.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-                    'Me.LayoutViewSouceArea.CardCaptionFormat = "{4}"
-                    'Me.LayoutViewSouceArea.CardHorzInterval = 0 'ระยะห่างระหว่าง การ์ด แนวนอน
-                    'Me.LayoutViewSouceArea.CardMinSize = New System.Drawing.Size(300, 180)
-                    'Me.LayoutViewSouceArea.CardVertInterval = 0 'ระยะห่างระหว่าง การ์ด แนวตั้ง
-                    'Me.LayoutViewSouceArea.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.[False]
-                    'Me.LayoutViewSouceArea.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.[False]
-                    'Me.LayoutViewSouceArea.OptionsItemText.TextToControlDistance = 1
-                    'Me.LayoutViewSouceArea.OptionsLayout.Columns.AddNewColumns = False
-                    'Me.LayoutViewSouceArea.OptionsLayout.Columns.RemoveOldColumns = False
-                    'Me.LayoutViewSouceArea.OptionsLayout.StoreAllOptions = True
-                    'Me.LayoutViewSouceArea.OptionsLayout.StoreAppearance = True
-                    'Me.LayoutViewSouceArea.OptionsLayout.StoreFormatRules = True
-                    'Me.LayoutViewSouceArea.OptionsView.AllowHotTrackFields = False
-                    'Me.LayoutViewSouceArea.OptionsBehavior.FocusLeaveOnTab = True
-                    'Me.LayoutViewSouceArea.OptionsFind.AlwaysVisible = True
-                    'Me.LayoutViewSouceArea.OptionsItemText.AlignMode = DevExpress.XtraGrid.Views.Layout.FieldTextAlignMode.AutoSize
-                    'Me.LayoutViewSouceArea.OptionsView.AnimationType = DevExpress.XtraGrid.Views.Base.GridAnimationType.NeverAnimate
-                    'Me.LayoutViewSouceArea.OptionsView.CardsAlignment = DevExpress.XtraGrid.Views.Layout.CardsAlignment.Near
-                    'Me.LayoutViewSouceArea.OptionsView.ShowCardExpandButton = False
-                    'Me.LayoutViewSouceArea.OptionsView.ShowCardLines = False
-                    'Me.LayoutViewSouceArea.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never
-                    'Me.LayoutViewSouceArea.OptionsView.ShowHeaderPanel = False
-                    'Me.LayoutViewSouceArea.OptionsView.ViewMode = DevExpress.XtraGrid.Views.Layout.LayoutViewMode.MultiColumn
-                    'Me.LayoutViewSouceArea.TemplateCard = Me.LayoutViewCard1
-
-
-                    ''*************************************************
-
-
-                    ''**************************************************
-                    'Dim table As DataTable = CType(GridControlSouceArea.DataSource, DataTable)
-                    'For i As Integer = 0 To table.Columns.Count - 1
-                    '    LayoutViewSouceArea.Columns.AddField(table.Columns(i).ColumnName)
-                    '    LayoutViewSouceArea.Columns(i).Visible = True
-
-                    '    Select Case table.Columns(i).ColumnName.ToString
-                    '        Case "PlateLicense"
-                    '            LayoutViewSouceArea.Columns(i).Visible = False
-                    '        Case "MaterialID"
-                    '            LayoutViewSouceArea.Columns(i).Visible = False
-                    '        Case "SupplierID"
-                    '            LayoutViewSouceArea.Columns(i).Visible = False
-                    '        Case "UnloadStation"
-                    '            LayoutViewSouceArea.Columns(i).Visible = False
-                    '        Case "MaterialSource"
-                    '            LayoutViewSouceArea.Columns(i).Visible = False
-                    '        Case "IsWeightOut"
-                    '            LayoutViewSouceArea.Columns(i).Visible = True
-                    '            LayoutViewSouceArea.Columns(i).Caption = "น้ำหนักต้นทาง"
-
-                    '        Case "Quantity"
-                    '            LayoutViewSouceArea.Columns(i).DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
-                    '            LayoutViewSouceArea.Columns(i).DisplayFormat.FormatString = "{0:n1}"
-                    '        Case "MillWeight"
-                    '            LayoutViewSouceArea.Columns(i).DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
-                    '            LayoutViewSouceArea.Columns(i).DisplayFormat.FormatString = "{0:n3}"
-                    '            'MillWeight
-                    '    End Select
-                    'Next i
-
-                    'LayoutViewSouceArea.EndUpdate()
                     '++++++++++ กรณี Unload จะไม่สามารถเลือก W.P. ได้ ++++++++++
                     txtquantity.ReadOnly = False
                     txtquantity.Enabled = True
                 Else
+
                     GridControlSouceArea.DataSource = GetSubAreaINVDataSet()
+                    LayoutViewRename = LayoutViewSouceArea
 
                     GridControlWeightTicket.Visible = False
                     GridControlSouceArea.Visible = True
@@ -282,10 +177,10 @@ Namespace PopupForms
                     Me.btnProperties.Enabled = False
                     '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     LayoutViewSouceArea.BeginUpdate()
-                    Me.LayoutViewSouceArea.CardHorzInterval = 2 'ระยะห่างระหว่าง การ์ด แนวนอน
-                    Me.LayoutViewSouceArea.CardMinSize = New System.Drawing.Size(134, 106)
-                    Me.LayoutViewSouceArea.CardVertInterval = 1 'ระยะห่างระหว่าง การ์ด แนวตั้ง
-                    LayoutViewSouceArea.EndUpdate()
+                    Me.LayoutViewRename.CardHorzInterval = 2 'ระยะห่างระหว่าง การ์ด แนวนอน
+                    Me.LayoutViewRename.CardMinSize = New System.Drawing.Size(134, 106)
+                    Me.LayoutViewRename.CardVertInterval = 1 'ระยะห่างระหว่าง การ์ด แนวตั้ง
+                    LayoutViewRename.EndUpdate()
 
                     layoutViewDestGroupArea.BeginUpdate()
                     Me.layoutViewDestGroupArea.CardHorzInterval = 2
@@ -318,33 +213,33 @@ Namespace PopupForms
                 rowind = CType(LayoutViewSouceArea.FocusedRowHandle, String)
 
                 Dim areaid As String
-                    Dim areaname As String
-                    Dim matid As String
-                    Dim matname As String
-                    Dim weight As Double
-                    rowind = CType(LayoutViewSouceArea.FocusedRowHandle, String)
-                    areaid = CType(LayoutViewSouceArea.GetFocusedRowCellValue("StorageID"), String)
-                    areaname = CType(LayoutViewSouceArea.GetFocusedRowCellValue("StorageName"), String)
-                    matid = CType(LayoutViewSouceArea.GetFocusedRowCellValue("MaterialID"), String)
-                    matname = CType(LayoutViewSouceArea.GetFocusedRowCellValue("MaterialName"), String)
-                    quantity = DataHelper.DBNullOrNothingTo(Of Decimal)(LayoutViewSouceArea.GetFocusedRowCellValue("Quantity"), 0)
-                    weight = DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewSouceArea.GetFocusedRowCellValue("WeightADT"), 0)
-                    'DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewSouceArea.GetFocusedRowCellValue("MillWeight"), 0)
-                    '+++++ If not unload must to clear value ++++++
-                    lblTicketID.Text = String.Empty
+                Dim areaname As String
+                Dim matid As String
+                Dim matname As String
+                Dim weight As Double
+                rowind = CType(LayoutViewSouceArea.FocusedRowHandle, String)
+                areaid = CType(LayoutViewSouceArea.GetFocusedRowCellValue("StorageID"), String)
+                areaname = CType(LayoutViewSouceArea.GetFocusedRowCellValue("StorageName"), String)
+                matid = CType(LayoutViewSouceArea.GetFocusedRowCellValue("MaterialID"), String)
+                matname = CType(LayoutViewSouceArea.GetFocusedRowCellValue("MaterialName"), String)
+                quantity = DataHelper.DBNullOrNothingTo(Of Decimal)(LayoutViewSouceArea.GetFocusedRowCellValue("Quantity"), 0)
+                weight = DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewSouceArea.GetFocusedRowCellValue("WeightADT"), 0)
+                'DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewSouceArea.GetFocusedRowCellValue("MillWeight"), 0)
+                '+++++ If not unload must to clear value ++++++
+                lblTicketID.Text = String.Empty
 
-                    '++++++++++++++++++++++++++++++++++++++++++++++
-                    lblStroageID.Text = areaid
-                    lblStroageName.Text = areaname
-                    lblWeight.Text = weight.ToString("0.000")
-                    txtquantity.EditValue = quantity.ToString("0.0")
-                    lblNetAmount.Text = quantity.ToString
-                    '+++++++ Cal weight per unit +++++
-                    WeightPUnit = weight / quantity
-                    '+++++++++++++++++++ Binding Search lookupedit Mat +++++++++++++++++++++++++++
-                    BindingSearchMaterial()
-                    '+++++++++++++ Lock object ++++++++++++++++++++
-                    LockObject()
+                '++++++++++++++++++++++++++++++++++++++++++++++
+                lblStroageID.Text = areaid
+                lblStroageName.Text = areaname
+                lblWeight.Text = weight.ToString("0.000")
+                txtquantity.EditValue = quantity.ToString("0.0")
+                lblNetAmount.Text = quantity.ToString
+                '+++++++ Cal weight per unit +++++
+                WeightPUnit = weight / quantity
+                '+++++++++++++++++++ Binding Search lookupedit Mat +++++++++++++++++++++++++++
+                BindingSearchMaterial()
+                '+++++++++++++ Lock object ++++++++++++++++++++
+                LockObject()
 
                 '++++++++++++++++++++ Clear ข้อมูล grid ก่อนการเลือกพื้นที่ใหม่ ++++++++++++++++++
                 If (GridViewMoveMentDetail.RowCount > 0) Then
@@ -363,13 +258,15 @@ Namespace PopupForms
         End Sub
         Private Sub BindingSearchMaterial()
             Try
+
                 Dim searchlookupmat As New SearchLookUpEdit
                 searchlookupmat = SearchMaterial
                 Dim matid As String
                 Dim matname As String
                 '+++++++++++++++++++ Binding Search lookupedit Mat +++++++++++++++++++++++++++
-                searchlookupmat.EditValue = LayoutViewWeightTicket.GetFocusedRowCellValue("MaterialID")
-                searchlookupmat.SelectedText = LayoutViewWeightTicket.GetFocusedRowCellValue("MaterialName").ToString
+
+                searchlookupmat.EditValue = LayoutViewRename.GetFocusedRowCellValue("MaterialID")
+                searchlookupmat.SelectedText = LayoutViewRename.GetFocusedRowCellValue("MaterialName").ToString
                 matid = CType(searchlookupmat.EditValue, String)
                 matname = searchlookupmat.SelectedText
                 lblMatID.Text = matid
@@ -554,8 +451,8 @@ Namespace PopupForms
         End Sub
         ''' <exclude />
         Private Sub GridViewMoveMentDetail_ValidateRow(ByVal sender As Object,
-                ByVal e As DevExpress.XtraGrid.Views.Base.ValidateRowEventArgs) _
-                Handles GridViewMoveMentDetail.ValidateRow
+                ByVal e As DevExpress.XtraGrid.Views.Base.ValidateRowEventArgs)
+
             Try
                 Dim View As GridView = CType(sender, GridView)
                 Dim Quantity As GridColumn = View.Columns("Quantity")
@@ -589,8 +486,8 @@ Namespace PopupForms
         End Sub
         ''' <exclude />
         Private Sub GridViewMoveMentDetail_InvalidRowException(ByVal sender As Object,
-            ByVal e As DevExpress.XtraGrid.Views.Base.InvalidRowExceptionEventArgs) _
-            Handles GridViewMoveMentDetail.InvalidRowException
+            ByVal e As DevExpress.XtraGrid.Views.Base.InvalidRowExceptionEventArgs)
+
             WinUtil.ShowWarningBox("จำนวนวัตถุดิบไม่เพียงพอ!", "กรุณาตรวจสอบจำนวนวัตถุดิบที่มี")
             e.ExceptionMode = ExceptionMode.NoAction
         End Sub
@@ -722,7 +619,7 @@ Namespace PopupForms
             Return DS_Tarket_Area_Data
         End Function
         ''' <exclude />
-        Private Sub GridViewMoveMentDetail_EditFormPrepared(sender As Object, e As EditFormPreparedEventArgs) Handles GridViewMoveMentDetail.EditFormPrepared
+        Private Sub GridViewMoveMentDetail_EditFormPrepared(sender As Object, e As EditFormPreparedEventArgs)
             Try
                 TryCast(e.Panel.Parent, Form).StartPosition = FormStartPosition.CenterScreen
 
@@ -734,7 +631,7 @@ Namespace PopupForms
             End Try
         End Sub
         ''' <exclude />
-        Private Sub RemoveRow(sender As Object, e As ButtonPressedEventArgs) Handles DeleteCustomRow.ButtonClick
+        Private Sub RemoveRow(sender As Object, e As ButtonPressedEventArgs)
             Dim View As GridView = TryCast(GridViewMoveMentDetail, GridView)
             Dim storageID As String = ""
             If CType(e.Button.Tag, String) = "Remove" Then
@@ -807,7 +704,7 @@ Namespace PopupForms
             End Try
         End Sub
         ''' <exclude />
-        Private Sub GridViewMoveMentDetail_ShowingEditor(sender As Object, e As CancelEventArgs) Handles GridViewMoveMentDetail.ShowingEditor
+        Private Sub GridViewMoveMentDetail_ShowingEditor(sender As Object, e As CancelEventArgs)
             Dim gv As GridView = CType(sender, GridView)
             Dim Quantity As GridColumn = gv.Columns("Quantity")
             Dim FRow As Integer = gv.FocusedRowHandle
@@ -916,8 +813,10 @@ Namespace PopupForms
         Private Sub CheckShowAll_EditValueChanged(sender As Object, e As EventArgs) Handles CheckShowAll.EditValueChanged
             Try
                 'InitData()
-                GridControlSouceArea.DataSource = GetSubAreaINVDataSet()
-                LayoutViewDestSubArea.RefreshData()
+                'GridControlSouceArea.DataSource = GetSubAreaINVDataSet()
+                'LayoutViewDestSubArea.RefreshData()
+                GridControlWeightTicket.DataSource = GetSubAreaINVDataSet()
+                LayoutViewWeightTicket.RefreshData()
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
                 Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [CheckShowAll_EditValueChanged]")
@@ -1021,28 +920,28 @@ Namespace PopupForms
             End If
         End Sub
         ''' <exclude />
-        Private Sub GridControlSouceArea_ProcessGridKey(sender As Object, e As KeyEventArgs) Handles GridControlSouceArea.ProcessGridKey
+        Private Sub GridControlSouceArea_ProcessGridKey(sender As Object, e As KeyEventArgs)
             If e.KeyCode = Keys.K Then
                 onScreenKeyboard()
             End If
         End Sub
 
         ''' <exclude />
-        Private Sub GridControlWP_ProcessGridKey(sender As Object, e As KeyEventArgs) Handles GridControlWP.ProcessGridKey
+        Private Sub GridControlWP_ProcessGridKey(sender As Object, e As KeyEventArgs)
             If e.KeyCode = Keys.K Then
                 onScreenKeyboard()
             End If
         End Sub
 
         ''' <exclude />
-        Private Sub gridControlDestGroupArea_ProcessGridKey(sender As Object, e As KeyEventArgs) Handles gridControlDestGroupArea.ProcessGridKey
+        Private Sub gridControlDestGroupArea_ProcessGridKey(sender As Object, e As KeyEventArgs)
             If e.KeyCode = Keys.K Then
                 onScreenKeyboard()
             End If
         End Sub
 
         ''' <exclude />
-        Private Sub GridControlDestSubArea_ProcessGridKey(sender As Object, e As KeyEventArgs) Handles GridControlDestSubArea.ProcessGridKey
+        Private Sub GridControlDestSubArea_ProcessGridKey(sender As Object, e As KeyEventArgs)
             If e.KeyCode = Keys.K Then
                 onScreenKeyboard()
             End If
@@ -1059,7 +958,9 @@ Namespace PopupForms
                     "ซีลโรงอัด : " & tmpBalingSealProperties & vbCrLf &
                     "จุดขนถ่าย : " & tmpTransferPointProperties & vbCrLf &
                     "ชนิดวัตถุดิบ : " & tmpMatProperties & vbCrLf &
-                    "ผู้รับเหมา : " & tmpContractorProperties
+                    "ผู้รับเหมา : " & tmpContractorProperties & vbCrLf &
+                    "New properties1 : " & "New properties1" & vbCrLf &
+                    "New properties2 : " & "New properties2"
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
             End Try
@@ -1084,34 +985,34 @@ Namespace PopupForms
                 rowind = CType(LayoutViewWeightTicket.FocusedRowHandle, String)
 
                 Dim Ticket As String
-                    Dim ReceiveDate As DateTime
-                    Dim PlateLicense As String
-                    Dim SupplierName As String
+                Dim ReceiveDate As DateTime
+                Dim PlateLicense As String
+                Dim SupplierName As String
 
-                    Ticket = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("Ticket"), String)
-                    PlateLicense = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("PlateLicense"), String)
-                    ReceiveDate = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("ReceiveDate"), DateTime)
-                    SupplierName = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("SupplierName"), String)
-                    '+++++++++++++++++++ Binding Search lookupedit Mat +++++++++++++++++++++++++++
-                    BindingSearchMaterial()
-                    '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                    quantity = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("Quantity"), Decimal)
-                    'weight = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("MillWeight"), Double)
-                    weight = DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewWeightTicket.GetFocusedRowCellValue("MillWeight"), 0)
-                    lblWeightTicket.Text = Ticket
-                    '++++++++++ Use for debug only +++++++++++++
-                    'Must to get ID from database.
-                    lblStroageID.Text = _MaterialSourceID.ToString
-                    '+++++++++++++++++++++++++++++++++++++++++++
-                    lblTicketID.Text = Ticket
-                    lblStroageName.Text = PlateLicense
-                    lblWeight.Text = weight.ToString("0.000")
-                    txtquantity.EditValue = quantity
-                    lblNetAmount.Text = quantity.ToString
-                    '+++++++ Cal weight per unit +++++
-                    WeightPUnit = weight / quantity
-                    '+++++++++++++ Lock object ++++++++++++++++++++
-                    UnLockObject()
+                Ticket = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("Ticket"), String)
+                PlateLicense = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("PlateLicense"), String)
+                ReceiveDate = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("ReceiveDate"), DateTime)
+                SupplierName = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("SupplierName"), String)
+                '+++++++++++++++++++ Binding Search lookupedit Mat +++++++++++++++++++++++++++
+                BindingSearchMaterial()
+                '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                quantity = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("Quantity"), Decimal)
+                'weight = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("MillWeight"), Double)
+                weight = DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewWeightTicket.GetFocusedRowCellValue("MillWeight"), 0)
+                lblWeightTicket.Text = Ticket
+                '++++++++++ Use for debug only +++++++++++++
+                'Must to get ID from database.
+                lblStroageID.Text = _MaterialSourceID.ToString
+                '+++++++++++++++++++++++++++++++++++++++++++
+                lblTicketID.Text = Ticket
+                lblStroageName.Text = PlateLicense
+                lblWeight.Text = weight.ToString("0.000")
+                txtquantity.EditValue = quantity
+                lblNetAmount.Text = quantity.ToString
+                '+++++++ Cal weight per unit +++++
+                WeightPUnit = weight / quantity
+                '+++++++++++++ Lock object ++++++++++++++++++++
+                UnLockObject()
                 '++++++++++++++++++++++++++++++++++++++++++++++
 
                 '++++++++++++++++++++ Clear ข้อมูล grid ก่อนการเลือกพื้นที่ใหม่ ++++++++++++++++++
@@ -1129,5 +1030,6 @@ Namespace PopupForms
                 Infolog.ShowExMessage(ex, FC.M.PSL_Win.MessageType.ErrorMessage)
             End Try
         End Sub
+
     End Class
 End Namespace

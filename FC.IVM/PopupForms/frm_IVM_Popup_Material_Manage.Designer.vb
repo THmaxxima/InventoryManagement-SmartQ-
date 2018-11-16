@@ -21,33 +21,14 @@
         <System.Diagnostics.DebuggerStepThrough()>
         Private Sub InitializeComponent()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_IVM_Popup_Material_Manage))
-            Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject3 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject4 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject7 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject8 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
             Me.RepositoryItemSpinEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit()
-            Me.LayoutControlSouceData = New DevExpress.XtraLayout.LayoutControl()
             Me.CheckShowAll = New DevExpress.XtraEditors.CheckEdit()
-            Me.lblTruckProperties = New DevExpress.XtraEditors.LabelControl()
-            Me.btnClose = New DevExpress.XtraEditors.SimpleButton()
-            Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
+            Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl()
+            Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
             Me.TabPane1 = New DevExpress.XtraBars.Navigation.TabPane()
             Me.TabNP_Souce = New DevExpress.XtraBars.Navigation.TabNavigationPage()
-            Me.GridControlWeightTicket = New DevExpress.XtraGrid.GridControl()
-            Me.LayoutViewWeightTicket = New DevExpress.XtraGrid.Views.Layout.LayoutView()
-            Me.LayoutViewColumn3 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
-            Me.LayoutViewColumn5 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
-            Me.LayoutViewColumn10 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
-            Me.LayoutViewColumn11 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
-            Me.LayoutViewColumn12 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
-            Me.LayoutViewColumn13 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
-            Me.LayoutViewColumn14 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
-            Me.LayoutViewColumn15 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
-            Me.LayoutViewColumn16 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
-            Me.LayoutViewColumn17 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
-            Me.LayoutViewColumn18 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
-            Me.LayoutViewColumn19 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
-            Me.LayoutViewColumn20 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
             Me.GridControlSouceArea = New DevExpress.XtraGrid.GridControl()
             Me.LayoutViewSouceArea = New DevExpress.XtraGrid.Views.Layout.LayoutView()
             Me.colCardStorageName = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
@@ -67,6 +48,35 @@
             Me.colCardPackageSize = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
             Me.layoutViewField_colCardPackageSize = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
             Me.LayoutViewCard1 = New DevExpress.XtraGrid.Views.Layout.LayoutViewCard()
+            Me.GridControlWeightTicket = New DevExpress.XtraGrid.GridControl()
+            Me.LayoutViewWeightTicket = New DevExpress.XtraGrid.Views.Layout.LayoutView()
+            Me.LayoutViewColumn3 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
+            Me.layoutViewField_LayoutViewColumn3 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
+            Me.LayoutViewColumn5 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
+            Me.layoutViewField_LayoutViewColumn5 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
+            Me.LayoutViewColumn10 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
+            Me.layoutViewField_LayoutViewColumn10 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
+            Me.LayoutViewColumn11 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
+            Me.layoutViewField_LayoutViewColumn11 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
+            Me.LayoutViewColumn12 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
+            Me.layoutViewField_LayoutViewColumn12 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
+            Me.LayoutViewColumn13 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
+            Me.layoutViewField_LayoutViewColumn13 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
+            Me.LayoutViewColumn14 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
+            Me.layoutViewField_LayoutViewColumn14 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
+            Me.LayoutViewColumn15 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
+            Me.layoutViewField_LayoutViewColumn15 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
+            Me.LayoutViewColumn16 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
+            Me.layoutViewField_LayoutViewColumn16 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
+            Me.LayoutViewColumn17 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
+            Me.layoutViewField_LayoutViewColumn17 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
+            Me.LayoutViewColumn18 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
+            Me.layoutViewField_LayoutViewColumn18 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
+            Me.LayoutViewColumn19 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
+            Me.layoutViewField_LayoutViewColumn19 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
+            Me.LayoutViewColumn20 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
+            Me.layoutViewField_LayoutViewColumn20 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
+            Me.LayoutViewCard5 = New DevExpress.XtraGrid.Views.Layout.LayoutViewCard()
             Me.TabNP_SouceGroup = New DevExpress.XtraBars.Navigation.TabNavigationPage()
             Me.gridControlDestGroupArea = New DevExpress.XtraGrid.GridControl()
             Me.layoutViewDestGroupArea = New DevExpress.XtraGrid.Views.Layout.LayoutView()
@@ -87,8 +97,6 @@
             Me.RepositoryItemPictureEdit3 = New DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit()
             Me.layoutViewField_colPhoto = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
             Me.LayoutViewCard2 = New DevExpress.XtraGrid.Views.Layout.LayoutViewCard()
-            Me.item2 = New DevExpress.XtraLayout.EmptySpaceItem()
-            Me.item9 = New DevExpress.XtraLayout.EmptySpaceItem()
             Me.RepositoryItemHyperLinkEdit3 = New DevExpress.XtraEditors.Repository.RepositoryItemHyperLinkEdit()
             Me.TabNP_SouceDetail = New DevExpress.XtraBars.Navigation.TabNavigationPage()
             Me.GridControlDestSubArea = New DevExpress.XtraGrid.GridControl()
@@ -113,8 +121,7 @@
             Me.LayoutViewColumn2 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
             Me.LayoutViewField2 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
             Me.LayoutViewCard3 = New DevExpress.XtraGrid.Views.Layout.LayoutViewCard()
-            Me.item18 = New DevExpress.XtraLayout.EmptySpaceItem()
-            Me.btnSave = New DevExpress.XtraEditors.SimpleButton()
+            Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
             Me.GroupControl3 = New DevExpress.XtraEditors.GroupControl()
             Me.GridControlMoveMentDetail = New DevExpress.XtraGrid.GridControl()
             Me.GridViewMoveMentDetail = New DevExpress.XtraGrid.Views.Grid.GridView()
@@ -124,68 +131,30 @@
             Me.colCustomMaterialName = New DevExpress.XtraGrid.Columns.GridColumn()
             Me.colCustomQuantity = New DevExpress.XtraGrid.Columns.GridColumn()
             Me.colCustomAction = New DevExpress.XtraGrid.Columns.GridColumn()
-            Me.DeleteCustomRow = New DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit()
             Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
-            Me.EditRow = New DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit()
             Me.colCustomPackageSize = New DevExpress.XtraGrid.Columns.GridColumn()
-            Me.RepositoryItemLookUpEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit()
-            Me.CalcEditBale = New DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit()
-            Me.lblWeightTicket = New DevExpress.XtraEditors.LabelControl()
-            Me.lblStroageName = New DevExpress.XtraEditors.LabelControl()
-            Me.btnProperties = New DevExpress.XtraEditors.SimpleButton()
-            Me.lblContractorInfo = New DevExpress.XtraEditors.LabelControl()
-            Me.lblMatNameInfo = New DevExpress.XtraEditors.LabelControl()
-            Me.lblTicketID = New DevExpress.XtraEditors.LabelControl()
-            Me.lblNetAmount = New DevExpress.XtraEditors.LabelControl()
-            Me.lblMatName = New DevExpress.XtraEditors.LabelControl()
-            Me.lblMatID = New DevExpress.XtraEditors.LabelControl()
-            Me.lblStroageID = New DevExpress.XtraEditors.LabelControl()
-            Me.lblWeight = New DevExpress.XtraEditors.LabelControl()
             Me.SearchMaterial = New DevExpress.XtraEditors.SearchLookUpEdit()
             Me.SearchLookUpEdit1View = New DevExpress.XtraGrid.Views.Grid.GridView()
             Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
             Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
+            Me.lblStroageID = New DevExpress.XtraEditors.LabelControl()
             Me.txtquantity = New DevExpress.XtraEditors.TextEdit()
-            Me.LabelControl6 = New DevExpress.XtraEditors.LabelControl()
+            Me.lblStroageName = New DevExpress.XtraEditors.LabelControl()
+            Me.lblWeightTicket = New DevExpress.XtraEditors.LabelControl()
+            Me.lblTicketID = New DevExpress.XtraEditors.LabelControl()
+            Me.lblTruckProperties = New DevExpress.XtraEditors.LabelControl()
             Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
-            Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.LayoutControlItem4 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.LayoutControlItem9 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.LayoutControlItem15 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.LayoutControlItem8 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.LayoutControlItem11 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.LayoutControlItem10 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.LayoutControlItem13 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.LayoutControlItem14 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.LayoutControlItem3 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.LayoutControlGroupSouceData = New DevExpress.XtraLayout.LayoutControlGroup()
-            Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.LayoutControlItem6 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.EmptySpaceItem3 = New DevExpress.XtraLayout.EmptySpaceItem()
-            Me.EmptySpaceItem13 = New DevExpress.XtraLayout.EmptySpaceItem()
-            Me.LayoutControlItem17 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.EmptySpaceItem4 = New DevExpress.XtraLayout.EmptySpaceItem()
-            Me.LayoutControlItem20 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.LayoutControlItem7 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.EmptySpaceItem2 = New DevExpress.XtraLayout.EmptySpaceItem()
+            Me.LabelControl6 = New DevExpress.XtraEditors.LabelControl()
+            Me.lblWeight = New DevExpress.XtraEditors.LabelControl()
+            Me.lblNetAmount = New DevExpress.XtraEditors.LabelControl()
+            Me.lblMatNameInfo = New DevExpress.XtraEditors.LabelControl()
+            Me.lblMatName = New DevExpress.XtraEditors.LabelControl()
+            Me.lblMatID = New DevExpress.XtraEditors.LabelControl()
+            Me.lblContractorInfo = New DevExpress.XtraEditors.LabelControl()
+            Me.SplitContainer2 = New System.Windows.Forms.SplitContainer()
+            Me.LayoutControlGroup1 = New DevExpress.XtraLayout.LayoutControlGroup()
+            Me.LayoutControlItem26 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.LayoutControlItem19 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.LayoutControlItem22 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.EmptySpaceItem7 = New DevExpress.XtraLayout.EmptySpaceItem()
-            Me.LayoutControlItem21 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.LayoutControlItem23 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.EmptySpaceItem5 = New DevExpress.XtraLayout.EmptySpaceItem()
-            Me.LayoutControlItem18 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.EmptySpaceItem8 = New DevExpress.XtraLayout.EmptySpaceItem()
-            Me.EmptySpaceItem11 = New DevExpress.XtraLayout.EmptySpaceItem()
-            Me.EmptySpaceItem9 = New DevExpress.XtraLayout.EmptySpaceItem()
-            Me.LayoutControlItem24 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.LayoutControlItem12 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.EmptySpaceItem12 = New DevExpress.XtraLayout.EmptySpaceItem()
-            Me.LayoutControlItem5 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.EmptySpaceItem6 = New DevExpress.XtraLayout.EmptySpaceItem()
-            Me.EmptySpaceItem14 = New DevExpress.XtraLayout.EmptySpaceItem()
-            Me.EmptySpaceItem16 = New DevExpress.XtraLayout.EmptySpaceItem()
-            Me.EmptySpaceItem17 = New DevExpress.XtraLayout.EmptySpaceItem()
             Me.item3 = New DevExpress.XtraLayout.EmptySpaceItem()
             Me.repositoryItemTextEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemTextEdit()
             Me.repositoryItemPictureEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit()
@@ -209,40 +178,21 @@
             Me.EmptySpaceItem10 = New DevExpress.XtraLayout.EmptySpaceItem()
             Me.EmptySpaceItem15 = New DevExpress.XtraLayout.EmptySpaceItem()
             Me.LayoutControlGroup2 = New DevExpress.XtraLayout.LayoutControlGroup()
-            Me.LayoutViewCard5 = New DevExpress.XtraGrid.Views.Layout.LayoutViewCard()
-            Me.layoutViewField_LayoutViewColumn12 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
-            Me.layoutViewField_LayoutViewColumn14 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
-            Me.layoutViewField_LayoutViewColumn16 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
-            Me.layoutViewField_LayoutViewColumn5 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
-            Me.layoutViewField_LayoutViewColumn3 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
-            Me.layoutViewField_LayoutViewColumn20 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
-            Me.item17 = New DevExpress.XtraLayout.SimpleLabelItem()
-            Me.item11 = New DevExpress.XtraLayout.EmptySpaceItem()
-            Me.item19 = New DevExpress.XtraLayout.SimpleLabelItem()
-            Me.item20 = New DevExpress.XtraLayout.EmptySpaceItem()
-            Me.layoutViewField_LayoutViewColumn15 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
-            Me.item24 = New DevExpress.XtraLayout.SimpleLabelItem()
-            Me.item21 = New DevExpress.XtraLayout.EmptySpaceItem()
-            Me.item10 = New DevExpress.XtraLayout.EmptySpaceItem()
-            Me.item16 = New DevExpress.XtraLayout.SimpleLabelItem()
-            Me.item14 = New DevExpress.XtraLayout.EmptySpaceItem()
-            Me.layoutViewField_LayoutViewColumn11 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
-            Me.layoutViewField_LayoutViewColumn13 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
-            Me.layoutViewField_LayoutViewColumn17 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
-            Me.layoutViewField_LayoutViewColumn18 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
-            Me.layoutViewField_LayoutViewColumn19 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
-            Me.layoutViewField_LayoutViewColumn10 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
+            Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+            Me.btnClose = New DevExpress.XtraEditors.SimpleButton()
+            Me.btnSave = New DevExpress.XtraEditors.SimpleButton()
+            Me.btnProperties = New DevExpress.XtraEditors.SimpleButton()
             CType(Me.RepositoryItemSpinEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlSouceData, System.ComponentModel.ISupportInitialize).BeginInit()
-            Me.LayoutControlSouceData.SuspendLayout()
             CType(Me.CheckShowAll.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-            Me.GroupControl1.SuspendLayout()
+            CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.LayoutControl1.SuspendLayout()
+            CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.SplitContainer1.Panel1.SuspendLayout()
+            Me.SplitContainer1.Panel2.SuspendLayout()
+            Me.SplitContainer1.SuspendLayout()
             CType(Me.TabPane1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.TabPane1.SuspendLayout()
             Me.TabNP_Souce.SuspendLayout()
-            CType(Me.GridControlWeightTicket, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutViewWeightTicket, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.GridControlSouceArea, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutViewSouceArea, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.layoutViewField_colCardStorageName, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -254,6 +204,22 @@
             CType(Me.layoutViewField_colPlateLicense, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.layoutViewField_colCardPackageSize, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutViewCard1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.GridControlWeightTicket, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.LayoutViewWeightTicket, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.layoutViewField_LayoutViewColumn3, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.layoutViewField_LayoutViewColumn5, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.layoutViewField_LayoutViewColumn10, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.layoutViewField_LayoutViewColumn11, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.layoutViewField_LayoutViewColumn12, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.layoutViewField_LayoutViewColumn13, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.layoutViewField_LayoutViewColumn14, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.layoutViewField_LayoutViewColumn15, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.layoutViewField_LayoutViewColumn16, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.layoutViewField_LayoutViewColumn17, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.layoutViewField_LayoutViewColumn18, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.layoutViewField_LayoutViewColumn19, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.layoutViewField_LayoutViewColumn20, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.LayoutViewCard5, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.TabNP_SouceGroup.SuspendLayout()
             CType(Me.gridControlDestGroupArea, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.layoutViewDestGroupArea, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -268,8 +234,6 @@
             CType(Me.RepositoryItemPictureEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.layoutViewField_colPhoto, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutViewCard2, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.item2, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.item9, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.RepositoryItemHyperLinkEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.TabNP_SouceDetail.SuspendLayout()
             CType(Me.GridControlDestSubArea, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -288,56 +252,22 @@
             CType(Me.LayoutViewField1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutViewField2, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutViewCard3, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.item18, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.GroupControl1.SuspendLayout()
             CType(Me.GroupControl3, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.GroupControl3.SuspendLayout()
             CType(Me.GridControlMoveMentDetail, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.GridViewMoveMentDetail, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.DeleteCustomRow, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.EditRow, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.RepositoryItemLookUpEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.CalcEditBale, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.SearchMaterial.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.SearchLookUpEdit1View, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.txtquantity.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem9, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem15, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem8, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem11, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem10, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem13, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem14, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlGroupSouceData, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.EmptySpaceItem3, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.EmptySpaceItem13, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem17, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.EmptySpaceItem4, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem20, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.EmptySpaceItem2, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.SplitContainer2, System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.SplitContainer2.Panel1.SuspendLayout()
+            Me.SplitContainer2.Panel2.SuspendLayout()
+            Me.SplitContainer2.SuspendLayout()
+            CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.LayoutControlItem26, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutControlItem19, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem22, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.EmptySpaceItem7, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem21, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem23, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.EmptySpaceItem5, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem18, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.EmptySpaceItem8, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.EmptySpaceItem11, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.EmptySpaceItem9, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem24, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem12, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.EmptySpaceItem12, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.EmptySpaceItem6, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.EmptySpaceItem14, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.EmptySpaceItem16, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.EmptySpaceItem17, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.item3, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.repositoryItemTextEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.repositoryItemPictureEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -360,29 +290,7 @@
             CType(Me.EmptySpaceItem10, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.EmptySpaceItem15, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutViewCard5, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.layoutViewField_LayoutViewColumn12, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.layoutViewField_LayoutViewColumn14, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.layoutViewField_LayoutViewColumn16, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.layoutViewField_LayoutViewColumn5, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.layoutViewField_LayoutViewColumn3, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.layoutViewField_LayoutViewColumn20, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.item17, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.item11, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.item19, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.item20, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.layoutViewField_LayoutViewColumn15, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.item24, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.item21, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.item10, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.item16, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.item14, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.layoutViewField_LayoutViewColumn11, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.layoutViewField_LayoutViewColumn13, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.layoutViewField_LayoutViewColumn17, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.layoutViewField_LayoutViewColumn18, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.layoutViewField_LayoutViewColumn19, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.layoutViewField_LayoutViewColumn10, System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.TableLayoutPanel1.SuspendLayout()
             Me.SuspendLayout()
             '
             'RepositoryItemSpinEdit1
@@ -390,47 +298,14 @@
             Me.RepositoryItemSpinEdit1.AllowFocused = False
             Me.RepositoryItemSpinEdit1.AutoHeight = False
             Me.RepositoryItemSpinEdit1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D
-            Me.RepositoryItemSpinEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 5, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("RepositoryItemSpinEdit1.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, "", Nothing, Nothing, True)})
+            Me.RepositoryItemSpinEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 5, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("RepositoryItemSpinEdit1.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject7, "", Nothing, Nothing, True)})
             Me.RepositoryItemSpinEdit1.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D
             Me.RepositoryItemSpinEdit1.Name = "RepositoryItemSpinEdit1"
             '
-            'LayoutControlSouceData
-            '
-            Me.LayoutControlSouceData.Controls.Add(Me.CheckShowAll)
-            Me.LayoutControlSouceData.Controls.Add(Me.lblTruckProperties)
-            Me.LayoutControlSouceData.Controls.Add(Me.btnClose)
-            Me.LayoutControlSouceData.Controls.Add(Me.GroupControl1)
-            Me.LayoutControlSouceData.Controls.Add(Me.btnSave)
-            Me.LayoutControlSouceData.Controls.Add(Me.GroupControl3)
-            Me.LayoutControlSouceData.Controls.Add(Me.lblWeightTicket)
-            Me.LayoutControlSouceData.Controls.Add(Me.lblStroageName)
-            Me.LayoutControlSouceData.Controls.Add(Me.btnProperties)
-            Me.LayoutControlSouceData.Controls.Add(Me.lblContractorInfo)
-            Me.LayoutControlSouceData.Controls.Add(Me.lblMatNameInfo)
-            Me.LayoutControlSouceData.Controls.Add(Me.lblTicketID)
-            Me.LayoutControlSouceData.Controls.Add(Me.lblNetAmount)
-            Me.LayoutControlSouceData.Controls.Add(Me.lblMatName)
-            Me.LayoutControlSouceData.Controls.Add(Me.lblMatID)
-            Me.LayoutControlSouceData.Controls.Add(Me.lblStroageID)
-            Me.LayoutControlSouceData.Controls.Add(Me.lblWeight)
-            Me.LayoutControlSouceData.Controls.Add(Me.SearchMaterial)
-            Me.LayoutControlSouceData.Controls.Add(Me.txtquantity)
-            Me.LayoutControlSouceData.Controls.Add(Me.LabelControl6)
-            Me.LayoutControlSouceData.Controls.Add(Me.LabelControl1)
-            Me.LayoutControlSouceData.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.LayoutControlSouceData.HiddenItems.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.LayoutControlItem4, Me.LayoutControlItem9, Me.LayoutControlItem15, Me.LayoutControlItem8, Me.LayoutControlItem11, Me.LayoutControlItem10, Me.LayoutControlItem13, Me.LayoutControlItem14, Me.LayoutControlItem3})
-            Me.LayoutControlSouceData.Location = New System.Drawing.Point(0, 0)
-            Me.LayoutControlSouceData.Name = "LayoutControlSouceData"
-            Me.LayoutControlSouceData.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(635, 412, 375, 525)
-            Me.LayoutControlSouceData.Root = Me.LayoutControlGroupSouceData
-            Me.LayoutControlSouceData.Size = New System.Drawing.Size(1285, 796)
-            Me.LayoutControlSouceData.TabIndex = 4
-            Me.LayoutControlSouceData.Text = "LayoutControl2"
-            '
             'CheckShowAll
             '
-            Me.CheckShowAll.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.CheckShowAll.Location = New System.Drawing.Point(22, 19)
+            Me.CheckShowAll.AllowDrop = True
+            Me.CheckShowAll.Location = New System.Drawing.Point(18, 18)
             Me.CheckShowAll.Name = "CheckShowAll"
             Me.CheckShowAll.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.CheckShowAll.Properties.Appearance.Options.UseFont = True
@@ -439,41 +314,42 @@
             Me.CheckShowAll.Properties.CheckStyle = DevExpress.XtraEditors.Controls.CheckStyles.Style1
             Me.CheckShowAll.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.[Default]
             Me.CheckShowAll.Size = New System.Drawing.Size(273, 31)
-            Me.CheckShowAll.StyleController = Me.LayoutControlSouceData
+            Me.CheckShowAll.StyleController = Me.LayoutControl1
             Me.CheckShowAll.TabIndex = 0
             '
-            'lblTruckProperties
+            'LayoutControl1
             '
-            Me.lblTruckProperties.Appearance.Font = New System.Drawing.Font("Tahoma", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.lblTruckProperties.Appearance.ForeColor = System.Drawing.Color.Blue
-            Me.lblTruckProperties.Appearance.Options.UseFont = True
-            Me.lblTruckProperties.Appearance.Options.UseForeColor = True
-            Me.lblTruckProperties.Location = New System.Drawing.Point(946, 121)
-            Me.lblTruckProperties.Name = "lblTruckProperties"
-            Me.lblTruckProperties.Size = New System.Drawing.Size(311, 27)
-            Me.lblTruckProperties.StyleController = Me.LayoutControlSouceData
-            Me.lblTruckProperties.TabIndex = 1
+            Me.LayoutControl1.Controls.Add(Me.CheckShowAll)
+            Me.LayoutControl1.Controls.Add(Me.SplitContainer1)
+            Me.LayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.LayoutControl1.Location = New System.Drawing.Point(0, 0)
+            Me.LayoutControl1.Name = "LayoutControl1"
+            Me.LayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(808, 335, 375, 525)
+            Me.LayoutControl1.Root = Me.LayoutControlGroup1
+            Me.LayoutControl1.Size = New System.Drawing.Size(1315, 687)
+            Me.LayoutControl1.TabIndex = 5
+            Me.LayoutControl1.Text = "LayoutControl1"
             '
-            'btnClose
+            'SplitContainer1
             '
-            Me.btnClose.Image = CType(resources.GetObject("btnClose.Image"), System.Drawing.Image)
-            Me.btnClose.Location = New System.Drawing.Point(1183, 716)
-            Me.btnClose.Name = "btnClose"
-            Me.btnClose.Size = New System.Drawing.Size(84, 62)
-            Me.btnClose.StyleController = Me.LayoutControlSouceData
-            Me.btnClose.TabIndex = 7
-            Me.btnClose.Text = "Close"
+            Me.SplitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1
+            Me.SplitContainer1.Location = New System.Drawing.Point(18, 55)
+            Me.SplitContainer1.Name = "SplitContainer1"
             '
-            'GroupControl1
+            'SplitContainer1.Panel1
             '
-            Me.GroupControl1.AppearanceCaption.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.GroupControl1.AppearanceCaption.Options.UseFont = True
-            Me.GroupControl1.Controls.Add(Me.TabPane1)
-            Me.GroupControl1.Location = New System.Drawing.Point(18, 55)
-            Me.GroupControl1.Name = "GroupControl1"
-            Me.GroupControl1.ShowCaption = False
-            Me.GroupControl1.Size = New System.Drawing.Size(544, 723)
-            Me.GroupControl1.TabIndex = 0
+            Me.SplitContainer1.Panel1.AllowDrop = True
+            Me.SplitContainer1.Panel1.Controls.Add(Me.TabPane1)
+            '
+            'SplitContainer1.Panel2
+            '
+            Me.SplitContainer1.Panel2.AllowDrop = True
+            Me.SplitContainer1.Panel2.Controls.Add(Me.lblContractorInfo)
+            Me.SplitContainer1.Panel2.Controls.Add(Me.SplitContainer2)
+            Me.SplitContainer1.Size = New System.Drawing.Size(1279, 614)
+            Me.SplitContainer1.SplitterDistance = 465
+            Me.SplitContainer1.SplitterWidth = 1
+            Me.SplitContainer1.TabIndex = 2
             '
             'TabPane1
             '
@@ -484,254 +360,39 @@
             Me.TabPane1.Controls.Add(Me.TabNP_SouceGroup)
             Me.TabPane1.Controls.Add(Me.TabNP_SouceDetail)
             Me.TabPane1.Controls.Add(Me.TabNP_WP)
-            Me.TabPane1.Dock = System.Windows.Forms.DockStyle.Fill
             Me.TabPane1.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.TabPane1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-            Me.TabPane1.Location = New System.Drawing.Point(3, 3)
+            Me.TabPane1.Location = New System.Drawing.Point(0, 0)
             Me.TabPane1.Name = "TabPane1"
             Me.TabPane1.PageProperties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Text
             Me.TabPane1.Pages.AddRange(New DevExpress.XtraBars.Navigation.NavigationPageBase() {Me.TabNP_Souce, Me.TabNP_SouceGroup, Me.TabNP_SouceDetail, Me.TabNP_WP})
-            Me.TabPane1.RegularSize = New System.Drawing.Size(538, 717)
+            Me.TabPane1.RegularSize = New System.Drawing.Size(460, 611)
             Me.TabPane1.SelectedPage = Me.TabNP_Souce
-            Me.TabPane1.Size = New System.Drawing.Size(538, 717)
-            Me.TabPane1.TabIndex = 1
+            Me.TabPane1.Size = New System.Drawing.Size(460, 611)
+            Me.TabPane1.TabIndex = 2
             '
             'TabNP_Souce
             '
+            Me.TabNP_Souce.AllowDrop = True
             Me.TabNP_Souce.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.TabNP_Souce.Appearance.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
             Me.TabNP_Souce.Appearance.Options.UseFont = True
             Me.TabNP_Souce.Appearance.Options.UseForeColor = True
-            Me.TabNP_Souce.AutoSize = True
             Me.TabNP_Souce.Caption = "Souce Detail"
-            Me.TabNP_Souce.Controls.Add(Me.GridControlWeightTicket)
             Me.TabNP_Souce.Controls.Add(Me.GridControlSouceArea)
+            Me.TabNP_Souce.Controls.Add(Me.GridControlWeightTicket)
             Me.TabNP_Souce.Cursor = System.Windows.Forms.Cursors.Hand
             Me.TabNP_Souce.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.TabNP_Souce.Name = "TabNP_Souce"
-            Me.TabNP_Souce.Size = New System.Drawing.Size(512, 649)
-            '
-            'GridControlWeightTicket
-            '
-            Me.GridControlWeightTicket.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.GridControlWeightTicket.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.GridControlWeightTicket.Location = New System.Drawing.Point(0, 0)
-            Me.GridControlWeightTicket.MainView = Me.LayoutViewWeightTicket
-            Me.GridControlWeightTicket.Margin = New System.Windows.Forms.Padding(0)
-            Me.GridControlWeightTicket.Name = "GridControlWeightTicket"
-            Me.GridControlWeightTicket.Size = New System.Drawing.Size(512, 649)
-            Me.GridControlWeightTicket.TabIndex = 1
-            Me.GridControlWeightTicket.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.LayoutViewWeightTicket})
-            Me.GridControlWeightTicket.Visible = False
-            '
-            'LayoutViewWeightTicket
-            '
-            Me.LayoutViewWeightTicket.ActiveFilterEnabled = False
-            Me.LayoutViewWeightTicket.Appearance.Card.Font = New System.Drawing.Font("Tahoma", 14.0!)
-            Me.LayoutViewWeightTicket.Appearance.Card.ForeColor = System.Drawing.Color.Black
-            Me.LayoutViewWeightTicket.Appearance.Card.Options.UseFont = True
-            Me.LayoutViewWeightTicket.Appearance.Card.Options.UseForeColor = True
-            Me.LayoutViewWeightTicket.Appearance.CardCaption.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
-            Me.LayoutViewWeightTicket.Appearance.CardCaption.ForeColor = System.Drawing.Color.Black
-            Me.LayoutViewWeightTicket.Appearance.CardCaption.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal
-            Me.LayoutViewWeightTicket.Appearance.CardCaption.Options.UseFont = True
-            Me.LayoutViewWeightTicket.Appearance.CardCaption.Options.UseForeColor = True
-            Me.LayoutViewWeightTicket.Appearance.CardCaption.Options.UseTextOptions = True
-            Me.LayoutViewWeightTicket.Appearance.CardCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-            Me.LayoutViewWeightTicket.Appearance.CardCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
-            Me.LayoutViewWeightTicket.Appearance.FieldCaption.Font = New System.Drawing.Font("Tahoma", 14.0!)
-            Me.LayoutViewWeightTicket.Appearance.FieldCaption.Options.UseFont = True
-            Me.LayoutViewWeightTicket.Appearance.FieldCaption.Options.UseTextOptions = True
-            Me.LayoutViewWeightTicket.Appearance.FieldCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-            Me.LayoutViewWeightTicket.Appearance.FieldCaption.TextOptions.Trimming = DevExpress.Utils.Trimming.None
-            Me.LayoutViewWeightTicket.Appearance.FieldCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
-            Me.LayoutViewWeightTicket.Appearance.FieldValue.Font = New System.Drawing.Font("Tahoma", 14.0!)
-            Me.LayoutViewWeightTicket.Appearance.FieldValue.ForeColor = System.Drawing.Color.Black
-            Me.LayoutViewWeightTicket.Appearance.FieldValue.Options.UseFont = True
-            Me.LayoutViewWeightTicket.Appearance.FieldValue.Options.UseForeColor = True
-            Me.LayoutViewWeightTicket.Appearance.FieldValue.Options.UseTextOptions = True
-            Me.LayoutViewWeightTicket.Appearance.FieldValue.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-            Me.LayoutViewWeightTicket.Appearance.FieldValue.TextOptions.Trimming = DevExpress.Utils.Trimming.None
-            Me.LayoutViewWeightTicket.Appearance.FieldValue.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
-            Me.LayoutViewWeightTicket.Appearance.FilterPanel.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
-            Me.LayoutViewWeightTicket.Appearance.FilterPanel.ForeColor = System.Drawing.Color.Blue
-            Me.LayoutViewWeightTicket.Appearance.FilterPanel.Options.UseFont = True
-            Me.LayoutViewWeightTicket.Appearance.FilterPanel.Options.UseForeColor = True
-            Me.LayoutViewWeightTicket.Appearance.FocusedCardCaption.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
-            Me.LayoutViewWeightTicket.Appearance.FocusedCardCaption.FontStyleDelta = System.Drawing.FontStyle.Bold
-            Me.LayoutViewWeightTicket.Appearance.FocusedCardCaption.ForeColor = System.Drawing.Color.Black
-            Me.LayoutViewWeightTicket.Appearance.FocusedCardCaption.Options.UseFont = True
-            Me.LayoutViewWeightTicket.Appearance.FocusedCardCaption.Options.UseForeColor = True
-            Me.LayoutViewWeightTicket.Appearance.FocusedCardCaption.Options.UseTextOptions = True
-            Me.LayoutViewWeightTicket.Appearance.FocusedCardCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-            Me.LayoutViewWeightTicket.Appearance.FocusedCardCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
-            Me.LayoutViewWeightTicket.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 16.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
-            Me.LayoutViewWeightTicket.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Blue
-            Me.LayoutViewWeightTicket.Appearance.HeaderPanel.Options.UseFont = True
-            Me.LayoutViewWeightTicket.Appearance.HeaderPanel.Options.UseForeColor = True
-            Me.LayoutViewWeightTicket.Appearance.HeaderPanel.Options.UseTextOptions = True
-            Me.LayoutViewWeightTicket.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-            Me.LayoutViewWeightTicket.Appearance.HideSelectionCardCaption.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
-            Me.LayoutViewWeightTicket.Appearance.HideSelectionCardCaption.ForeColor = System.Drawing.Color.Black
-            Me.LayoutViewWeightTicket.Appearance.HideSelectionCardCaption.Options.UseFont = True
-            Me.LayoutViewWeightTicket.Appearance.HideSelectionCardCaption.Options.UseForeColor = True
-            Me.LayoutViewWeightTicket.Appearance.SelectedCardCaption.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
-            Me.LayoutViewWeightTicket.Appearance.SelectedCardCaption.ForeColor = System.Drawing.Color.Black
-            Me.LayoutViewWeightTicket.Appearance.SelectedCardCaption.Options.UseFont = True
-            Me.LayoutViewWeightTicket.Appearance.SelectedCardCaption.Options.UseForeColor = True
-            Me.LayoutViewWeightTicket.Appearance.SelectedCardCaption.Options.UseTextOptions = True
-            Me.LayoutViewWeightTicket.Appearance.SelectedCardCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-            Me.LayoutViewWeightTicket.Appearance.SelectedCardCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
-            Me.LayoutViewWeightTicket.Appearance.SelectionFrame.Font = New System.Drawing.Font("Tahoma", 16.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
-            Me.LayoutViewWeightTicket.Appearance.SelectionFrame.ForeColor = System.Drawing.Color.Blue
-            Me.LayoutViewWeightTicket.Appearance.SelectionFrame.Options.UseFont = True
-            Me.LayoutViewWeightTicket.Appearance.SelectionFrame.Options.UseForeColor = True
-            Me.LayoutViewWeightTicket.Appearance.SelectionFrame.Options.UseTextOptions = True
-            Me.LayoutViewWeightTicket.Appearance.SelectionFrame.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-            Me.LayoutViewWeightTicket.CardCaptionFormat = "{4}"
-            Me.LayoutViewWeightTicket.CardHorzInterval = 1
-            Me.LayoutViewWeightTicket.CardMinSize = New System.Drawing.Size(129, 201)
-            Me.LayoutViewWeightTicket.CardVertInterval = 9
-            Me.LayoutViewWeightTicket.Columns.AddRange(New DevExpress.XtraGrid.Columns.LayoutViewColumn() {Me.LayoutViewColumn3, Me.LayoutViewColumn5, Me.LayoutViewColumn10, Me.LayoutViewColumn11, Me.LayoutViewColumn12, Me.LayoutViewColumn13, Me.LayoutViewColumn14, Me.LayoutViewColumn15, Me.LayoutViewColumn16, Me.LayoutViewColumn17, Me.LayoutViewColumn18, Me.LayoutViewColumn19, Me.LayoutViewColumn20})
-            Me.LayoutViewWeightTicket.DetailHeight = 50
-            Me.LayoutViewWeightTicket.DetailTabHeaderLocation = DevExpress.XtraTab.TabHeaderLocation.Right
-            Me.LayoutViewWeightTicket.GridControl = Me.GridControlWeightTicket
-            Me.LayoutViewWeightTicket.HiddenItems.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutViewField_LayoutViewColumn11, Me.layoutViewField_LayoutViewColumn13, Me.layoutViewField_LayoutViewColumn17, Me.layoutViewField_LayoutViewColumn18, Me.layoutViewField_LayoutViewColumn19, Me.layoutViewField_LayoutViewColumn10})
-            Me.LayoutViewWeightTicket.Name = "LayoutViewWeightTicket"
-            Me.LayoutViewWeightTicket.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.[False]
-            Me.LayoutViewWeightTicket.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.[False]
-            Me.LayoutViewWeightTicket.OptionsBehavior.FocusLeaveOnTab = True
-            Me.LayoutViewWeightTicket.OptionsCustomization.AllowFilter = False
-            Me.LayoutViewWeightTicket.OptionsCustomization.AllowSort = False
-            Me.LayoutViewWeightTicket.OptionsCustomization.ShowGroupCardCaptions = False
-            Me.LayoutViewWeightTicket.OptionsCustomization.ShowGroupCardIndents = False
-            Me.LayoutViewWeightTicket.OptionsCustomization.ShowGroupCards = False
-            Me.LayoutViewWeightTicket.OptionsCustomization.ShowGroupFields = False
-            Me.LayoutViewWeightTicket.OptionsItemText.AlignMode = DevExpress.XtraGrid.Views.Layout.FieldTextAlignMode.CustomSize
-            Me.LayoutViewWeightTicket.OptionsItemText.TextToControlDistance = 1
-            Me.LayoutViewWeightTicket.OptionsLayout.Columns.AddNewColumns = False
-            Me.LayoutViewWeightTicket.OptionsLayout.StoreAllOptions = True
-            Me.LayoutViewWeightTicket.OptionsLayout.StoreAppearance = True
-            Me.LayoutViewWeightTicket.OptionsLayout.StoreFormatRules = True
-            Me.LayoutViewWeightTicket.OptionsMultiRecordMode.MultiColumnScrollBarOrientation = DevExpress.XtraGrid.Views.Layout.ScrollBarOrientation.Horizontal
-            Me.LayoutViewWeightTicket.OptionsMultiRecordMode.MultiRowScrollBarOrientation = DevExpress.XtraGrid.Views.Layout.ScrollBarOrientation.Vertical
-            Me.LayoutViewWeightTicket.OptionsView.AllowHotTrackFields = False
-            Me.LayoutViewWeightTicket.OptionsView.AnimationType = DevExpress.XtraGrid.Views.Base.GridAnimationType.NeverAnimate
-            Me.LayoutViewWeightTicket.OptionsView.CardArrangeRule = DevExpress.XtraGrid.Views.Layout.LayoutCardArrangeRule.AllowPartialCards
-            Me.LayoutViewWeightTicket.OptionsView.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.ShowOnlyInEditor
-            Me.LayoutViewWeightTicket.OptionsView.ShowCardExpandButton = False
-            Me.LayoutViewWeightTicket.OptionsView.ShowFieldHints = False
-            Me.LayoutViewWeightTicket.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never
-            Me.LayoutViewWeightTicket.OptionsView.ShowHeaderPanel = False
-            Me.LayoutViewWeightTicket.OptionsView.ViewMode = DevExpress.XtraGrid.Views.Layout.LayoutViewMode.Column
-            Me.LayoutViewWeightTicket.TemplateCard = Me.LayoutViewCard5
-            '
-            'LayoutViewColumn3
-            '
-            Me.LayoutViewColumn3.FieldName = "Ticket"
-            Me.LayoutViewColumn3.LayoutViewField = Me.layoutViewField_LayoutViewColumn3
-            Me.LayoutViewColumn3.Name = "LayoutViewColumn3"
-            Me.LayoutViewColumn3.OptionsColumn.AllowEdit = False
-            Me.LayoutViewColumn3.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.[False]
-            Me.LayoutViewColumn3.OptionsColumn.AllowIncrementalSearch = False
-            Me.LayoutViewColumn3.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.[False]
-            Me.LayoutViewColumn3.OptionsColumn.ReadOnly = True
-            Me.LayoutViewColumn3.OptionsColumn.ShowInCustomizationForm = False
-            Me.LayoutViewColumn3.OptionsColumn.ShowInExpressionEditor = False
-            Me.LayoutViewColumn3.OptionsFilter.AllowAutoFilter = False
-            Me.LayoutViewColumn3.OptionsFilter.AllowFilter = False
-            '
-            'LayoutViewColumn5
-            '
-            Me.LayoutViewColumn5.Caption = "วันที่"
-            Me.LayoutViewColumn5.FieldName = "ReceiveDate"
-            Me.LayoutViewColumn5.LayoutViewField = Me.layoutViewField_LayoutViewColumn5
-            Me.LayoutViewColumn5.Name = "LayoutViewColumn5"
-            '
-            'LayoutViewColumn10
-            '
-            Me.LayoutViewColumn10.FieldName = "PlateLicense"
-            Me.LayoutViewColumn10.LayoutViewField = Me.layoutViewField_LayoutViewColumn10
-            Me.LayoutViewColumn10.Name = "LayoutViewColumn10"
-            '
-            'LayoutViewColumn11
-            '
-            Me.LayoutViewColumn11.Caption = "รหัสวัตถุดิบ"
-            Me.LayoutViewColumn11.FieldName = "MaterialID"
-            Me.LayoutViewColumn11.LayoutViewField = Me.layoutViewField_LayoutViewColumn11
-            Me.LayoutViewColumn11.Name = "LayoutViewColumn11"
-            '
-            'LayoutViewColumn12
-            '
-            Me.LayoutViewColumn12.FieldName = "MaterialName"
-            Me.LayoutViewColumn12.LayoutViewField = Me.layoutViewField_LayoutViewColumn12
-            Me.LayoutViewColumn12.Name = "LayoutViewColumn12"
-            '
-            'LayoutViewColumn13
-            '
-            Me.LayoutViewColumn13.Caption = "รหัสลูกค้า"
-            Me.LayoutViewColumn13.FieldName = "SupplierID"
-            Me.LayoutViewColumn13.LayoutViewField = Me.layoutViewField_LayoutViewColumn13
-            Me.LayoutViewColumn13.Name = "LayoutViewColumn13"
-            '
-            'LayoutViewColumn14
-            '
-            Me.LayoutViewColumn14.FieldName = "SupplierName"
-            Me.LayoutViewColumn14.LayoutViewField = Me.layoutViewField_LayoutViewColumn14
-            Me.LayoutViewColumn14.Name = "LayoutViewColumn14"
-            '
-            'LayoutViewColumn15
-            '
-            Me.LayoutViewColumn15.FieldName = "Quantity"
-            Me.LayoutViewColumn15.LayoutViewField = Me.layoutViewField_LayoutViewColumn15
-            Me.LayoutViewColumn15.Name = "LayoutViewColumn15"
-            Me.LayoutViewColumn15.OptionsColumn.AllowEdit = False
-            Me.LayoutViewColumn15.OptionsColumn.FixedWidth = True
-            Me.LayoutViewColumn15.OptionsColumn.ReadOnly = True
-            '
-            'LayoutViewColumn16
-            '
-            Me.LayoutViewColumn16.FieldName = "MillWeight"
-            Me.LayoutViewColumn16.LayoutViewField = Me.layoutViewField_LayoutViewColumn16
-            Me.LayoutViewColumn16.Name = "LayoutViewColumn16"
-            '
-            'LayoutViewColumn17
-            '
-            Me.LayoutViewColumn17.Caption = "IsWeightOut"
-            Me.LayoutViewColumn17.FieldName = "IsWeightOut"
-            Me.LayoutViewColumn17.LayoutViewField = Me.layoutViewField_LayoutViewColumn17
-            Me.LayoutViewColumn17.Name = "LayoutViewColumn17"
-            '
-            'LayoutViewColumn18
-            '
-            Me.LayoutViewColumn18.Caption = "ต้นทาง"
-            Me.LayoutViewColumn18.FieldName = "MaterialSource"
-            Me.LayoutViewColumn18.LayoutViewField = Me.layoutViewField_LayoutViewColumn18
-            Me.LayoutViewColumn18.Name = "LayoutViewColumn18"
-            '
-            'LayoutViewColumn19
-            '
-            Me.LayoutViewColumn19.Caption = "UnloadStation"
-            Me.LayoutViewColumn19.FieldName = "UnloadStation"
-            Me.LayoutViewColumn19.LayoutViewField = Me.layoutViewField_LayoutViewColumn19
-            Me.LayoutViewColumn19.Name = "LayoutViewColumn19"
-            '
-            'LayoutViewColumn20
-            '
-            Me.LayoutViewColumn20.Caption = "ต้นทาง"
-            Me.LayoutViewColumn20.FieldName = "MaterialSource"
-            Me.LayoutViewColumn20.LayoutViewField = Me.layoutViewField_LayoutViewColumn20
-            Me.LayoutViewColumn20.Name = "LayoutViewColumn20"
-            Me.LayoutViewColumn20.UnboundType = DevExpress.Data.UnboundColumnType.[String]
+            Me.TabNP_Souce.Size = New System.Drawing.Size(434, 543)
             '
             'GridControlSouceArea
             '
-            Me.GridControlSouceArea.Dock = System.Windows.Forms.DockStyle.Fill
             Me.GridControlSouceArea.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.GridControlSouceArea.Location = New System.Drawing.Point(0, 0)
+            Me.GridControlSouceArea.Location = New System.Drawing.Point(-13, 0)
             Me.GridControlSouceArea.MainView = Me.LayoutViewSouceArea
             Me.GridControlSouceArea.Name = "GridControlSouceArea"
-            Me.GridControlSouceArea.Size = New System.Drawing.Size(512, 649)
+            Me.GridControlSouceArea.Size = New System.Drawing.Size(460, 552)
             Me.GridControlSouceArea.TabIndex = 0
             Me.GridControlSouceArea.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.LayoutViewSouceArea})
             '
@@ -991,32 +652,425 @@
             Me.LayoutViewCard1.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
             Me.LayoutViewCard1.Text = "TemplateCard"
             '
+            'GridControlWeightTicket
+            '
+            Me.GridControlWeightTicket.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.GridControlWeightTicket.Location = New System.Drawing.Point(0, 0)
+            Me.GridControlWeightTicket.MainView = Me.LayoutViewWeightTicket
+            Me.GridControlWeightTicket.Margin = New System.Windows.Forms.Padding(0)
+            Me.GridControlWeightTicket.Name = "GridControlWeightTicket"
+            Me.GridControlWeightTicket.Size = New System.Drawing.Size(450, 543)
+            Me.GridControlWeightTicket.TabIndex = 2
+            Me.GridControlWeightTicket.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.LayoutViewWeightTicket})
+            Me.GridControlWeightTicket.Visible = False
+            '
+            'LayoutViewWeightTicket
+            '
+            Me.LayoutViewWeightTicket.ActiveFilterEnabled = False
+            Me.LayoutViewWeightTicket.Appearance.Card.Font = New System.Drawing.Font("Tahoma", 14.0!)
+            Me.LayoutViewWeightTicket.Appearance.Card.ForeColor = System.Drawing.Color.Black
+            Me.LayoutViewWeightTicket.Appearance.Card.Options.UseFont = True
+            Me.LayoutViewWeightTicket.Appearance.Card.Options.UseForeColor = True
+            Me.LayoutViewWeightTicket.Appearance.CardCaption.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
+            Me.LayoutViewWeightTicket.Appearance.CardCaption.ForeColor = System.Drawing.Color.Black
+            Me.LayoutViewWeightTicket.Appearance.CardCaption.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal
+            Me.LayoutViewWeightTicket.Appearance.CardCaption.Options.UseFont = True
+            Me.LayoutViewWeightTicket.Appearance.CardCaption.Options.UseForeColor = True
+            Me.LayoutViewWeightTicket.Appearance.CardCaption.Options.UseTextOptions = True
+            Me.LayoutViewWeightTicket.Appearance.CardCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+            Me.LayoutViewWeightTicket.Appearance.CardCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
+            Me.LayoutViewWeightTicket.Appearance.FieldCaption.Font = New System.Drawing.Font("Tahoma", 14.0!)
+            Me.LayoutViewWeightTicket.Appearance.FieldCaption.Options.UseFont = True
+            Me.LayoutViewWeightTicket.Appearance.FieldCaption.Options.UseTextOptions = True
+            Me.LayoutViewWeightTicket.Appearance.FieldCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+            Me.LayoutViewWeightTicket.Appearance.FieldCaption.TextOptions.Trimming = DevExpress.Utils.Trimming.None
+            Me.LayoutViewWeightTicket.Appearance.FieldCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
+            Me.LayoutViewWeightTicket.Appearance.FieldValue.Font = New System.Drawing.Font("Tahoma", 14.0!)
+            Me.LayoutViewWeightTicket.Appearance.FieldValue.ForeColor = System.Drawing.Color.Black
+            Me.LayoutViewWeightTicket.Appearance.FieldValue.Options.UseFont = True
+            Me.LayoutViewWeightTicket.Appearance.FieldValue.Options.UseForeColor = True
+            Me.LayoutViewWeightTicket.Appearance.FieldValue.Options.UseTextOptions = True
+            Me.LayoutViewWeightTicket.Appearance.FieldValue.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+            Me.LayoutViewWeightTicket.Appearance.FieldValue.TextOptions.Trimming = DevExpress.Utils.Trimming.None
+            Me.LayoutViewWeightTicket.Appearance.FieldValue.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
+            Me.LayoutViewWeightTicket.Appearance.FilterPanel.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
+            Me.LayoutViewWeightTicket.Appearance.FilterPanel.ForeColor = System.Drawing.Color.Blue
+            Me.LayoutViewWeightTicket.Appearance.FilterPanel.Options.UseFont = True
+            Me.LayoutViewWeightTicket.Appearance.FilterPanel.Options.UseForeColor = True
+            Me.LayoutViewWeightTicket.Appearance.FocusedCardCaption.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
+            Me.LayoutViewWeightTicket.Appearance.FocusedCardCaption.FontStyleDelta = System.Drawing.FontStyle.Bold
+            Me.LayoutViewWeightTicket.Appearance.FocusedCardCaption.ForeColor = System.Drawing.Color.Black
+            Me.LayoutViewWeightTicket.Appearance.FocusedCardCaption.Options.UseFont = True
+            Me.LayoutViewWeightTicket.Appearance.FocusedCardCaption.Options.UseForeColor = True
+            Me.LayoutViewWeightTicket.Appearance.FocusedCardCaption.Options.UseTextOptions = True
+            Me.LayoutViewWeightTicket.Appearance.FocusedCardCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+            Me.LayoutViewWeightTicket.Appearance.FocusedCardCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
+            Me.LayoutViewWeightTicket.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 16.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
+            Me.LayoutViewWeightTicket.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Blue
+            Me.LayoutViewWeightTicket.Appearance.HeaderPanel.Options.UseFont = True
+            Me.LayoutViewWeightTicket.Appearance.HeaderPanel.Options.UseForeColor = True
+            Me.LayoutViewWeightTicket.Appearance.HeaderPanel.Options.UseTextOptions = True
+            Me.LayoutViewWeightTicket.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+            Me.LayoutViewWeightTicket.Appearance.HideSelectionCardCaption.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
+            Me.LayoutViewWeightTicket.Appearance.HideSelectionCardCaption.ForeColor = System.Drawing.Color.Black
+            Me.LayoutViewWeightTicket.Appearance.HideSelectionCardCaption.Options.UseFont = True
+            Me.LayoutViewWeightTicket.Appearance.HideSelectionCardCaption.Options.UseForeColor = True
+            Me.LayoutViewWeightTicket.Appearance.SelectedCardCaption.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
+            Me.LayoutViewWeightTicket.Appearance.SelectedCardCaption.ForeColor = System.Drawing.Color.Black
+            Me.LayoutViewWeightTicket.Appearance.SelectedCardCaption.Options.UseFont = True
+            Me.LayoutViewWeightTicket.Appearance.SelectedCardCaption.Options.UseForeColor = True
+            Me.LayoutViewWeightTicket.Appearance.SelectedCardCaption.Options.UseTextOptions = True
+            Me.LayoutViewWeightTicket.Appearance.SelectedCardCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+            Me.LayoutViewWeightTicket.Appearance.SelectedCardCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
+            Me.LayoutViewWeightTicket.Appearance.SelectionFrame.Font = New System.Drawing.Font("Tahoma", 16.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
+            Me.LayoutViewWeightTicket.Appearance.SelectionFrame.ForeColor = System.Drawing.Color.Blue
+            Me.LayoutViewWeightTicket.Appearance.SelectionFrame.Options.UseFont = True
+            Me.LayoutViewWeightTicket.Appearance.SelectionFrame.Options.UseForeColor = True
+            Me.LayoutViewWeightTicket.Appearance.SelectionFrame.Options.UseTextOptions = True
+            Me.LayoutViewWeightTicket.Appearance.SelectionFrame.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+            Me.LayoutViewWeightTicket.CardCaptionFormat = "{4}"
+            Me.LayoutViewWeightTicket.CardHorzInterval = 1
+            Me.LayoutViewWeightTicket.CardMinSize = New System.Drawing.Size(129, 201)
+            Me.LayoutViewWeightTicket.CardVertInterval = 9
+            Me.LayoutViewWeightTicket.Columns.AddRange(New DevExpress.XtraGrid.Columns.LayoutViewColumn() {Me.LayoutViewColumn3, Me.LayoutViewColumn5, Me.LayoutViewColumn10, Me.LayoutViewColumn11, Me.LayoutViewColumn12, Me.LayoutViewColumn13, Me.LayoutViewColumn14, Me.LayoutViewColumn15, Me.LayoutViewColumn16, Me.LayoutViewColumn17, Me.LayoutViewColumn18, Me.LayoutViewColumn19, Me.LayoutViewColumn20})
+            Me.LayoutViewWeightTicket.DetailHeight = 50
+            Me.LayoutViewWeightTicket.DetailTabHeaderLocation = DevExpress.XtraTab.TabHeaderLocation.Right
+            Me.LayoutViewWeightTicket.GridControl = Me.GridControlWeightTicket
+            Me.LayoutViewWeightTicket.HiddenItems.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutViewField_LayoutViewColumn11, Me.layoutViewField_LayoutViewColumn13, Me.layoutViewField_LayoutViewColumn17, Me.layoutViewField_LayoutViewColumn18, Me.layoutViewField_LayoutViewColumn19, Me.layoutViewField_LayoutViewColumn10})
+            Me.LayoutViewWeightTicket.Name = "LayoutViewWeightTicket"
+            Me.LayoutViewWeightTicket.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.[False]
+            Me.LayoutViewWeightTicket.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.[False]
+            Me.LayoutViewWeightTicket.OptionsBehavior.FocusLeaveOnTab = True
+            Me.LayoutViewWeightTicket.OptionsCustomization.AllowFilter = False
+            Me.LayoutViewWeightTicket.OptionsCustomization.AllowSort = False
+            Me.LayoutViewWeightTicket.OptionsCustomization.ShowGroupCardCaptions = False
+            Me.LayoutViewWeightTicket.OptionsCustomization.ShowGroupCardIndents = False
+            Me.LayoutViewWeightTicket.OptionsCustomization.ShowGroupCards = False
+            Me.LayoutViewWeightTicket.OptionsCustomization.ShowGroupFields = False
+            Me.LayoutViewWeightTicket.OptionsItemText.AlignMode = DevExpress.XtraGrid.Views.Layout.FieldTextAlignMode.CustomSize
+            Me.LayoutViewWeightTicket.OptionsItemText.TextToControlDistance = 1
+            Me.LayoutViewWeightTicket.OptionsLayout.Columns.AddNewColumns = False
+            Me.LayoutViewWeightTicket.OptionsLayout.StoreAllOptions = True
+            Me.LayoutViewWeightTicket.OptionsLayout.StoreAppearance = True
+            Me.LayoutViewWeightTicket.OptionsLayout.StoreFormatRules = True
+            Me.LayoutViewWeightTicket.OptionsMultiRecordMode.MultiColumnScrollBarOrientation = DevExpress.XtraGrid.Views.Layout.ScrollBarOrientation.Horizontal
+            Me.LayoutViewWeightTicket.OptionsMultiRecordMode.MultiRowScrollBarOrientation = DevExpress.XtraGrid.Views.Layout.ScrollBarOrientation.Vertical
+            Me.LayoutViewWeightTicket.OptionsView.AllowHotTrackFields = False
+            Me.LayoutViewWeightTicket.OptionsView.AnimationType = DevExpress.XtraGrid.Views.Base.GridAnimationType.NeverAnimate
+            Me.LayoutViewWeightTicket.OptionsView.CardArrangeRule = DevExpress.XtraGrid.Views.Layout.LayoutCardArrangeRule.AllowPartialCards
+            Me.LayoutViewWeightTicket.OptionsView.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.ShowOnlyInEditor
+            Me.LayoutViewWeightTicket.OptionsView.ShowCardExpandButton = False
+            Me.LayoutViewWeightTicket.OptionsView.ShowFieldHints = False
+            Me.LayoutViewWeightTicket.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never
+            Me.LayoutViewWeightTicket.OptionsView.ShowHeaderPanel = False
+            Me.LayoutViewWeightTicket.OptionsView.ViewMode = DevExpress.XtraGrid.Views.Layout.LayoutViewMode.Column
+            Me.LayoutViewWeightTicket.TemplateCard = Me.LayoutViewCard5
+            '
+            'LayoutViewColumn3
+            '
+            Me.LayoutViewColumn3.FieldName = "Ticket"
+            Me.LayoutViewColumn3.LayoutViewField = Me.layoutViewField_LayoutViewColumn3
+            Me.LayoutViewColumn3.Name = "LayoutViewColumn3"
+            Me.LayoutViewColumn3.OptionsColumn.AllowEdit = False
+            Me.LayoutViewColumn3.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.[False]
+            Me.LayoutViewColumn3.OptionsColumn.AllowIncrementalSearch = False
+            Me.LayoutViewColumn3.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.[False]
+            Me.LayoutViewColumn3.OptionsColumn.ReadOnly = True
+            Me.LayoutViewColumn3.OptionsColumn.ShowInCustomizationForm = False
+            Me.LayoutViewColumn3.OptionsColumn.ShowInExpressionEditor = False
+            Me.LayoutViewColumn3.OptionsFilter.AllowAutoFilter = False
+            Me.LayoutViewColumn3.OptionsFilter.AllowFilter = False
+            '
+            'layoutViewField_LayoutViewColumn3
+            '
+            Me.layoutViewField_LayoutViewColumn3.EditorPreferredWidth = 340
+            Me.layoutViewField_LayoutViewColumn3.Location = New System.Drawing.Point(65, 0)
+            Me.layoutViewField_LayoutViewColumn3.Name = "layoutViewField_LayoutViewColumn3"
+            Me.layoutViewField_LayoutViewColumn3.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
+            Me.layoutViewField_LayoutViewColumn3.Size = New System.Drawing.Size(346, 32)
+            Me.layoutViewField_LayoutViewColumn3.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
+            Me.layoutViewField_LayoutViewColumn3.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
+            Me.layoutViewField_LayoutViewColumn3.TextLocation = DevExpress.Utils.Locations.Left
+            Me.layoutViewField_LayoutViewColumn3.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutViewField_LayoutViewColumn3.TextToControlDistance = 0
+            Me.layoutViewField_LayoutViewColumn3.TextVisible = False
+            '
+            'LayoutViewColumn5
+            '
+            Me.LayoutViewColumn5.Caption = "วันที่"
+            Me.LayoutViewColumn5.FieldName = "ReceiveDate"
+            Me.LayoutViewColumn5.LayoutViewField = Me.layoutViewField_LayoutViewColumn5
+            Me.LayoutViewColumn5.Name = "LayoutViewColumn5"
+            '
+            'layoutViewField_LayoutViewColumn5
+            '
+            Me.layoutViewField_LayoutViewColumn5.AppearanceItemCaption.Options.UseTextOptions = True
+            Me.layoutViewField_LayoutViewColumn5.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+            Me.layoutViewField_LayoutViewColumn5.EditorPreferredWidth = 196
+            Me.layoutViewField_LayoutViewColumn5.Location = New System.Drawing.Point(209, 96)
+            Me.layoutViewField_LayoutViewColumn5.Name = "layoutViewField_LayoutViewColumn5"
+            Me.layoutViewField_LayoutViewColumn5.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
+            Me.layoutViewField_LayoutViewColumn5.Size = New System.Drawing.Size(202, 32)
+            Me.layoutViewField_LayoutViewColumn5.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
+            Me.layoutViewField_LayoutViewColumn5.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
+            Me.layoutViewField_LayoutViewColumn5.TextLocation = DevExpress.Utils.Locations.Top
+            Me.layoutViewField_LayoutViewColumn5.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutViewField_LayoutViewColumn5.TextToControlDistance = 0
+            Me.layoutViewField_LayoutViewColumn5.TextVisible = False
+            '
+            'LayoutViewColumn10
+            '
+            Me.LayoutViewColumn10.FieldName = "PlateLicense"
+            Me.LayoutViewColumn10.LayoutViewField = Me.layoutViewField_LayoutViewColumn10
+            Me.LayoutViewColumn10.Name = "LayoutViewColumn10"
+            '
+            'layoutViewField_LayoutViewColumn10
+            '
+            Me.layoutViewField_LayoutViewColumn10.EditorPreferredWidth = 20
+            Me.layoutViewField_LayoutViewColumn10.Location = New System.Drawing.Point(0, 0)
+            Me.layoutViewField_LayoutViewColumn10.Name = "layoutViewField_LayoutViewColumn10"
+            Me.layoutViewField_LayoutViewColumn10.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
+            Me.layoutViewField_LayoutViewColumn10.Size = New System.Drawing.Size(395, 170)
+            Me.layoutViewField_LayoutViewColumn10.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
+            Me.layoutViewField_LayoutViewColumn10.TextLocation = DevExpress.Utils.Locations.Left
+            Me.layoutViewField_LayoutViewColumn10.TextSize = New System.Drawing.Size(74, 19)
+            '
+            'LayoutViewColumn11
+            '
+            Me.LayoutViewColumn11.Caption = "รหัสวัตถุดิบ"
+            Me.LayoutViewColumn11.FieldName = "MaterialID"
+            Me.LayoutViewColumn11.LayoutViewField = Me.layoutViewField_LayoutViewColumn11
+            Me.LayoutViewColumn11.Name = "LayoutViewColumn11"
+            '
+            'layoutViewField_LayoutViewColumn11
+            '
+            Me.layoutViewField_LayoutViewColumn11.EditorPreferredWidth = 20
+            Me.layoutViewField_LayoutViewColumn11.Location = New System.Drawing.Point(0, 0)
+            Me.layoutViewField_LayoutViewColumn11.Name = "layoutViewField_LayoutViewColumn11"
+            Me.layoutViewField_LayoutViewColumn11.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
+            Me.layoutViewField_LayoutViewColumn11.Size = New System.Drawing.Size(395, 170)
+            Me.layoutViewField_LayoutViewColumn11.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
+            Me.layoutViewField_LayoutViewColumn11.TextLocation = DevExpress.Utils.Locations.Left
+            Me.layoutViewField_LayoutViewColumn11.TextSize = New System.Drawing.Size(80, 19)
+            '
+            'LayoutViewColumn12
+            '
+            Me.LayoutViewColumn12.FieldName = "MaterialName"
+            Me.LayoutViewColumn12.LayoutViewField = Me.layoutViewField_LayoutViewColumn12
+            Me.LayoutViewColumn12.Name = "LayoutViewColumn12"
+            '
+            'layoutViewField_LayoutViewColumn12
+            '
+            Me.layoutViewField_LayoutViewColumn12.EditorPreferredWidth = 340
+            Me.layoutViewField_LayoutViewColumn12.Location = New System.Drawing.Point(65, 32)
+            Me.layoutViewField_LayoutViewColumn12.Name = "layoutViewField_LayoutViewColumn12"
+            Me.layoutViewField_LayoutViewColumn12.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
+            Me.layoutViewField_LayoutViewColumn12.Size = New System.Drawing.Size(346, 32)
+            Me.layoutViewField_LayoutViewColumn12.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
+            Me.layoutViewField_LayoutViewColumn12.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
+            Me.layoutViewField_LayoutViewColumn12.TextLocation = DevExpress.Utils.Locations.Left
+            Me.layoutViewField_LayoutViewColumn12.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutViewField_LayoutViewColumn12.TextToControlDistance = 0
+            Me.layoutViewField_LayoutViewColumn12.TextVisible = False
+            '
+            'LayoutViewColumn13
+            '
+            Me.LayoutViewColumn13.Caption = "รหัสลูกค้า"
+            Me.LayoutViewColumn13.FieldName = "SupplierID"
+            Me.LayoutViewColumn13.LayoutViewField = Me.layoutViewField_LayoutViewColumn13
+            Me.LayoutViewColumn13.Name = "LayoutViewColumn13"
+            '
+            'layoutViewField_LayoutViewColumn13
+            '
+            Me.layoutViewField_LayoutViewColumn13.EditorPreferredWidth = 20
+            Me.layoutViewField_LayoutViewColumn13.Location = New System.Drawing.Point(0, 0)
+            Me.layoutViewField_LayoutViewColumn13.Name = "layoutViewField_LayoutViewColumn13"
+            Me.layoutViewField_LayoutViewColumn13.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
+            Me.layoutViewField_LayoutViewColumn13.Size = New System.Drawing.Size(395, 170)
+            Me.layoutViewField_LayoutViewColumn13.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
+            Me.layoutViewField_LayoutViewColumn13.TextLocation = DevExpress.Utils.Locations.Left
+            Me.layoutViewField_LayoutViewColumn13.TextSize = New System.Drawing.Size(70, 19)
+            '
+            'LayoutViewColumn14
+            '
+            Me.LayoutViewColumn14.FieldName = "SupplierName"
+            Me.LayoutViewColumn14.LayoutViewField = Me.layoutViewField_LayoutViewColumn14
+            Me.LayoutViewColumn14.Name = "LayoutViewColumn14"
+            '
+            'layoutViewField_LayoutViewColumn14
+            '
+            Me.layoutViewField_LayoutViewColumn14.EditorPreferredWidth = 340
+            Me.layoutViewField_LayoutViewColumn14.Location = New System.Drawing.Point(65, 64)
+            Me.layoutViewField_LayoutViewColumn14.Name = "layoutViewField_LayoutViewColumn14"
+            Me.layoutViewField_LayoutViewColumn14.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
+            Me.layoutViewField_LayoutViewColumn14.Size = New System.Drawing.Size(346, 32)
+            Me.layoutViewField_LayoutViewColumn14.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
+            Me.layoutViewField_LayoutViewColumn14.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
+            Me.layoutViewField_LayoutViewColumn14.TextLocation = DevExpress.Utils.Locations.Left
+            Me.layoutViewField_LayoutViewColumn14.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutViewField_LayoutViewColumn14.TextToControlDistance = 0
+            Me.layoutViewField_LayoutViewColumn14.TextVisible = False
+            '
+            'LayoutViewColumn15
+            '
+            Me.LayoutViewColumn15.FieldName = "Quantity"
+            Me.LayoutViewColumn15.LayoutViewField = Me.layoutViewField_LayoutViewColumn15
+            Me.LayoutViewColumn15.Name = "LayoutViewColumn15"
+            Me.LayoutViewColumn15.OptionsColumn.AllowEdit = False
+            Me.LayoutViewColumn15.OptionsColumn.FixedWidth = True
+            Me.LayoutViewColumn15.OptionsColumn.ReadOnly = True
+            '
+            'layoutViewField_LayoutViewColumn15
+            '
+            Me.layoutViewField_LayoutViewColumn15.EditorPreferredWidth = 128
+            Me.layoutViewField_LayoutViewColumn15.Location = New System.Drawing.Point(65, 96)
+            Me.layoutViewField_LayoutViewColumn15.Name = "layoutViewField_LayoutViewColumn15"
+            Me.layoutViewField_LayoutViewColumn15.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
+            Me.layoutViewField_LayoutViewColumn15.Size = New System.Drawing.Size(134, 32)
+            Me.layoutViewField_LayoutViewColumn15.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
+            Me.layoutViewField_LayoutViewColumn15.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
+            Me.layoutViewField_LayoutViewColumn15.TextLocation = DevExpress.Utils.Locations.Left
+            Me.layoutViewField_LayoutViewColumn15.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutViewField_LayoutViewColumn15.TextToControlDistance = 0
+            Me.layoutViewField_LayoutViewColumn15.TextVisible = False
+            '
+            'LayoutViewColumn16
+            '
+            Me.LayoutViewColumn16.FieldName = "MillWeight"
+            Me.LayoutViewColumn16.LayoutViewField = Me.layoutViewField_LayoutViewColumn16
+            Me.LayoutViewColumn16.Name = "LayoutViewColumn16"
+            '
+            'layoutViewField_LayoutViewColumn16
+            '
+            Me.layoutViewField_LayoutViewColumn16.EditorPreferredWidth = 128
+            Me.layoutViewField_LayoutViewColumn16.Location = New System.Drawing.Point(65, 128)
+            Me.layoutViewField_LayoutViewColumn16.Name = "layoutViewField_LayoutViewColumn16"
+            Me.layoutViewField_LayoutViewColumn16.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
+            Me.layoutViewField_LayoutViewColumn16.Size = New System.Drawing.Size(134, 32)
+            Me.layoutViewField_LayoutViewColumn16.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
+            Me.layoutViewField_LayoutViewColumn16.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
+            Me.layoutViewField_LayoutViewColumn16.TextLocation = DevExpress.Utils.Locations.Left
+            Me.layoutViewField_LayoutViewColumn16.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutViewField_LayoutViewColumn16.TextToControlDistance = 0
+            Me.layoutViewField_LayoutViewColumn16.TextVisible = False
+            '
+            'LayoutViewColumn17
+            '
+            Me.LayoutViewColumn17.Caption = "IsWeightOut"
+            Me.LayoutViewColumn17.FieldName = "IsWeightOut"
+            Me.LayoutViewColumn17.LayoutViewField = Me.layoutViewField_LayoutViewColumn17
+            Me.LayoutViewColumn17.Name = "LayoutViewColumn17"
+            '
+            'layoutViewField_LayoutViewColumn17
+            '
+            Me.layoutViewField_LayoutViewColumn17.EditorPreferredWidth = 20
+            Me.layoutViewField_LayoutViewColumn17.Location = New System.Drawing.Point(0, 0)
+            Me.layoutViewField_LayoutViewColumn17.Name = "layoutViewField_LayoutViewColumn17"
+            Me.layoutViewField_LayoutViewColumn17.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
+            Me.layoutViewField_LayoutViewColumn17.Size = New System.Drawing.Size(395, 170)
+            Me.layoutViewField_LayoutViewColumn17.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
+            Me.layoutViewField_LayoutViewColumn17.TextLocation = DevExpress.Utils.Locations.Left
+            Me.layoutViewField_LayoutViewColumn17.TextSize = New System.Drawing.Size(94, 19)
+            '
+            'LayoutViewColumn18
+            '
+            Me.LayoutViewColumn18.Caption = "ต้นทาง"
+            Me.LayoutViewColumn18.FieldName = "MaterialSource"
+            Me.LayoutViewColumn18.LayoutViewField = Me.layoutViewField_LayoutViewColumn18
+            Me.LayoutViewColumn18.Name = "LayoutViewColumn18"
+            '
+            'layoutViewField_LayoutViewColumn18
+            '
+            Me.layoutViewField_LayoutViewColumn18.AppearanceItemCaption.Options.UseTextOptions = True
+            Me.layoutViewField_LayoutViewColumn18.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+            Me.layoutViewField_LayoutViewColumn18.EditorPreferredWidth = 20
+            Me.layoutViewField_LayoutViewColumn18.Location = New System.Drawing.Point(0, 0)
+            Me.layoutViewField_LayoutViewColumn18.Name = "layoutViewField_LayoutViewColumn18"
+            Me.layoutViewField_LayoutViewColumn18.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
+            Me.layoutViewField_LayoutViewColumn18.Size = New System.Drawing.Size(395, 170)
+            Me.layoutViewField_LayoutViewColumn18.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
+            Me.layoutViewField_LayoutViewColumn18.TextLocation = DevExpress.Utils.Locations.Left
+            Me.layoutViewField_LayoutViewColumn18.TextSize = New System.Drawing.Size(109, 19)
+            '
+            'LayoutViewColumn19
+            '
+            Me.LayoutViewColumn19.Caption = "UnloadStation"
+            Me.LayoutViewColumn19.FieldName = "UnloadStation"
+            Me.LayoutViewColumn19.LayoutViewField = Me.layoutViewField_LayoutViewColumn19
+            Me.LayoutViewColumn19.Name = "LayoutViewColumn19"
+            '
+            'layoutViewField_LayoutViewColumn19
+            '
+            Me.layoutViewField_LayoutViewColumn19.EditorPreferredWidth = 20
+            Me.layoutViewField_LayoutViewColumn19.Location = New System.Drawing.Point(0, 0)
+            Me.layoutViewField_LayoutViewColumn19.Name = "layoutViewField_LayoutViewColumn19"
+            Me.layoutViewField_LayoutViewColumn19.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
+            Me.layoutViewField_LayoutViewColumn19.Size = New System.Drawing.Size(395, 170)
+            Me.layoutViewField_LayoutViewColumn19.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
+            Me.layoutViewField_LayoutViewColumn19.TextLocation = DevExpress.Utils.Locations.Left
+            Me.layoutViewField_LayoutViewColumn19.TextSize = New System.Drawing.Size(105, 19)
+            '
+            'LayoutViewColumn20
+            '
+            Me.LayoutViewColumn20.Caption = "ต้นทาง"
+            Me.LayoutViewColumn20.FieldName = "MaterialSource"
+            Me.LayoutViewColumn20.LayoutViewField = Me.layoutViewField_LayoutViewColumn20
+            Me.LayoutViewColumn20.Name = "LayoutViewColumn20"
+            Me.LayoutViewColumn20.UnboundType = DevExpress.Data.UnboundColumnType.[String]
+            '
+            'layoutViewField_LayoutViewColumn20
+            '
+            Me.layoutViewField_LayoutViewColumn20.AppearanceItemCaption.Options.UseTextOptions = True
+            Me.layoutViewField_LayoutViewColumn20.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+            Me.layoutViewField_LayoutViewColumn20.EditorPreferredWidth = 196
+            Me.layoutViewField_LayoutViewColumn20.Location = New System.Drawing.Point(209, 128)
+            Me.layoutViewField_LayoutViewColumn20.Name = "layoutViewField_LayoutViewColumn20"
+            Me.layoutViewField_LayoutViewColumn20.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
+            Me.layoutViewField_LayoutViewColumn20.Size = New System.Drawing.Size(202, 32)
+            Me.layoutViewField_LayoutViewColumn20.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
+            Me.layoutViewField_LayoutViewColumn20.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
+            Me.layoutViewField_LayoutViewColumn20.TextLocation = DevExpress.Utils.Locations.Top
+            Me.layoutViewField_LayoutViewColumn20.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutViewField_LayoutViewColumn20.TextToControlDistance = 0
+            Me.layoutViewField_LayoutViewColumn20.TextVisible = False
+            '
+            'LayoutViewCard5
+            '
+            Me.LayoutViewCard5.CustomizationFormText = "TemplateCard"
+            Me.LayoutViewCard5.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
+            Me.LayoutViewCard5.HeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.AfterText
+            Me.LayoutViewCard5.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutViewField_LayoutViewColumn12, Me.layoutViewField_LayoutViewColumn14, Me.layoutViewField_LayoutViewColumn16, Me.layoutViewField_LayoutViewColumn5, Me.layoutViewField_LayoutViewColumn3, Me.layoutViewField_LayoutViewColumn20, Me.layoutViewField_LayoutViewColumn15})
+            Me.LayoutViewCard5.Name = "LayoutViewCard5"
+            Me.LayoutViewCard5.OptionsItemText.TextAlignMode = DevExpress.XtraLayout.TextAlignModeGroup.AlignWithChildren
+            Me.LayoutViewCard5.OptionsItemText.TextToControlDistance = 1
+            Me.LayoutViewCard5.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
+            Me.LayoutViewCard5.Text = "TemplateCard"
+            Me.LayoutViewCard5.TextLocation = DevExpress.Utils.Locations.[Default]
+            '
             'TabNP_SouceGroup
             '
             Me.TabNP_SouceGroup.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.TabNP_SouceGroup.Appearance.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
             Me.TabNP_SouceGroup.Appearance.Options.UseFont = True
             Me.TabNP_SouceGroup.Appearance.Options.UseForeColor = True
-            Me.TabNP_SouceGroup.AutoSize = True
             Me.TabNP_SouceGroup.Caption = "Destination Group"
             Me.TabNP_SouceGroup.Controls.Add(Me.gridControlDestGroupArea)
             Me.TabNP_SouceGroup.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.TabNP_SouceGroup.ItemShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Text
             Me.TabNP_SouceGroup.Name = "TabNP_SouceGroup"
             Me.TabNP_SouceGroup.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Text
-            Me.TabNP_SouceGroup.Size = New System.Drawing.Size(481, 649)
+            Me.TabNP_SouceGroup.Size = New System.Drawing.Size(434, 543)
             '
             'gridControlDestGroupArea
             '
             Me.gridControlDestGroupArea.Cursor = System.Windows.Forms.Cursors.Default
-            Me.gridControlDestGroupArea.Dock = System.Windows.Forms.DockStyle.Fill
             Me.gridControlDestGroupArea.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-            Me.gridControlDestGroupArea.Location = New System.Drawing.Point(0, 0)
+            Me.gridControlDestGroupArea.Location = New System.Drawing.Point(-13, -1)
             Me.gridControlDestGroupArea.MainView = Me.layoutViewDestGroupArea
             Me.gridControlDestGroupArea.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.gridControlDestGroupArea.Name = "gridControlDestGroupArea"
             Me.gridControlDestGroupArea.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemTextEdit3, Me.RepositoryItemPictureEdit3, Me.RepositoryItemHyperLinkEdit3, Me.RepositoryItemMemoEdit3, Me.RepositoryItemCheckEdit3})
-            Me.gridControlDestGroupArea.Size = New System.Drawing.Size(481, 649)
+            Me.gridControlDestGroupArea.Size = New System.Drawing.Size(459, 554)
             Me.gridControlDestGroupArea.TabIndex = 3
             Me.gridControlDestGroupArea.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.layoutViewDestGroupArea})
             '
@@ -1276,33 +1330,11 @@
             '
             Me.LayoutViewCard2.CustomizationFormText = "layoutViewTemplateCard"
             Me.LayoutViewCard2.HeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.AfterText
-            Me.LayoutViewCard2.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutViewField_colAmount, Me.layoutViewField_colIsFull, Me.item2, Me.item9})
+            Me.LayoutViewCard2.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutViewField_colAmount, Me.layoutViewField_colIsFull})
             Me.LayoutViewCard2.Name = "layoutViewTemplateCard"
             Me.LayoutViewCard2.OptionsItemText.TextToControlDistance = 1
             Me.LayoutViewCard2.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
             Me.LayoutViewCard2.Text = "TemplateCard"
-            '
-            'item2
-            '
-            Me.item2.AllowHotTrack = False
-            Me.item2.CustomizationFormText = "item2"
-            Me.item2.Location = New System.Drawing.Point(0, 23)
-            Me.item2.Name = "item2"
-            Me.item2.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
-            Me.item2.Size = New System.Drawing.Size(354, 10)
-            Me.item2.Spacing = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
-            Me.item2.TextSize = New System.Drawing.Size(0, 0)
-            '
-            'item9
-            '
-            Me.item9.AllowHotTrack = False
-            Me.item9.CustomizationFormText = "item9"
-            Me.item9.Location = New System.Drawing.Point(0, 0)
-            Me.item9.Name = "item9"
-            Me.item9.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
-            Me.item9.Size = New System.Drawing.Size(129, 23)
-            Me.item9.Spacing = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
-            Me.item9.TextSize = New System.Drawing.Size(0, 0)
             '
             'RepositoryItemHyperLinkEdit3
             '
@@ -1318,16 +1350,15 @@
             Me.TabNP_SouceDetail.ItemShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Text
             Me.TabNP_SouceDetail.Name = "TabNP_SouceDetail"
             Me.TabNP_SouceDetail.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Text
-            Me.TabNP_SouceDetail.Size = New System.Drawing.Size(481, 644)
+            Me.TabNP_SouceDetail.Size = New System.Drawing.Size(447, 558)
             '
             'GridControlDestSubArea
             '
-            Me.GridControlDestSubArea.Dock = System.Windows.Forms.DockStyle.Fill
             Me.GridControlDestSubArea.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.GridControlDestSubArea.Location = New System.Drawing.Point(0, 0)
+            Me.GridControlDestSubArea.Location = New System.Drawing.Point(-10, -10)
             Me.GridControlDestSubArea.MainView = Me.LayoutViewDestSubArea
             Me.GridControlDestSubArea.Name = "GridControlDestSubArea"
-            Me.GridControlDestSubArea.Size = New System.Drawing.Size(481, 644)
+            Me.GridControlDestSubArea.Size = New System.Drawing.Size(454, 565)
             Me.GridControlDestSubArea.TabIndex = 5
             Me.GridControlDestSubArea.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.LayoutViewDestSubArea})
             '
@@ -1536,7 +1567,7 @@
             Me.TabNP_WP.ItemShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Text
             Me.TabNP_WP.Name = "TabNP_WP"
             Me.TabNP_WP.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Text
-            Me.TabNP_WP.Size = New System.Drawing.Size(544, 569)
+            Me.TabNP_WP.Size = New System.Drawing.Size(434, 543)
             '
             'SplitContainerControl1
             '
@@ -1550,19 +1581,18 @@
             Me.SplitContainerControl1.Panel2.Controls.Add(Me.GridControlWP)
             Me.SplitContainerControl1.Panel2.Text = "Panel2"
             Me.SplitContainerControl1.PanelVisibility = DevExpress.XtraEditors.SplitPanelVisibility.Panel2
-            Me.SplitContainerControl1.Size = New System.Drawing.Size(544, 569)
+            Me.SplitContainerControl1.Size = New System.Drawing.Size(434, 543)
             Me.SplitContainerControl1.SplitterPosition = 36
             Me.SplitContainerControl1.TabIndex = 7
             Me.SplitContainerControl1.Text = "SplitContainerControl1"
             '
             'GridControlWP
             '
-            Me.GridControlWP.Dock = System.Windows.Forms.DockStyle.Fill
             Me.GridControlWP.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.GridControlWP.Location = New System.Drawing.Point(0, 0)
+            Me.GridControlWP.Location = New System.Drawing.Point(-10, -10)
             Me.GridControlWP.MainView = Me.LayoutViewWP
             Me.GridControlWP.Name = "GridControlWP"
-            Me.GridControlWP.Size = New System.Drawing.Size(544, 569)
+            Me.GridControlWP.Size = New System.Drawing.Size(441, 562)
             Me.GridControlWP.TabIndex = 6
             Me.GridControlWP.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.LayoutViewWP})
             '
@@ -1673,33 +1703,27 @@
             '
             Me.LayoutViewCard3.CustomizationFormText = "TemplateCard"
             Me.LayoutViewCard3.HeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.AfterText
-            Me.LayoutViewCard3.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.item18})
             Me.LayoutViewCard3.Name = "LayoutViewCard3"
             Me.LayoutViewCard3.OptionsItemText.TextToControlDistance = 1
             Me.LayoutViewCard3.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
             Me.LayoutViewCard3.Text = "TemplateCard"
             '
-            'item18
+            'GroupControl1
             '
-            Me.item18.AllowHotTrack = False
-            Me.item18.CustomizationFormText = "item18"
-            Me.item18.Location = New System.Drawing.Point(0, 0)
-            Me.item18.Name = "item18"
-            Me.item18.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-            Me.item18.Size = New System.Drawing.Size(388, 39)
-            Me.item18.Spacing = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
-            Me.item18.TextSize = New System.Drawing.Size(0, 0)
-            '
-            'btnSave
-            '
-            Me.btnSave.Image = CType(resources.GetObject("btnSave.Image"), System.Drawing.Image)
-            Me.btnSave.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft
-            Me.btnSave.Location = New System.Drawing.Point(1062, 716)
-            Me.btnSave.Name = "btnSave"
-            Me.btnSave.Size = New System.Drawing.Size(105, 62)
-            Me.btnSave.StyleController = Me.LayoutControlSouceData
-            Me.btnSave.TabIndex = 6
-            Me.btnSave.Text = "Save"
+            Me.GroupControl1.AllowDrop = True
+            Me.GroupControl1.CaptionLocation = DevExpress.Utils.Locations.Top
+            Me.GroupControl1.Controls.Add(Me.lblNetAmount)
+            Me.GroupControl1.Controls.Add(Me.lblMatNameInfo)
+            Me.GroupControl1.Controls.Add(Me.lblMatName)
+            Me.GroupControl1.Controls.Add(Me.lblStroageID)
+            Me.GroupControl1.Controls.Add(Me.lblMatID)
+            Me.GroupControl1.Controls.Add(Me.lblTicketID)
+            Me.GroupControl1.Location = New System.Drawing.Point(40, 15)
+            Me.GroupControl1.Name = "GroupControl1"
+            Me.GroupControl1.ShowCaption = False
+            Me.GroupControl1.Size = New System.Drawing.Size(700, 131)
+            Me.GroupControl1.TabIndex = 6
+            Me.GroupControl1.Text = "Root"
             '
             'GroupControl3
             '
@@ -1710,12 +1734,14 @@
             Me.GroupControl3.AppearanceCaption.Options.UseTextOptions = True
             Me.GroupControl3.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
             Me.GroupControl3.AppearanceCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
+            Me.GroupControl3.AutoSize = True
             Me.GroupControl3.CaptionLocation = DevExpress.Utils.Locations.Top
             Me.GroupControl3.Controls.Add(Me.GridControlMoveMentDetail)
-            Me.GroupControl3.Location = New System.Drawing.Point(568, 203)
+            Me.GroupControl3.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.GroupControl3.Location = New System.Drawing.Point(0, 0)
             Me.GroupControl3.Name = "GroupControl3"
-            Me.GroupControl3.Size = New System.Drawing.Size(699, 507)
-            Me.GroupControl3.TabIndex = 5
+            Me.GroupControl3.Size = New System.Drawing.Size(813, 405)
+            Me.GroupControl3.TabIndex = 6
             Me.GroupControl3.Text = "รายละเอียด พื้นที่ปลายทาง"
             '
             'GridControlMoveMentDetail
@@ -1726,9 +1752,8 @@
             Me.GridControlMoveMentDetail.Location = New System.Drawing.Point(3, 45)
             Me.GridControlMoveMentDetail.MainView = Me.GridViewMoveMentDetail
             Me.GridControlMoveMentDetail.Name = "GridControlMoveMentDetail"
-            Me.GridControlMoveMentDetail.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.DeleteCustomRow, Me.EditRow, Me.RepositoryItemLookUpEdit1, Me.CalcEditBale})
-            Me.GridControlMoveMentDetail.Size = New System.Drawing.Size(693, 459)
-            Me.GridControlMoveMentDetail.TabIndex = 2
+            Me.GridControlMoveMentDetail.Size = New System.Drawing.Size(807, 357)
+            Me.GridControlMoveMentDetail.TabIndex = 20
             Me.GridControlMoveMentDetail.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewMoveMentDetail})
             '
             'GridViewMoveMentDetail
@@ -1816,7 +1841,7 @@
             Me.colCustomStorageName.OptionsColumn.ReadOnly = True
             Me.colCustomStorageName.OptionsEditForm.Visible = DevExpress.Utils.DefaultBoolean.[False]
             Me.colCustomStorageName.Visible = True
-            Me.colCustomStorageName.VisibleIndex = 2
+            Me.colCustomStorageName.VisibleIndex = 1
             Me.colCustomStorageName.Width = 117
             '
             'colCustomMaterialID
@@ -1850,7 +1875,7 @@
             Me.colCustomQuantity.OptionsEditForm.RowSpan = 2
             Me.colCustomQuantity.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "Quantity", "{0:n1}")})
             Me.colCustomQuantity.Visible = True
-            Me.colCustomQuantity.VisibleIndex = 3
+            Me.colCustomQuantity.VisibleIndex = 2
             Me.colCustomQuantity.Width = 186
             '
             'colCustomAction
@@ -1858,7 +1883,6 @@
             Me.colCustomAction.AppearanceCell.Options.UseTextOptions = True
             Me.colCustomAction.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
             Me.colCustomAction.Caption = "ลบ"
-            Me.colCustomAction.ColumnEdit = Me.DeleteCustomRow
             Me.colCustomAction.FieldName = "colCustomAction"
             Me.colCustomAction.Name = "colCustomAction"
             Me.colCustomAction.OptionsEditForm.CaptionLocation = DevExpress.XtraGrid.EditForm.EditFormColumnCaptionLocation.None
@@ -1870,18 +1894,11 @@
             Me.colCustomAction.VisibleIndex = 0
             Me.colCustomAction.Width = 122
             '
-            'DeleteCustomRow
-            '
-            Me.DeleteCustomRow.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("DeleteCustomRow.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject2, "", "Remove", Nothing, True)})
-            Me.DeleteCustomRow.Name = "DeleteCustomRow"
-            Me.DeleteCustomRow.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor
-            '
             'GridColumn1
             '
             Me.GridColumn1.AppearanceCell.Options.UseTextOptions = True
             Me.GridColumn1.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
             Me.GridColumn1.Caption = "แก้ไข"
-            Me.GridColumn1.ColumnEdit = Me.EditRow
             Me.GridColumn1.FieldName = "GridColumn1"
             Me.GridColumn1.Name = "GridColumn1"
             Me.GridColumn1.OptionsEditForm.CaptionLocation = DevExpress.XtraGrid.EditForm.EditFormColumnCaptionLocation.None
@@ -1889,15 +1906,7 @@
             Me.GridColumn1.OptionsEditForm.Visible = DevExpress.Utils.DefaultBoolean.[False]
             Me.GridColumn1.OptionsEditForm.VisibleIndex = 2
             Me.GridColumn1.UnboundType = DevExpress.Data.UnboundColumnType.[Object]
-            Me.GridColumn1.Visible = True
-            Me.GridColumn1.VisibleIndex = 1
             Me.GridColumn1.Width = 126
-            '
-            'EditRow
-            '
-            Me.EditRow.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("EditRow.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject3, "", Nothing, Nothing, True)})
-            Me.EditRow.Name = "EditRow"
-            Me.EditRow.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor
             '
             'colCustomPackageSize
             '
@@ -1906,151 +1915,13 @@
             Me.colCustomPackageSize.FieldName = "PackageSize"
             Me.colCustomPackageSize.Name = "colCustomPackageSize"
             Me.colCustomPackageSize.Visible = True
-            Me.colCustomPackageSize.VisibleIndex = 4
+            Me.colCustomPackageSize.VisibleIndex = 3
             Me.colCustomPackageSize.Width = 103
-            '
-            'RepositoryItemLookUpEdit1
-            '
-            Me.RepositoryItemLookUpEdit1.AutoHeight = False
-            Me.RepositoryItemLookUpEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-            Me.RepositoryItemLookUpEdit1.Name = "RepositoryItemLookUpEdit1"
-            Me.RepositoryItemLookUpEdit1.NullText = ""
-            '
-            'CalcEditBale
-            '
-            Me.CalcEditBale.AutoHeight = False
-            Me.CalcEditBale.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-            Me.CalcEditBale.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
-            Me.CalcEditBale.Name = "CalcEditBale"
-            '
-            'lblWeightTicket
-            '
-            Me.lblWeightTicket.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.lblWeightTicket.Appearance.ForeColor = System.Drawing.Color.Blue
-            Me.lblWeightTicket.Appearance.Options.UseFont = True
-            Me.lblWeightTicket.Appearance.Options.UseForeColor = True
-            Me.lblWeightTicket.Appearance.Options.UseTextOptions = True
-            Me.lblWeightTicket.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-            Me.lblWeightTicket.Location = New System.Drawing.Point(760, 18)
-            Me.lblWeightTicket.Name = "lblWeightTicket"
-            Me.lblWeightTicket.Size = New System.Drawing.Size(415, 34)
-            Me.lblWeightTicket.StyleController = Me.LayoutControlSouceData
-            Me.lblWeightTicket.TabIndex = 1
-            Me.lblWeightTicket.Text = "รายละเอียดวัตถุดิบ ต้นทาง"
-            '
-            'lblStroageName
-            '
-            Me.lblStroageName.Appearance.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.lblStroageName.Appearance.ForeColor = System.Drawing.Color.Blue
-            Me.lblStroageName.Appearance.Options.UseFont = True
-            Me.lblStroageName.Appearance.Options.UseForeColor = True
-            Me.lblStroageName.Location = New System.Drawing.Point(658, 58)
-            Me.lblStroageName.Name = "lblStroageName"
-            Me.lblStroageName.Size = New System.Drawing.Size(72, 39)
-            Me.lblStroageName.StyleController = Me.LayoutControlSouceData
-            Me.lblStroageName.TabIndex = 1
-            Me.lblStroageName.Text = "A1.1"
-            '
-            'btnProperties
-            '
-            Me.btnProperties.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.btnProperties.Appearance.Options.UseFont = True
-            Me.btnProperties.Image = CType(resources.GetObject("btnProperties.Image"), System.Drawing.Image)
-            Me.btnProperties.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft
-            Me.btnProperties.Location = New System.Drawing.Point(1016, 154)
-            Me.btnProperties.Name = "btnProperties"
-            Me.btnProperties.Size = New System.Drawing.Size(198, 43)
-            Me.btnProperties.StyleController = Me.LayoutControlSouceData
-            Me.btnProperties.TabIndex = 4
-            Me.btnProperties.Text = "Properties "
-            '
-            'lblContractorInfo
-            '
-            Me.lblContractorInfo.Location = New System.Drawing.Point(171, 160)
-            Me.lblContractorInfo.Name = "lblContractorInfo"
-            Me.lblContractorInfo.Size = New System.Drawing.Size(98, 19)
-            Me.lblContractorInfo.StyleController = Me.LayoutControlSouceData
-            Me.lblContractorInfo.TabIndex = 1
-            Me.lblContractorInfo.Text = "LabelControl2"
-            Me.lblContractorInfo.Visible = False
-            '
-            'lblMatNameInfo
-            '
-            Me.lblMatNameInfo.Location = New System.Drawing.Point(23, 226)
-            Me.lblMatNameInfo.Name = "lblMatNameInfo"
-            Me.lblMatNameInfo.Size = New System.Drawing.Size(98, 19)
-            Me.lblMatNameInfo.StyleController = Me.LayoutControlSouceData
-            Me.lblMatNameInfo.TabIndex = 1
-            Me.lblMatNameInfo.Text = "LabelControl2"
-            Me.lblMatNameInfo.Visible = False
-            '
-            'lblTicketID
-            '
-            Me.lblTicketID.Location = New System.Drawing.Point(321, 206)
-            Me.lblTicketID.Name = "lblTicketID"
-            Me.lblTicketID.Size = New System.Drawing.Size(98, 19)
-            Me.lblTicketID.StyleController = Me.LayoutControlSouceData
-            Me.lblTicketID.TabIndex = 1
-            Me.lblTicketID.Text = "LabelControl2"
-            Me.lblTicketID.Visible = False
-            '
-            'lblNetAmount
-            '
-            Me.lblNetAmount.Location = New System.Drawing.Point(23, 206)
-            Me.lblNetAmount.Name = "lblNetAmount"
-            Me.lblNetAmount.Size = New System.Drawing.Size(98, 19)
-            Me.lblNetAmount.StyleController = Me.LayoutControlSouceData
-            Me.lblNetAmount.TabIndex = 1
-            Me.lblNetAmount.Text = "LabelControl2"
-            Me.lblNetAmount.Visible = False
-            '
-            'lblMatName
-            '
-            Me.lblMatName.Location = New System.Drawing.Point(171, 206)
-            Me.lblMatName.Name = "lblMatName"
-            Me.lblMatName.Size = New System.Drawing.Size(98, 19)
-            Me.lblMatName.StyleController = Me.LayoutControlSouceData
-            Me.lblMatName.TabIndex = 1
-            Me.lblMatName.Text = "LabelControl2"
-            Me.lblMatName.Visible = False
-            '
-            'lblMatID
-            '
-            Me.lblMatID.Location = New System.Drawing.Point(321, 160)
-            Me.lblMatID.Name = "lblMatID"
-            Me.lblMatID.Size = New System.Drawing.Size(98, 19)
-            Me.lblMatID.StyleController = Me.LayoutControlSouceData
-            Me.lblMatID.TabIndex = 1
-            Me.lblMatID.Text = "LabelControl2"
-            Me.lblMatID.Visible = False
-            '
-            'lblStroageID
-            '
-            Me.lblStroageID.Location = New System.Drawing.Point(23, 160)
-            Me.lblStroageID.Name = "lblStroageID"
-            Me.lblStroageID.Size = New System.Drawing.Size(98, 19)
-            Me.lblStroageID.StyleController = Me.LayoutControlSouceData
-            Me.lblStroageID.TabIndex = 1
-            Me.lblStroageID.Text = "LabelControl2"
-            Me.lblStroageID.Visible = False
-            '
-            'lblWeight
-            '
-            Me.lblWeight.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.lblWeight.Appearance.ForeColor = System.Drawing.Color.Blue
-            Me.lblWeight.Appearance.Options.UseFont = True
-            Me.lblWeight.Appearance.Options.UseForeColor = True
-            Me.lblWeight.Location = New System.Drawing.Point(718, 163)
-            Me.lblWeight.Name = "lblWeight"
-            Me.lblWeight.Size = New System.Drawing.Size(54, 34)
-            Me.lblWeight.StyleController = Me.LayoutControlSouceData
-            Me.lblWeight.TabIndex = 1
-            Me.lblWeight.Text = "100"
             '
             'SearchMaterial
             '
             Me.SearchMaterial.EditValue = ""
-            Me.SearchMaterial.Location = New System.Drawing.Point(946, 58)
+            Me.SearchMaterial.Location = New System.Drawing.Point(313, 55)
             Me.SearchMaterial.Name = "SearchMaterial"
             Me.SearchMaterial.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.SearchMaterial.Properties.Appearance.ForeColor = System.Drawing.Color.Blue
@@ -2067,8 +1938,7 @@
             Me.SearchMaterial.Properties.ShowFooter = False
             Me.SearchMaterial.Properties.ShowPopupShadow = False
             Me.SearchMaterial.Properties.View = Me.SearchLookUpEdit1View
-            Me.SearchMaterial.Size = New System.Drawing.Size(311, 46)
-            Me.SearchMaterial.StyleController = Me.LayoutControlSouceData
+            Me.SearchMaterial.Size = New System.Drawing.Size(244, 46)
             Me.SearchMaterial.TabIndex = 2
             '
             'SearchLookUpEdit1View
@@ -2110,14 +1980,25 @@
             Me.GridColumn3.Visible = True
             Me.GridColumn3.VisibleIndex = 0
             '
+            'lblStroageID
+            '
+            Me.lblStroageID.Location = New System.Drawing.Point(663, 6)
+            Me.lblStroageID.Name = "lblStroageID"
+            Me.lblStroageID.Size = New System.Drawing.Size(98, 19)
+            Me.lblStroageID.StyleController = Me.LayoutControl1
+            Me.lblStroageID.TabIndex = 44
+            Me.lblStroageID.Text = "LabelControl2"
+            Me.lblStroageID.Visible = False
+            '
             'txtquantity
             '
+            Me.txtquantity.AllowDrop = True
             Me.txtquantity.EditValue = New Decimal(New Integer() {100, 0, 0, 0})
-            Me.txtquantity.Location = New System.Drawing.Point(712, 113)
+            Me.txtquantity.Location = New System.Drawing.Point(177, 107)
             Me.txtquantity.Name = "txtquantity"
             Me.txtquantity.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
             Me.txtquantity.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.txtquantity.Properties.Appearance.ForeColor = System.Drawing.Color.Blue
+            Me.txtquantity.Properties.Appearance.ForeColor = System.Drawing.Color.Black
             Me.txtquantity.Properties.Appearance.Options.UseBackColor = True
             Me.txtquantity.Properties.Appearance.Options.UseFont = True
             Me.txtquantity.Properties.Appearance.Options.UseForeColor = True
@@ -2133,412 +2014,210 @@
             Me.txtquantity.Properties.ContextImageAlignment = DevExpress.XtraEditors.ContextImageAlignment.Far
             Me.txtquantity.Properties.DisplayFormat.FormatString = "{0:n1}"
             Me.txtquantity.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
-            Me.txtquantity.Size = New System.Drawing.Size(60, 44)
-            Me.txtquantity.StyleController = Me.LayoutControlSouceData
-            Me.txtquantity.TabIndex = 3
+            Me.txtquantity.Size = New System.Drawing.Size(130, 44)
+            Me.txtquantity.TabIndex = 12
             '
-            'LabelControl6
+            'lblStroageName
             '
-            Me.LabelControl6.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.LabelControl6.Appearance.Options.UseFont = True
-            Me.LabelControl6.Location = New System.Drawing.Point(609, 113)
-            Me.LabelControl6.Name = "LabelControl6"
-            Me.LabelControl6.Size = New System.Drawing.Size(97, 34)
-            Me.LabelControl6.StyleController = Me.LayoutControlSouceData
-            Me.LabelControl6.TabIndex = 1
-            Me.LabelControl6.Text = "จำนวน :"
+            Me.lblStroageName.Appearance.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.lblStroageName.Appearance.ForeColor = System.Drawing.Color.Black
+            Me.lblStroageName.Appearance.Options.UseFont = True
+            Me.lblStroageName.Appearance.Options.UseForeColor = True
+            Me.lblStroageName.Appearance.Options.UseTextOptions = True
+            Me.lblStroageName.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+            Me.TableLayoutPanel1.SetColumnSpan(Me.lblStroageName, 2)
+            Me.lblStroageName.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.lblStroageName.LineVisible = True
+            Me.lblStroageName.Location = New System.Drawing.Point(3, 55)
+            Me.lblStroageName.Name = "lblStroageName"
+            Me.lblStroageName.Size = New System.Drawing.Size(304, 46)
+            Me.lblStroageName.TabIndex = 1
+            Me.lblStroageName.Text = "A1.1"
+            '
+            'lblWeightTicket
+            '
+            Me.lblWeightTicket.Appearance.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.lblWeightTicket.Appearance.ForeColor = System.Drawing.Color.Black
+            Me.lblWeightTicket.Appearance.Options.UseFont = True
+            Me.lblWeightTicket.Appearance.Options.UseForeColor = True
+            Me.lblWeightTicket.Appearance.Options.UseTextOptions = True
+            Me.lblWeightTicket.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+            Me.TableLayoutPanel1.SetColumnSpan(Me.lblWeightTicket, 2)
+            Me.lblWeightTicket.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.lblWeightTicket.LineVisible = True
+            Me.lblWeightTicket.Location = New System.Drawing.Point(177, 3)
+            Me.lblWeightTicket.Name = "lblWeightTicket"
+            Me.lblWeightTicket.Size = New System.Drawing.Size(380, 46)
+            Me.lblWeightTicket.TabIndex = 14
+            Me.lblWeightTicket.Text = "รายละเอียดวัตถุดิบ ต้นทาง"
+            '
+            'lblTicketID
+            '
+            Me.lblTicketID.Location = New System.Drawing.Point(663, 31)
+            Me.lblTicketID.Name = "lblTicketID"
+            Me.lblTicketID.Size = New System.Drawing.Size(98, 19)
+            Me.lblTicketID.StyleController = Me.LayoutControl1
+            Me.lblTicketID.TabIndex = 45
+            Me.lblTicketID.Text = "LabelControl2"
+            Me.lblTicketID.Visible = False
+            '
+            'lblTruckProperties
+            '
+            Me.lblTruckProperties.Appearance.Font = New System.Drawing.Font("Tahoma", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.lblTruckProperties.Appearance.ForeColor = System.Drawing.Color.Black
+            Me.lblTruckProperties.Appearance.Options.UseFont = True
+            Me.lblTruckProperties.Appearance.Options.UseForeColor = True
+            Me.lblTruckProperties.Appearance.Options.UseTextOptions = True
+            Me.lblTruckProperties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+            Me.lblTruckProperties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
+            Me.lblTruckProperties.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+            Me.lblTruckProperties.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.lblTruckProperties.LineVisible = True
+            Me.lblTruckProperties.Location = New System.Drawing.Point(313, 107)
+            Me.lblTruckProperties.Name = "lblTruckProperties"
+            Me.lblTruckProperties.Size = New System.Drawing.Size(244, 44)
+            Me.lblTruckProperties.TabIndex = 10
             '
             'LabelControl1
             '
             Me.LabelControl1.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.LabelControl1.Appearance.Options.UseFont = True
-            Me.LabelControl1.Location = New System.Drawing.Point(609, 163)
+            Me.LabelControl1.Location = New System.Drawing.Point(3, 157)
             Me.LabelControl1.Name = "LabelControl1"
             Me.LabelControl1.Size = New System.Drawing.Size(103, 34)
-            Me.LabelControl1.StyleController = Me.LayoutControlSouceData
             Me.LabelControl1.TabIndex = 1
             Me.LabelControl1.Text = "น้ำหนัก :"
             '
-            'LayoutControlItem1
+            'LabelControl6
             '
-            Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 0)
-            Me.LayoutControlItem1.Name = "LayoutControlItem1"
-            Me.LayoutControlItem1.Size = New System.Drawing.Size(312, 56)
-            Me.LayoutControlItem1.TextSize = New System.Drawing.Size(50, 20)
+            Me.LabelControl6.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.LabelControl6.Appearance.Options.UseFont = True
+            Me.LabelControl6.Location = New System.Drawing.Point(3, 107)
+            Me.LabelControl6.Name = "LabelControl6"
+            Me.LabelControl6.Size = New System.Drawing.Size(97, 34)
+            Me.LabelControl6.TabIndex = 1
+            Me.LabelControl6.Text = "จำนวน :"
             '
-            'LayoutControlItem4
+            'lblWeight
             '
-            Me.LayoutControlItem4.Location = New System.Drawing.Point(312, 52)
-            Me.LayoutControlItem4.Name = "LayoutControlItem4"
-            Me.LayoutControlItem4.OptionsTableLayoutItem.ColumnIndex = 2
-            Me.LayoutControlItem4.OptionsTableLayoutItem.ColumnSpan = 2
-            Me.LayoutControlItem4.OptionsTableLayoutItem.RowIndex = 1
-            Me.LayoutControlItem4.OptionsTableLayoutItem.RowSpan = 2
-            Me.LayoutControlItem4.Size = New System.Drawing.Size(312, 90)
-            Me.LayoutControlItem4.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem4.TextVisible = False
+            Me.lblWeight.AllowDrop = True
+            Me.lblWeight.Appearance.BackColor = System.Drawing.Color.White
+            Me.lblWeight.Appearance.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.lblWeight.Appearance.ForeColor = System.Drawing.Color.Black
+            Me.lblWeight.Appearance.Options.UseBackColor = True
+            Me.lblWeight.Appearance.Options.UseFont = True
+            Me.lblWeight.Appearance.Options.UseForeColor = True
+            Me.lblWeight.LineVisible = True
+            Me.lblWeight.Location = New System.Drawing.Point(177, 157)
+            Me.lblWeight.Name = "lblWeight"
+            Me.lblWeight.Size = New System.Drawing.Size(130, 39)
+            Me.lblWeight.TabIndex = 13
+            Me.lblWeight.Text = "100.123"
             '
-            'LayoutControlItem9
+            'lblNetAmount
             '
-            Me.LayoutControlItem9.Control = Me.lblMatID
-            Me.LayoutControlItem9.Location = New System.Drawing.Point(298, 142)
-            Me.LayoutControlItem9.Name = "LayoutControlItem9"
-            Me.LayoutControlItem9.OptionsTableLayoutItem.ColumnIndex = 2
-            Me.LayoutControlItem9.OptionsTableLayoutItem.RowIndex = 3
-            Me.LayoutControlItem9.Size = New System.Drawing.Size(100, 46)
-            Me.LayoutControlItem9.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem9.TextVisible = False
-            Me.LayoutControlItem9.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
+            Me.lblNetAmount.Location = New System.Drawing.Point(663, 124)
+            Me.lblNetAmount.Name = "lblNetAmount"
+            Me.lblNetAmount.Size = New System.Drawing.Size(98, 19)
+            Me.lblNetAmount.StyleController = Me.LayoutControl1
+            Me.lblNetAmount.TabIndex = 43
+            Me.lblNetAmount.Text = "LabelControl2"
+            Me.lblNetAmount.Visible = False
             '
-            'LayoutControlItem15
+            'lblMatNameInfo
             '
-            Me.LayoutControlItem15.Control = Me.lblContractorInfo
-            Me.LayoutControlItem15.Location = New System.Drawing.Point(148, 142)
-            Me.LayoutControlItem15.Name = "LayoutControlItem15"
-            Me.LayoutControlItem15.OptionsTableLayoutItem.ColumnIndex = 1
-            Me.LayoutControlItem15.OptionsTableLayoutItem.RowIndex = 3
-            Me.LayoutControlItem15.Size = New System.Drawing.Size(150, 46)
-            Me.LayoutControlItem15.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem15.TextVisible = False
-            Me.LayoutControlItem15.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
+            Me.lblMatNameInfo.LineVisible = True
+            Me.lblMatNameInfo.Location = New System.Drawing.Point(663, 99)
+            Me.lblMatNameInfo.Name = "lblMatNameInfo"
+            Me.lblMatNameInfo.Size = New System.Drawing.Size(98, 19)
+            Me.lblMatNameInfo.StyleController = Me.LayoutControl1
+            Me.lblMatNameInfo.TabIndex = 42
+            Me.lblMatNameInfo.Text = "LabelControl2"
+            Me.lblMatNameInfo.Visible = False
             '
-            'LayoutControlItem8
+            'lblMatName
             '
-            Me.LayoutControlItem8.Control = Me.lblStroageID
-            Me.LayoutControlItem8.Location = New System.Drawing.Point(0, 142)
-            Me.LayoutControlItem8.Name = "LayoutControlItem8"
-            Me.LayoutControlItem8.OptionsTableLayoutItem.RowIndex = 3
-            Me.LayoutControlItem8.Size = New System.Drawing.Size(148, 46)
-            Me.LayoutControlItem8.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem8.TextVisible = False
-            Me.LayoutControlItem8.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
+            Me.lblMatName.Location = New System.Drawing.Point(663, 74)
+            Me.lblMatName.Name = "lblMatName"
+            Me.lblMatName.Size = New System.Drawing.Size(98, 19)
+            Me.lblMatName.StyleController = Me.LayoutControl1
+            Me.lblMatName.TabIndex = 41
+            Me.lblMatName.Text = "LabelControl2"
+            Me.lblMatName.Visible = False
             '
-            'LayoutControlItem11
+            'lblMatID
             '
-            Me.LayoutControlItem11.Control = Me.lblNetAmount
-            Me.LayoutControlItem11.Location = New System.Drawing.Point(0, 188)
-            Me.LayoutControlItem11.Name = "LayoutControlItem11"
-            Me.LayoutControlItem11.OptionsTableLayoutItem.RowIndex = 4
-            Me.LayoutControlItem11.Size = New System.Drawing.Size(148, 25)
-            Me.LayoutControlItem11.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem11.TextVisible = False
-            Me.LayoutControlItem11.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
+            Me.lblMatID.Location = New System.Drawing.Point(663, 56)
+            Me.lblMatID.Name = "lblMatID"
+            Me.lblMatID.Size = New System.Drawing.Size(98, 19)
+            Me.lblMatID.StyleController = Me.LayoutControl1
+            Me.lblMatID.TabIndex = 40
+            Me.lblMatID.Text = "LabelControl2"
+            Me.lblMatID.Visible = False
             '
-            'LayoutControlItem10
+            'lblContractorInfo
             '
-            Me.LayoutControlItem10.Control = Me.lblMatName
-            Me.LayoutControlItem10.Location = New System.Drawing.Point(148, 188)
-            Me.LayoutControlItem10.Name = "LayoutControlItem10"
-            Me.LayoutControlItem10.OptionsTableLayoutItem.ColumnIndex = 1
-            Me.LayoutControlItem10.OptionsTableLayoutItem.RowIndex = 4
-            Me.LayoutControlItem10.Size = New System.Drawing.Size(150, 25)
-            Me.LayoutControlItem10.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem10.TextVisible = False
-            Me.LayoutControlItem10.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
+            Me.lblContractorInfo.LineVisible = True
+            Me.lblContractorInfo.Location = New System.Drawing.Point(260, -23)
+            Me.lblContractorInfo.Name = "lblContractorInfo"
+            Me.lblContractorInfo.Size = New System.Drawing.Size(98, 19)
+            Me.lblContractorInfo.StyleController = Me.LayoutControl1
+            Me.lblContractorInfo.TabIndex = 39
+            Me.lblContractorInfo.Text = "LabelControl2"
+            Me.lblContractorInfo.Visible = False
             '
-            'LayoutControlItem13
+            'SplitContainer2
             '
-            Me.LayoutControlItem13.Control = Me.lblTicketID
-            Me.LayoutControlItem13.Location = New System.Drawing.Point(298, 188)
-            Me.LayoutControlItem13.Name = "LayoutControlItem13"
-            Me.LayoutControlItem13.OptionsTableLayoutItem.ColumnIndex = 2
-            Me.LayoutControlItem13.OptionsTableLayoutItem.RowIndex = 4
-            Me.LayoutControlItem13.Size = New System.Drawing.Size(100, 25)
-            Me.LayoutControlItem13.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem13.TextVisible = False
-            Me.LayoutControlItem13.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
+            Me.SplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.SplitContainer2.FixedPanel = System.Windows.Forms.FixedPanel.Panel1
+            Me.SplitContainer2.Location = New System.Drawing.Point(0, 0)
+            Me.SplitContainer2.Name = "SplitContainer2"
+            Me.SplitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal
             '
-            'LayoutControlItem14
+            'SplitContainer2.Panel1
             '
-            Me.LayoutControlItem14.Control = Me.lblMatNameInfo
-            Me.LayoutControlItem14.Location = New System.Drawing.Point(0, 208)
-            Me.LayoutControlItem14.Name = "LayoutControlItem14"
-            Me.LayoutControlItem14.OptionsTableLayoutItem.RowIndex = 5
-            Me.LayoutControlItem14.Size = New System.Drawing.Size(148, 25)
-            Me.LayoutControlItem14.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem14.TextVisible = False
-            Me.LayoutControlItem14.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
+            Me.SplitContainer2.Panel1.AllowDrop = True
+            Me.SplitContainer2.Panel1.Controls.Add(Me.TableLayoutPanel1)
+            Me.SplitContainer2.Panel1.Controls.Add(Me.GroupControl1)
             '
-            'LayoutControlItem3
+            'SplitContainer2.Panel2
             '
-            Me.LayoutControlItem3.Location = New System.Drawing.Point(0, 0)
-            Me.LayoutControlItem3.Name = "LayoutControlItem3"
-            Me.LayoutControlItem3.OptionsTableLayoutItem.ColumnSpan = 2
-            Me.LayoutControlItem3.Size = New System.Drawing.Size(262, 52)
-            Me.LayoutControlItem3.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem3.TextVisible = False
+            Me.SplitContainer2.Panel2.Controls.Add(Me.GroupControl3)
+            Me.SplitContainer2.Size = New System.Drawing.Size(813, 614)
+            Me.SplitContainer2.SplitterDistance = 205
+            Me.SplitContainer2.TabIndex = 0
             '
-            'LayoutControlGroupSouceData
+            'LayoutControlGroup1
             '
-            Me.LayoutControlGroupSouceData.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
-            Me.LayoutControlGroupSouceData.GroupBordersVisible = False
-            Me.LayoutControlGroupSouceData.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem2, Me.LayoutControlItem6, Me.EmptySpaceItem3, Me.EmptySpaceItem13, Me.LayoutControlItem17, Me.EmptySpaceItem4, Me.LayoutControlItem20, Me.LayoutControlItem7, Me.EmptySpaceItem2, Me.LayoutControlItem19, Me.LayoutControlItem22, Me.EmptySpaceItem7, Me.LayoutControlItem21, Me.LayoutControlItem23, Me.EmptySpaceItem5, Me.LayoutControlItem18, Me.EmptySpaceItem8, Me.EmptySpaceItem11, Me.EmptySpaceItem9, Me.LayoutControlItem24, Me.LayoutControlItem12, Me.EmptySpaceItem12, Me.LayoutControlItem5, Me.EmptySpaceItem6, Me.EmptySpaceItem14, Me.EmptySpaceItem16, Me.EmptySpaceItem17})
-            Me.LayoutControlGroupSouceData.Location = New System.Drawing.Point(0, 0)
-            Me.LayoutControlGroupSouceData.Name = "Root"
-            Me.LayoutControlGroupSouceData.OptionsItemText.TextAlignMode = DevExpress.XtraLayout.TextAlignModeGroup.CustomSize
-            Me.LayoutControlGroupSouceData.OptionsItemText.TextToControlDistance = 5
-            Me.LayoutControlGroupSouceData.Size = New System.Drawing.Size(1285, 796)
+            Me.LayoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
+            Me.LayoutControlGroup1.GroupBordersVisible = False
+            Me.LayoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem26, Me.LayoutControlItem19})
+            Me.LayoutControlGroup1.Location = New System.Drawing.Point(0, 0)
+            Me.LayoutControlGroup1.Name = "Root"
+            Me.LayoutControlGroup1.OptionsItemText.TextToControlDistance = 5
+            Me.LayoutControlGroup1.Size = New System.Drawing.Size(1315, 687)
+            Me.LayoutControlGroup1.TextVisible = False
             '
-            'LayoutControlItem2
+            'LayoutControlItem26
             '
-            Me.LayoutControlItem2.Control = Me.SearchMaterial
-            Me.LayoutControlItem2.Location = New System.Drawing.Point(928, 40)
-            Me.LayoutControlItem2.MinSize = New System.Drawing.Size(56, 52)
-            Me.LayoutControlItem2.Name = "LayoutControlItem2"
-            Me.LayoutControlItem2.OptionsTableLayoutItem.ColumnIndex = 2
-            Me.LayoutControlItem2.OptionsTableLayoutItem.ColumnSpan = 2
-            Me.LayoutControlItem2.Size = New System.Drawing.Size(317, 63)
-            Me.LayoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
-            Me.LayoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem2.TextVisible = False
-            '
-            'LayoutControlItem6
-            '
-            Me.LayoutControlItem6.Control = Me.LabelControl6
-            Me.LayoutControlItem6.Location = New System.Drawing.Point(591, 95)
-            Me.LayoutControlItem6.Name = "LayoutControlItem6"
-            Me.LayoutControlItem6.OptionsTableLayoutItem.RowIndex = 1
-            Me.LayoutControlItem6.Size = New System.Drawing.Size(103, 50)
-            Me.LayoutControlItem6.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem6.TextVisible = False
-            '
-            'EmptySpaceItem3
-            '
-            Me.EmptySpaceItem3.AllowHotTrack = False
-            Me.EmptySpaceItem3.Location = New System.Drawing.Point(591, 40)
-            Me.EmptySpaceItem3.Name = "EmptySpaceItem3"
-            Me.EmptySpaceItem3.Size = New System.Drawing.Size(49, 45)
-            Me.EmptySpaceItem3.TextSize = New System.Drawing.Size(0, 0)
-            '
-            'EmptySpaceItem13
-            '
-            Me.EmptySpaceItem13.AllowHotTrack = False
-            Me.EmptySpaceItem13.Location = New System.Drawing.Point(718, 40)
-            Me.EmptySpaceItem13.Name = "EmptySpaceItem13"
-            Me.EmptySpaceItem13.Size = New System.Drawing.Size(42, 45)
-            Me.EmptySpaceItem13.TextSize = New System.Drawing.Size(0, 0)
-            '
-            'LayoutControlItem17
-            '
-            Me.LayoutControlItem17.Control = Me.lblStroageName
-            Me.LayoutControlItem17.Location = New System.Drawing.Point(640, 40)
-            Me.LayoutControlItem17.Name = "LayoutControlItem17"
-            Me.LayoutControlItem17.OptionsTableLayoutItem.ColumnIndex = 1
-            Me.LayoutControlItem17.Size = New System.Drawing.Size(78, 45)
-            Me.LayoutControlItem17.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem17.TextVisible = False
-            '
-            'EmptySpaceItem4
-            '
-            Me.EmptySpaceItem4.AllowHotTrack = False
-            Me.EmptySpaceItem4.Location = New System.Drawing.Point(760, 40)
-            Me.EmptySpaceItem4.Name = "EmptySpaceItem4"
-            Me.EmptySpaceItem4.Size = New System.Drawing.Size(168, 145)
-            Me.EmptySpaceItem4.TextSize = New System.Drawing.Size(0, 0)
-            '
-            'LayoutControlItem20
-            '
-            Me.LayoutControlItem20.Control = Me.txtquantity
-            Me.LayoutControlItem20.CustomizationFormText = "LayoutControlItem15"
-            Me.LayoutControlItem20.Location = New System.Drawing.Point(694, 95)
-            Me.LayoutControlItem20.MinSize = New System.Drawing.Size(56, 50)
-            Me.LayoutControlItem20.Name = "LayoutControlItem20"
-            Me.LayoutControlItem20.OptionsTableLayoutItem.ColumnIndex = 1
-            Me.LayoutControlItem20.OptionsTableLayoutItem.RowIndex = 1
-            Me.LayoutControlItem20.Size = New System.Drawing.Size(66, 50)
-            Me.LayoutControlItem20.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
-            Me.LayoutControlItem20.Text = "LayoutControlItem15"
-            Me.LayoutControlItem20.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem20.TextVisible = False
-            '
-            'LayoutControlItem7
-            '
-            Me.LayoutControlItem7.Control = Me.lblWeight
-            Me.LayoutControlItem7.Location = New System.Drawing.Point(700, 145)
-            Me.LayoutControlItem7.Name = "LayoutControlItem7"
-            Me.LayoutControlItem7.OptionsTableLayoutItem.ColumnIndex = 1
-            Me.LayoutControlItem7.OptionsTableLayoutItem.RowIndex = 2
-            Me.LayoutControlItem7.Size = New System.Drawing.Size(60, 40)
-            Me.LayoutControlItem7.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem7.TextVisible = False
-            '
-            'EmptySpaceItem2
-            '
-            Me.EmptySpaceItem2.AllowHotTrack = False
-            Me.EmptySpaceItem2.Location = New System.Drawing.Point(1163, 0)
-            Me.EmptySpaceItem2.Name = "EmptySpaceItem2"
-            Me.EmptySpaceItem2.Size = New System.Drawing.Size(82, 40)
-            Me.EmptySpaceItem2.TextSize = New System.Drawing.Size(0, 0)
+            Me.LayoutControlItem26.Control = Me.SplitContainer1
+            Me.LayoutControlItem26.Location = New System.Drawing.Point(0, 37)
+            Me.LayoutControlItem26.Name = "LayoutControlItem26"
+            Me.LayoutControlItem26.Size = New System.Drawing.Size(1285, 620)
+            Me.LayoutControlItem26.TextSize = New System.Drawing.Size(0, 0)
+            Me.LayoutControlItem26.TextVisible = False
             '
             'LayoutControlItem19
             '
-            Me.LayoutControlItem19.Control = Me.GroupControl3
-            Me.LayoutControlItem19.Location = New System.Drawing.Point(550, 185)
-            Me.LayoutControlItem19.MinSize = New System.Drawing.Size(7, 7)
+            Me.LayoutControlItem19.Control = Me.CheckShowAll
+            Me.LayoutControlItem19.Location = New System.Drawing.Point(0, 0)
             Me.LayoutControlItem19.Name = "LayoutControlItem19"
-            Me.LayoutControlItem19.Size = New System.Drawing.Size(705, 513)
-            Me.LayoutControlItem19.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
+            Me.LayoutControlItem19.Size = New System.Drawing.Size(1285, 37)
+            Me.LayoutControlItem19.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize
+            Me.LayoutControlItem19.TextLocation = DevExpress.Utils.Locations.Right
             Me.LayoutControlItem19.TextSize = New System.Drawing.Size(0, 0)
+            Me.LayoutControlItem19.TextToControlDistance = 0
             Me.LayoutControlItem19.TextVisible = False
-            '
-            'LayoutControlItem22
-            '
-            Me.LayoutControlItem22.Control = Me.GroupControl1
-            Me.LayoutControlItem22.Location = New System.Drawing.Point(0, 37)
-            Me.LayoutControlItem22.Name = "LayoutControlItem22"
-            Me.LayoutControlItem22.Size = New System.Drawing.Size(550, 729)
-            Me.LayoutControlItem22.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem22.TextVisible = False
-            '
-            'EmptySpaceItem7
-            '
-            Me.EmptySpaceItem7.AllowHotTrack = False
-            Me.EmptySpaceItem7.Location = New System.Drawing.Point(591, 0)
-            Me.EmptySpaceItem7.Name = "EmptySpaceItem7"
-            Me.EmptySpaceItem7.Size = New System.Drawing.Size(151, 40)
-            Me.EmptySpaceItem7.TextSize = New System.Drawing.Size(0, 0)
-            '
-            'LayoutControlItem21
-            '
-            Me.LayoutControlItem21.Control = Me.btnSave
-            Me.LayoutControlItem21.Location = New System.Drawing.Point(1044, 698)
-            Me.LayoutControlItem21.MinSize = New System.Drawing.Size(85, 46)
-            Me.LayoutControlItem21.Name = "LayoutControlItem21"
-            Me.LayoutControlItem21.Size = New System.Drawing.Size(111, 68)
-            Me.LayoutControlItem21.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
-            Me.LayoutControlItem21.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem21.TextVisible = False
-            '
-            'LayoutControlItem23
-            '
-            Me.LayoutControlItem23.Control = Me.btnClose
-            Me.LayoutControlItem23.Location = New System.Drawing.Point(1165, 698)
-            Me.LayoutControlItem23.MinSize = New System.Drawing.Size(90, 46)
-            Me.LayoutControlItem23.Name = "LayoutControlItem23"
-            Me.LayoutControlItem23.Size = New System.Drawing.Size(90, 68)
-            Me.LayoutControlItem23.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
-            Me.LayoutControlItem23.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem23.TextVisible = False
-            '
-            'EmptySpaceItem5
-            '
-            Me.EmptySpaceItem5.AllowHotTrack = False
-            Me.EmptySpaceItem5.Location = New System.Drawing.Point(1155, 698)
-            Me.EmptySpaceItem5.Name = "EmptySpaceItem5"
-            Me.EmptySpaceItem5.Size = New System.Drawing.Size(10, 68)
-            Me.EmptySpaceItem5.TextSize = New System.Drawing.Size(0, 0)
-            '
-            'LayoutControlItem18
-            '
-            Me.LayoutControlItem18.Control = Me.lblWeightTicket
-            Me.LayoutControlItem18.Location = New System.Drawing.Point(742, 0)
-            Me.LayoutControlItem18.MinSize = New System.Drawing.Size(339, 40)
-            Me.LayoutControlItem18.Name = "LayoutControlItem18"
-            Me.LayoutControlItem18.Size = New System.Drawing.Size(421, 40)
-            Me.LayoutControlItem18.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
-            Me.LayoutControlItem18.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize
-            Me.LayoutControlItem18.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem18.TextToControlDistance = 0
-            Me.LayoutControlItem18.TextVisible = False
-            '
-            'EmptySpaceItem8
-            '
-            Me.EmptySpaceItem8.AllowHotTrack = False
-            Me.EmptySpaceItem8.Location = New System.Drawing.Point(550, 698)
-            Me.EmptySpaceItem8.Name = "EmptySpaceItem8"
-            Me.EmptySpaceItem8.Size = New System.Drawing.Size(494, 68)
-            Me.EmptySpaceItem8.TextSize = New System.Drawing.Size(0, 0)
-            '
-            'EmptySpaceItem11
-            '
-            Me.EmptySpaceItem11.AllowHotTrack = False
-            Me.EmptySpaceItem11.Location = New System.Drawing.Point(1202, 136)
-            Me.EmptySpaceItem11.Name = "EmptySpaceItem11"
-            Me.EmptySpaceItem11.Size = New System.Drawing.Size(43, 49)
-            Me.EmptySpaceItem11.TextSize = New System.Drawing.Size(0, 0)
-            '
-            'EmptySpaceItem9
-            '
-            Me.EmptySpaceItem9.AllowHotTrack = False
-            Me.EmptySpaceItem9.Location = New System.Drawing.Point(1245, 0)
-            Me.EmptySpaceItem9.Name = "EmptySpaceItem9"
-            Me.EmptySpaceItem9.Size = New System.Drawing.Size(10, 185)
-            Me.EmptySpaceItem9.TextSize = New System.Drawing.Size(0, 0)
-            '
-            'LayoutControlItem24
-            '
-            Me.LayoutControlItem24.Control = Me.lblTruckProperties
-            Me.LayoutControlItem24.Location = New System.Drawing.Point(928, 103)
-            Me.LayoutControlItem24.Name = "LayoutControlItem24"
-            Me.LayoutControlItem24.Size = New System.Drawing.Size(317, 33)
-            Me.LayoutControlItem24.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem24.TextVisible = False
-            '
-            'LayoutControlItem12
-            '
-            Me.LayoutControlItem12.Control = Me.btnProperties
-            Me.LayoutControlItem12.Location = New System.Drawing.Point(998, 136)
-            Me.LayoutControlItem12.MaxSize = New System.Drawing.Size(204, 49)
-            Me.LayoutControlItem12.MinSize = New System.Drawing.Size(204, 49)
-            Me.LayoutControlItem12.Name = "LayoutControlItem12"
-            Me.LayoutControlItem12.OptionsTableLayoutItem.ColumnIndex = 3
-            Me.LayoutControlItem12.OptionsTableLayoutItem.RowIndex = 3
-            Me.LayoutControlItem12.Size = New System.Drawing.Size(204, 49)
-            Me.LayoutControlItem12.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
-            Me.LayoutControlItem12.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem12.TextVisible = False
-            '
-            'EmptySpaceItem12
-            '
-            Me.EmptySpaceItem12.AllowHotTrack = False
-            Me.EmptySpaceItem12.Location = New System.Drawing.Point(928, 136)
-            Me.EmptySpaceItem12.Name = "EmptySpaceItem12"
-            Me.EmptySpaceItem12.Size = New System.Drawing.Size(70, 49)
-            Me.EmptySpaceItem12.TextSize = New System.Drawing.Size(0, 0)
-            '
-            'LayoutControlItem5
-            '
-            Me.LayoutControlItem5.Control = Me.LabelControl1
-            Me.LayoutControlItem5.CustomizationFormText = "LayoutControlItem6"
-            Me.LayoutControlItem5.Location = New System.Drawing.Point(591, 145)
-            Me.LayoutControlItem5.Name = "LayoutControlItem5"
-            Me.LayoutControlItem5.OptionsTableLayoutItem.RowIndex = 2
-            Me.LayoutControlItem5.Size = New System.Drawing.Size(109, 40)
-            Me.LayoutControlItem5.Text = "LayoutControlItem6"
-            Me.LayoutControlItem5.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem5.TextVisible = False
-            '
-            'EmptySpaceItem6
-            '
-            Me.EmptySpaceItem6.AllowHotTrack = False
-            Me.EmptySpaceItem6.Location = New System.Drawing.Point(550, 0)
-            Me.EmptySpaceItem6.Name = "EmptySpaceItem6"
-            Me.EmptySpaceItem6.Size = New System.Drawing.Size(41, 185)
-            Me.EmptySpaceItem6.TextSize = New System.Drawing.Size(0, 0)
-            '
-            'EmptySpaceItem14
-            '
-            Me.EmptySpaceItem14.AllowHotTrack = False
-            Me.EmptySpaceItem14.Location = New System.Drawing.Point(591, 85)
-            Me.EmptySpaceItem14.Name = "EmptySpaceItem14"
-            Me.EmptySpaceItem14.Size = New System.Drawing.Size(169, 10)
-            Me.EmptySpaceItem14.TextSize = New System.Drawing.Size(0, 0)
-            '
-            'EmptySpaceItem16
-            '
-            Me.EmptySpaceItem16.AllowHotTrack = False
-            Me.EmptySpaceItem16.Location = New System.Drawing.Point(314, 0)
-            Me.EmptySpaceItem16.Name = "EmptySpaceItem16"
-            Me.EmptySpaceItem16.Size = New System.Drawing.Size(236, 37)
-            Me.EmptySpaceItem16.TextSize = New System.Drawing.Size(0, 0)
-            '
-            'EmptySpaceItem17
-            '
-            Me.EmptySpaceItem17.AllowHotTrack = False
-            Me.EmptySpaceItem17.Location = New System.Drawing.Point(0, 0)
-            Me.EmptySpaceItem17.Name = "EmptySpaceItem17"
-            Me.EmptySpaceItem17.Size = New System.Drawing.Size(314, 37)
-            Me.EmptySpaceItem17.TextSize = New System.Drawing.Size(0, 0)
             '
             'item3
             '
@@ -2665,7 +2344,7 @@
             Me.RepositoryItemSpinEdit2.AllowFocused = False
             Me.RepositoryItemSpinEdit2.AutoHeight = False
             Me.RepositoryItemSpinEdit2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D
-            Me.RepositoryItemSpinEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 5, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("RepositoryItemSpinEdit2.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject4, "", Nothing, Nothing, True)})
+            Me.RepositoryItemSpinEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 5, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("RepositoryItemSpinEdit2.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject8, "", Nothing, Nothing, True)})
             Me.RepositoryItemSpinEdit2.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D
             Me.RepositoryItemSpinEdit2.Name = "RepositoryItemSpinEdit2"
             '
@@ -2708,308 +2387,95 @@
             Me.LayoutControlGroup2.OptionsItemText.TextToControlDistance = 5
             Me.LayoutControlGroup2.Size = New System.Drawing.Size(411, 75)
             '
-            'LayoutViewCard5
+            'TableLayoutPanel1
             '
-            Me.LayoutViewCard5.CustomizationFormText = "TemplateCard"
-            Me.LayoutViewCard5.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
-            Me.LayoutViewCard5.HeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.AfterText
-            Me.LayoutViewCard5.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutViewField_LayoutViewColumn12, Me.layoutViewField_LayoutViewColumn14, Me.layoutViewField_LayoutViewColumn16, Me.layoutViewField_LayoutViewColumn5, Me.layoutViewField_LayoutViewColumn3, Me.layoutViewField_LayoutViewColumn20, Me.item17, Me.item11, Me.item19, Me.item20, Me.layoutViewField_LayoutViewColumn15, Me.item24, Me.item21, Me.item10, Me.item16, Me.item14})
-            Me.LayoutViewCard5.Name = "LayoutViewCard5"
-            Me.LayoutViewCard5.OptionsItemText.TextAlignMode = DevExpress.XtraLayout.TextAlignModeGroup.AlignWithChildren
-            Me.LayoutViewCard5.OptionsItemText.TextToControlDistance = 1
-            Me.LayoutViewCard5.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.LayoutViewCard5.Text = "TemplateCard"
-            Me.LayoutViewCard5.TextLocation = DevExpress.Utils.Locations.[Default]
+            Me.TableLayoutPanel1.AutoSize = True
+            Me.TableLayoutPanel1.ColumnCount = 4
+            Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 174.0!))
+            Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
+            Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
+            Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 49.0!))
+            Me.TableLayoutPanel1.Controls.Add(Me.LabelControl1, 0, 3)
+            Me.TableLayoutPanel1.Controls.Add(Me.lblWeight, 1, 3)
+            Me.TableLayoutPanel1.Controls.Add(Me.LabelControl6, 0, 2)
+            Me.TableLayoutPanel1.Controls.Add(Me.lblStroageName, 0, 1)
+            Me.TableLayoutPanel1.Controls.Add(Me.lblTruckProperties, 2, 2)
+            Me.TableLayoutPanel1.Controls.Add(Me.btnSave, 3, 1)
+            Me.TableLayoutPanel1.Controls.Add(Me.btnClose, 3, 0)
+            Me.TableLayoutPanel1.Controls.Add(Me.SearchMaterial, 2, 1)
+            Me.TableLayoutPanel1.Controls.Add(Me.txtquantity, 1, 2)
+            Me.TableLayoutPanel1.Controls.Add(Me.lblWeightTicket, 1, 0)
+            Me.TableLayoutPanel1.Controls.Add(Me.btnProperties, 3, 2)
+            Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.TableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize
+            Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+            Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+            Me.TableLayoutPanel1.RowCount = 4
+            Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+            Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+            Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+            Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+            Me.TableLayoutPanel1.Size = New System.Drawing.Size(813, 205)
+            Me.TableLayoutPanel1.TabIndex = 46
             '
-            'layoutViewField_LayoutViewColumn12
+            'btnClose
             '
-            Me.layoutViewField_LayoutViewColumn12.EditorPreferredWidth = 340
-            Me.layoutViewField_LayoutViewColumn12.Location = New System.Drawing.Point(65, 32)
-            Me.layoutViewField_LayoutViewColumn12.Name = "layoutViewField_LayoutViewColumn12"
-            Me.layoutViewField_LayoutViewColumn12.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutViewField_LayoutViewColumn12.Size = New System.Drawing.Size(346, 32)
-            Me.layoutViewField_LayoutViewColumn12.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
-            Me.layoutViewField_LayoutViewColumn12.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
-            Me.layoutViewField_LayoutViewColumn12.TextLocation = DevExpress.Utils.Locations.Left
-            Me.layoutViewField_LayoutViewColumn12.TextSize = New System.Drawing.Size(0, 0)
-            Me.layoutViewField_LayoutViewColumn12.TextToControlDistance = 0
-            Me.layoutViewField_LayoutViewColumn12.TextVisible = False
+            Me.btnClose.AllowDrop = True
+            Me.btnClose.Dock = System.Windows.Forms.DockStyle.Right
+            Me.btnClose.Image = CType(resources.GetObject("btnClose.Image"), System.Drawing.Image)
+            Me.btnClose.Location = New System.Drawing.Point(632, 3)
+            Me.btnClose.Name = "btnClose"
+            Me.btnClose.Size = New System.Drawing.Size(178, 46)
+            Me.btnClose.TabIndex = 9
+            Me.btnClose.Text = "Close"
             '
-            'layoutViewField_LayoutViewColumn14
+            'btnSave
             '
-            Me.layoutViewField_LayoutViewColumn14.EditorPreferredWidth = 340
-            Me.layoutViewField_LayoutViewColumn14.Location = New System.Drawing.Point(65, 64)
-            Me.layoutViewField_LayoutViewColumn14.Name = "layoutViewField_LayoutViewColumn14"
-            Me.layoutViewField_LayoutViewColumn14.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutViewField_LayoutViewColumn14.Size = New System.Drawing.Size(346, 32)
-            Me.layoutViewField_LayoutViewColumn14.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
-            Me.layoutViewField_LayoutViewColumn14.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
-            Me.layoutViewField_LayoutViewColumn14.TextLocation = DevExpress.Utils.Locations.Left
-            Me.layoutViewField_LayoutViewColumn14.TextSize = New System.Drawing.Size(0, 0)
-            Me.layoutViewField_LayoutViewColumn14.TextToControlDistance = 0
-            Me.layoutViewField_LayoutViewColumn14.TextVisible = False
+            Me.btnSave.AllowDrop = True
+            Me.btnSave.Dock = System.Windows.Forms.DockStyle.Right
+            Me.btnSave.Image = CType(resources.GetObject("btnSave.Image"), System.Drawing.Image)
+            Me.btnSave.Location = New System.Drawing.Point(632, 55)
+            Me.btnSave.Name = "btnSave"
+            Me.btnSave.Size = New System.Drawing.Size(178, 46)
+            Me.btnSave.TabIndex = 7
+            Me.btnSave.Text = "Save"
             '
-            'layoutViewField_LayoutViewColumn16
+            'btnProperties
             '
-            Me.layoutViewField_LayoutViewColumn16.EditorPreferredWidth = 128
-            Me.layoutViewField_LayoutViewColumn16.Location = New System.Drawing.Point(65, 128)
-            Me.layoutViewField_LayoutViewColumn16.Name = "layoutViewField_LayoutViewColumn16"
-            Me.layoutViewField_LayoutViewColumn16.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutViewField_LayoutViewColumn16.Size = New System.Drawing.Size(134, 32)
-            Me.layoutViewField_LayoutViewColumn16.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
-            Me.layoutViewField_LayoutViewColumn16.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
-            Me.layoutViewField_LayoutViewColumn16.TextLocation = DevExpress.Utils.Locations.Left
-            Me.layoutViewField_LayoutViewColumn16.TextSize = New System.Drawing.Size(0, 0)
-            Me.layoutViewField_LayoutViewColumn16.TextToControlDistance = 0
-            Me.layoutViewField_LayoutViewColumn16.TextVisible = False
-            '
-            'layoutViewField_LayoutViewColumn5
-            '
-            Me.layoutViewField_LayoutViewColumn5.AppearanceItemCaption.Options.UseTextOptions = True
-            Me.layoutViewField_LayoutViewColumn5.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-            Me.layoutViewField_LayoutViewColumn5.EditorPreferredWidth = 196
-            Me.layoutViewField_LayoutViewColumn5.Location = New System.Drawing.Point(209, 96)
-            Me.layoutViewField_LayoutViewColumn5.Name = "layoutViewField_LayoutViewColumn5"
-            Me.layoutViewField_LayoutViewColumn5.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutViewField_LayoutViewColumn5.Size = New System.Drawing.Size(202, 32)
-            Me.layoutViewField_LayoutViewColumn5.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
-            Me.layoutViewField_LayoutViewColumn5.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
-            Me.layoutViewField_LayoutViewColumn5.TextLocation = DevExpress.Utils.Locations.Top
-            Me.layoutViewField_LayoutViewColumn5.TextSize = New System.Drawing.Size(0, 0)
-            Me.layoutViewField_LayoutViewColumn5.TextToControlDistance = 0
-            Me.layoutViewField_LayoutViewColumn5.TextVisible = False
-            '
-            'layoutViewField_LayoutViewColumn3
-            '
-            Me.layoutViewField_LayoutViewColumn3.EditorPreferredWidth = 340
-            Me.layoutViewField_LayoutViewColumn3.Location = New System.Drawing.Point(65, 0)
-            Me.layoutViewField_LayoutViewColumn3.Name = "layoutViewField_LayoutViewColumn3"
-            Me.layoutViewField_LayoutViewColumn3.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutViewField_LayoutViewColumn3.Size = New System.Drawing.Size(346, 32)
-            Me.layoutViewField_LayoutViewColumn3.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
-            Me.layoutViewField_LayoutViewColumn3.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
-            Me.layoutViewField_LayoutViewColumn3.TextLocation = DevExpress.Utils.Locations.Left
-            Me.layoutViewField_LayoutViewColumn3.TextSize = New System.Drawing.Size(0, 0)
-            Me.layoutViewField_LayoutViewColumn3.TextToControlDistance = 0
-            Me.layoutViewField_LayoutViewColumn3.TextVisible = False
-            '
-            'layoutViewField_LayoutViewColumn20
-            '
-            Me.layoutViewField_LayoutViewColumn20.AppearanceItemCaption.Options.UseTextOptions = True
-            Me.layoutViewField_LayoutViewColumn20.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-            Me.layoutViewField_LayoutViewColumn20.EditorPreferredWidth = 196
-            Me.layoutViewField_LayoutViewColumn20.Location = New System.Drawing.Point(209, 128)
-            Me.layoutViewField_LayoutViewColumn20.Name = "layoutViewField_LayoutViewColumn20"
-            Me.layoutViewField_LayoutViewColumn20.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutViewField_LayoutViewColumn20.Size = New System.Drawing.Size(202, 32)
-            Me.layoutViewField_LayoutViewColumn20.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
-            Me.layoutViewField_LayoutViewColumn20.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
-            Me.layoutViewField_LayoutViewColumn20.TextLocation = DevExpress.Utils.Locations.Top
-            Me.layoutViewField_LayoutViewColumn20.TextSize = New System.Drawing.Size(0, 0)
-            Me.layoutViewField_LayoutViewColumn20.TextToControlDistance = 0
-            Me.layoutViewField_LayoutViewColumn20.TextVisible = False
-            '
-            'item17
-            '
-            Me.item17.AllowHotTrack = False
-            Me.item17.CustomizationFormText = "Labelitem17"
-            Me.item17.Location = New System.Drawing.Point(0, 73)
-            Me.item17.Name = "item17"
-            Me.item17.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.item17.Size = New System.Drawing.Size(55, 25)
-            Me.item17.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
-            Me.item17.Text = "ลูกค้า"
-            Me.item17.TextSize = New System.Drawing.Size(47, 19)
-            '
-            'item11
-            '
-            Me.item11.AllowHotTrack = False
-            Me.item11.CustomizationFormText = "item11"
-            Me.item11.Location = New System.Drawing.Point(55, 0)
-            Me.item11.Name = "item11"
-            Me.item11.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.item11.Size = New System.Drawing.Size(10, 170)
-            Me.item11.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
-            Me.item11.TextSize = New System.Drawing.Size(0, 0)
-            '
-            'item19
-            '
-            Me.item19.AllowHotTrack = False
-            Me.item19.CustomizationFormText = "Labelitem19"
-            Me.item19.Location = New System.Drawing.Point(0, 98)
-            Me.item19.Name = "item19"
-            Me.item19.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.item19.Size = New System.Drawing.Size(55, 25)
-            Me.item19.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
-            Me.item19.Text = "จำนวน"
-            Me.item19.TextSize = New System.Drawing.Size(47, 19)
-            '
-            'item20
-            '
-            Me.item20.AllowHotTrack = False
-            Me.item20.CustomizationFormText = "item20"
-            Me.item20.Location = New System.Drawing.Point(199, 96)
-            Me.item20.Name = "item20"
-            Me.item20.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.item20.Size = New System.Drawing.Size(10, 64)
-            Me.item20.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
-            Me.item20.TextSize = New System.Drawing.Size(0, 0)
-            '
-            'layoutViewField_LayoutViewColumn15
-            '
-            Me.layoutViewField_LayoutViewColumn15.EditorPreferredWidth = 128
-            Me.layoutViewField_LayoutViewColumn15.Location = New System.Drawing.Point(65, 96)
-            Me.layoutViewField_LayoutViewColumn15.Name = "layoutViewField_LayoutViewColumn15"
-            Me.layoutViewField_LayoutViewColumn15.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutViewField_LayoutViewColumn15.Size = New System.Drawing.Size(134, 32)
-            Me.layoutViewField_LayoutViewColumn15.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
-            Me.layoutViewField_LayoutViewColumn15.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
-            Me.layoutViewField_LayoutViewColumn15.TextLocation = DevExpress.Utils.Locations.Left
-            Me.layoutViewField_LayoutViewColumn15.TextSize = New System.Drawing.Size(0, 0)
-            Me.layoutViewField_LayoutViewColumn15.TextToControlDistance = 0
-            Me.layoutViewField_LayoutViewColumn15.TextVisible = False
-            '
-            'item24
-            '
-            Me.item24.AllowHotTrack = False
-            Me.item24.CustomizationFormText = "น้ำหนัก"
-            Me.item24.Location = New System.Drawing.Point(0, 123)
-            Me.item24.Name = "item24"
-            Me.item24.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.item24.Size = New System.Drawing.Size(55, 25)
-            Me.item24.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
-            Me.item24.Text = "น้ำหนัก"
-            Me.item24.TextSize = New System.Drawing.Size(47, 19)
-            '
-            'item21
-            '
-            Me.item21.AllowHotTrack = False
-            Me.item21.CustomizationFormText = "item21"
-            Me.item21.Location = New System.Drawing.Point(0, 0)
-            Me.item21.Name = "item21"
-            Me.item21.Size = New System.Drawing.Size(55, 48)
-            Me.item21.TextSize = New System.Drawing.Size(0, 0)
-            '
-            'item10
-            '
-            Me.item10.AllowHotTrack = False
-            Me.item10.CustomizationFormText = "item10"
-            Me.item10.Location = New System.Drawing.Point(0, 148)
-            Me.item10.Name = "item10"
-            Me.item10.Size = New System.Drawing.Size(55, 22)
-            Me.item10.TextSize = New System.Drawing.Size(0, 0)
-            '
-            'item16
-            '
-            Me.item16.AllowHotTrack = False
-            Me.item16.CustomizationFormText = "ทะเบียนรถ"
-            Me.item16.Location = New System.Drawing.Point(0, 48)
-            Me.item16.Name = "item16"
-            Me.item16.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.item16.Size = New System.Drawing.Size(55, 25)
-            Me.item16.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
-            Me.item16.Text = "วัตถุดิบ"
-            Me.item16.TextSize = New System.Drawing.Size(47, 19)
-            '
-            'item14
-            '
-            Me.item14.AllowHotTrack = False
-            Me.item14.CustomizationFormText = "item14"
-            Me.item14.Location = New System.Drawing.Point(65, 160)
-            Me.item14.Name = "item14"
-            Me.item14.Size = New System.Drawing.Size(346, 10)
-            Me.item14.TextSize = New System.Drawing.Size(0, 0)
-            '
-            'layoutViewField_LayoutViewColumn11
-            '
-            Me.layoutViewField_LayoutViewColumn11.EditorPreferredWidth = 20
-            Me.layoutViewField_LayoutViewColumn11.Location = New System.Drawing.Point(0, 0)
-            Me.layoutViewField_LayoutViewColumn11.Name = "layoutViewField_LayoutViewColumn11"
-            Me.layoutViewField_LayoutViewColumn11.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutViewField_LayoutViewColumn11.Size = New System.Drawing.Size(395, 170)
-            Me.layoutViewField_LayoutViewColumn11.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
-            Me.layoutViewField_LayoutViewColumn11.TextLocation = DevExpress.Utils.Locations.Left
-            Me.layoutViewField_LayoutViewColumn11.TextSize = New System.Drawing.Size(80, 19)
-            '
-            'layoutViewField_LayoutViewColumn13
-            '
-            Me.layoutViewField_LayoutViewColumn13.EditorPreferredWidth = 20
-            Me.layoutViewField_LayoutViewColumn13.Location = New System.Drawing.Point(0, 0)
-            Me.layoutViewField_LayoutViewColumn13.Name = "layoutViewField_LayoutViewColumn13"
-            Me.layoutViewField_LayoutViewColumn13.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutViewField_LayoutViewColumn13.Size = New System.Drawing.Size(395, 170)
-            Me.layoutViewField_LayoutViewColumn13.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
-            Me.layoutViewField_LayoutViewColumn13.TextLocation = DevExpress.Utils.Locations.Left
-            Me.layoutViewField_LayoutViewColumn13.TextSize = New System.Drawing.Size(70, 19)
-            '
-            'layoutViewField_LayoutViewColumn17
-            '
-            Me.layoutViewField_LayoutViewColumn17.EditorPreferredWidth = 20
-            Me.layoutViewField_LayoutViewColumn17.Location = New System.Drawing.Point(0, 0)
-            Me.layoutViewField_LayoutViewColumn17.Name = "layoutViewField_LayoutViewColumn17"
-            Me.layoutViewField_LayoutViewColumn17.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutViewField_LayoutViewColumn17.Size = New System.Drawing.Size(395, 170)
-            Me.layoutViewField_LayoutViewColumn17.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
-            Me.layoutViewField_LayoutViewColumn17.TextLocation = DevExpress.Utils.Locations.Left
-            Me.layoutViewField_LayoutViewColumn17.TextSize = New System.Drawing.Size(94, 19)
-            '
-            'layoutViewField_LayoutViewColumn18
-            '
-            Me.layoutViewField_LayoutViewColumn18.AppearanceItemCaption.Options.UseTextOptions = True
-            Me.layoutViewField_LayoutViewColumn18.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-            Me.layoutViewField_LayoutViewColumn18.EditorPreferredWidth = 20
-            Me.layoutViewField_LayoutViewColumn18.Location = New System.Drawing.Point(0, 0)
-            Me.layoutViewField_LayoutViewColumn18.Name = "layoutViewField_LayoutViewColumn18"
-            Me.layoutViewField_LayoutViewColumn18.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutViewField_LayoutViewColumn18.Size = New System.Drawing.Size(395, 170)
-            Me.layoutViewField_LayoutViewColumn18.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
-            Me.layoutViewField_LayoutViewColumn18.TextLocation = DevExpress.Utils.Locations.Left
-            Me.layoutViewField_LayoutViewColumn18.TextSize = New System.Drawing.Size(109, 19)
-            '
-            'layoutViewField_LayoutViewColumn19
-            '
-            Me.layoutViewField_LayoutViewColumn19.EditorPreferredWidth = 20
-            Me.layoutViewField_LayoutViewColumn19.Location = New System.Drawing.Point(0, 0)
-            Me.layoutViewField_LayoutViewColumn19.Name = "layoutViewField_LayoutViewColumn19"
-            Me.layoutViewField_LayoutViewColumn19.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutViewField_LayoutViewColumn19.Size = New System.Drawing.Size(395, 170)
-            Me.layoutViewField_LayoutViewColumn19.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
-            Me.layoutViewField_LayoutViewColumn19.TextLocation = DevExpress.Utils.Locations.Left
-            Me.layoutViewField_LayoutViewColumn19.TextSize = New System.Drawing.Size(105, 19)
-            '
-            'layoutViewField_LayoutViewColumn10
-            '
-            Me.layoutViewField_LayoutViewColumn10.EditorPreferredWidth = 20
-            Me.layoutViewField_LayoutViewColumn10.Location = New System.Drawing.Point(0, 0)
-            Me.layoutViewField_LayoutViewColumn10.Name = "layoutViewField_LayoutViewColumn10"
-            Me.layoutViewField_LayoutViewColumn10.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutViewField_LayoutViewColumn10.Size = New System.Drawing.Size(395, 170)
-            Me.layoutViewField_LayoutViewColumn10.Spacing = New DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3)
-            Me.layoutViewField_LayoutViewColumn10.TextLocation = DevExpress.Utils.Locations.Left
-            Me.layoutViewField_LayoutViewColumn10.TextSize = New System.Drawing.Size(74, 19)
+            Me.btnProperties.AllowDrop = True
+            Me.btnProperties.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.btnProperties.Appearance.Options.UseFont = True
+            Me.btnProperties.Dock = System.Windows.Forms.DockStyle.Right
+            Me.btnProperties.Image = CType(resources.GetObject("btnProperties.Image"), System.Drawing.Image)
+            Me.btnProperties.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft
+            Me.btnProperties.Location = New System.Drawing.Point(632, 107)
+            Me.btnProperties.Name = "btnProperties"
+            Me.btnProperties.Size = New System.Drawing.Size(178, 44)
+            Me.btnProperties.TabIndex = 5
+            Me.btnProperties.Text = "Properties "
             '
             'frm_IVM_Popup_Material_Manage
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(1285, 796)
-            Me.Controls.Add(Me.LayoutControlSouceData)
+            Me.ClientSize = New System.Drawing.Size(1315, 687)
+            Me.Controls.Add(Me.LayoutControl1)
             Me.Name = "frm_IVM_Popup_Material_Manage"
             Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
             Me.Text = "IMV"
             CType(Me.RepositoryItemSpinEdit1, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlSouceData, System.ComponentModel.ISupportInitialize).EndInit()
-            Me.LayoutControlSouceData.ResumeLayout(False)
-            Me.LayoutControlSouceData.PerformLayout()
             CType(Me.CheckShowAll.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).EndInit()
-            Me.GroupControl1.ResumeLayout(False)
+            CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
+            Me.LayoutControl1.ResumeLayout(False)
+            Me.SplitContainer1.Panel1.ResumeLayout(False)
+            Me.SplitContainer1.Panel2.ResumeLayout(False)
+            Me.SplitContainer1.Panel2.PerformLayout()
+            CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
+            Me.SplitContainer1.ResumeLayout(False)
             CType(Me.TabPane1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.TabPane1.ResumeLayout(False)
             Me.TabPane1.PerformLayout()
             Me.TabNP_Souce.ResumeLayout(False)
-            CType(Me.GridControlWeightTicket, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutViewWeightTicket, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.GridControlSouceArea, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutViewSouceArea, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.layoutViewField_colCardStorageName, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3021,6 +2487,22 @@
             CType(Me.layoutViewField_colPlateLicense, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.layoutViewField_colCardPackageSize, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutViewCard1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.GridControlWeightTicket, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.LayoutViewWeightTicket, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.layoutViewField_LayoutViewColumn3, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.layoutViewField_LayoutViewColumn5, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.layoutViewField_LayoutViewColumn10, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.layoutViewField_LayoutViewColumn11, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.layoutViewField_LayoutViewColumn12, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.layoutViewField_LayoutViewColumn13, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.layoutViewField_LayoutViewColumn14, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.layoutViewField_LayoutViewColumn15, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.layoutViewField_LayoutViewColumn16, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.layoutViewField_LayoutViewColumn17, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.layoutViewField_LayoutViewColumn18, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.layoutViewField_LayoutViewColumn19, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.layoutViewField_LayoutViewColumn20, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.LayoutViewCard5, System.ComponentModel.ISupportInitialize).EndInit()
             Me.TabNP_SouceGroup.ResumeLayout(False)
             CType(Me.gridControlDestGroupArea, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.layoutViewDestGroupArea, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3035,8 +2517,6 @@
             CType(Me.RepositoryItemPictureEdit3, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.layoutViewField_colPhoto, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutViewCard2, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.item2, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.item9, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.RepositoryItemHyperLinkEdit3, System.ComponentModel.ISupportInitialize).EndInit()
             Me.TabNP_SouceDetail.ResumeLayout(False)
             CType(Me.GridControlDestSubArea, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3055,56 +2535,25 @@
             CType(Me.LayoutViewField1, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutViewField2, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutViewCard3, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.item18, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).EndInit()
+            Me.GroupControl1.ResumeLayout(False)
+            Me.GroupControl1.PerformLayout()
             CType(Me.GroupControl3, System.ComponentModel.ISupportInitialize).EndInit()
             Me.GroupControl3.ResumeLayout(False)
             CType(Me.GridControlMoveMentDetail, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.GridViewMoveMentDetail, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.DeleteCustomRow, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.EditRow, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.RepositoryItemLookUpEdit1, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.CalcEditBale, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.SearchMaterial.Properties, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.SearchLookUpEdit1View, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.txtquantity.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem9, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem15, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem8, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem11, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem10, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem13, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem14, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlGroupSouceData, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.EmptySpaceItem3, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.EmptySpaceItem13, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem17, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.EmptySpaceItem4, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem20, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.EmptySpaceItem2, System.ComponentModel.ISupportInitialize).EndInit()
+            Me.SplitContainer2.Panel1.ResumeLayout(False)
+            Me.SplitContainer2.Panel1.PerformLayout()
+            Me.SplitContainer2.Panel2.ResumeLayout(False)
+            Me.SplitContainer2.Panel2.PerformLayout()
+            CType(Me.SplitContainer2, System.ComponentModel.ISupportInitialize).EndInit()
+            Me.SplitContainer2.ResumeLayout(False)
+            CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.LayoutControlItem26, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutControlItem19, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem22, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.EmptySpaceItem7, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem21, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem23, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.EmptySpaceItem5, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem18, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.EmptySpaceItem8, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.EmptySpaceItem11, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.EmptySpaceItem9, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem24, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem12, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.EmptySpaceItem12, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.EmptySpaceItem6, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.EmptySpaceItem14, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.EmptySpaceItem16, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.EmptySpaceItem17, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.item3, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.repositoryItemTextEdit1, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.repositoryItemPictureEdit1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3127,36 +2576,13 @@
             CType(Me.EmptySpaceItem10, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.EmptySpaceItem15, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutViewCard5, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.layoutViewField_LayoutViewColumn12, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.layoutViewField_LayoutViewColumn14, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.layoutViewField_LayoutViewColumn16, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.layoutViewField_LayoutViewColumn5, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.layoutViewField_LayoutViewColumn3, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.layoutViewField_LayoutViewColumn20, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.item17, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.item11, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.item19, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.item20, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.layoutViewField_LayoutViewColumn15, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.item24, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.item21, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.item10, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.item16, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.item14, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.layoutViewField_LayoutViewColumn11, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.layoutViewField_LayoutViewColumn13, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.layoutViewField_LayoutViewColumn17, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.layoutViewField_LayoutViewColumn18, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.layoutViewField_LayoutViewColumn19, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.layoutViewField_LayoutViewColumn10, System.ComponentModel.ISupportInitialize).EndInit()
+            Me.TableLayoutPanel1.ResumeLayout(False)
+            Me.TableLayoutPanel1.PerformLayout()
             Me.ResumeLayout(False)
 
         End Sub
 
         Private WithEvents RepositoryItemSpinEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit
-        Private WithEvents lblWeight As DevExpress.XtraEditors.LabelControl
-        Friend WithEvents LabelControl6 As DevExpress.XtraEditors.LabelControl
         'Friend WithEvents RepositoryItemLookUpEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
         Friend WithEvents item3 As DevExpress.XtraLayout.EmptySpaceItem
         Private WithEvents repositoryItemTextEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemTextEdit
@@ -3165,203 +2591,157 @@
         Private WithEvents repositoryItemMemoEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit
         Private WithEvents RepositoryItemCheckEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
         Friend WithEvents item1 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents btnSave As DevExpress.XtraEditors.SimpleButton
-        Friend WithEvents GroupControl3 As DevExpress.XtraEditors.GroupControl
         Friend WithEvents item8 As DevExpress.XtraLayout.EmptySpaceItem
         Friend WithEvents item7 As DevExpress.XtraLayout.EmptySpaceItem
         Friend WithEvents item6 As DevExpress.XtraLayout.EmptySpaceItem
         Friend WithEvents item4 As DevExpress.XtraLayout.EmptySpaceItem
         Friend WithEvents item5 As DevExpress.XtraLayout.EmptySpaceItem
-        Private WithEvents TabPane1 As DevExpress.XtraBars.Navigation.TabPane
-        Private WithEvents TabNP_Souce As DevExpress.XtraBars.Navigation.TabNavigationPage
-        Friend WithEvents GridControlSouceArea As DevExpress.XtraGrid.GridControl
-        Private WithEvents TabNP_SouceGroup As DevExpress.XtraBars.Navigation.TabNavigationPage
-        Private WithEvents TabNP_SouceDetail As DevExpress.XtraBars.Navigation.TabNavigationPage
         Private WithEvents RepositoryItemTextEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemTextEdit
         Private WithEvents RepositoryItemPictureEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit
         Private WithEvents RepositoryItemHyperLinkEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemHyperLinkEdit
         Private WithEvents RepositoryItemMemoEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit
         Private WithEvents RepositoryItemCheckEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
         Private WithEvents RepositoryItemSpinEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit
-        Private WithEvents GroupControl1 As DevExpress.XtraEditors.GroupControl
+        Friend WithEvents RichEditControl1 As DevExpress.XtraRichEdit.RichEditControl
+        Friend WithEvents EmptySpaceItem1 As DevExpress.XtraLayout.EmptySpaceItem
+        Friend WithEvents EmptySpaceItem10 As DevExpress.XtraLayout.EmptySpaceItem
+        Friend WithEvents EmptySpaceItem15 As DevExpress.XtraLayout.EmptySpaceItem
+        Friend WithEvents LayoutControlGroup2 As DevExpress.XtraLayout.LayoutControlGroup
+        Friend WithEvents CheckShowAll As DevExpress.XtraEditors.CheckEdit
+        Friend WithEvents LayoutControl1 As DevExpress.XtraLayout.LayoutControl
+        Friend WithEvents SplitContainer1 As Windows.Forms.SplitContainer
+        Friend WithEvents SplitContainer2 As Windows.Forms.SplitContainer
+        Friend WithEvents LayoutControlGroup1 As DevExpress.XtraLayout.LayoutControlGroup
+        Friend WithEvents LayoutControlItem26 As DevExpress.XtraLayout.LayoutControlItem
+        Private WithEvents TabPane1 As DevExpress.XtraBars.Navigation.TabPane
+        Private WithEvents TabNP_Souce As DevExpress.XtraBars.Navigation.TabNavigationPage
+        Friend WithEvents GridControlSouceArea As DevExpress.XtraGrid.GridControl
         Private WithEvents LayoutViewSouceArea As DevExpress.XtraGrid.Views.Layout.LayoutView
         Friend WithEvents colCardStorageName As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_colCardStorageName As DevExpress.XtraGrid.Views.Layout.LayoutViewField
         Friend WithEvents colCardAreaID As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_colCardAreaID As DevExpress.XtraGrid.Views.Layout.LayoutViewField
         Friend WithEvents colCardMaterialName As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_colCardMaterialName As DevExpress.XtraGrid.Views.Layout.LayoutViewField
         Friend WithEvents colCardQuantity As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_colCardQuantity As DevExpress.XtraGrid.Views.Layout.LayoutViewField
         Friend WithEvents colCardWeightADT As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_colCardWeightADT As DevExpress.XtraGrid.Views.Layout.LayoutViewField
         Friend WithEvents colTicket As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_colTicket As DevExpress.XtraGrid.Views.Layout.LayoutViewField
         Friend WithEvents colPlateLicense As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_colPlateLicense As DevExpress.XtraGrid.Views.Layout.LayoutViewField
         Friend WithEvents colCardPackageSize As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_colCardPackageSize As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewCard1 As DevExpress.XtraGrid.Views.Layout.LayoutViewCard
+        Friend WithEvents GridControlWeightTicket As DevExpress.XtraGrid.GridControl
+        Private WithEvents LayoutViewWeightTicket As DevExpress.XtraGrid.Views.Layout.LayoutView
+        Friend WithEvents LayoutViewColumn3 As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_LayoutViewColumn3 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewColumn5 As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_LayoutViewColumn5 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewColumn10 As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_LayoutViewColumn10 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewColumn11 As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_LayoutViewColumn11 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewColumn12 As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_LayoutViewColumn12 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewColumn13 As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_LayoutViewColumn13 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewColumn14 As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_LayoutViewColumn14 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewColumn15 As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_LayoutViewColumn15 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewColumn16 As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_LayoutViewColumn16 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewColumn17 As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_LayoutViewColumn17 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewColumn18 As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_LayoutViewColumn18 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewColumn19 As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_LayoutViewColumn19 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewColumn20 As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_LayoutViewColumn20 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewCard5 As DevExpress.XtraGrid.Views.Layout.LayoutViewCard
+        Private WithEvents TabNP_SouceGroup As DevExpress.XtraBars.Navigation.TabNavigationPage
         Private WithEvents gridControlDestGroupArea As DevExpress.XtraGrid.GridControl
         Private WithEvents layoutViewDestGroupArea As DevExpress.XtraGrid.Views.Layout.LayoutView
         Private WithEvents colStorageName As DevExpress.XtraGrid.Columns.LayoutViewColumn
         Private WithEvents RepositoryItemTextEdit3 As DevExpress.XtraEditors.Repository.RepositoryItemTextEdit
+        Friend WithEvents layoutViewField_colStorageName As DevExpress.XtraGrid.Views.Layout.LayoutViewField
         Private WithEvents colStorageID As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_colYear As DevExpress.XtraGrid.Views.Layout.LayoutViewField
         Private WithEvents colPlotoutLine As DevExpress.XtraGrid.Columns.LayoutViewColumn
         Private WithEvents RepositoryItemMemoEdit3 As DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit
+        Friend WithEvents layoutViewField_colPlotoutLine As DevExpress.XtraGrid.Views.Layout.LayoutViewField
         Private WithEvents colStorageCapacity As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents layoutViewField_colAmount As DevExpress.XtraGrid.Views.Layout.LayoutViewField
         Private WithEvents colFull As DevExpress.XtraGrid.Columns.LayoutViewColumn
         Private WithEvents RepositoryItemCheckEdit3 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
+        Friend WithEvents layoutViewField_colIsFull As DevExpress.XtraGrid.Views.Layout.LayoutViewField
         Private WithEvents colPhoto As DevExpress.XtraGrid.Columns.LayoutViewColumn
         Private WithEvents RepositoryItemPictureEdit3 As DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit
+        Friend WithEvents layoutViewField_colPhoto As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewCard2 As DevExpress.XtraGrid.Views.Layout.LayoutViewCard
         Private WithEvents RepositoryItemHyperLinkEdit3 As DevExpress.XtraEditors.Repository.RepositoryItemHyperLinkEdit
+        Private WithEvents TabNP_SouceDetail As DevExpress.XtraBars.Navigation.TabNavigationPage
+        Private WithEvents GridControlDestSubArea As DevExpress.XtraGrid.GridControl
+        Friend WithEvents LayoutViewDestSubArea As DevExpress.XtraGrid.Views.Layout.LayoutView
+        Private WithEvents LayoutViewColumn4 As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents LayoutViewField6 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewColumn6 As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents LayoutViewField7 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewColumn7 As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents LayoutViewField8 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewColumn8 As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents LayoutViewField9 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewColumn9 As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents LayoutViewField10 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewCard4 As DevExpress.XtraGrid.Views.Layout.LayoutViewCard
+        Friend WithEvents TabNP_WP As DevExpress.XtraBars.Navigation.TabNavigationPage
+        Friend WithEvents SplitContainerControl1 As DevExpress.XtraEditors.SplitContainerControl
+        Private WithEvents GridControlWP As DevExpress.XtraGrid.GridControl
+        Friend WithEvents LayoutViewWP As DevExpress.XtraGrid.Views.Layout.LayoutView
+        Private WithEvents LayoutViewColumn1 As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents LayoutViewField1 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewColumn2 As DevExpress.XtraGrid.Columns.LayoutViewColumn
+        Friend WithEvents LayoutViewField2 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewCard3 As DevExpress.XtraGrid.Views.Layout.LayoutViewCard
+        Friend WithEvents LayoutControlItem19 As DevExpress.XtraLayout.LayoutControlItem
+        Friend WithEvents GroupControl1 As DevExpress.XtraEditors.GroupControl
+        Private WithEvents SearchMaterial As DevExpress.XtraEditors.SearchLookUpEdit
+        Public WithEvents SearchLookUpEdit1View As DevExpress.XtraGrid.Views.Grid.GridView
+        Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
+        Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
+        Friend WithEvents lblStroageID As DevExpress.XtraEditors.LabelControl
+        Friend WithEvents txtquantity As DevExpress.XtraEditors.TextEdit
+        Private WithEvents lblStroageName As DevExpress.XtraEditors.LabelControl
+        Friend WithEvents lblWeightTicket As DevExpress.XtraEditors.LabelControl
+        Friend WithEvents lblTicketID As DevExpress.XtraEditors.LabelControl
+        Friend WithEvents lblTruckProperties As DevExpress.XtraEditors.LabelControl
+        Friend WithEvents LabelControl1 As DevExpress.XtraEditors.LabelControl
+        Friend WithEvents LabelControl6 As DevExpress.XtraEditors.LabelControl
+        Private WithEvents lblWeight As DevExpress.XtraEditors.LabelControl
+        Friend WithEvents lblNetAmount As DevExpress.XtraEditors.LabelControl
+        Friend WithEvents lblMatNameInfo As DevExpress.XtraEditors.LabelControl
+        Friend WithEvents lblMatName As DevExpress.XtraEditors.LabelControl
+        Friend WithEvents lblMatID As DevExpress.XtraEditors.LabelControl
+        Friend WithEvents lblContractorInfo As DevExpress.XtraEditors.LabelControl
+        Friend WithEvents GroupControl3 As DevExpress.XtraEditors.GroupControl
         Private WithEvents GridControlMoveMentDetail As DevExpress.XtraGrid.GridControl
+        Private WithEvents GridViewMoveMentDetail As DevExpress.XtraGrid.Views.Grid.GridView
         Private WithEvents colCustomStorageID As DevExpress.XtraGrid.Columns.GridColumn
         Private WithEvents colCustomStorageName As DevExpress.XtraGrid.Columns.GridColumn
         Private WithEvents colCustomMaterialID As DevExpress.XtraGrid.Columns.GridColumn
         Private WithEvents colCustomMaterialName As DevExpress.XtraGrid.Columns.GridColumn
         Private WithEvents colCustomQuantity As DevExpress.XtraGrid.Columns.GridColumn
         Private WithEvents colCustomAction As DevExpress.XtraGrid.Columns.GridColumn
-        Friend WithEvents DeleteCustomRow As DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit
         Private WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
-        Friend WithEvents EditRow As DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit
         Private WithEvents colCustomPackageSize As DevExpress.XtraGrid.Columns.GridColumn
-        Friend WithEvents RepositoryItemLookUpEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
-        Private WithEvents GridControlDestSubArea As DevExpress.XtraGrid.GridControl
-        Friend WithEvents LayoutViewDestSubArea As DevExpress.XtraGrid.Views.Layout.LayoutView
-        Private WithEvents LayoutViewColumn4 As DevExpress.XtraGrid.Columns.LayoutViewColumn
-        Friend WithEvents LayoutViewColumn6 As DevExpress.XtraGrid.Columns.LayoutViewColumn
-        Friend WithEvents LayoutViewColumn7 As DevExpress.XtraGrid.Columns.LayoutViewColumn
-        Friend WithEvents LayoutViewColumn8 As DevExpress.XtraGrid.Columns.LayoutViewColumn
-        Friend WithEvents LayoutViewColumn9 As DevExpress.XtraGrid.Columns.LayoutViewColumn
-        Private WithEvents GridViewMoveMentDetail As DevExpress.XtraGrid.Views.Grid.GridView
-        Friend WithEvents TabNP_WP As DevExpress.XtraBars.Navigation.TabNavigationPage
-        Friend WithEvents SplitContainerControl1 As DevExpress.XtraEditors.SplitContainerControl
-        Private WithEvents GridControlWP As DevExpress.XtraGrid.GridControl
-        Friend WithEvents LayoutViewWP As DevExpress.XtraGrid.Views.Layout.LayoutView
-        Private WithEvents LayoutViewColumn1 As DevExpress.XtraGrid.Columns.LayoutViewColumn
-        Friend WithEvents LayoutViewColumn2 As DevExpress.XtraGrid.Columns.LayoutViewColumn
-        Private WithEvents CalcEditBale As DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit
-        Public WithEvents SearchLookUpEdit1View As DevExpress.XtraGrid.Views.Grid.GridView
-        Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
-        Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
-        Friend WithEvents LayoutViewField1 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents LayoutViewField2 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents LayoutViewCard3 As DevExpress.XtraGrid.Views.Layout.LayoutViewCard
-        Friend WithEvents item18 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents RichEditControl1 As DevExpress.XtraRichEdit.RichEditControl
-        Friend WithEvents EmptySpaceItem1 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents EmptySpaceItem10 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents EmptySpaceItem15 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents LayoutControlGroup2 As DevExpress.XtraLayout.LayoutControlGroup
-        Private WithEvents SearchMaterial As DevExpress.XtraEditors.SearchLookUpEdit
-        Friend WithEvents LayoutControlSouceData As DevExpress.XtraLayout.LayoutControl
-        Private WithEvents lblStroageName As DevExpress.XtraEditors.LabelControl
-        Friend WithEvents LayoutControlItem1 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents txtquantity As DevExpress.XtraEditors.TextEdit
-        Friend WithEvents LayoutControlItem2 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents LayoutControlItem20 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents LayoutControlItem6 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents LabelControl1 As DevExpress.XtraEditors.LabelControl
-        Friend WithEvents lblStroageID As DevExpress.XtraEditors.LabelControl
-        Friend WithEvents lblMatID As DevExpress.XtraEditors.LabelControl
-        Friend WithEvents lblMatName As DevExpress.XtraEditors.LabelControl
-        Friend WithEvents lblNetAmount As DevExpress.XtraEditors.LabelControl
-        Friend WithEvents LayoutControlItem7 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents LayoutControlItem5 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents lblTicketID As DevExpress.XtraEditors.LabelControl
-        Friend WithEvents lblMatNameInfo As DevExpress.XtraEditors.LabelControl
-        Friend WithEvents lblContractorInfo As DevExpress.XtraEditors.LabelControl
-        Friend WithEvents LayoutControlItem4 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents LayoutControlItem3 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents LayoutControlItem9 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents LayoutControlItem15 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents LayoutControlItem8 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents LayoutControlItem11 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents LayoutControlItem10 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents LayoutControlItem13 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents LayoutControlItem14 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents btnProperties As DevExpress.XtraEditors.SimpleButton
-        Friend WithEvents LayoutControlItem12 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents LayoutControlItem17 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents EmptySpaceItem3 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents EmptySpaceItem13 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents EmptySpaceItem4 As DevExpress.XtraLayout.EmptySpaceItem
-        Private WithEvents LayoutControlGroupSouceData As DevExpress.XtraLayout.LayoutControlGroup
-        Friend WithEvents EmptySpaceItem2 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents lblWeightTicket As DevExpress.XtraEditors.LabelControl
-        Friend WithEvents LayoutControlItem18 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents EmptySpaceItem7 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents LayoutControlItem19 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents LayoutControlItem22 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents LayoutControlItem21 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents EmptySpaceItem5 As DevExpress.XtraLayout.EmptySpaceItem
+        Friend WithEvents TableLayoutPanel1 As Windows.Forms.TableLayoutPanel
+        Friend WithEvents btnSave As DevExpress.XtraEditors.SimpleButton
         Friend WithEvents btnClose As DevExpress.XtraEditors.SimpleButton
-        Friend WithEvents LayoutControlItem23 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents EmptySpaceItem8 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents EmptySpaceItem11 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents lblTruckProperties As DevExpress.XtraEditors.LabelControl
-        Friend WithEvents LayoutControlItem24 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents EmptySpaceItem9 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents EmptySpaceItem12 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents EmptySpaceItem6 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents EmptySpaceItem14 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents LayoutViewField6 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents LayoutViewField7 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents LayoutViewField8 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents LayoutViewField9 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents LayoutViewField10 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents LayoutViewCard4 As DevExpress.XtraGrid.Views.Layout.LayoutViewCard
-        Friend WithEvents layoutViewField_colStorageName As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_colYear As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_colPlotoutLine As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_colAmount As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_colIsFull As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_colPhoto As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents LayoutViewCard2 As DevExpress.XtraGrid.Views.Layout.LayoutViewCard
-        Friend WithEvents item2 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents item9 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents layoutViewField_colCardStorageName As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_colCardAreaID As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_colCardMaterialName As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_colCardQuantity As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_colCardWeightADT As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_colTicket As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_colPlateLicense As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_colCardPackageSize As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents LayoutViewCard1 As DevExpress.XtraGrid.Views.Layout.LayoutViewCard
-        Friend WithEvents EmptySpaceItem16 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents GridControlWeightTicket As DevExpress.XtraGrid.GridControl
-        Private WithEvents LayoutViewWeightTicket As DevExpress.XtraGrid.Views.Layout.LayoutView
-        Friend WithEvents LayoutViewColumn3 As DevExpress.XtraGrid.Columns.LayoutViewColumn
-        Friend WithEvents LayoutViewColumn5 As DevExpress.XtraGrid.Columns.LayoutViewColumn
-        Friend WithEvents LayoutViewColumn10 As DevExpress.XtraGrid.Columns.LayoutViewColumn
-        Friend WithEvents LayoutViewColumn11 As DevExpress.XtraGrid.Columns.LayoutViewColumn
-        Friend WithEvents LayoutViewColumn12 As DevExpress.XtraGrid.Columns.LayoutViewColumn
-        Friend WithEvents LayoutViewColumn13 As DevExpress.XtraGrid.Columns.LayoutViewColumn
-        Friend WithEvents LayoutViewColumn14 As DevExpress.XtraGrid.Columns.LayoutViewColumn
-        Friend WithEvents LayoutViewColumn15 As DevExpress.XtraGrid.Columns.LayoutViewColumn
-        Friend WithEvents LayoutViewColumn16 As DevExpress.XtraGrid.Columns.LayoutViewColumn
-        Friend WithEvents LayoutViewColumn17 As DevExpress.XtraGrid.Columns.LayoutViewColumn
-        Friend WithEvents LayoutViewColumn18 As DevExpress.XtraGrid.Columns.LayoutViewColumn
-        Friend WithEvents LayoutViewColumn19 As DevExpress.XtraGrid.Columns.LayoutViewColumn
-        Friend WithEvents LayoutViewColumn20 As DevExpress.XtraGrid.Columns.LayoutViewColumn
-        Friend WithEvents CheckShowAll As DevExpress.XtraEditors.CheckEdit
-        Friend WithEvents EmptySpaceItem17 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents layoutViewField_LayoutViewColumn3 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_LayoutViewColumn5 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_LayoutViewColumn10 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_LayoutViewColumn11 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_LayoutViewColumn12 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_LayoutViewColumn13 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_LayoutViewColumn14 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_LayoutViewColumn15 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_LayoutViewColumn16 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_LayoutViewColumn17 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_LayoutViewColumn18 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_LayoutViewColumn19 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_LayoutViewColumn20 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents LayoutViewCard5 As DevExpress.XtraGrid.Views.Layout.LayoutViewCard
-        Friend WithEvents item17 As DevExpress.XtraLayout.SimpleLabelItem
-        Friend WithEvents item11 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents item19 As DevExpress.XtraLayout.SimpleLabelItem
-        Friend WithEvents item20 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents item24 As DevExpress.XtraLayout.SimpleLabelItem
-        Friend WithEvents item21 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents item10 As DevExpress.XtraLayout.EmptySpaceItem
-        Friend WithEvents item16 As DevExpress.XtraLayout.SimpleLabelItem
-        Friend WithEvents item14 As DevExpress.XtraLayout.EmptySpaceItem
+        Friend WithEvents btnProperties As DevExpress.XtraEditors.SimpleButton
     End Class
 
 End Namespace

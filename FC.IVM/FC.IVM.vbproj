@@ -106,26 +106,6 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="Syncfusion.Grid.Base, Version=16.3400.0.29, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Grid.Base.16.3.0.29\lib\net40\Syncfusion.Grid.Base.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Syncfusion.Grid.Windows, Version=16.3400.0.29, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Grid.Windows.16.3.0.29\lib\net40\Syncfusion.Grid.Windows.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Syncfusion.Licensing, Version=16.3400.0.29, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Licensing.16.3.0.29\lib\net40\Syncfusion.Licensing.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Syncfusion.Shared.Base, Version=16.3400.0.29, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Shared.Base.16.3.0.29\lib\net40\Syncfusion.Shared.Base.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Syncfusion.Shared.Windows, Version=16.3400.0.29, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Shared.Windows.16.3.0.29\lib\net40\Syncfusion.Shared.Windows.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -197,12 +177,6 @@
     <Compile Include="PopupForms\frm_IVM_Popup_Material_Manage.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PopupForms\frm_IVM_Popup_Material_Management.Designer.vb">
-      <DependentUpon>frm_IVM_Popup_Material_Management.vb</DependentUpon>
-    </Compile>
-    <Compile Include="PopupForms\frm_IVM_Popup_Material_Management.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="PopupForms\frm_IVM_Popup_Mat_Property.Designer.vb">
       <DependentUpon>frm_IVM_Popup_Mat_Property.vb</DependentUpon>
     </Compile>
@@ -242,9 +216,6 @@
     <EmbeddedResource Include="PopupForms\frm_IVM_Popup_Material_Manage.resx">
       <DependentUpon>frm_IVM_Popup_Material_Manage.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PopupForms\frm_IVM_Popup_Material_Management.resx">
-      <DependentUpon>frm_IVM_Popup_Material_Management.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PopupForms\frm_IVM_Popup_Mat_Property.resx">
       <DependentUpon>frm_IVM_Popup_Mat_Property.vb</DependentUpon>
     </EmbeddedResource>
@@ -266,7 +237,6 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FC.IVM.Bus\FC.IVM.Bus.vbproj">

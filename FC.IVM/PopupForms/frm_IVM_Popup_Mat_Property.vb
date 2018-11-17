@@ -205,28 +205,19 @@ Namespace PopupForms
         ''' <summary>ปุ่มสำหรับเลือก คุณสมบัติในการ Unload</summary>
         Private Sub btnOK_Click(sender As Object, e As EventArgs) Handles btnOK.Click
             Try
-                If GridLookUpContractor.EditValue Is Nothing Then
-                    'tmpContractorProperties = "ไม่เลือกผู้รับเหมา" & vbCrLf
-                Else
+                If Not GridLookUpContractor.EditValue Is Nothing Then
                     tmpContractorProperties = GridLookUpContractor.EditValue.ToString()
                 End If
 
-                If GridLookUpMatProperties.EditValue Is Nothing Then
-                    'tmpMatProperties = "ไม่เลือก ชนิดวัตถุดิบ" & vbCrLf
-                Else
-                    'tmpMatProperties = GridLookUpMatProperties.EditValue.ToString() & vbCrLf
+                If Not GridLookUpMatProperties.EditValue Is Nothing Then
                     tmpMatProperties = GridLookUpMatProperties.EditValue.ToString()
                 End If
 
-                If GridLookUpBalingSeal.EditValue Is Nothing Then
-                    'tmpBalingSealProperties = "ไม่เลือก BalingSeal" & vbCrLf
-                Else
+                If Not GridLookUpBalingSeal.EditValue Is Nothing Then
                     tmpBalingSealProperties = GridLookUpBalingSeal.EditValue.ToString()
                 End If
 
-                If GridLookUpTransferPoint.EditValue Is Nothing Then
-                    'tmpTransferPointProperties = "ไม่เลือก TransferPoint" & vbCrLf
-                Else
+                If Not GridLookUpTransferPoint.EditValue Is Nothing Then
                     tmpTransferPointProperties = GridLookUpTransferPoint.EditValue.ToString()
                 End If
 
@@ -312,5 +303,25 @@ Namespace PopupForms
                 Infolog.ShowExMessage(ex, FC.M.PSL_Win.MessageType.ErrorMessage)
             End Try
         End Sub
+
+        Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+            Me.Close()
+        End Sub
+
+        'Private Sub frm_IVM_Popup_Mat_Properties_Load(sender As Object, e As EventArgs) Handles Me.Load
+        '    AddHandler Me.FormClosed, AddressOf ClearTempData
+        'End Sub
+        'Private Sub ClearTempData(sender As Object, e As FormClosedEventArgs)
+        '    Try
+        '        tmpContractorProperties = ""
+        '        tmpTransferPointProperties = ""
+        '        tmpBalingSealProperties = ""
+        '        tmpMatProperties = ""
+        '    Catch ex As Exception
+        '        Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name)
+        '        Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [ClearTempData]")
+        '        Infolog.ShowExMessage(ex, FC.M.PSL_Win.MessageType.ErrorMessage)
+        '    End Try
+        'End Sub
     End Class
 End Namespace

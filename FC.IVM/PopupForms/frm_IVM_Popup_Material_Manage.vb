@@ -954,11 +954,23 @@ Namespace PopupForms
         ''' <exclude />
         Private Sub frm_IVM_Popup_Mat_Properties_FormClosed(sender As Object, e As FormClosedEventArgs)
             Try
+                If (tmpBalingSealProperties = "") Then
+                    Return
+                End If
+                If (tmpMatProperties = "") Then
+                    Return
+                End If
+                If (tmpTransferPointProperties = "") Then
+                    Return
+                End If
+                If (tmpContractorProperties = "") Then
+                    Return
+                End If
+
                 lblTruckProperties.Text = "" &
-                    "ซีลโรงอัด : " & tmpBalingSealProperties & vbCrLf &
-                    "จุดขนถ่าย : " & tmpTransferPointProperties & vbCrLf &
-                    "ชนิดวัตถุดิบ : " & tmpMatProperties & vbCrLf &
-                    "ผู้รับเหมา : " & tmpContractorProperties
+                    "ซีลโรงอัด : " & tmpBalingSealProperties & " จุดขนถ่าย : " & tmpTransferPointProperties & vbCrLf &
+                    "ชนิดวัตถุดิบ : " & tmpMatProperties & " ผู้รับเหมา : " & tmpContractorProperties & vbCrLf &
+                    "New properties1 : " & "New properties1" & " New properties2 : " & "New properties2"
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
             End Try

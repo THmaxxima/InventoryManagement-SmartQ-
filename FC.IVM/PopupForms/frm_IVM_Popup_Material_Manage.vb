@@ -145,7 +145,7 @@ Namespace PopupForms
                 '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                 GridControlWP.DataSource = GetWPInfo(CInt(_fieldID))
                 '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                LayoutViewSouceArea.BeginUpdate()
+                'LayoutViewSouceArea.BeginUpdate()
 
                 If (_siteName = "UnloadImport" Or _siteName = "Unload") Then
 
@@ -160,7 +160,7 @@ Namespace PopupForms
 
                     '++++++++++ กรณี Unload จะไม่สามารถเลือก W.P. ได้ ++++++++++
                     txtquantity.ReadOnly = False
-                    txtquantity.Enabled = True
+
                 Else
                     GridControlSouceArea.DataSource = GetSubAreaINVDataSet()
 
@@ -171,30 +171,30 @@ Namespace PopupForms
                     Me.CheckShowAll.Visible = False
                     Me.btnProperties.Enabled = False
                     '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                    LayoutViewSouceArea.BeginUpdate()
-                    Me.LayoutViewSouceArea.CardHorzInterval = 2 'ระยะห่างระหว่าง การ์ด แนวนอน
-                    Me.LayoutViewSouceArea.CardMinSize = New System.Drawing.Size(134, 106)
-                    Me.LayoutViewSouceArea.CardVertInterval = 1 'ระยะห่างระหว่าง การ์ด แนวตั้ง
-                    LayoutViewSouceArea.EndUpdate()
+                    'LayoutViewSouceArea.BeginUpdate()
+                    'Me.LayoutViewSouceArea.CardHorzInterval = 2 'ระยะห่างระหว่าง การ์ด แนวนอน
+                    'Me.LayoutViewSouceArea.CardMinSize = New System.Drawing.Size(134, 106)
+                    'Me.LayoutViewSouceArea.CardVertInterval = 1 'ระยะห่างระหว่าง การ์ด แนวตั้ง
+                    'LayoutViewSouceArea.EndUpdate()
 
-                    layoutViewDestGroupArea.BeginUpdate()
-                    Me.layoutViewDestGroupArea.CardHorzInterval = 2
-                    Me.layoutViewDestGroupArea.CardVertInterval = 1
-                    layoutViewDestGroupArea.EndUpdate()
+                    'layoutViewDestGroupArea.BeginUpdate()
+                    'Me.layoutViewDestGroupArea.CardHorzInterval = 2
+                    'Me.layoutViewDestGroupArea.CardVertInterval = 1
+                    'layoutViewDestGroupArea.EndUpdate()
 
-                    LayoutViewDestSubArea.BeginUpdate()
-                    Me.LayoutViewDestSubArea.CardHorzInterval = 2
-                    Me.LayoutViewDestSubArea.CardVertInterval = 1
-                    LayoutViewDestSubArea.EndUpdate()
+                    'LayoutViewDestSubArea.BeginUpdate()
+                    'Me.LayoutViewDestSubArea.CardHorzInterval = 2
+                    'Me.LayoutViewDestSubArea.CardVertInterval = 1
+                    'LayoutViewDestSubArea.EndUpdate()
 
-                    lblWeightTicket.Visible = False
+                    'lblWeightTicket.Visible = False
                     txtquantity.ReadOnly = True
-                    txtquantity.Enabled = False
+                    'txtquantity.Enabled = False
 
                 End If
 
-                LayoutViewSouceArea.EndUpdate()
-                LayoutViewSouceArea.RefreshData()
+                'LayoutViewSouceArea.EndUpdate()
+                'LayoutViewSouceArea.RefreshData()
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
                 Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [InitData]")
@@ -205,37 +205,35 @@ Namespace PopupForms
             Dim rowind As String
             Dim quantity As Decimal
             Try
-                rowind = CType(LayoutViewSouceArea.FocusedRowHandle, String)
-
+                'rowind = CType(LayoutViewSouceArea.FocusedRowHandle, String)
                 Dim areaid As String
-                    Dim areaname As String
-                    Dim matid As String
-                    Dim matname As String
-                    Dim weight As Double
-                    rowind = CType(LayoutViewSouceArea.FocusedRowHandle, String)
-                    areaid = CType(LayoutViewSouceArea.GetFocusedRowCellValue("StorageID"), String)
-                    areaname = CType(LayoutViewSouceArea.GetFocusedRowCellValue("StorageName"), String)
-                    matid = CType(LayoutViewSouceArea.GetFocusedRowCellValue("MaterialID"), String)
-                    matname = CType(LayoutViewSouceArea.GetFocusedRowCellValue("MaterialName"), String)
-                    quantity = DataHelper.DBNullOrNothingTo(Of Decimal)(LayoutViewSouceArea.GetFocusedRowCellValue("Quantity"), 0)
-                    weight = DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewSouceArea.GetFocusedRowCellValue("WeightADT"), 0)
-                    'DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewSouceArea.GetFocusedRowCellValue("MillWeight"), 0)
-                    '+++++ If not unload must to clear value ++++++
-                    lblTicketID.Text = String.Empty
+                Dim matid As String
+                Dim matname As String
+                Dim areaname As String
+                Dim weight As Double
 
-                    '++++++++++++++++++++++++++++++++++++++++++++++
-                    lblStroageID.Text = areaid
-                    lblStroageName.Text = areaname
-                    lblWeight.Text = weight.ToString("0.000")
-                    txtquantity.EditValue = quantity.ToString("0.0")
-                    lblNetAmount.Text = quantity.ToString
-                    '+++++++ Cal weight per unit +++++
-                    WeightPUnit = weight / quantity
-                    '+++++++++++++++++++ Binding Search lookupedit Mat +++++++++++++++++++++++++++
-                    BindingSearchMaterial()
-                    '+++++++++++++ Lock object ++++++++++++++++++++
-                    LockObject()
-
+                rowind = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewSouceArea.FocusedRowHandle, 0)
+                areaid = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewSouceArea.GetFocusedRowCellValue("StorageID"), 0)
+                areaname = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewSouceArea.GetFocusedRowCellValue("StorageName"), 0)
+                matid = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewSouceArea.GetFocusedRowCellValue("MaterialID"), 0)
+                matname = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewSouceArea.GetFocusedRowCellValue("MaterialName"), 0)
+                quantity = DataHelper.DBNullOrNothingTo(Of Decimal)(LayoutViewSouceArea.GetFocusedRowCellValue("Quantity"), 0)
+                weight = DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewSouceArea.GetFocusedRowCellValue("WeightADT"), 0)
+                'DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewSouceArea.GetFocusedRowCellValue("MillWeight"), 0)
+                '+++++ If not unload must to clear value ++++++
+                lblTicketID.Text = String.Empty
+                '++++++++++++++++++++++++++++++++++++++++++++++
+                lblStroageID.Text = areaid
+                lblStroageName.Text = areaname
+                lblWeight.Text = weight.ToString("0.000")
+                txtquantity.EditValue = quantity.ToString("0.0")
+                lblNetAmount.Text = quantity.ToString
+                '+++++++ Cal weight per unit +++++
+                WeightPUnit = weight / quantity
+                '+++++++++++++++++++ Binding Search lookupedit Mat +++++++++++++++++++++++++++
+                BindingSearchMaterial()
+                '+++++++++++++ Lock object ++++++++++++++++++++
+                LockObject()
                 '++++++++++++++++++++ Clear ข้อมูล grid ก่อนการเลือกพื้นที่ใหม่ ++++++++++++++++++
                 If (GridViewMoveMentDetail.RowCount > 0) Then
                     Dim iCountRows As Integer
@@ -324,9 +322,9 @@ Namespace PopupForms
         End Function
         Function GetSubAreaINVDataSet() As DataTable
             'Dim tmpDT_Area_Data As DataTable
-            Dim foundRow As DataRow()
-
             Try
+                Dim foundRow As DataRow()
+
                 If (_GroupID > 0 And (_siteName = "Unload")) Then
                     '   ModMainApp.Log.Log4N("GetSubAreaINVDataSet [Before]").DebugFormat("Call := proc_IVM_GetUnloadTruck_1862 {0}",
                     'String.Format("Proc param := {0},{1}", DataHelper.ToSqlValue(_MaterialSourceID), DataHelper.ToSqlValue(_PUserID)))
@@ -400,13 +398,14 @@ Namespace PopupForms
                     'DT_Area_Data.Rows.Count.ToString)
                 End If
 
-                Return DT_Area_Data
-
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
                 Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [GetSubAreaINVDataSet]")
                 Infolog.ShowExMessage(ex, FC.M.PSL_Win.MessageType.ErrorMessage)
             End Try
+
+            Return DT_Area_Data
+
         End Function
         ''' <exclude />
         Private Sub frm_IVM_Popup_Material_Manage_Load(sender As Object, e As EventArgs) Handles Me.Load
@@ -968,9 +967,9 @@ Namespace PopupForms
                 End If
 
                 lblTruckProperties.Text = "" &
-                    "ซีลโรงอัด : " & tmpBalingSealProperties & " จุดขนถ่าย : " & tmpTransferPointProperties & vbCrLf &
-                    "ชนิดวัตถุดิบ : " & tmpMatProperties & " ผู้รับเหมา : " & tmpContractorProperties & vbCrLf &
-                    "New properties1 : " & "New properties1" & " New properties2 : " & "New properties2"
+                    "ซีลโรงอัด : " & tmpBalingSealProperties & " จุดขนถ่าย : " & tmpTransferPointProperties &
+                    "ชนิดวัตถุดิบ : " & tmpMatProperties & vbCrLf & " ผู้รับเหมา : " & tmpContractorProperties &
+                    " New properties1 : " & "New properties1" & " New properties2 : " & "New properties2"
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
             End Try

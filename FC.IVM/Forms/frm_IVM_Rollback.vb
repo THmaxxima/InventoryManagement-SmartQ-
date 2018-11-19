@@ -79,6 +79,8 @@ Namespace Forms
         ''' <exclude />
         Private Sub frm_IVM_Rollback_Load(sender As Object, e As EventArgs) Handles Me.Load
             Try
+                Me.FormBorderStyle = FormBorderStyle.None
+
                 Dim display_member As String = ""
                 Dim value_member As String = ""
                 Dim show_column_names As String = ""
@@ -92,7 +94,7 @@ Namespace Forms
                 If (_fieldID <> "") Then
 
                     idOfField = CInt(_fieldID)
-                    Me.FormBorderStyle = FormBorderStyle.None
+
                     btnClose.Visible = True
 
                     Select Case CInt(_fieldID)
@@ -171,6 +173,7 @@ Namespace Forms
                     End Select
 
                     cboSite.EditValue = CInt(_fieldID)
+                    cboSite.ReadOnly = True
                 End If
 
             Catch ex As Exception
@@ -463,5 +466,7 @@ Namespace Forms
         Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
             Me.Close()
         End Sub
+
+
     End Class
 End Namespace

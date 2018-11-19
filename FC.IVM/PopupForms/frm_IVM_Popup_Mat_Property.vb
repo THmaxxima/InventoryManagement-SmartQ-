@@ -297,6 +297,7 @@ Namespace PopupForms
                 Else
                     btnOK.Enabled = False
                 End If
+
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name)
                 Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [check_input_data]")
@@ -307,6 +308,7 @@ Namespace PopupForms
         Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
             Me.Close()
         End Sub
+
 
         'Private Sub frm_IVM_Popup_Mat_Properties_Load(sender As Object, e As EventArgs) Handles Me.Load
         '    AddHandler Me.FormClosed, AddressOf ClearTempData

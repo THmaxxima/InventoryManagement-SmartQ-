@@ -333,7 +333,7 @@
             Me.Controls.Add(Me.btnClose)
             Me.Controls.Add(Me.GridLookUpTransferPoint)
             Me.Controls.Add(Me.GridLookUpEdit1)
-            Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+            Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
             Me.MaximizeBox = False
             Me.MinimizeBox = False
             Me.Name = "frm_IVM_Popup_Mat_Properties"

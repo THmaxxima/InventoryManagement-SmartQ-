@@ -84,10 +84,10 @@ Namespace PopupForms
             SetGridFont(GridControlWP, New Font("Tahoma", 16, FontStyle.Bold))
             CheckShowAll.Visible = False
             lblStroageID.Text = String.Empty
-            lblStroageName.Text = String.Empty
+            'lblStroageName.Text = String.Empty
             lblMatID.Text = String.Empty
             lblMatName.Text = String.Empty
-            lblWeight.Text = String.Empty
+            'lblWeight.Text = String.Empty
             txtquantity.EditValue = 0
             lblNetAmount.Text = "0"
         End Sub
@@ -202,10 +202,11 @@ Namespace PopupForms
             End Try
         End Sub
         Private Sub LayoutViewSouceArea_CardClick(sender As Object, e As CardClickEventArgs) Handles LayoutViewSouceArea.CardClick
-            Dim rowind As String
-            Dim quantity As Decimal
+
             Try
                 'rowind = CType(LayoutViewSouceArea.FocusedRowHandle, String)
+                Dim rowind As String
+                Dim quantity As Double
                 Dim areaid As String
                 Dim matid As String
                 Dim matname As String
@@ -217,7 +218,7 @@ Namespace PopupForms
                 areaname = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewSouceArea.GetFocusedRowCellValue("StorageName"), 0)
                 matid = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewSouceArea.GetFocusedRowCellValue("MaterialID"), 0)
                 matname = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewSouceArea.GetFocusedRowCellValue("MaterialName"), 0)
-                quantity = DataHelper.DBNullOrNothingTo(Of Decimal)(LayoutViewSouceArea.GetFocusedRowCellValue("Quantity"), 0)
+                quantity = DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewSouceArea.GetFocusedRowCellValue("Quantity"), 0)
                 weight = DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewSouceArea.GetFocusedRowCellValue("WeightADT"), 0)
                 'DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewSouceArea.GetFocusedRowCellValue("MillWeight"), 0)
                 '+++++ If not unload must to clear value ++++++
@@ -737,7 +738,7 @@ Namespace PopupForms
             CheckShowAll.Visible = True
             btnProperties.Enabled = True
             lblTruckProperties.Visible = True
-            lblWeightTicket.Visible = True
+            'lblWeightTicket.Visible = True
             '++++++++++++++++++++++++++++++++++++++++++++++
         End Sub
         Private Sub LockObject()
@@ -756,7 +757,7 @@ Namespace PopupForms
             CheckShowAll.Visible = False
             btnProperties.Enabled = False
             lblTruckProperties.Visible = False
-            lblWeightTicket.Visible = False
+            'lblWeightTicket.Visible = False
             '++++++++++++++++++++++++++++++++++++++++++++++
         End Sub
         Private Sub LayoutViewDestSubArea_CardClick(sender As Object, e As CardClickEventArgs) Handles LayoutViewDestSubArea.CardClick

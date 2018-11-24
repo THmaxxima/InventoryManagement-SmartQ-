@@ -4,6 +4,7 @@ Imports System.Windows.Forms
 Imports DevExpress.XtraBars
 Imports DevExpress.XtraMap
 Imports FC.M.BLL_Util
+Imports FC.M.PSL_Win.Classes_Helper
 Imports FC.MainApp.Modules
 
 Namespace Modules
@@ -51,135 +52,210 @@ Namespace Modules
 
         ''' <summary>Function use to hide map layer item</summary>
         Public Sub HideLayerItems(ByVal layer As VectorItemsLayer, ByVal ItemID As String, ByVal ItemName As String)
-            For Each item As MapItem In (CType(layer.Data, IMapDataAdapter)).Items
+            Try
+                For Each item As MapItem In (CType(layer.Data, IMapDataAdapter)).Items
 
-                If (item.Attributes("ID").Value.ToString = ItemID And item.Attributes("Name").Value.ToString = ItemName) Then
-                    item.Visible = False
-                    'item.Fill = colors_ST(0)
-                    Return
-                End If
-            Next
+                    If (item.Attributes("ID").Value.ToString = ItemID And item.Attributes("Name").Value.ToString = ItemName) Then
+                        item.Visible = False
+                        Return
+                    End If
+                Next
+            Catch ex As Exception
+                Infolog.ClearMessage()
+                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, "FC.IVM.Bus Error")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "File name := mod_IVM_Map_Function")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "Function name := HideLayerItems")
+                Infolog.ShowExMessageWithTopic(ex, FC.M.PSL_Win.MessageType.ErrorMessage, "Function use to hide map layer item")
+
+                ModMainApp.Log.Log4N("HideLayerItems [Catch]").DebugFormat("Err detail := {0} ", ex.Message)
+            End Try
+
         End Sub
         Public Function CreateLayerStatus(ByVal location As GeoPoint, ByVal name As String, ByVal iconPath As String, ByVal index As Integer) As MapItem
             Dim IconST As New MapCustomElement() With {.Location = location}
-            'Dim imageIco = New Bitmap(icoFilePath & iconPath)
-            'Dim imageIco = New Bitmap("C:\Forward Consulting\IVM\Bin\Data\Icons\Information_Icon.png")
-            Dim imageIco As Bitmap = CType(ModMainApp.GetResourceObject(Of Image)("Information_Icon"), Bitmap)
-            IconST.Image = New Bitmap(imageIco, New Size(50, 50))
-            IconST.Attributes.Add(New MapItemAttribute() With {.Name = "ID", .Value = index, .Type = GetType(String)})
-            IconST.Attributes.Add(New MapItemAttribute() With {.Name = "Label", .Value = name, .Type = GetType(String)})
-            IconST.Attributes.Add(New MapItemAttribute() With {.Name = "Name", .Value = name, .Type = GetType(String)})
-            IconST.BackgroundDrawingMode = ElementState.None
+            Try
+                Dim imageIco As Bitmap = CType(ModMainApp.GetResourceObject(Of Image)("Information_Icon"), Bitmap)
+                IconST.Image = New Bitmap(imageIco, New Size(50, 50))
+                IconST.Attributes.Add(New MapItemAttribute() With {.Name = "ID", .Value = index, .Type = GetType(String)})
+                IconST.Attributes.Add(New MapItemAttribute() With {.Name = "Label", .Value = name, .Type = GetType(String)})
+                IconST.Attributes.Add(New MapItemAttribute() With {.Name = "Name", .Value = name, .Type = GetType(String)})
+                IconST.BackgroundDrawingMode = ElementState.None
 
-            IconST.Visible = False
+                IconST.Visible = False
+            Catch ex As Exception
+                Infolog.ClearMessage()
+                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, "FC.IVM.Bus Error")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "File name := mod_IVM_Map_Function")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "Function name := CreateLayerStatus")
+                Infolog.ShowExMessageWithTopic(ex, FC.M.PSL_Win.MessageType.ErrorMessage, "Function use to create map layer status")
+
+                ModMainApp.Log.Log4N("CreateLayerStatus [Catch]").DebugFormat("Err detail := {0} ", ex.Message)
+            End Try
+
             Return IconST
         End Function
         ''' <exclude />
         Public Sub UpdateFullIcon(ByVal ItmeMapRec As MapItem, ByVal fullSt As Boolean)
-            Dim RecItem As New MapRectangle()
-            RecItem = CType(ItmeMapRec, MapRectangle)
-            Dim color1 As Color = CType(RecItem.Attributes("ColorProp").Value, Color)
-            Dim color2 As Color = Color.FromArgb(255 - color1.R, 255 - color1.G, 255 - color1.B)
-            Dim linearizedPower As Integer
-            Dim Pcapacity As Integer = CType(ItmeMapRec.Attributes("Capacity").Value, Integer)
-            linearizedPower = CInt(calRangeColor(Pcapacity))
-            If (fullSt) Then
-                RecItem.Fill = colors_ST(linearizedPower)
-                RecItem.HighlightedFill = Color.LightGray
-                RecItem.HighlightedStroke = Color.LightGray
-                RecItem.Stroke = Color.LightGray
-                RecItem.HighlightedStrokeWidth = 10
-                RecItem.StrokeWidth = 10
-            Else
-                If (CType(RecItem.Attributes("Label").Value, String) = "Other") Then
-                    RecItem.Fill = Color.Gray
-                    'RecItem.Stroke = color2
-                    RecItem.HighlightedFill = colors_ST(linearizedPower)
-                    RecItem.HighlightedStroke = color1
-                    RecItem.HighlightedStrokeWidth = 5
-                    RecItem.StrokeWidth = 2
-                Else
-                    RecItem.Fill = colors_ST(linearizedPower)
-                    'RecItem.Stroke = color2
-                    RecItem.HighlightedFill = colors_ST(linearizedPower)
-                    RecItem.HighlightedStroke = color1
-                    RecItem.HighlightedStrokeWidth = 5
-                    RecItem.StrokeWidth = 2
-                End If
 
-            End If
+            Try
+                Dim RecItem As New MapRectangle()
+                RecItem = CType(ItmeMapRec, MapRectangle)
+                Dim color1 As Color = CType(RecItem.Attributes("ColorProp").Value, Color)
+                Dim color2 As Color = Color.FromArgb(255 - color1.R, 255 - color1.G, 255 - color1.B)
+                Dim linearizedPower As Integer
+                Dim Pcapacity As Integer = CType(ItmeMapRec.Attributes("Capacity").Value, Integer)
+                linearizedPower = CInt(calRangeColor(Pcapacity))
+                If (fullSt) Then
+                    RecItem.Fill = colors_ST(linearizedPower)
+                    RecItem.HighlightedFill = Color.LightGray
+                    RecItem.HighlightedStroke = Color.LightGray
+                    RecItem.Stroke = Color.LightGray
+                    RecItem.HighlightedStrokeWidth = 10
+                    RecItem.StrokeWidth = 10
+                Else
+                    If (CType(RecItem.Attributes("Label").Value, String) = "Other") Then
+                        RecItem.Fill = Color.Gray
+                        'RecItem.Stroke = color2
+                        RecItem.HighlightedFill = colors_ST(linearizedPower)
+                        RecItem.HighlightedStroke = color1
+                        RecItem.HighlightedStrokeWidth = 5
+                        RecItem.StrokeWidth = 2
+                    Else
+                        RecItem.Fill = colors_ST(linearizedPower)
+                        'RecItem.Stroke = color2
+                        RecItem.HighlightedFill = colors_ST(linearizedPower)
+                        RecItem.HighlightedStroke = color1
+                        RecItem.HighlightedStrokeWidth = 5
+                        RecItem.StrokeWidth = 2
+                    End If
+
+                End If
+            Catch ex As Exception
+                Infolog.ClearMessage()
+                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, "FC.IVM.Bus Error")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "File name := mod_IVM_Map_Function")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "Function name := UpdateFullIcon")
+                Infolog.ShowExMessageWithTopic(ex, FC.M.PSL_Win.MessageType.ErrorMessage, "Function use to create full icon")
+
+                ModMainApp.Log.Log4N("UpdateFullIcon [Catch]").DebugFormat("Err detail := {0} ", ex.Message)
+            End Try
+
         End Sub
         Public Function CreateColorizer() As MapColorizer
             Dim colorizer As New ChoroplethColorizer()
-            'colorizer.ValueProvider = New ShapeAttributeValueProvider With {.AttributeName = CapacityST}
-            colorizer.RangeStops.AddRange(New List(Of Double) From {0, 25, 50, 75, 100})
-            colorizer.ColorItems.AddRange(New List(Of ColorizerColorItem) From {
-            New ColorizerColorItem(Color.DarkRed),
-            New ColorizerColorItem(Color.Red),
-            New ColorizerColorItem(Color.GreenYellow),
-            New ColorizerColorItem(Color.LimeGreen),
-            New ColorizerColorItem(Color.Green)
-        })
+            Try
+                colorizer.RangeStops.AddRange(New List(Of Double) From {0, 25, 50, 75, 100})
+                colorizer.ColorItems.AddRange(New List(Of ColorizerColorItem) From {
+                New ColorizerColorItem(Color.DarkRed),
+                New ColorizerColorItem(Color.Red),
+                New ColorizerColorItem(Color.GreenYellow),
+                New ColorizerColorItem(Color.LimeGreen),
+                New ColorizerColorItem(Color.Green)
+            })
+            Catch ex As Exception
+                Infolog.ClearMessage()
+                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, "FC.IVM.Bus Error")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "File name := mod_IVM_Map_Function")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "Function name := CreateColorizer")
+                Infolog.ShowExMessageWithTopic(ex, FC.M.PSL_Win.MessageType.ErrorMessage, "Function use to create map colorizer")
+
+                ModMainApp.Log.Log4N("CreateColorizer [Catch]").DebugFormat("Err detail := {0} ", ex.Message)
+            End Try
+
             Return colorizer
         End Function
 
         ''' <summary>Function use to create map legend</summary>
         Public Function CreateLegend(ByVal layer As MapItemsLayerBase, ByVal idOfField As Integer) As MapLegendBase
             Dim legend As New ColorScaleLegend()
-            legend.HeaderStyle.Font = FontsCollection("mainArea")
-            legend.Header = "W / C Ranges ( % ลาน : " & idOfField & " )"
-            legend.Layer = layer
+            Try
+
+                legend.HeaderStyle.Font = FontsCollection("mainArea")
+                legend.Header = "W / C Ranges ( % ลาน : " & idOfField & " )"
+                legend.Layer = layer
+            Catch ex As Exception
+                Infolog.ClearMessage()
+                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, "FC.IVM.Bus Error")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "File name := mod_IVM_Map_Function")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "Function name := CreateLegend")
+                Infolog.ShowExMessageWithTopic(ex, FC.M.PSL_Win.MessageType.ErrorMessage, "Function use to create map legend")
+
+                ModMainApp.Log.Log4N("CreateLegend [Catch]").DebugFormat("Err detail := {0} ", ex.Message)
+            End Try
+
             Return legend
         End Function
 
         ''' <summary>Function use to create icon unload local</summary>
         Public Function createUnloadLocalItem(ByVal UnloadLocal As MapCustomElement, ByVal AreaID As Integer) As MapCustomElement
-            Dim CustomItemElement As New MapCustomElement()
-            CustomItemElement = UnloadLocal
-            With CustomItemElement
-                '.Location = New GeoPoint(8, -29) Y,X
-                If (AreaID = 1) Then
-                    .Location = New GeoPoint(25, -22)
-                ElseIf (AreaID = 2) Then
-                    .Location = New GeoPoint(25, -18)
-                ElseIf (AreaID = 3) Then
-                    .Location = New GeoPoint(25, -20)
-                End If
-                .Text = "Unload"
-                .Font = FontsCollection("mainArea")
-            End With
+            Try
+                Dim CustomItemElement As New MapCustomElement()
+                CustomItemElement = UnloadLocal
+                With CustomItemElement
+                    '.Location = New GeoPoint(8, -29) Y,X
+                    If (AreaID = 1) Then
+                        .Location = New GeoPoint(25, -22)
+                    ElseIf (AreaID = 2) Then
+                        .Location = New GeoPoint(25, -18)
+                    ElseIf (AreaID = 3) Then
+                        .Location = New GeoPoint(25, -20)
+                    End If
+                    .Text = "Unload"
+                    .Font = FontsCollection("mainArea")
+                End With
 
-            Dim image As Bitmap = CType(ModMainApp.GetResourceObject(Of Image)("logistic_icon"), Bitmap)
-            UnloadLocal.Image = New Bitmap(image, New Size(50, 50))
-            UnloadLocal.Attributes.Add(New MapItemAttribute() With {.Name = "ID", .Value = 1, .Type = GetType(Integer)})
-            UnloadLocal.Attributes.Add(New MapItemAttribute() With {.Name = "Name", .Value = "Unload", .Type = GetType(String)})
-            UnloadLocal.Attributes.Add(New MapItemAttribute() With {.Name = "Label", .Value = "Unload", .Type = GetType(String)})
+                Dim image As Bitmap = CType(ModMainApp.GetResourceObject(Of Image)("logistic_icon"), Bitmap)
+                UnloadLocal.Image = New Bitmap(image, New Size(50, 50))
+                UnloadLocal.Attributes.Add(New MapItemAttribute() With {.Name = "ID", .Value = 1, .Type = GetType(Integer)})
+                UnloadLocal.Attributes.Add(New MapItemAttribute() With {.Name = "Name", .Value = "Unload", .Type = GetType(String)})
+                UnloadLocal.Attributes.Add(New MapItemAttribute() With {.Name = "Label", .Value = "Unload", .Type = GetType(String)})
+            Catch ex As Exception
+                Infolog.ClearMessage()
+                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, "FC.IVM.Bus Error")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "File name := mod_IVM_Map_Function")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "Function name := createUnloadLocalItem")
+                Infolog.ShowExMessageWithTopic(ex, FC.M.PSL_Win.MessageType.ErrorMessage, "Function use to create icon unload local")
+
+                ModMainApp.Log.Log4N("createUnloadLocalItem [Catch]").DebugFormat("Err detail := {0} ", ex.Message)
+            End Try
+
             Return UnloadLocal
         End Function
         ''' <summary>Function use to create icon unload import</summary>
         Public Function createUnloadImportItem(ByVal UnloadImport As MapCustomElement, ByVal AreaID As Integer) As MapCustomElement
-            Dim CustomItemElement As New MapCustomElement()
-            CustomItemElement = UnloadImport
-            With CustomItemElement
-                '.Location = New GeoPoint(8, 5)
-                '.Location = New GeoPoint(25, 0)
-                If (AreaID = 1) Then
-                    .Location = New GeoPoint(25, 5)
-                ElseIf (AreaID = 2) Then
-                    .Location = New GeoPoint(25, 5)
-                ElseIf (AreaID = 3) Then
-                    .Location = New GeoPoint(25, 5)
-                End If
-                .Location = New GeoPoint(25, 5) 'Y,X
-                .Text = "Unload Import"
-                .Font = FontsCollection("mainArea")
-            End With
+            Try
+                Dim CustomItemElement As New MapCustomElement()
+                CustomItemElement = UnloadImport
+                With CustomItemElement
+                    '.Location = New GeoPoint(8, 5)
+                    '.Location = New GeoPoint(25, 0)
+                    If (AreaID = 1) Then
+                        .Location = New GeoPoint(25, 5)
+                    ElseIf (AreaID = 2) Then
+                        .Location = New GeoPoint(25, 5)
+                    ElseIf (AreaID = 3) Then
+                        .Location = New GeoPoint(25, 5)
+                    End If
+                    .Location = New GeoPoint(25, 5) 'Y,X
+                    .Text = "Unload Import"
+                    .Font = FontsCollection("mainArea")
+                End With
 
-            Dim image As Bitmap = CType(ModMainApp.GetResourceObject(Of Image)("import_icon"), Bitmap)
-            UnloadImport.Image = New Bitmap(image, New Size(50, 50))
-            UnloadImport.Attributes.Add(New MapItemAttribute() With {.Name = "ID", .Value = 2, .Type = GetType(Integer)})
-            UnloadImport.Attributes.Add(New MapItemAttribute() With {.Name = "Name", .Value = "UnloadImport", .Type = GetType(String)})
-            UnloadImport.Attributes.Add(New MapItemAttribute() With {.Name = "Label", .Value = "UnloadImport", .Type = GetType(String)})
+                Dim image As Bitmap = CType(ModMainApp.GetResourceObject(Of Image)("import_icon"), Bitmap)
+                UnloadImport.Image = New Bitmap(image, New Size(50, 50))
+                UnloadImport.Attributes.Add(New MapItemAttribute() With {.Name = "ID", .Value = 2, .Type = GetType(Integer)})
+                UnloadImport.Attributes.Add(New MapItemAttribute() With {.Name = "Name", .Value = "UnloadImport", .Type = GetType(String)})
+                UnloadImport.Attributes.Add(New MapItemAttribute() With {.Name = "Label", .Value = "UnloadImport", .Type = GetType(String)})
+            Catch ex As Exception
+                Infolog.ClearMessage()
+                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, "FC.IVM.Bus Error")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "File name := mod_IVM_Map_Function")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "Function name := createUnloadImportItem")
+                Infolog.ShowExMessageWithTopic(ex, FC.M.PSL_Win.MessageType.ErrorMessage, "Function use to create icon unload import")
+
+                ModMainApp.Log.Log4N("createUnloadImportItem [Catch]").DebugFormat("Err detail := {0} ", ex.Message)
+            End Try
+
             Return UnloadImport
         End Function
 
@@ -212,7 +288,7 @@ Namespace Modules
             End If
             Return linearizedPower
         End Function
-        ''' <summary>ฟังก์ชั่น สำหรับ แสดงน้ำหนักวัตถุดิบรวม ของแต่ละลาน</summary>
+        ''' <summary>ฟังก์ชั่น สำหรับแสดงข้อมูล น้ำหนักวัตถุดิบรวมของแต่ละลาน</summary>
         Public Function GetSumAreaWeight(ByVal FieldID As Integer) As Double
             Dim result As Double = 0
             Try
@@ -220,11 +296,17 @@ Namespace Modules
                 Dim DT_Area_Info As DataTable = DS_GetSumAreaWeight.Tables(1)
                 result = DataHelper.DBNullOrNothingTo(Of Double)(DT_Area_Info.Rows(0).Item("TotalWeight"), 0)
             Catch ex As Exception
-                MsgBox("GetSumAreaWeight := " & ex.Message)
+                Infolog.ClearMessage()
+                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, "FC.IVM.Bus Error")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "File name := mod_IVM_Map_Function")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "Function name := func_IVM_Get_Area_Info")
+                Infolog.ShowExMessageWithTopic(ex, FC.M.PSL_Win.MessageType.ErrorMessage, "ฟังก์ชั่น สำหรับแสดงข้อมูล น้ำหนักวัตถุดิบรวมของแต่ละลาน")
+
+                ModMainApp.Log.Log4N("GetSumAreaWeight [Catch]").DebugFormat("Err detail := {0} ", ex.Message)
             End Try
             Return result
         End Function
-        ''' <summary>ฟังก์ชั่น สำหรับ %น้ำหนักรวม ของแต่ละลาน</summary>
+        ''' <summary>ฟังก์ชั่น สำหรับแสดงข้อมูล % น้ำหนักรวม ของแต่ละลาน</summary>
         Public Function GetPAreaWeight(ByVal FieldID As Integer) As Double
             Dim result As Double = 0
             Try
@@ -232,7 +314,13 @@ Namespace Modules
                 Dim DT_Area_Info As DataTable = DS_GetSumPAreaWeight.Tables(1)
                 result = DataHelper.DBNullOrNothingTo(Of Double)(DT_Area_Info.Rows(0).Item("InUseCapcity"), 0)
             Catch ex As Exception
-                MsgBox("GetPAreaWeight := " & ex.Message)
+                Infolog.ClearMessage()
+                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, "FC.IVM.Bus Error")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "File name := mod_IVM_Map_Function")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "Function name := GetPAreaWeight")
+                Infolog.ShowExMessageWithTopic(ex, FC.M.PSL_Win.MessageType.ErrorMessage, "ฟังก์ชั่น สำหรับแสดงข้อมูล % น้ำหนักรวม ของแต่ละลาน")
+
+                ModMainApp.Log.Log4N("GetPAreaWeight [Catch]").DebugFormat("Err detail := {0} ", ex.Message)
             End Try
             Return result
         End Function
@@ -291,7 +379,13 @@ Namespace Modules
                 overlayWithTextRollback.Items.AddRange(New MapOverlayItemBase() {rollbackImage_Renamed})
                 map.Overlays.Add(overlayWithTextRollback)
             Catch ex As Exception
-                'MsgBox("CreateOverlay : " & ex.Message)
+                Infolog.ClearMessage()
+                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, "FC.IVM.Bus Error")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "File name := mod_IVM_Map_Function")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "Function name := CreateOverlay")
+                Infolog.ShowExMessageWithTopic(ex, FC.M.PSL_Win.MessageType.ErrorMessage, "Function use to create map overlay")
+
+                ModMainApp.Log.Log4N("CreateOverlay [Catch]").DebugFormat("Err detail := {0} ", ex.Message)
             End Try
         End Sub
         ''' <exclude />
@@ -307,66 +401,46 @@ Namespace Modules
             Return StringItmeInfo.ToString
         End Function
 
-        ''' <exclude />
-        Public Function genStorageMatDetailData(DT_MatData As DataTable) As String
-            Dim res As String = String.Empty
-            Dim storagename As String = String.Empty
-            Dim matname As String = String.Empty
-            Dim matbalance As Double = 0
-            Dim matweight As Double = 0
 
-            For i As Integer = 0 To DT_MatData.Rows.Count - 1
-                storagename = CType(DT_MatData.Rows(i).Item("StorageName"), String)
-                matname = CType(DT_MatData.Rows(i).Item("MaterialName"), String)
-                matbalance = CType(DT_MatData.Rows(i).Item("Quantity"), Double)
-                matweight = CType(DT_MatData.Rows(i).Item("WeightADT"), Double)
+        'Public Function genStorageMatDetailData(DT_MatData As DataTable) As String
+        '    Dim res As String = String.Empty
+        '    Dim storagename As String = String.Empty
+        '    Dim matname As String = String.Empty
+        '    Dim matbalance As Double = 0
+        '    Dim matweight As Double = 0
+        '    Try
+        '        For i As Integer = 0 To DT_MatData.Rows.Count - 1
+        '            storagename = CType(DT_MatData.Rows(i).Item("StorageName"), String)
+        '            matname = CType(DT_MatData.Rows(i).Item("MaterialName"), String)
+        '            matbalance = CType(DT_MatData.Rows(i).Item("Quantity"), Double)
+        '            matweight = CType(DT_MatData.Rows(i).Item("WeightADT"), Double)
 
-                res &= prePareMatInfo(storagename, matname, matbalance, matweight)
-            Next
+        '            res &= prePareMatInfo(storagename, matname, matbalance, matweight)
+        '        Next
+        '    Catch ex As Exception
+        '        Infolog.ClearMessage()
+        '        Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, "FC.IVM.Bus Error")
+        '        Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "File name := mod_IVM_Map_Function")
+        '        Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "Function name := genStorageMatDetailData")
+        '        Infolog.ShowExMessageWithTopic(ex, FC.M.PSL_Win.MessageType.ErrorMessage, "Function use to create map overlay")
 
-            Return res
-        End Function
-        ''' <summary>Function use to show material detail data in each area</summary>
-        Public Function prePareMatInfo(ByVal StorageName As String, ByVal MatName As String,
-                            ByVal Balance As Double, ByVal Weight As Double) As String
+        '        ModMainApp.Log.Log4N("genStorageMatDetailData [Catch]").DebugFormat("Err detail := {0} ", ex.Message)
+        '    End Try
 
-            Dim StringMatInfo As New StringBuilder
-            StringMatInfo.Append("Material    {MatName}    ")
-            StringMatInfo.Replace("{MatName}", MatName)
-            StringMatInfo.AppendFormat("Bale    {0:0}    ", Balance)
-            StringMatInfo.AppendFormat("Weight    {0:0.000}    ", Weight).AppendLine()
+        '    Return res
+        'End Function
 
-            Return StringMatInfo.ToString
-        End Function
-        'Public Sub CreateInfoOverlay()
+        'Public Function prePareMatInfo(ByVal StorageName As String, ByVal MatName As String,
+        '                    ByVal Balance As Double, ByVal Weight As Double) As String
 
-        '    infoOverlay = New MapOverlay() With {.Alignment = ContentAlignment.TopRight, .JoiningOrientation = Orientation.Vertical, .Margin = New Padding(0, 0, 10, 0), .Padding = New Padding(10)}
-        '    infoOverlay.Visible = True
-        '    'textItems = New Dictionary(Of String, MapOverlayTextItem)()
+        '    Dim StringMatInfo As New StringBuilder
+        '    StringMatInfo.Append("วัตถุดิบ    {MatName}    ")
+        '    StringMatInfo.Replace("{MatName}", MatName)
+        '    StringMatInfo.AppendFormat("จำนวน    {0:0}    ", Balance)
+        '    StringMatInfo.AppendFormat("น้ำหนัก    {0:0.000}    ", Weight).AppendLine()
 
-        '    'overlayManager.SetOverlaysVisibility(True)
-        '    SetTextToItemByKey("name", "NameVal")
-        '    SetTextToItemByKey("id", "PlaneID")
-        '    SetTextToItemByKey("from", "selectedPlane_Renamed.StartPointName")
-        '    SetTextToItemByKey("to", "selectedPlane_Renamed.EndPointName")
-        '    SetTextToItemByKey("current_time", New TimeSpan(0, 0, CInt(Fix(Math.Ceiling(0.00 * 3600)))).ToString())
-        '    SetTextToItemByKey("flight_time", New TimeSpan(0, 0, CInt(Fix(Math.Ceiling(0 * 3600)))).ToString())
-        '    SetTextToItemByKey("speed", "electedPlane_Renamed.SpeedKmH")
-        '    SetTextToItemByKey("altitude", "selectedPlane_Renamed.FlightAltitude")
-        '    'textItems.Clear()
-        '    itemsNames = CreateNames()
-
-        '    For Each key As String In keys
-        '        Dim bottomPadding As Integer = If(spacingMask(key), 13, 3)
-        '        Dim itemText As String = String.Format("{0}:", itemsNames(key))
-        '        Dim labelItem As New MapOverlayTextItem() With {.Alignment = ContentAlignment.TopLeft, .JoiningOrientation = Orientation.Vertical, .Size = New Size(105, 0), .Padding = New Padding(0, 3, 0, bottomPadding), .Text = itemText}
-        '        labelItem.TextStyle.Font = FontsCollection("desc")
-        '        Dim valueItem As New MapOverlayTextItem() With {.Alignment = ContentAlignment.TopRight, .JoiningOrientation = Orientation.Vertical, .Size = New Size(120, 0), .Padding = New Padding(0, 3, 0, bottomPadding)}
-        '        valueItem.TextStyle.Font = FontsCollection("desc")
-        '        'textItems.Add(key, valueItem)
-        '        infoOverlay.Items.AddRange(New MapOverlayItemBase() {labelItem, valueItem})
-        '    Next key
-        'End Sub
+        '    Return StringMatInfo.ToString
+        'End Function
 
         ''' <exclude />
         Public ReadOnly Property Overlay() As MapOverlay

@@ -103,6 +103,9 @@
     <Reference Include="FC.M.BLL_Util">
       <HintPath>..\DLLs\FC.M.BLL_Util.dll</HintPath>
     </Reference>
+    <Reference Include="FC.M.PSL_Win">
+      <HintPath>..\DLLs\FC.M.PSL_Win.dll</HintPath>
+    </Reference>
     <Reference Include="FC.MainApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bd5f4cb6c09884aa, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLLs\FC.MainApp.dll</HintPath>

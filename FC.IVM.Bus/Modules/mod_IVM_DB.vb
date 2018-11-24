@@ -3,6 +3,7 @@ Imports DevExpress.XtraGrid.Views.Grid
 Imports FC.M.BLL_Util
 Imports FC.MainSQL.Modules
 Imports FC.MainApp.Modules
+Imports FC.M.PSL_Win.Classes_Helper
 
 Namespace Modules
     ''' <summary>Module for management database</summary>
@@ -27,17 +28,22 @@ Namespace Modules
         ''' <param name="FieldID">รหัสลาน</param>
         ''' <returns>Datatable : Group area detail data</returns>
         Public Function func_IVM_Get_Area_Info(ByVal FieldID As Integer) As DataSet
-
+            Dim DS_Area As New DataSet
             Try
-                Dim DS_Area As New DataSet
+
                 'Dim Dt_Area As New DataTable
                 SQL.FillDataSet(DS_Area, String.Format("proc_IVM_PrimaryStorage_1664 {0}", DataHelper.ToSqlValue(FieldID)))
                 'SQL.FillDataTable(Dt_Area, String.Format("proc_IVM_PrimaryStorage_1664 {0}", DataHelper.ToSqlValue(FieldID)))
-                Return DS_Area
-            Catch ex As Exception
-                Throw New Exception("Error : func_IVM_Get_Area_Info ", ex)
-            End Try
 
+            Catch ex As Exception
+                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, "FC.IVM.Bus")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "File := mod_IVM_DB Function := func_IVM_Get_Area_Info")
+                Infolog.ShowExMessage(ex, FC.M.PSL_Win.MessageType.ErrorMessage)
+
+                ModMainApp.Log.Log4N("func_IVM_Get_Area_Info [Catch]").DebugFormat("Err := {0} ", ex.Message)
+                'Throw New Exception("Error : func_IVM_Get_Area_Info ", ex)
+            End Try
+            Return DS_Area
         End Function
         ''' <summary>Function use to get WP. detail data</summary>
         ''' <param name="FieldID">รหัสลาน</param>

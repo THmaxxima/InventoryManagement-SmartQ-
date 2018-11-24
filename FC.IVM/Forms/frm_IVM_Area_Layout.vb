@@ -167,6 +167,8 @@ Namespace Forms
         Dim iAreaCount As Integer = 0
 
         ''' <exclude />
+        Dim DS_Area_Info As New DataSet
+        ''' <exclude />
         Dim DT_Area_Info As New DataTable
 
         ''' <exclude />
@@ -1137,7 +1139,8 @@ Namespace Forms
         ''' </summary>
         Public Sub GetDataFromDB()
             Try
-                DT_Area_Info = func_IVM_Get_Area_Info(idOfField)
+                DS_Area_Info = func_IVM_Get_Area_Info(idOfField)
+                DT_Area_Info = DS_Area_Info.Tables(0)
                 iAreaCount = DT_Area_Info.Rows.Count
                 '+++++++++++ Redraw mapitem +++++++
                 UpdateItemMap()
@@ -1152,7 +1155,8 @@ Namespace Forms
         ''' <summary>คิวรี่ข้อมูลของลานจากฐานข้อมูลมาเก็บไว้ใน Datatable</summary>
         Private Sub GetSummaryAreaData()
             Try
-                DT_Area_Info = func_IVM_Get_Area_Info(idOfField)
+                DS_Area_Info = func_IVM_Get_Area_Info(idOfField)
+                DT_Area_Info = DS_Area_Info.Tables(0)
                 iAreaCount = DT_Area_Info.Rows.Count
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")

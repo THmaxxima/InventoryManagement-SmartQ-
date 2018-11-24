@@ -26,12 +26,14 @@ Namespace Modules
         ''' <summary>ฟังก์ชั่นแสดงข้อมูลของ Group area ในแต่ละลาน</summary>
         ''' <param name="FieldID">รหัสลาน</param>
         ''' <returns>Datatable : Group area detail data</returns>
-        Public Function func_IVM_Get_Area_Info(ByVal FieldID As Integer) As DataTable
+        Public Function func_IVM_Get_Area_Info(ByVal FieldID As Integer) As DataSet
 
             Try
-                Dim Dt_Area As New DataTable
-                SQL.FillDataTable(Dt_Area, String.Format("proc_IVM_PrimaryStorage_1664 {0}", DataHelper.ToSqlValue(FieldID)))
-                Return Dt_Area
+                Dim DS_Area As New DataSet
+                'Dim Dt_Area As New DataTable
+                SQL.FillDataSet(DS_Area, String.Format("proc_IVM_PrimaryStorage_1664 {0}", DataHelper.ToSqlValue(FieldID)))
+                'SQL.FillDataTable(Dt_Area, String.Format("proc_IVM_PrimaryStorage_1664 {0}", DataHelper.ToSqlValue(FieldID)))
+                Return DS_Area
             Catch ex As Exception
                 Throw New Exception("Error : func_IVM_Get_Area_Info ", ex)
             End Try

@@ -285,7 +285,8 @@ Namespace PopupForms
                   String.Format("Proc param := {0}", DataHelper.ToSqlValue(FieldID)))
 
                 '******************************************************
-                DT = func_IVM_Get_Area_Info(FieldID)
+                DS_Area_Data = func_IVM_Get_Area_Info(FieldID)
+                DT = DS_Area_Data.Tables(0)
                 '******************************************************
 
                 ModMainApp.Log.Log4N("GetGroupAreaInfo [Return]").DebugFormat("1664 Return data table rows count := {0} ",

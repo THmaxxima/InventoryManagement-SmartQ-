@@ -216,8 +216,9 @@ Namespace Modules
         Public Function GetSumAreaWeight(ByVal FieldID As Integer) As Double
             Dim result As Double = 0
             Try
-                Dim DT_Area_Info As DataTable = mod_IVM_DB.func_IVM_Get_Area_Info(FieldID)
-                result = DataHelper.DBNullOrNothingTo(Of Double)(DT_Area_Info.Compute("SUM(MaterialWeight)", ""), 0)
+                Dim DS_GetSumAreaWeight As DataSet = mod_IVM_DB.func_IVM_Get_Area_Info(FieldID)
+                Dim DT_Area_Info As DataTable = DS_GetSumAreaWeight.Tables(1)
+                result = DataHelper.DBNullOrNothingTo(Of Double)(DT_Area_Info.Rows(0).Item("TotalWeight"), 0)
             Catch ex As Exception
                 MsgBox("GetSumAreaWeight := " & ex.Message)
             End Try
@@ -227,8 +228,9 @@ Namespace Modules
         Public Function GetPAreaWeight(ByVal FieldID As Integer) As Double
             Dim result As Double = 0
             Try
-                Dim DT_Area_Info As DataTable = mod_IVM_DB.func_IVM_Get_Area_Info(FieldID)
-                result = DataHelper.DBNullOrNothingTo(Of Double)(DT_Area_Info.Compute("SUM(InuseCapacity)", ""), 0)
+                Dim DS_GetSumPAreaWeight As DataSet = mod_IVM_DB.func_IVM_Get_Area_Info(FieldID)
+                Dim DT_Area_Info As DataTable = DS_GetSumPAreaWeight.Tables(1)
+                result = DataHelper.DBNullOrNothingTo(Of Double)(DT_Area_Info.Rows(0).Item("InUseCapcity"), 0)
             Catch ex As Exception
                 MsgBox("GetPAreaWeight := " & ex.Message)
             End Try

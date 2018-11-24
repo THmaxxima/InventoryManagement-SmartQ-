@@ -90,6 +90,9 @@ Namespace PopupForms
             'lblWeight.Text = String.Empty
             txtquantity.EditValue = 0
             lblNetAmount.Text = "0"
+
+            lblCaptionPLW.Visible = False
+            lblPLWeight.Visible = False
         End Sub
         ''' <exclude />
         Sub SetGridFont(view As GridControl, font As Font)
@@ -145,8 +148,6 @@ Namespace PopupForms
                 '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                 GridControlWP.DataSource = GetWPInfo(CInt(_fieldID))
                 '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                'LayoutViewSouceArea.BeginUpdate()
-
                 If (_siteName = "UnloadImport" Or _siteName = "Unload") Then
 
                     GridControlWeightTicket.DataSource = GetSubAreaINVDataSet()
@@ -158,43 +159,31 @@ Namespace PopupForms
                     LayoutViewWeightTicket.Columns(8).DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
                     LayoutViewWeightTicket.Columns(8).DisplayFormat.FormatString = "{0:n3}"
 
+                    If (_siteName = "Unload") Then
+                        lblCaptionPLW.Visible = True
+                        lblPLWeight.Visible = True
+                        LayoutViewWeightTicket.Columns(12).DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+                        LayoutViewWeightTicket.Columns(12).DisplayFormat.FormatString = "{0:n3}"
+                    Else
+                        lblCaptionPLW.Visible = False
+                        lblPLWeight.Visible = False
+                    End If
+
                     '++++++++++ กรณี Unload จะไม่สามารถเลือก W.P. ได้ ++++++++++
                     txtquantity.ReadOnly = False
-
                 Else
                     GridControlSouceArea.DataSource = GetSubAreaINVDataSet()
-
                     GridControlWeightTicket.Visible = False
                     GridControlSouceArea.Visible = True
-
                     '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     Me.CheckShowAll.Visible = False
                     Me.btnProperties.Enabled = False
                     '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                    'LayoutViewSouceArea.BeginUpdate()
-                    'Me.LayoutViewSouceArea.CardHorzInterval = 2 'ระยะห่างระหว่าง การ์ด แนวนอน
-                    'Me.LayoutViewSouceArea.CardMinSize = New System.Drawing.Size(134, 106)
-                    'Me.LayoutViewSouceArea.CardVertInterval = 1 'ระยะห่างระหว่าง การ์ด แนวตั้ง
-                    'LayoutViewSouceArea.EndUpdate()
-
-                    'layoutViewDestGroupArea.BeginUpdate()
-                    'Me.layoutViewDestGroupArea.CardHorzInterval = 2
-                    'Me.layoutViewDestGroupArea.CardVertInterval = 1
-                    'layoutViewDestGroupArea.EndUpdate()
-
-                    'LayoutViewDestSubArea.BeginUpdate()
-                    'Me.LayoutViewDestSubArea.CardHorzInterval = 2
-                    'Me.LayoutViewDestSubArea.CardVertInterval = 1
-                    'LayoutViewDestSubArea.EndUpdate()
-
-                    'lblWeightTicket.Visible = False
                     txtquantity.ReadOnly = True
-                    'txtquantity.Enabled = False
+                    lblCaptionPLW.Visible = True
+                    lblPLWeight.Visible = True
 
                 End If
-
-                'LayoutViewSouceArea.EndUpdate()
-                'LayoutViewSouceArea.RefreshData()
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
                 Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [InitData]")
@@ -328,13 +317,12 @@ Namespace PopupForms
                 Dim foundRow As DataRow()
 
                 If (_GroupID > 0 And (_siteName = "Unload")) Then
-                    '   ModMainApp.Log.Log4N("GetSubAreaINVDataSet [Before]").DebugFormat("Call := proc_IVM_GetUnloadTruck_1862 {0}",
-                    'String.Format("Proc param := {0},{1}", DataHelper.ToSqlValue(_MaterialSourceID), DataHelper.ToSqlValue(_PUserID)))
+
                     DT_Area_Data = New DataTable
                     DT_Area_Data = func_IVM_Get_WeightTicketData(_materialTypeId, _PUserID)
 
                     If (CheckShowAll.Checked = True) Then
-                        'Dim tmpConditionString As String = "MaterialSource=\"Import\""
+
                         foundRow = DT_Area_Data.Select("MaterialSource='Import'")
                     Else
                         'Dim tmpConditionString As String = "MaterialSource = """Import""" And UnloadStation Not Like """%ลาน1%"
@@ -352,8 +340,7 @@ Namespace PopupForms
                         Next
 
                     End If
-                    '   ModMainApp.Log.Log4N("GetSubAreaINVDataSet [Return]").DebugFormat("1862 Return data table rows count := {0} ",
-                    'DT_Area_Data.Rows.Count.ToString)
+
                 ElseIf (_GroupID > 0 And (_siteName = "UnloadImport")) Then
                     DT_Area_Data = New DataTable
                     DT_Area_Data = func_IVM_Get_WeightTicketData(_materialTypeId, _PUserID)
@@ -377,10 +364,6 @@ Namespace PopupForms
                     End If
 
                 Else
-                    '   ModMainApp.Log.Log4N("GetSubAreaINVDataSet [Before]").DebugFormat("Call := proc_IVM_ChildStorageData_1726 {0}",
-                    'String.Format("Proc param := {0},{1}", DataHelper.ToSqlValue(_GroupID)), DataHelper.ToSqlValue(_fieldID))
-                    '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                    'Dim Amount As Double = DataHelper.DBNullOrNothingTo(Of Double)(ViewData.GetRowCellValue(icountGridRow, "Quantity"), 0)
                     DT_Area_Data = New DataTable
                     DT_Area_Data = func_IVM_Get_ChildStorageData(_GroupID, CInt(_fieldID))
                     foundRow = DT_Area_Data.Select("MaterialID IS NULL")
@@ -394,10 +377,7 @@ Namespace PopupForms
                         Next
 
                     End If
-                    '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-                    '   ModMainApp.Log.Log4N("GetSubAreaINVDataSet [Return]").DebugFormat("1726 Return data table rows count := {0} ",
-                    'DT_Area_Data.Rows.Count.ToString)
                 End If
 
             Catch ex As Exception
@@ -416,7 +396,6 @@ Namespace PopupForms
                 WinDevHelper.ShowWaitForm(Me)
                 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                 Prepare_Grid_Movement_Souce()
-                'GridControlSouceArea.DataSource = GetSubAreaINVDataSet()
                 InitData()
                 gridControlDestGroupArea.DataSource = GetGroupAreaInfo(CInt(_fieldID))
                 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -426,20 +405,30 @@ Namespace PopupForms
 
                 Dim find As FindControl = TryCast(LayoutViewSouceArea.GridControl.Controls.Find("FindControl", True)(0), FindControl)
                 find.FindEdit.Focus()
-
                 find.FocusFindEdit()
 
                 If (_ToDo = "Unload" Or _ToDo = "UnloadImport") Then
                     UnLockObject()
                     TabNP_WP.PageVisible = False
                     lblWeightTicket.Visible = True
+                    If (_ToDo = "Unload") Then
+                        lblCaptionPLW.Visible = True
+                        lblPLWeight.Visible = True
+                    Else
+                        lblCaptionPLW.Visible = False
+                        lblPLWeight.Visible = False
+                    End If
+                    LayoutViewWeightTicket.Focus()
+
                 Else
                     LockObject()
                     TabNP_WP.PageVisible = True
                     lblWeightTicket.Visible = False
-                End If
+                    lblCaptionPLW.Visible = False
+                    lblPLWeight.Visible = False
 
-                LayoutViewSouceArea.Focus()
+                    LayoutViewSouceArea.Focus()
+                End If
 
                 Me.Text = "Storage area information := " & _siteName & " [ " & _fieldID & " ] [ " & _ToDo & " ]"
             Catch ex As Exception
@@ -992,23 +981,26 @@ Namespace PopupForms
         Private Sub LayoutViewWeightTicket_CardClick(sender As Object, e As CardClickEventArgs) Handles LayoutViewWeightTicket.CardClick
             Dim rowind As String
             Dim quantity As Decimal
+            Dim PLWeight As Double = 0
+            Dim Ticket As String
+            Dim ReceiveDate As DateTime
+            Dim PlateLicense As String
+            Dim SupplierName As String
+
             Try
-                rowind = CType(LayoutViewWeightTicket.FocusedRowHandle, String)
+                'rowind = CType(LayoutViewWeightTicket.FocusedRowHandle, String)
+                rowind = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewWeightTicket.FocusedRowHandle, "0")
 
-                Dim Ticket As String
-                Dim ReceiveDate As DateTime
-                Dim PlateLicense As String
-                Dim SupplierName As String
+                Ticket = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewWeightTicket.GetFocusedRowCellValue("Ticket"), "-")
+                PlateLicense = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewWeightTicket.GetFocusedRowCellValue("PlateLicense"), "-")
+                ReceiveDate = DataHelper.DBNullOrNothingTo(Of DateTime)(LayoutViewWeightTicket.GetFocusedRowCellValue("ReceiveDate"), "000-00-00 00:00:00")
+                SupplierName = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewWeightTicket.GetFocusedRowCellValue("SupplierName"), "-")
 
-                Ticket = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("Ticket"), String)
-                PlateLicense = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("PlateLicense"), String)
-                ReceiveDate = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("ReceiveDate"), DateTime)
-                SupplierName = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("SupplierName"), String)
+                'ReceiveDate = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("ReceiveDate"), DateTime)
                 '+++++++++++++++++++ Binding Search lookupedit Mat +++++++++++++++++++++++++++
                 BindingSearchMaterial()
                 '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                quantity = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("Quantity"), Decimal)
-                'weight = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("MillWeight"), Double)
+                quantity = DataHelper.DBNullOrNothingTo(Of Decimal)(LayoutViewWeightTicket.GetFocusedRowCellValue("Quantity"), 0)
                 weight = DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewWeightTicket.GetFocusedRowCellValue("MillWeight"), 0)
                 lblWeightTicket.Text = Ticket
                 '++++++++++ Use for debug only +++++++++++++
@@ -1018,6 +1010,7 @@ Namespace PopupForms
                 lblTicketID.Text = Ticket
                 lblStroageName.Text = PlateLicense
                 lblWeight.Text = weight.ToString("0.000")
+                lblPLWeight.Text = DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewWeightTicket.GetFocusedRowCellValue("PLWeight"), 0).ToString("##0.000")
                 txtquantity.EditValue = quantity
                 lblNetAmount.Text = quantity.ToString
                 '+++++++ Cal weight per unit +++++
@@ -1025,7 +1018,6 @@ Namespace PopupForms
                 '+++++++++++++ Lock object ++++++++++++++++++++
                 UnLockObject()
                 '++++++++++++++++++++++++++++++++++++++++++++++
-
                 '++++++++++++++++++++ Clear ข้อมูล grid ก่อนการเลือกพื้นที่ใหม่ ++++++++++++++++++
                 If (GridViewMoveMentDetail.RowCount > 0) Then
                     Dim iCountRows As Integer
@@ -1041,6 +1033,7 @@ Namespace PopupForms
                 Infolog.ShowExMessage(ex, FC.M.PSL_Win.MessageType.ErrorMessage)
             End Try
         End Sub
+
 
     End Class
 End Namespace

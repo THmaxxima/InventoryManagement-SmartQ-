@@ -174,8 +174,10 @@ Namespace Forms
 
                     cboSite.EditValue = CInt(_fieldID)
                     cboSite.ReadOnly = True
+
                 End If
 
+                LayoutControlGroupUnload.Selected = True
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
                 Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [frm_IVM_Rollback_Load]")
@@ -433,7 +435,7 @@ Namespace Forms
         End Sub
 
         ''' <exclude />
-        Private Sub LayoutControlGroupUnload_Shown(sender As Object, e As EventArgs) Handles LayoutControlGroupUnload.Shown
+        Private Sub LayoutControlGroupUnload_Shown(sender As Object, e As EventArgs) 
             tmpTapAction = 1
         End Sub
 

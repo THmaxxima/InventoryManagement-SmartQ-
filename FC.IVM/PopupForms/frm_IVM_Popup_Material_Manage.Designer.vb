@@ -21,28 +21,29 @@
         <System.Diagnostics.DebuggerStepThrough()>
         Private Sub InitializeComponent()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_IVM_Popup_Material_Manage))
-            Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject3 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject4 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject5 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject6 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject7 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject8 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
             Me.RepositoryItemSpinEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit()
             Me.LayoutControlSouceData = New DevExpress.XtraLayout.LayoutControl()
             Me.CheckShowAll = New DevExpress.XtraEditors.CheckEdit()
             Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-            Me.lblTruckProperties = New DevExpress.XtraEditors.LabelControl()
+            Me.lblWeight = New DevExpress.XtraEditors.LabelControl()
+            Me.txtquantity = New DevExpress.XtraEditors.TextEdit()
             Me.LabelControl6 = New DevExpress.XtraEditors.LabelControl()
-            Me.lblStroageName = New DevExpress.XtraEditors.LabelControl()
-            Me.btnSave = New DevExpress.XtraEditors.SimpleButton()
+            Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
+            Me.LabelControl2 = New DevExpress.XtraEditors.LabelControl()
             Me.btnClose = New DevExpress.XtraEditors.SimpleButton()
+            Me.btnSave = New DevExpress.XtraEditors.SimpleButton()
+            Me.btnProperties = New DevExpress.XtraEditors.SimpleButton()
             Me.SearchMaterial = New DevExpress.XtraEditors.SearchLookUpEdit()
             Me.SearchLookUpEdit1View = New DevExpress.XtraGrid.Views.Grid.GridView()
             Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
             Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
-            Me.txtquantity = New DevExpress.XtraEditors.TextEdit()
+            Me.lblTruckProperties = New DevExpress.XtraEditors.LabelControl()
+            Me.lblStroageName = New DevExpress.XtraEditors.LabelControl()
             Me.lblWeightTicket = New DevExpress.XtraEditors.LabelControl()
-            Me.btnProperties = New DevExpress.XtraEditors.SimpleButton()
-            Me.lblWeight = New DevExpress.XtraEditors.LabelControl()
-            Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
             Me.GroupControl3 = New DevExpress.XtraEditors.GroupControl()
             Me.GridControlMoveMentDetail = New DevExpress.XtraGrid.GridControl()
             Me.GridViewMoveMentDetail = New DevExpress.XtraGrid.Views.Grid.GridView()
@@ -187,7 +188,6 @@
             Me.LayoutControlItem5 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.LayoutControlItem6 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.LayoutControlGroup1 = New DevExpress.XtraLayout.LayoutControlGroup()
-            Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.item3 = New DevExpress.XtraLayout.EmptySpaceItem()
             Me.repositoryItemTextEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemTextEdit()
             Me.repositoryItemPictureEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit()
@@ -211,15 +211,17 @@
             Me.EmptySpaceItem10 = New DevExpress.XtraLayout.EmptySpaceItem()
             Me.EmptySpaceItem15 = New DevExpress.XtraLayout.EmptySpaceItem()
             Me.LayoutControlGroup2 = New DevExpress.XtraLayout.LayoutControlGroup()
-            Me.LabelControl2 = New DevExpress.XtraEditors.LabelControl()
+            Me.lblCaptionPLW = New DevExpress.XtraEditors.LabelControl()
+            Me.lblPLWeight = New DevExpress.XtraEditors.LabelControl()
+            Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
             CType(Me.RepositoryItemSpinEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutControlSouceData, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.LayoutControlSouceData.SuspendLayout()
             CType(Me.CheckShowAll.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.TableLayoutPanel1.SuspendLayout()
+            CType(Me.txtquantity.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.SearchMaterial.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.SearchLookUpEdit1View, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.txtquantity.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.GroupControl3, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.GroupControl3.SuspendLayout()
             CType(Me.GridControlMoveMentDetail, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -318,7 +320,6 @@
             CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.item3, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.repositoryItemTextEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.repositoryItemPictureEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -341,6 +342,7 @@
             CType(Me.EmptySpaceItem10, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.EmptySpaceItem15, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
             'RepositoryItemSpinEdit1
@@ -348,14 +350,14 @@
             Me.RepositoryItemSpinEdit1.AllowFocused = False
             Me.RepositoryItemSpinEdit1.AutoHeight = False
             Me.RepositoryItemSpinEdit1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D
-            Me.RepositoryItemSpinEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 5, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("RepositoryItemSpinEdit1.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, "", Nothing, Nothing, True)})
+            Me.RepositoryItemSpinEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 5, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("RepositoryItemSpinEdit1.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, "", Nothing, Nothing, True)})
             Me.RepositoryItemSpinEdit1.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D
             Me.RepositoryItemSpinEdit1.Name = "RepositoryItemSpinEdit1"
             '
             'LayoutControlSouceData
             '
-            Me.LayoutControlSouceData.Controls.Add(Me.CheckShowAll)
             Me.LayoutControlSouceData.Controls.Add(Me.TableLayoutPanel1)
+            Me.LayoutControlSouceData.Controls.Add(Me.CheckShowAll)
             Me.LayoutControlSouceData.Controls.Add(Me.GroupControl3)
             Me.LayoutControlSouceData.Controls.Add(Me.GroupControl1)
             Me.LayoutControlSouceData.Controls.Add(Me.lblContractorInfo)
@@ -395,10 +397,10 @@
             Me.TableLayoutPanel1.AllowDrop = True
             Me.TableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
             Me.TableLayoutPanel1.ColumnCount = 4
-            Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.85515!))
-            Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.2702!))
-            Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.93923!))
-            Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.17127!))
+            Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.78961!))
+            Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.22956!))
+            Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.86643!))
+            Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.1144!))
             Me.TableLayoutPanel1.Controls.Add(Me.lblWeight, 1, 3)
             Me.TableLayoutPanel1.Controls.Add(Me.txtquantity, 1, 2)
             Me.TableLayoutPanel1.Controls.Add(Me.LabelControl6, 0, 2)
@@ -411,39 +413,68 @@
             Me.TableLayoutPanel1.Controls.Add(Me.lblTruckProperties, 2, 1)
             Me.TableLayoutPanel1.Controls.Add(Me.lblStroageName, 0, 0)
             Me.TableLayoutPanel1.Controls.Add(Me.lblWeightTicket, 0, 1)
+            Me.TableLayoutPanel1.Controls.Add(Me.lblCaptionPLW, 0, 4)
+            Me.TableLayoutPanel1.Controls.Add(Me.lblPLWeight, 1, 4)
             Me.TableLayoutPanel1.Location = New System.Drawing.Point(523, 79)
             Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
             Me.TableLayoutPanel1.RowCount = 6
             Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
             Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
             Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+            Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+            Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
             Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-            Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-            Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-            Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-            Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-            Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-            Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-            Me.TableLayoutPanel1.Size = New System.Drawing.Size(733, 225)
+            Me.TableLayoutPanel1.Size = New System.Drawing.Size(733, 242)
             Me.TableLayoutPanel1.TabIndex = 47
             '
-            'lblTruckProperties
+            'lblWeight
             '
-            Me.lblTruckProperties.AllowDrop = True
-            Me.lblTruckProperties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.lblTruckProperties.Appearance.ForeColor = System.Drawing.Color.Black
-            Me.lblTruckProperties.Appearance.Options.UseFont = True
-            Me.lblTruckProperties.Appearance.Options.UseForeColor = True
-            Me.lblTruckProperties.Appearance.Options.UseTextOptions = True
-            Me.lblTruckProperties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-            Me.lblTruckProperties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
-            Me.lblTruckProperties.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
-            Me.lblTruckProperties.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
-            Me.lblTruckProperties.Location = New System.Drawing.Point(332, 55)
-            Me.lblTruckProperties.Name = "lblTruckProperties"
-            Me.TableLayoutPanel1.SetRowSpan(Me.lblTruckProperties, 4)
-            Me.lblTruckProperties.Size = New System.Drawing.Size(220, 170)
-            Me.lblTruckProperties.TabIndex = 15
+            Me.lblWeight.AllowDrop = True
+            Me.lblWeight.Appearance.BackColor = System.Drawing.Color.Transparent
+            Me.lblWeight.Appearance.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.lblWeight.Appearance.ForeColor = System.Drawing.Color.Black
+            Me.lblWeight.Appearance.Options.UseBackColor = True
+            Me.lblWeight.Appearance.Options.UseFont = True
+            Me.lblWeight.Appearance.Options.UseForeColor = True
+            Me.lblWeight.Appearance.Options.UseTextOptions = True
+            Me.lblWeight.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+            Me.lblWeight.Dock = System.Windows.Forms.DockStyle.Top
+            Me.lblWeight.Location = New System.Drawing.Point(206, 147)
+            Me.lblWeight.Name = "lblWeight"
+            Me.lblWeight.Size = New System.Drawing.Size(90, 39)
+            Me.lblWeight.TabIndex = 13
+            Me.lblWeight.Text = "0.000"
+            '
+            'txtquantity
+            '
+            Me.txtquantity.AllowDrop = True
+            Me.txtquantity.Dock = System.Windows.Forms.DockStyle.Top
+            Me.txtquantity.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
+            Me.txtquantity.Location = New System.Drawing.Point(206, 101)
+            Me.txtquantity.Name = "txtquantity"
+            Me.txtquantity.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
+            Me.txtquantity.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.txtquantity.Properties.Appearance.ForeColor = System.Drawing.Color.Black
+            Me.txtquantity.Properties.Appearance.Options.UseBackColor = True
+            Me.txtquantity.Properties.Appearance.Options.UseFont = True
+            Me.txtquantity.Properties.Appearance.Options.UseForeColor = True
+            Me.txtquantity.Properties.Appearance.Options.UseTextOptions = True
+            Me.txtquantity.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+            Me.txtquantity.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.Transparent
+            Me.txtquantity.Properties.AppearanceReadOnly.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.txtquantity.Properties.AppearanceReadOnly.ForeColor = System.Drawing.Color.Black
+            Me.txtquantity.Properties.AppearanceReadOnly.Options.UseBackColor = True
+            Me.txtquantity.Properties.AppearanceReadOnly.Options.UseFont = True
+            Me.txtquantity.Properties.AppearanceReadOnly.Options.UseForeColor = True
+            Me.txtquantity.Properties.AutoHeight = False
+            Me.txtquantity.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+            Me.txtquantity.Properties.ContextImageAlignment = DevExpress.XtraEditors.ContextImageAlignment.Far
+            Me.txtquantity.Properties.DisplayFormat.FormatString = "{0:n1}"
+            Me.txtquantity.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+            Me.txtquantity.Properties.EditFormat.FormatString = "{0:n1}"
+            Me.txtquantity.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+            Me.txtquantity.Size = New System.Drawing.Size(120, 39)
+            Me.txtquantity.TabIndex = 12
             '
             'LabelControl6
             '
@@ -453,41 +484,32 @@
             Me.LabelControl6.Dock = System.Windows.Forms.DockStyle.Top
             Me.LabelControl6.Location = New System.Drawing.Point(3, 101)
             Me.LabelControl6.Name = "LabelControl6"
-            Me.LabelControl6.Size = New System.Drawing.Size(197, 40)
+            Me.LabelControl6.Size = New System.Drawing.Size(197, 34)
             Me.LabelControl6.TabIndex = 1
             Me.LabelControl6.Text = "จำนวน"
             '
-            'lblStroageName
+            'LabelControl1
             '
-            Me.lblStroageName.Appearance.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.lblStroageName.Appearance.ForeColor = System.Drawing.Color.Black
-            Me.lblStroageName.Appearance.Options.UseFont = True
-            Me.lblStroageName.Appearance.Options.UseForeColor = True
-            Me.lblStroageName.Appearance.Options.UseTextOptions = True
-            Me.lblStroageName.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-            Me.lblStroageName.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal
-            Me.lblStroageName.Dock = System.Windows.Forms.DockStyle.Left
-            Me.lblStroageName.Location = New System.Drawing.Point(3, 3)
-            Me.lblStroageName.Name = "lblStroageName"
-            Me.lblStroageName.Size = New System.Drawing.Size(71, 39)
-            Me.lblStroageName.TabIndex = 1
-            Me.lblStroageName.Text = "พื้นที่"
+            Me.LabelControl1.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.LabelControl1.Appearance.Options.UseFont = True
+            Me.LabelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
+            Me.LabelControl1.Dock = System.Windows.Forms.DockStyle.Top
+            Me.LabelControl1.Location = New System.Drawing.Point(3, 147)
+            Me.LabelControl1.Name = "LabelControl1"
+            Me.LabelControl1.Size = New System.Drawing.Size(197, 34)
+            Me.LabelControl1.TabIndex = 1
+            Me.LabelControl1.Text = "น้ำหนัก"
             '
-            'btnSave
+            'LabelControl2
             '
-            Me.btnSave.AllowDrop = True
-            Me.btnSave.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.btnSave.Appearance.Options.UseFont = True
-            Me.btnSave.Appearance.Options.UseTextOptions = True
-            Me.btnSave.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-            Me.btnSave.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.btnSave.Image = CType(resources.GetObject("btnSave.Image"), System.Drawing.Image)
-            Me.btnSave.Location = New System.Drawing.Point(555, 55)
-            Me.btnSave.Margin = New System.Windows.Forms.Padding(0, 3, 3, 3)
-            Me.btnSave.Name = "btnSave"
-            Me.btnSave.Size = New System.Drawing.Size(175, 40)
-            Me.btnSave.TabIndex = 7
-            Me.btnSave.Text = "Save"
+            Me.LabelControl2.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.LabelControl2.Appearance.Options.UseFont = True
+            Me.LabelControl2.Dock = System.Windows.Forms.DockStyle.Right
+            Me.LabelControl2.Location = New System.Drawing.Point(244, 3)
+            Me.LabelControl2.Name = "LabelControl2"
+            Me.LabelControl2.Size = New System.Drawing.Size(82, 34)
+            Me.LabelControl2.TabIndex = 16
+            Me.LabelControl2.Text = "วัตถุดิบ"
             '
             'btnClose
             '
@@ -505,9 +527,43 @@
             Me.btnClose.TabIndex = 9
             Me.btnClose.Text = "Close"
             '
+            'btnSave
+            '
+            Me.btnSave.AllowDrop = True
+            Me.btnSave.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.btnSave.Appearance.Options.UseFont = True
+            Me.btnSave.Appearance.Options.UseTextOptions = True
+            Me.btnSave.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+            Me.btnSave.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.btnSave.Image = CType(resources.GetObject("btnSave.Image"), System.Drawing.Image)
+            Me.btnSave.Location = New System.Drawing.Point(555, 55)
+            Me.btnSave.Margin = New System.Windows.Forms.Padding(0, 3, 3, 3)
+            Me.btnSave.Name = "btnSave"
+            Me.btnSave.Size = New System.Drawing.Size(175, 40)
+            Me.btnSave.TabIndex = 7
+            Me.btnSave.Text = "Save"
+            '
+            'btnProperties
+            '
+            Me.btnProperties.AllowDrop = True
+            Me.btnProperties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.btnProperties.Appearance.Options.UseFont = True
+            Me.btnProperties.Appearance.Options.UseTextOptions = True
+            Me.btnProperties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+            Me.btnProperties.AutoSize = True
+            Me.btnProperties.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.btnProperties.Image = CType(resources.GetObject("btnProperties.Image"), System.Drawing.Image)
+            Me.btnProperties.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft
+            Me.btnProperties.Location = New System.Drawing.Point(555, 101)
+            Me.btnProperties.Margin = New System.Windows.Forms.Padding(0, 3, 3, 3)
+            Me.btnProperties.Name = "btnProperties"
+            Me.btnProperties.Size = New System.Drawing.Size(175, 40)
+            Me.btnProperties.TabIndex = 5
+            Me.btnProperties.Text = "Properties "
+            '
             'SearchMaterial
             '
-            Me.SearchMaterial.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.SearchMaterial.Dock = System.Windows.Forms.DockStyle.Top
             Me.SearchMaterial.EditValue = ""
             Me.SearchMaterial.Location = New System.Drawing.Point(332, 3)
             Me.SearchMaterial.Name = "SearchMaterial"
@@ -568,33 +624,39 @@
             Me.GridColumn3.Visible = True
             Me.GridColumn3.VisibleIndex = 0
             '
-            'txtquantity
+            'lblTruckProperties
             '
-            Me.txtquantity.AllowDrop = True
-            Me.txtquantity.Dock = System.Windows.Forms.DockStyle.Top
-            Me.txtquantity.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-            Me.txtquantity.Location = New System.Drawing.Point(206, 101)
-            Me.txtquantity.Name = "txtquantity"
-            Me.txtquantity.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
-            Me.txtquantity.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.txtquantity.Properties.Appearance.ForeColor = System.Drawing.Color.Black
-            Me.txtquantity.Properties.Appearance.Options.UseBackColor = True
-            Me.txtquantity.Properties.Appearance.Options.UseFont = True
-            Me.txtquantity.Properties.Appearance.Options.UseForeColor = True
-            Me.txtquantity.Properties.Appearance.Options.UseTextOptions = True
-            Me.txtquantity.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-            Me.txtquantity.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.Transparent
-            Me.txtquantity.Properties.AppearanceReadOnly.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.txtquantity.Properties.AppearanceReadOnly.ForeColor = System.Drawing.Color.Black
-            Me.txtquantity.Properties.AppearanceReadOnly.Options.UseBackColor = True
-            Me.txtquantity.Properties.AppearanceReadOnly.Options.UseFont = True
-            Me.txtquantity.Properties.AppearanceReadOnly.Options.UseForeColor = True
-            Me.txtquantity.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-            Me.txtquantity.Properties.ContextImageAlignment = DevExpress.XtraEditors.ContextImageAlignment.Far
-            Me.txtquantity.Properties.DisplayFormat.FormatString = "{0:n1}"
-            Me.txtquantity.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
-            Me.txtquantity.Size = New System.Drawing.Size(120, 44)
-            Me.txtquantity.TabIndex = 12
+            Me.lblTruckProperties.AllowDrop = True
+            Me.lblTruckProperties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.lblTruckProperties.Appearance.ForeColor = System.Drawing.Color.Black
+            Me.lblTruckProperties.Appearance.Options.UseFont = True
+            Me.lblTruckProperties.Appearance.Options.UseForeColor = True
+            Me.lblTruckProperties.Appearance.Options.UseTextOptions = True
+            Me.lblTruckProperties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+            Me.lblTruckProperties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
+            Me.lblTruckProperties.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+            Me.lblTruckProperties.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
+            Me.lblTruckProperties.Location = New System.Drawing.Point(332, 55)
+            Me.lblTruckProperties.Name = "lblTruckProperties"
+            Me.TableLayoutPanel1.SetRowSpan(Me.lblTruckProperties, 5)
+            Me.lblTruckProperties.Size = New System.Drawing.Size(220, 206)
+            Me.lblTruckProperties.TabIndex = 15
+            '
+            'lblStroageName
+            '
+            Me.lblStroageName.Appearance.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.lblStroageName.Appearance.ForeColor = System.Drawing.Color.Black
+            Me.lblStroageName.Appearance.Options.UseFont = True
+            Me.lblStroageName.Appearance.Options.UseForeColor = True
+            Me.lblStroageName.Appearance.Options.UseTextOptions = True
+            Me.lblStroageName.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+            Me.lblStroageName.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal
+            Me.lblStroageName.Dock = System.Windows.Forms.DockStyle.Left
+            Me.lblStroageName.Location = New System.Drawing.Point(3, 3)
+            Me.lblStroageName.Name = "lblStroageName"
+            Me.lblStroageName.Size = New System.Drawing.Size(71, 39)
+            Me.lblStroageName.TabIndex = 1
+            Me.lblStroageName.Text = "พื้นที่"
             '
             'lblWeightTicket
             '
@@ -605,61 +667,12 @@
             Me.lblWeightTicket.Appearance.Options.UseTextOptions = True
             Me.lblWeightTicket.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
             Me.TableLayoutPanel1.SetColumnSpan(Me.lblWeightTicket, 2)
-            Me.lblWeightTicket.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.lblWeightTicket.Dock = System.Windows.Forms.DockStyle.Top
             Me.lblWeightTicket.Location = New System.Drawing.Point(3, 55)
             Me.lblWeightTicket.Name = "lblWeightTicket"
-            Me.lblWeightTicket.Size = New System.Drawing.Size(323, 40)
+            Me.lblWeightTicket.Size = New System.Drawing.Size(80, 39)
             Me.lblWeightTicket.TabIndex = 14
             Me.lblWeightTicket.Text = "ตั๋วชั่ง"
-            '
-            'btnProperties
-            '
-            Me.btnProperties.AllowDrop = True
-            Me.btnProperties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.btnProperties.Appearance.Options.UseFont = True
-            Me.btnProperties.Appearance.Options.UseTextOptions = True
-            Me.btnProperties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-            Me.btnProperties.AutoSize = True
-            Me.btnProperties.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.btnProperties.Image = CType(resources.GetObject("btnProperties.Image"), System.Drawing.Image)
-            Me.btnProperties.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft
-            Me.btnProperties.Location = New System.Drawing.Point(555, 101)
-            Me.btnProperties.Margin = New System.Windows.Forms.Padding(0, 3, 3, 3)
-            Me.btnProperties.Name = "btnProperties"
-            Me.btnProperties.Size = New System.Drawing.Size(175, 44)
-            Me.btnProperties.TabIndex = 5
-            Me.btnProperties.Text = "Properties "
-            '
-            'lblWeight
-            '
-            Me.lblWeight.AllowDrop = True
-            Me.lblWeight.Appearance.BackColor = System.Drawing.Color.Transparent
-            Me.lblWeight.Appearance.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.lblWeight.Appearance.ForeColor = System.Drawing.Color.Black
-            Me.lblWeight.Appearance.Options.UseBackColor = True
-            Me.lblWeight.Appearance.Options.UseFont = True
-            Me.lblWeight.Appearance.Options.UseForeColor = True
-            Me.lblWeight.Appearance.Options.UseTextOptions = True
-            Me.lblWeight.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-            Me.lblWeight.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
-            Me.lblWeight.Dock = System.Windows.Forms.DockStyle.Top
-            Me.lblWeight.Location = New System.Drawing.Point(206, 151)
-            Me.lblWeight.Name = "lblWeight"
-            Me.lblWeight.Size = New System.Drawing.Size(120, 40)
-            Me.lblWeight.TabIndex = 13
-            Me.lblWeight.Text = "0.000"
-            '
-            'LabelControl1
-            '
-            Me.LabelControl1.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.LabelControl1.Appearance.Options.UseFont = True
-            Me.LabelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
-            Me.LabelControl1.Dock = System.Windows.Forms.DockStyle.Top
-            Me.LabelControl1.Location = New System.Drawing.Point(3, 151)
-            Me.LabelControl1.Name = "LabelControl1"
-            Me.LabelControl1.Size = New System.Drawing.Size(197, 40)
-            Me.LabelControl1.TabIndex = 1
-            Me.LabelControl1.Text = "น้ำหนัก"
             '
             'GroupControl3
             '
@@ -672,9 +685,9 @@
             Me.GroupControl3.AppearanceCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
             Me.GroupControl3.CaptionLocation = DevExpress.Utils.Locations.Top
             Me.GroupControl3.Controls.Add(Me.GridControlMoveMentDetail)
-            Me.GroupControl3.Location = New System.Drawing.Point(504, 329)
+            Me.GroupControl3.Location = New System.Drawing.Point(504, 346)
             Me.GroupControl3.Name = "GroupControl3"
-            Me.GroupControl3.Size = New System.Drawing.Size(771, 333)
+            Me.GroupControl3.Size = New System.Drawing.Size(771, 316)
             Me.GroupControl3.TabIndex = 5
             Me.GroupControl3.Text = "รายละเอียด พื้นที่ปลายทาง"
             '
@@ -688,7 +701,7 @@
             Me.GridControlMoveMentDetail.MainView = Me.GridViewMoveMentDetail
             Me.GridControlMoveMentDetail.Name = "GridControlMoveMentDetail"
             Me.GridControlMoveMentDetail.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.DeleteCustomRow, Me.EditRow, Me.RepositoryItemLookUpEdit1, Me.CalcEditBale})
-            Me.GridControlMoveMentDetail.Size = New System.Drawing.Size(765, 285)
+            Me.GridControlMoveMentDetail.Size = New System.Drawing.Size(765, 268)
             Me.GridControlMoveMentDetail.TabIndex = 2
             Me.GridControlMoveMentDetail.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewMoveMentDetail})
             '
@@ -833,7 +846,7 @@
             '
             'DeleteCustomRow
             '
-            Me.DeleteCustomRow.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("DeleteCustomRow.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject2, "", "Remove", Nothing, True)})
+            Me.DeleteCustomRow.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("DeleteCustomRow.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject6, "", "Remove", Nothing, True)})
             Me.DeleteCustomRow.Name = "DeleteCustomRow"
             Me.DeleteCustomRow.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor
             '
@@ -856,7 +869,7 @@
             '
             'EditRow
             '
-            Me.EditRow.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("EditRow.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject3, "", Nothing, Nothing, True)})
+            Me.EditRow.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("EditRow.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject7, "", Nothing, Nothing, True)})
             Me.EditRow.Name = "EditRow"
             Me.EditRow.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor
             '
@@ -1509,7 +1522,7 @@
             '
             'LayoutViewColumn18
             '
-            Me.LayoutViewColumn18.Caption = "ต้นทาง"
+            Me.LayoutViewColumn18.Caption = "ประเภทวัตถุดิบ"
             Me.LayoutViewColumn18.FieldName = "MaterialSource"
             Me.LayoutViewColumn18.LayoutViewField = Me.layoutViewField_LayoutViewColumn18
             Me.LayoutViewColumn18.Name = "LayoutViewColumn18"
@@ -1546,7 +1559,9 @@
             'LayoutViewColumn20
             '
             Me.LayoutViewColumn20.Caption = "ต้นทาง"
-            Me.LayoutViewColumn20.FieldName = "MaterialSource"
+            Me.LayoutViewColumn20.DisplayFormat.FormatString = "{0:n3}"
+            Me.LayoutViewColumn20.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+            Me.LayoutViewColumn20.FieldName = "PLWeight"
             Me.LayoutViewColumn20.LayoutViewField = Me.layoutViewField_LayoutViewColumn20
             Me.LayoutViewColumn20.Name = "LayoutViewColumn20"
             Me.LayoutViewColumn20.UnboundType = DevExpress.Data.UnboundColumnType.[String]
@@ -1572,7 +1587,7 @@
             Me.LayoutViewCard5.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
             Me.LayoutViewCard5.HeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.AfterText
             Me.LayoutViewCard5.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutViewField_LayoutViewColumn12, Me.layoutViewField_LayoutViewColumn14, Me.layoutViewField_LayoutViewColumn16, Me.layoutViewField_LayoutViewColumn5, Me.layoutViewField_LayoutViewColumn3, Me.layoutViewField_LayoutViewColumn20, Me.item17, Me.item11, Me.item19, Me.item20, Me.layoutViewField_LayoutViewColumn15, Me.item24, Me.item21, Me.item10, Me.item16, Me.item14})
-            Me.LayoutViewCard5.Name = "LayoutViewCard5"
+            Me.LayoutViewCard5.Name = "layoutViewTemplateCard"
             Me.LayoutViewCard5.OptionsItemText.TextAlignMode = DevExpress.XtraLayout.TextAlignModeGroup.AlignWithChildren
             Me.LayoutViewCard5.OptionsItemText.TextToControlDistance = 0
             Me.LayoutViewCard5.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
@@ -2566,10 +2581,10 @@
             'LayoutControlItem5
             '
             Me.LayoutControlItem5.Control = Me.GroupControl3
-            Me.LayoutControlItem5.Location = New System.Drawing.Point(486, 311)
+            Me.LayoutControlItem5.Location = New System.Drawing.Point(486, 328)
             Me.LayoutControlItem5.MinSize = New System.Drawing.Size(7, 7)
             Me.LayoutControlItem5.Name = "LayoutControlItem5"
-            Me.LayoutControlItem5.Size = New System.Drawing.Size(777, 339)
+            Me.LayoutControlItem5.Size = New System.Drawing.Size(777, 322)
             Me.LayoutControlItem5.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
             Me.LayoutControlItem5.TextSize = New System.Drawing.Size(0, 0)
             Me.LayoutControlItem5.TextVisible = False
@@ -2595,20 +2610,9 @@
             Me.LayoutControlGroup1.Location = New System.Drawing.Point(486, 0)
             Me.LayoutControlGroup1.Name = "LayoutControlGroup1"
             Me.LayoutControlGroup1.OptionsItemText.TextToControlDistance = 5
-            Me.LayoutControlGroup1.Size = New System.Drawing.Size(777, 311)
+            Me.LayoutControlGroup1.Size = New System.Drawing.Size(777, 328)
             Me.LayoutControlGroup1.StartNewLine = True
             Me.LayoutControlGroup1.Text = "ข้อมูลวัตถุดิบ"
-            '
-            'LayoutControlItem2
-            '
-            Me.LayoutControlItem2.Control = Me.TableLayoutPanel1
-            Me.LayoutControlItem2.Location = New System.Drawing.Point(0, 0)
-            Me.LayoutControlItem2.MinSize = New System.Drawing.Size(106, 26)
-            Me.LayoutControlItem2.Name = "LayoutControlItem2"
-            Me.LayoutControlItem2.Size = New System.Drawing.Size(739, 231)
-            Me.LayoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
-            Me.LayoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem2.TextVisible = False
             '
             'item3
             '
@@ -2735,7 +2739,7 @@
             Me.RepositoryItemSpinEdit2.AllowFocused = False
             Me.RepositoryItemSpinEdit2.AutoHeight = False
             Me.RepositoryItemSpinEdit2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D
-            Me.RepositoryItemSpinEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 5, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("RepositoryItemSpinEdit2.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject4, "", Nothing, Nothing, True)})
+            Me.RepositoryItemSpinEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 5, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("RepositoryItemSpinEdit2.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject8, "", Nothing, Nothing, True)})
             Me.RepositoryItemSpinEdit2.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D
             Me.RepositoryItemSpinEdit2.Name = "RepositoryItemSpinEdit2"
             '
@@ -2778,16 +2782,45 @@
             Me.LayoutControlGroup2.OptionsItemText.TextToControlDistance = 5
             Me.LayoutControlGroup2.Size = New System.Drawing.Size(411, 75)
             '
-            'LabelControl2
+            'lblCaptionPLW
             '
-            Me.LabelControl2.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.LabelControl2.Appearance.Options.UseFont = True
-            Me.LabelControl2.Dock = System.Windows.Forms.DockStyle.Right
-            Me.LabelControl2.Location = New System.Drawing.Point(244, 3)
-            Me.LabelControl2.Name = "LabelControl2"
-            Me.LabelControl2.Size = New System.Drawing.Size(82, 34)
-            Me.LabelControl2.TabIndex = 16
-            Me.LabelControl2.Text = "วัตถุดิบ"
+            Me.lblCaptionPLW.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.lblCaptionPLW.Appearance.Options.UseFont = True
+            Me.lblCaptionPLW.Dock = System.Windows.Forms.DockStyle.Top
+            Me.lblCaptionPLW.Location = New System.Drawing.Point(3, 197)
+            Me.lblCaptionPLW.Name = "lblCaptionPLW"
+            Me.lblCaptionPLW.Size = New System.Drawing.Size(166, 34)
+            Me.lblCaptionPLW.TabIndex = 17
+            Me.lblCaptionPLW.Text = "น้ำหนักต้นทาง"
+            Me.lblCaptionPLW.Visible = False
+            '
+            'lblPLWeight
+            '
+            Me.lblPLWeight.AllowDrop = True
+            Me.lblPLWeight.Appearance.BackColor = System.Drawing.Color.Transparent
+            Me.lblPLWeight.Appearance.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.lblPLWeight.Appearance.ForeColor = System.Drawing.Color.Black
+            Me.lblPLWeight.Appearance.Options.UseBackColor = True
+            Me.lblPLWeight.Appearance.Options.UseFont = True
+            Me.lblPLWeight.Appearance.Options.UseForeColor = True
+            Me.lblPLWeight.Appearance.Options.UseTextOptions = True
+            Me.lblPLWeight.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+            Me.lblPLWeight.Dock = System.Windows.Forms.DockStyle.Top
+            Me.lblPLWeight.Location = New System.Drawing.Point(206, 197)
+            Me.lblPLWeight.Name = "lblPLWeight"
+            Me.lblPLWeight.Size = New System.Drawing.Size(90, 39)
+            Me.lblPLWeight.TabIndex = 18
+            Me.lblPLWeight.Text = "0.000"
+            Me.lblPLWeight.Visible = False
+            '
+            'LayoutControlItem2
+            '
+            Me.LayoutControlItem2.Control = Me.TableLayoutPanel1
+            Me.LayoutControlItem2.Location = New System.Drawing.Point(0, 0)
+            Me.LayoutControlItem2.Name = "LayoutControlItem2"
+            Me.LayoutControlItem2.Size = New System.Drawing.Size(739, 248)
+            Me.LayoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
+            Me.LayoutControlItem2.TextVisible = False
             '
             'frm_IVM_Popup_Material_Manage
             '
@@ -2804,9 +2837,9 @@
             CType(Me.CheckShowAll.Properties, System.ComponentModel.ISupportInitialize).EndInit()
             Me.TableLayoutPanel1.ResumeLayout(False)
             Me.TableLayoutPanel1.PerformLayout()
+            CType(Me.txtquantity.Properties, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.SearchMaterial.Properties, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.SearchLookUpEdit1View, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.txtquantity.Properties, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.GroupControl3, System.ComponentModel.ISupportInitialize).EndInit()
             Me.GroupControl3.ResumeLayout(False)
             CType(Me.GridControlMoveMentDetail, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2906,7 +2939,6 @@
             CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.item3, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.repositoryItemTextEdit1, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.repositoryItemPictureEdit1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2929,6 +2961,7 @@
             CType(Me.EmptySpaceItem10, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.EmptySpaceItem15, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
 
         End Sub
@@ -3104,7 +3137,6 @@
         Friend WithEvents item16 As DevExpress.XtraLayout.SimpleLabelItem
         Friend WithEvents item14 As DevExpress.XtraLayout.EmptySpaceItem
         Friend WithEvents lblTruckProperties As DevExpress.XtraEditors.LabelControl
-        Friend WithEvents LayoutControlItem2 As DevExpress.XtraLayout.LayoutControlItem
         Friend WithEvents LayoutViewField6 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
         Friend WithEvents LayoutViewField7 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
         Friend WithEvents LayoutViewField8 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
@@ -3121,6 +3153,9 @@
         Friend WithEvents item2 As DevExpress.XtraLayout.EmptySpaceItem
         Friend WithEvents item9 As DevExpress.XtraLayout.EmptySpaceItem
         Friend WithEvents LabelControl2 As DevExpress.XtraEditors.LabelControl
+        Friend WithEvents lblCaptionPLW As DevExpress.XtraEditors.LabelControl
+        Private WithEvents lblPLWeight As DevExpress.XtraEditors.LabelControl
+        Friend WithEvents LayoutControlItem2 As DevExpress.XtraLayout.LayoutControlItem
     End Class
 
 End Namespace

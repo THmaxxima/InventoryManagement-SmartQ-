@@ -270,22 +270,33 @@ Namespace Modules
         ''' <remarks>0 : 0-24<see cref=" 25-49">, 1 </see>, 2 : 50-74<see cref=" 75-99">, 3 </see>, 4 : &gt;=100%</remarks>
         ''' <returns>Integer</returns>
         Public Function calRangeColor(ByVal capacity As Double) As Integer
-            'Math.Round((32.635), 2, MidPointRounding.AwayFromZero)
             Dim linearizedPower As Integer
-            Dim truncatedResult As Double = 0
-            If (capacity >= 0 And capacity < 25) Then
-                linearizedPower = 0
-            ElseIf (capacity >= 25 And capacity < 50) Then
-                linearizedPower = 1
-            ElseIf (capacity >= 50 And capacity < 75) Then
-                linearizedPower = 2
-            ElseIf (capacity >= 75 And capacity < 100) Then
-                linearizedPower = 3
-            ElseIf (capacity >= 100) Then
-                linearizedPower = 4
-            Else
-                linearizedPower = 0
-            End If
+            Try
+
+                Dim truncatedResult As Double = 0
+                If (capacity >= 0 And capacity < 25) Then
+                    linearizedPower = 0
+                ElseIf (capacity >= 25 And capacity < 50) Then
+                    linearizedPower = 1
+                ElseIf (capacity >= 50 And capacity < 75) Then
+                    linearizedPower = 2
+                ElseIf (capacity >= 75 And capacity < 100) Then
+                    linearizedPower = 3
+                ElseIf (capacity >= 100) Then
+                    linearizedPower = 4
+                Else
+                    linearizedPower = 0
+                End If
+            Catch ex As Exception
+                Infolog.ClearMessage()
+                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, "FC.IVM.Bus Error")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "File name := mod_IVM_Map_Function")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.InfoMesage, "Function name := calRangeColor")
+                Infolog.ShowExMessageWithTopic(ex, FC.M.PSL_Win.MessageType.ErrorMessage, "ฟังก์ชั่น สำหรับแสดงสี ของสถานะพื้นที่กองเก็บ")
+
+                ModMainApp.Log.Log4N("calRangeColor [Catch]").DebugFormat("Err detail := {0} ", ex.Message)
+            End Try
+
             Return linearizedPower
         End Function
         ''' <summary>ฟังก์ชั่น สำหรับแสดงข้อมูล น้ำหนักวัตถุดิบรวมของแต่ละลาน</summary>

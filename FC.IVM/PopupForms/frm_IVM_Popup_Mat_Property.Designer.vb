@@ -31,10 +31,10 @@
             Me.GridLookupTransferPointView = New DevExpress.XtraGrid.Views.Grid.GridView()
             Me.GridLookUpContractor = New DevExpress.XtraEditors.GridLookUpEdit()
             Me.GridLookupContractorView = New DevExpress.XtraGrid.Views.Grid.GridView()
-            Me.GridLookUpEdit1 = New DevExpress.XtraEditors.GridLookUpEdit()
-            Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
-            Me.GridLookUpEdit2 = New DevExpress.XtraEditors.GridLookUpEdit()
-            Me.GridView2 = New DevExpress.XtraGrid.Views.Grid.GridView()
+            Me.GridLookUpEditWedge = New DevExpress.XtraEditors.GridLookUpEdit()
+            Me.GridViewWedge = New DevExpress.XtraGrid.Views.Grid.GridView()
+            Me.GridLookUpEditTruckCondition = New DevExpress.XtraEditors.GridLookUpEdit()
+            Me.GridViewTruckCondition = New DevExpress.XtraGrid.Views.Grid.GridView()
             Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
             Me.LabelControl2 = New DevExpress.XtraEditors.LabelControl()
             Me.LabelControl3 = New DevExpress.XtraEditors.LabelControl()
@@ -49,10 +49,10 @@
             CType(Me.GridLookupTransferPointView, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.GridLookUpContractor.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.GridLookupContractorView, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.GridLookUpEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.GridLookUpEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.GridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.GridLookUpEditWedge.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.GridViewWedge, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.GridLookUpEditTruckCondition.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.GridViewTruckCondition, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
             'btnClose
@@ -188,63 +188,65 @@
             Me.GridLookupContractorView.OptionsSelection.EnableAppearanceFocusedCell = False
             Me.GridLookupContractorView.OptionsView.ShowGroupPanel = False
             '
-            'GridLookUpEdit1
+            'GridLookUpEditWedge
             '
-            Me.GridLookUpEdit1.EditValue = ""
-            Me.GridLookUpEdit1.Location = New System.Drawing.Point(150, 144)
-            Me.GridLookUpEdit1.Name = "GridLookUpEdit1"
-            Me.GridLookUpEdit1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.GridLookUpEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.Black
-            Me.GridLookUpEdit1.Properties.Appearance.Options.UseFont = True
-            Me.GridLookUpEdit1.Properties.Appearance.Options.UseForeColor = True
-            Me.GridLookUpEdit1.Properties.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFit
-            Me.GridLookUpEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-            Me.GridLookUpEdit1.Properties.NullText = ""
-            Me.GridLookUpEdit1.Properties.ShowFooter = False
-            Me.GridLookUpEdit1.Properties.View = Me.GridView1
-            Me.GridLookUpEdit1.Size = New System.Drawing.Size(187, 40)
-            Me.GridLookUpEdit1.TabIndex = 3
+            Me.GridLookUpEditWedge.Location = New System.Drawing.Point(150, 144)
+            Me.GridLookUpEditWedge.Name = "GridLookUpEditWedge"
+            Me.GridLookUpEditWedge.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.GridLookUpEditWedge.Properties.Appearance.ForeColor = System.Drawing.Color.Black
+            Me.GridLookUpEditWedge.Properties.Appearance.Options.UseFont = True
+            Me.GridLookUpEditWedge.Properties.Appearance.Options.UseForeColor = True
+            Me.GridLookUpEditWedge.Properties.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFit
+            Me.GridLookUpEditWedge.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+            Me.GridLookUpEditWedge.Properties.NullText = ""
+            Me.GridLookUpEditWedge.Properties.ShowFooter = False
+            Me.GridLookUpEditWedge.Properties.View = Me.GridViewWedge
+            Me.GridLookUpEditWedge.Size = New System.Drawing.Size(187, 40)
+            Me.GridLookUpEditWedge.TabIndex = 3
             '
-            'GridView1
+            'GridViewWedge
             '
-            Me.GridView1.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.GridView1.Appearance.HeaderPanel.Options.UseFont = True
-            Me.GridView1.Appearance.Row.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.GridView1.Appearance.Row.Options.UseFont = True
-            Me.GridView1.Appearance.ViewCaption.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.GridView1.Appearance.ViewCaption.Options.UseFont = True
-            Me.GridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
-            Me.GridView1.Name = "GridView1"
-            Me.GridView1.OptionsSelection.EnableAppearanceFocusedCell = False
-            Me.GridView1.OptionsView.ShowGroupPanel = False
+            Me.GridViewWedge.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.GridViewWedge.Appearance.HeaderPanel.Options.UseFont = True
+            Me.GridViewWedge.Appearance.Row.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.GridViewWedge.Appearance.Row.ForeColor = System.Drawing.Color.Black
+            Me.GridViewWedge.Appearance.Row.Options.UseFont = True
+            Me.GridViewWedge.Appearance.Row.Options.UseForeColor = True
+            Me.GridViewWedge.Appearance.ViewCaption.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.GridViewWedge.Appearance.ViewCaption.Options.UseFont = True
+            Me.GridViewWedge.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
+            Me.GridViewWedge.Name = "GridViewWedge"
+            Me.GridViewWedge.OptionsSelection.EnableAppearanceFocusedCell = False
+            Me.GridViewWedge.OptionsView.ShowGroupPanel = False
             '
-            'GridLookUpEdit2
+            'GridLookUpEditTruckCondition
             '
-            Me.GridLookUpEdit2.EditValue = ""
-            Me.GridLookUpEdit2.Location = New System.Drawing.Point(501, 150)
-            Me.GridLookUpEdit2.Name = "GridLookUpEdit2"
-            Me.GridLookUpEdit2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.GridLookUpEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.Black
-            Me.GridLookUpEdit2.Properties.Appearance.Options.UseFont = True
-            Me.GridLookUpEdit2.Properties.Appearance.Options.UseForeColor = True
-            Me.GridLookUpEdit2.Properties.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFit
-            Me.GridLookUpEdit2.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-            Me.GridLookUpEdit2.Properties.NullText = ""
-            Me.GridLookUpEdit2.Properties.ShowFooter = False
-            Me.GridLookUpEdit2.Properties.View = Me.GridView2
-            Me.GridLookUpEdit2.Size = New System.Drawing.Size(187, 40)
-            Me.GridLookUpEdit2.TabIndex = 6
+            Me.GridLookUpEditTruckCondition.Location = New System.Drawing.Point(501, 150)
+            Me.GridLookUpEditTruckCondition.Name = "GridLookUpEditTruckCondition"
+            Me.GridLookUpEditTruckCondition.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.GridLookUpEditTruckCondition.Properties.Appearance.ForeColor = System.Drawing.Color.Black
+            Me.GridLookUpEditTruckCondition.Properties.Appearance.Options.UseFont = True
+            Me.GridLookUpEditTruckCondition.Properties.Appearance.Options.UseForeColor = True
+            Me.GridLookUpEditTruckCondition.Properties.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFit
+            Me.GridLookUpEditTruckCondition.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+            Me.GridLookUpEditTruckCondition.Properties.NullText = ""
+            Me.GridLookUpEditTruckCondition.Properties.ShowFooter = False
+            Me.GridLookUpEditTruckCondition.Properties.View = Me.GridViewTruckCondition
+            Me.GridLookUpEditTruckCondition.Size = New System.Drawing.Size(187, 40)
+            Me.GridLookUpEditTruckCondition.TabIndex = 6
             '
-            'GridView2
+            'GridViewTruckCondition
             '
-            Me.GridView2.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.GridView2.Appearance.HeaderPanel.Options.UseFont = True
-            Me.GridView2.Appearance.Row.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.GridView2.Appearance.Row.Options.UseFont = True
-            Me.GridView2.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
-            Me.GridView2.Name = "GridView2"
-            Me.GridView2.OptionsSelection.EnableAppearanceFocusedCell = False
-            Me.GridView2.OptionsView.ShowGroupPanel = False
+            Me.GridViewTruckCondition.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.GridViewTruckCondition.Appearance.HeaderPanel.Options.UseFont = True
+            Me.GridViewTruckCondition.Appearance.Row.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.GridViewTruckCondition.Appearance.Row.ForeColor = System.Drawing.Color.Black
+            Me.GridViewTruckCondition.Appearance.Row.Options.UseFont = True
+            Me.GridViewTruckCondition.Appearance.Row.Options.UseForeColor = True
+            Me.GridViewTruckCondition.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
+            Me.GridViewTruckCondition.Name = "GridViewTruckCondition"
+            Me.GridViewTruckCondition.OptionsSelection.EnableAppearanceFocusedCell = False
+            Me.GridViewTruckCondition.OptionsView.ShowGroupPanel = False
             '
             'LabelControl1
             '
@@ -277,7 +279,7 @@
             Me.LabelControl3.Name = "LabelControl3"
             Me.LabelControl3.Size = New System.Drawing.Size(116, 52)
             Me.LabelControl3.TabIndex = 13
-            Me.LabelControl3.Text = "New1"
+            Me.LabelControl3.Text = "การใช้ลิ่ม"
             '
             'LabelControl4
             '
@@ -288,7 +290,7 @@
             Me.LabelControl4.Name = "LabelControl4"
             Me.LabelControl4.Size = New System.Drawing.Size(116, 52)
             Me.LabelControl4.TabIndex = 14
-            Me.LabelControl4.Text = "New2"
+            Me.LabelControl4.Text = "TruckCondition"
             '
             'LabelControl5
             '
@@ -326,13 +328,13 @@
             Me.Controls.Add(Me.LabelControl2)
             Me.Controls.Add(Me.LabelControl1)
             Me.Controls.Add(Me.btnOK)
-            Me.Controls.Add(Me.GridLookUpEdit2)
+            Me.Controls.Add(Me.GridLookUpEditTruckCondition)
             Me.Controls.Add(Me.GridLookUpContractor)
             Me.Controls.Add(Me.GridLookUpBalingSeal)
             Me.Controls.Add(Me.GridLookUpMatProperties)
             Me.Controls.Add(Me.btnClose)
             Me.Controls.Add(Me.GridLookUpTransferPoint)
-            Me.Controls.Add(Me.GridLookUpEdit1)
+            Me.Controls.Add(Me.GridLookUpEditWedge)
             Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
             Me.MaximizeBox = False
             Me.MinimizeBox = False
@@ -346,10 +348,10 @@
             CType(Me.GridLookupTransferPointView, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.GridLookUpContractor.Properties, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.GridLookupContractorView, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.GridLookUpEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.GridLookUpEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.GridView2, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.GridLookUpEditWedge.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.GridViewWedge, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.GridLookUpEditTruckCondition.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.GridViewTruckCondition, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
 
         End Sub
@@ -363,10 +365,10 @@
         Friend WithEvents GridLookupTransferPointView As DevExpress.XtraGrid.Views.Grid.GridView
         Friend WithEvents GridLookUpContractor As DevExpress.XtraEditors.GridLookUpEdit
         Friend WithEvents GridLookupContractorView As DevExpress.XtraGrid.Views.Grid.GridView
-        Friend WithEvents GridLookUpEdit1 As DevExpress.XtraEditors.GridLookUpEdit
-        Friend WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
-        Friend WithEvents GridLookUpEdit2 As DevExpress.XtraEditors.GridLookUpEdit
-        Friend WithEvents GridView2 As DevExpress.XtraGrid.Views.Grid.GridView
+        Friend WithEvents GridLookUpEditWedge As DevExpress.XtraEditors.GridLookUpEdit
+        Friend WithEvents GridViewWedge As DevExpress.XtraGrid.Views.Grid.GridView
+        Friend WithEvents GridLookUpEditTruckCondition As DevExpress.XtraEditors.GridLookUpEdit
+        Friend WithEvents GridViewTruckCondition As DevExpress.XtraGrid.Views.Grid.GridView
         Friend WithEvents LabelControl1 As DevExpress.XtraEditors.LabelControl
         Friend WithEvents LabelControl2 As DevExpress.XtraEditors.LabelControl
         Friend WithEvents LabelControl3 As DevExpress.XtraEditors.LabelControl

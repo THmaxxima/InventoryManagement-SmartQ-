@@ -122,7 +122,40 @@ Namespace PopupForms
                     .PopupFormWidth = 350
                 End With
 
+                '--------------------------------------------------------
+                GridLookUpEditTruckCondition.Properties.DataSource = GetDataTruckConditionProperties()
+                GridLookUpEditTruckCondition.EditValue = tmpBalingSealProperties
+                Dim gViewTruckCondition As GridView = GridViewTruckCondition
+                gViewTruckCondition.Columns.Clear()
+                gViewTruckCondition.Columns.Add(colValue2)
+                ' Hide the group panel
+                gViewTruckCondition.OptionsView.ShowGroupPanel = False
+
+                With GridLookUpEditTruckCondition.Properties
+                    .DisplayMember = "Value"
+                    .ValueMember = "Value"
+                    .View.BestFitColumns()
+                    .PopupFormWidth = 350
+                End With
+
+                GridLookUpEditWedge.Properties.DataSource = GetDataWedgeProperties()
+                GridLookUpEditWedge.EditValue = tmpWedgeProperties
+                Dim gViewWedge As GridView = GridViewWedge
+                gViewWedge.Columns.Clear()
+                gViewWedge.Columns.Add(colValue2)
+                ' Hide the group panel
+                gViewWedge.OptionsView.ShowGroupPanel = False
+
+                With GridLookUpEditWedge.Properties
+                    .DisplayMember = "Value"
+                    .ValueMember = "Value"
+                    .View.BestFitColumns()
+                    .PopupFormWidth = 350
+                End With
+
+
                 initLookupContractor()
+
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name)
                 Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [New]")
@@ -189,6 +222,42 @@ Namespace PopupForms
             End Try
             Return dtBalingSealProperties
         End Function
+        Function GetDataTruckConditionProperties() As DataTable
+            Dim dtTruckCondition As New DataTable
+            Try
+                dtTruckCondition = func_IVM_Get_Material_Properties()
+                Dim foundRow As DataRow() = Nothing
+                foundRow = dtTruckCondition.Select("Category <> 'TruckCondition'")
+                If foundRow.Count > 0 Then
+                    For Each row As DataRow In foundRow
+                        row.Delete()
+                    Next
+                End If
+            Catch ex As Exception
+                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name)
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [GetDataBalingSealProperties]")
+                Infolog.ShowExMessage(ex, FC.M.PSL_Win.MessageType.ErrorMessage)
+            End Try
+            Return dtTruckCondition
+        End Function
+        Function GetDataWedgeProperties() As DataTable
+            Dim dtWedge As New DataTable
+            Try
+                dtWedge = func_IVM_Get_Material_Properties()
+                Dim foundRow As DataRow() = Nothing
+                foundRow = dtWedge.Select("Category <> 'Wedge'")
+                If foundRow.Count > 0 Then
+                    For Each row As DataRow In foundRow
+                        row.Delete()
+                    Next
+                End If
+            Catch ex As Exception
+                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name)
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [GetDataBalingSealProperties]")
+                Infolog.ShowExMessage(ex, FC.M.PSL_Win.MessageType.ErrorMessage)
+            End Try
+            Return dtWedge
+        End Function
         ''' <exclude />
         Private Sub initLookupContractor()
             btnOK.Enabled = False
@@ -221,6 +290,14 @@ Namespace PopupForms
                     tmpTransferPointProperties = GridLookUpTransferPoint.EditValue.ToString()
                 End If
 
+                If Not GridLookUpEditTruckCondition.EditValue Is Nothing Then
+                    tmpTruckConditionProperties = GridLookUpEditTruckCondition.EditValue.ToString()
+                End If
+
+                If Not GridLookUpEditWedge.EditValue Is Nothing Then
+                    tmpWedgeProperties = GridLookUpEditWedge.EditValue.ToString()
+                End If
+                'tmpTruckConditionProperties
                 Me.Close()
 
             Catch ex As Exception
@@ -291,6 +368,8 @@ Namespace PopupForms
                 If (CType(GridLookUpMatProperties.EditValue, String) <> "" _
                     And CType(GridLookUpTransferPoint.EditValue, String) <> "" _
                     And CType(GridLookUpBalingSeal.EditValue, String) <> "" _
+                    And CType(GridLookUpEditTruckCondition.EditValue, String) <> "" _
+                    And CType(GridLookUpEditWedge.EditValue, String) <> "" _
                     And CType(GridLookUpContractor.EditValue, String) <> "") Then
 
                     btnOK.Enabled = True
@@ -307,6 +386,32 @@ Namespace PopupForms
 
         Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
             Me.Close()
+        End Sub
+
+        Private Sub GridLookUpEditTruckCondition_EditValueChanged(sender As Object, e As EventArgs) Handles GridLookUpEditTruckCondition.EditValueChanged
+            Try
+                If (tmpTruckConditionProperties <> GridLookUpEditTruckCondition.EditValue.ToString) Then
+                    tmpTruckConditionProperties = GridLookUpEditTruckCondition.EditValue.ToString
+                End If
+                check_input_data()
+            Catch ex As Exception
+                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name)
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [GridLookUpBalingSeal_EditValueChanged]")
+                Infolog.ShowExMessage(ex, FC.M.PSL_Win.MessageType.ErrorMessage)
+            End Try
+        End Sub
+
+        Private Sub GridLookUpEditWedge_EditValueChanged(sender As Object, e As EventArgs) Handles GridLookUpEditWedge.EditValueChanged
+            Try
+                If (tmpWedgeProperties <> GridLookUpEditWedge.EditValue.ToString) Then
+                    tmpWedgeProperties = GridLookUpEditWedge.EditValue.ToString
+                End If
+                check_input_data()
+            Catch ex As Exception
+                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name)
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [GridLookUpBalingSeal_EditValueChanged]")
+                Infolog.ShowExMessage(ex, FC.M.PSL_Win.MessageType.ErrorMessage)
+            End Try
         End Sub
 
 

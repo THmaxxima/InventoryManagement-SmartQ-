@@ -16,6 +16,8 @@ Namespace Modules
         Public tmpBalingSealProperties As String = ""
         Public tmpTransferPointProperties As String = ""
         Public tmpContractorProperties As String = ""
+        Public tmpTruckConditionProperties As String = ""
+        Public tmpWedgeProperties As String = ""
 
         Public ReadOnly Property FontsCollection() As Dictionary(Of String, Font)
             Get

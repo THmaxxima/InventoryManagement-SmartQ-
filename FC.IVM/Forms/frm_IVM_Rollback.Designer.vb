@@ -21,22 +21,22 @@
         <System.Diagnostics.DebuggerStepThrough()>
         Private Sub InitializeComponent()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_IVM_Rollback))
-            Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject3 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject4 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject5 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject6 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject7 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject8 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject9 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject10 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject11 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject12 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject13 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject14 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject15 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject16 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject17 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject18 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject19 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject20 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject21 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject22 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject23 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject24 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject25 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject26 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject27 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject28 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject29 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject30 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject31 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject32 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
             Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl()
             Me.btnClose = New DevExpress.XtraEditors.SimpleButton()
             Me.btnRollbackData = New DevExpress.XtraEditors.SimpleButton()
@@ -72,11 +72,11 @@
             Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.LayoutControlGroupMovement = New DevExpress.XtraLayout.LayoutControlGroup()
             Me.LayoutControlItem5 = New DevExpress.XtraLayout.LayoutControlItem()
+            Me.LayoutControlGroup2 = New DevExpress.XtraLayout.LayoutControlGroup()
             Me.LayoutControlItem3 = New DevExpress.XtraLayout.LayoutControlItem()
+            Me.EmptySpaceItem1 = New DevExpress.XtraLayout.EmptySpaceItem()
             Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.LayoutControlItem7 = New DevExpress.XtraLayout.LayoutControlItem()
-            Me.LayoutControlGroup2 = New DevExpress.XtraLayout.LayoutControlGroup()
-            Me.EmptySpaceItem1 = New DevExpress.XtraLayout.EmptySpaceItem()
             CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.LayoutControl1.SuspendLayout()
             CType(Me.GridControl_Movement_Tentative, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -94,11 +94,11 @@
             CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutControlGroupMovement, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
             'LayoutControl1
@@ -121,7 +121,6 @@
             '
             Me.btnClose.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.btnClose.Appearance.Options.UseFont = True
-            Me.btnClose.Dock = System.Windows.Forms.DockStyle.Fill
             Me.btnClose.Image = CType(resources.GetObject("btnClose.Image"), System.Drawing.Image)
             Me.btnClose.Location = New System.Drawing.Point(1058, 37)
             Me.btnClose.Name = "btnClose"
@@ -136,7 +135,6 @@
             Me.btnRollbackData.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.btnRollbackData.Appearance.Options.UseFont = True
             Me.btnRollbackData.AutoWidthInLayoutControl = True
-            Me.btnRollbackData.Dock = System.Windows.Forms.DockStyle.Fill
             Me.btnRollbackData.Image = CType(resources.GetObject("btnRollbackData.Image"), System.Drawing.Image)
             Me.btnRollbackData.Location = New System.Drawing.Point(853, 37)
             Me.btnRollbackData.Name = "btnRollbackData"
@@ -204,15 +202,15 @@
             Me.RepositoryItemLookUpEditSouce.Appearance.Options.UseFont = True
             Me.RepositoryItemLookUpEditSouce.Appearance.Options.UseForeColor = True
             Me.RepositoryItemLookUpEditSouce.AutoHeight = False
-            SerializableAppearanceObject1.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject1.Options.UseFont = True
-            SerializableAppearanceObject2.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject2.Options.UseFont = True
-            SerializableAppearanceObject3.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject3.Options.UseFont = True
-            SerializableAppearanceObject4.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject4.Options.UseFont = True
-            Me.RepositoryItemLookUpEditSouce.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, "", New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, True)})
+            SerializableAppearanceObject17.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject17.Options.UseFont = True
+            SerializableAppearanceObject18.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject18.Options.UseFont = True
+            SerializableAppearanceObject19.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject19.Options.UseFont = True
+            SerializableAppearanceObject20.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject20.Options.UseFont = True
+            Me.RepositoryItemLookUpEditSouce.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, "", New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject17, SerializableAppearanceObject18, SerializableAppearanceObject19, SerializableAppearanceObject20, "", Nothing, Nothing, True)})
             Me.RepositoryItemLookUpEditSouce.Name = "RepositoryItemLookUpEditSouce"
             Me.RepositoryItemLookUpEditSouce.NullText = "[ไม่พบ พื้นที่ในระบบ]"
             Me.RepositoryItemLookUpEditSouce.ReadOnly = True
@@ -244,15 +242,15 @@
             Me.RepositoryItemLookUpEditMaterial.Appearance.Options.UseFont = True
             Me.RepositoryItemLookUpEditMaterial.Appearance.Options.UseForeColor = True
             Me.RepositoryItemLookUpEditMaterial.AutoHeight = False
-            SerializableAppearanceObject5.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject5.Options.UseFont = True
-            SerializableAppearanceObject6.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject6.Options.UseFont = True
-            SerializableAppearanceObject7.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject7.Options.UseFont = True
-            SerializableAppearanceObject8.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject8.Options.UseFont = True
-            Me.RepositoryItemLookUpEditMaterial.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, "", New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, SerializableAppearanceObject6, SerializableAppearanceObject7, SerializableAppearanceObject8, "", Nothing, Nothing, True)})
+            SerializableAppearanceObject21.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject21.Options.UseFont = True
+            SerializableAppearanceObject22.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject22.Options.UseFont = True
+            SerializableAppearanceObject23.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject23.Options.UseFont = True
+            SerializableAppearanceObject24.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject24.Options.UseFont = True
+            Me.RepositoryItemLookUpEditMaterial.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, "", New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject21, SerializableAppearanceObject22, SerializableAppearanceObject23, SerializableAppearanceObject24, "", Nothing, Nothing, True)})
             Me.RepositoryItemLookUpEditMaterial.Name = "RepositoryItemLookUpEditMaterial"
             Me.RepositoryItemLookUpEditMaterial.ReadOnly = True
             '
@@ -370,15 +368,15 @@
             Me.RepositoryDestinationStorage.Appearance.Options.UseFont = True
             Me.RepositoryDestinationStorage.Appearance.Options.UseForeColor = True
             Me.RepositoryDestinationStorage.AutoHeight = False
-            SerializableAppearanceObject9.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject9.Options.UseFont = True
-            SerializableAppearanceObject10.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject10.Options.UseFont = True
-            SerializableAppearanceObject11.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject11.Options.UseFont = True
-            SerializableAppearanceObject12.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject12.Options.UseFont = True
-            Me.RepositoryDestinationStorage.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, "", New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject9, SerializableAppearanceObject10, SerializableAppearanceObject11, SerializableAppearanceObject12, "", Nothing, Nothing, True)})
+            SerializableAppearanceObject25.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject25.Options.UseFont = True
+            SerializableAppearanceObject26.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject26.Options.UseFont = True
+            SerializableAppearanceObject27.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject27.Options.UseFont = True
+            SerializableAppearanceObject28.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject28.Options.UseFont = True
+            Me.RepositoryDestinationStorage.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, "", New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject25, SerializableAppearanceObject26, SerializableAppearanceObject27, SerializableAppearanceObject28, "", Nothing, Nothing, True)})
             Me.RepositoryDestinationStorage.Name = "RepositoryDestinationStorage"
             Me.RepositoryDestinationStorage.NullText = "[พื้นที่ปลายทาง]"
             Me.RepositoryDestinationStorage.ReadOnly = True
@@ -430,15 +428,15 @@
             Me.cboSite.Properties.AppearanceReadOnly.Options.UseFont = True
             Me.cboSite.Properties.AppearanceReadOnly.Options.UseForeColor = True
             Me.cboSite.Properties.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFit
-            SerializableAppearanceObject13.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject13.Options.UseFont = True
-            SerializableAppearanceObject14.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject14.Options.UseFont = True
-            SerializableAppearanceObject15.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject15.Options.UseFont = True
-            SerializableAppearanceObject16.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            SerializableAppearanceObject16.Options.UseFont = True
-            Me.cboSite.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, "", New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject13, SerializableAppearanceObject14, SerializableAppearanceObject15, SerializableAppearanceObject16, "", Nothing, Nothing, True)})
+            SerializableAppearanceObject29.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject29.Options.UseFont = True
+            SerializableAppearanceObject30.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject30.Options.UseFont = True
+            SerializableAppearanceObject31.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject31.Options.UseFont = True
+            SerializableAppearanceObject32.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            SerializableAppearanceObject32.Options.UseFont = True
+            Me.cboSite.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, "", New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject29, SerializableAppearanceObject30, SerializableAppearanceObject31, SerializableAppearanceObject32, "", Nothing, Nothing, True)})
             Me.cboSite.Properties.NullText = "[เลือกลาน]"
             Me.cboSite.Properties.PopupFormSize = New System.Drawing.Size(300, 300)
             Me.cboSite.Properties.ReadOnly = True
@@ -535,6 +533,16 @@
             Me.LayoutControlItem5.TextSize = New System.Drawing.Size(0, 0)
             Me.LayoutControlItem5.TextVisible = False
             '
+            'LayoutControlGroup2
+            '
+            Me.LayoutControlGroup2.ContentImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
+            Me.LayoutControlGroup2.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem3, Me.EmptySpaceItem1, Me.LayoutControlItem2, Me.LayoutControlItem7})
+            Me.LayoutControlGroup2.Location = New System.Drawing.Point(0, 0)
+            Me.LayoutControlGroup2.Name = "LayoutControlGroup2"
+            Me.LayoutControlGroup2.OptionsItemText.TextToControlDistance = 5
+            Me.LayoutControlGroup2.Size = New System.Drawing.Size(1260, 90)
+            Me.LayoutControlGroup2.TextVisible = False
+            '
             'LayoutControlItem3
             '
             Me.LayoutControlItem3.Control = Me.btnClose
@@ -543,6 +551,14 @@
             Me.LayoutControlItem3.Size = New System.Drawing.Size(201, 52)
             Me.LayoutControlItem3.TextSize = New System.Drawing.Size(0, 0)
             Me.LayoutControlItem3.TextVisible = False
+            '
+            'EmptySpaceItem1
+            '
+            Me.EmptySpaceItem1.AllowHotTrack = False
+            Me.EmptySpaceItem1.Location = New System.Drawing.Point(332, 0)
+            Me.EmptySpaceItem1.Name = "EmptySpaceItem1"
+            Me.EmptySpaceItem1.Size = New System.Drawing.Size(484, 52)
+            Me.EmptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
             '
             'LayoutControlItem2
             '
@@ -566,24 +582,6 @@
             Me.LayoutControlItem7.Size = New System.Drawing.Size(205, 52)
             Me.LayoutControlItem7.TextSize = New System.Drawing.Size(0, 0)
             Me.LayoutControlItem7.TextVisible = False
-            '
-            'LayoutControlGroup2
-            '
-            Me.LayoutControlGroup2.ContentImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-            Me.LayoutControlGroup2.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem3, Me.EmptySpaceItem1, Me.LayoutControlItem2, Me.LayoutControlItem7})
-            Me.LayoutControlGroup2.Location = New System.Drawing.Point(0, 0)
-            Me.LayoutControlGroup2.Name = "LayoutControlGroup2"
-            Me.LayoutControlGroup2.OptionsItemText.TextToControlDistance = 5
-            Me.LayoutControlGroup2.Size = New System.Drawing.Size(1260, 90)
-            Me.LayoutControlGroup2.TextVisible = False
-            '
-            'EmptySpaceItem1
-            '
-            Me.EmptySpaceItem1.AllowHotTrack = False
-            Me.EmptySpaceItem1.Location = New System.Drawing.Point(332, 0)
-            Me.EmptySpaceItem1.Name = "EmptySpaceItem1"
-            Me.EmptySpaceItem1.Size = New System.Drawing.Size(484, 52)
-            Me.EmptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
             '
             'frm_IVM_Rollback
             '
@@ -613,11 +611,11 @@
             CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutControlGroupMovement, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
 
         End Sub

@@ -960,7 +960,7 @@ Namespace PopupForms
                 lblTruckProperties.Text = "" &
                     "ซีลโรงอัด : " & tmpBalingSealProperties & " จุดขนถ่าย : " & tmpTransferPointProperties &
                     "ชนิดวัตถุดิบ : " & tmpMatProperties & vbCrLf & " ผู้รับเหมา : " & tmpContractorProperties &
-                    " New properties1 : " & "New properties1" & " New properties2 : " & "New properties2"
+                    "TruckCond : " & tmpTruckConditionProperties & " การใช้ลิ่ม : " & tmpWedgeProperties
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
             End Try
@@ -1033,7 +1033,6 @@ Namespace PopupForms
                 Infolog.ShowExMessage(ex, FC.M.PSL_Win.MessageType.ErrorMessage)
             End Try
         End Sub
-
 
     End Class
 End Namespace

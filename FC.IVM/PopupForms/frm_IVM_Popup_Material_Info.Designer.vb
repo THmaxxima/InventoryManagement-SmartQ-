@@ -29,8 +29,19 @@
             Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
             Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
             Me.btnClose = New DevExpress.XtraEditors.SimpleButton()
+            Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl()
+            Me.LayoutControlGroup1 = New DevExpress.XtraLayout.LayoutControlGroup()
+            Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
+            Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
+            Me.EmptySpaceItem1 = New DevExpress.XtraLayout.EmptySpaceItem()
             CType(Me.GridMatInfo, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.GridViewMatInfo, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.LayoutControl1.SuspendLayout()
+            CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
             'GridMatInfo
@@ -38,38 +49,38 @@
             Me.GridMatInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
             Me.GridMatInfo.EmbeddedNavigator.Buttons.CancelEdit.Visible = False
             Me.GridMatInfo.EmbeddedNavigator.Buttons.Edit.Visible = False
-            Me.GridMatInfo.Location = New System.Drawing.Point(0, 0)
+            Me.GridMatInfo.Location = New System.Drawing.Point(18, 64)
             Me.GridMatInfo.MainView = Me.GridViewMatInfo
             Me.GridMatInfo.Name = "GridMatInfo"
-            Me.GridMatInfo.Size = New System.Drawing.Size(797, 301)
+            Me.GridMatInfo.Size = New System.Drawing.Size(711, 230)
             Me.GridMatInfo.TabIndex = 0
             Me.GridMatInfo.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewMatInfo})
             '
             'GridViewMatInfo
             '
-            Me.GridViewMatInfo.Appearance.FocusedRow.BackColor = System.Drawing.Color.Aqua
-            Me.GridViewMatInfo.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+            Me.GridViewMatInfo.Appearance.FocusedRow.BackColor = System.Drawing.SystemColors.ActiveBorder
+            Me.GridViewMatInfo.Appearance.FocusedRow.BackColor2 = System.Drawing.SystemColors.ActiveBorder
             Me.GridViewMatInfo.Appearance.FocusedRow.BorderColor = System.Drawing.Color.White
             Me.GridViewMatInfo.Appearance.FocusedRow.Options.UseBackColor = True
             Me.GridViewMatInfo.Appearance.FocusedRow.Options.UseBorderColor = True
-            Me.GridViewMatInfo.Appearance.FooterPanel.BackColor = System.Drawing.SystemColors.Highlight
-            Me.GridViewMatInfo.Appearance.FooterPanel.BorderColor = System.Drawing.Color.Aqua
+            Me.GridViewMatInfo.Appearance.FooterPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+            Me.GridViewMatInfo.Appearance.FooterPanel.BorderColor = System.Drawing.Color.White
             Me.GridViewMatInfo.Appearance.FooterPanel.Font = New System.Drawing.Font("Tahoma", 14.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.GridViewMatInfo.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Yellow
+            Me.GridViewMatInfo.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Black
             Me.GridViewMatInfo.Appearance.FooterPanel.Options.UseBackColor = True
             Me.GridViewMatInfo.Appearance.FooterPanel.Options.UseBorderColor = True
             Me.GridViewMatInfo.Appearance.FooterPanel.Options.UseFont = True
             Me.GridViewMatInfo.Appearance.FooterPanel.Options.UseForeColor = True
-            Me.GridViewMatInfo.Appearance.HeaderPanel.BackColor = System.Drawing.SystemColors.Highlight
+            Me.GridViewMatInfo.Appearance.HeaderPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight
             Me.GridViewMatInfo.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 14.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.GridViewMatInfo.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Yellow
+            Me.GridViewMatInfo.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Black
             Me.GridViewMatInfo.Appearance.HeaderPanel.Options.UseBackColor = True
             Me.GridViewMatInfo.Appearance.HeaderPanel.Options.UseFont = True
             Me.GridViewMatInfo.Appearance.HeaderPanel.Options.UseForeColor = True
             Me.GridViewMatInfo.Appearance.HeaderPanel.Options.UseTextOptions = True
             Me.GridViewMatInfo.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
             Me.GridViewMatInfo.Appearance.Row.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.GridViewMatInfo.Appearance.Row.ForeColor = System.Drawing.Color.Blue
+            Me.GridViewMatInfo.Appearance.Row.ForeColor = System.Drawing.Color.Black
             Me.GridViewMatInfo.Appearance.Row.Options.UseFont = True
             Me.GridViewMatInfo.Appearance.Row.Options.UseForeColor = True
             Me.GridViewMatInfo.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
@@ -169,19 +180,69 @@
             'btnClose
             '
             Me.btnClose.Image = CType(resources.GetObject("btnClose.Image"), System.Drawing.Image)
-            Me.btnClose.Location = New System.Drawing.Point(665, 312)
+            Me.btnClose.Location = New System.Drawing.Point(590, 18)
             Me.btnClose.Name = "btnClose"
-            Me.btnClose.Size = New System.Drawing.Size(121, 52)
+            Me.btnClose.Size = New System.Drawing.Size(139, 40)
+            Me.btnClose.StyleController = Me.LayoutControl1
             Me.btnClose.TabIndex = 36
             Me.btnClose.Text = "Close"
+            '
+            'LayoutControl1
+            '
+            Me.LayoutControl1.Controls.Add(Me.btnClose)
+            Me.LayoutControl1.Controls.Add(Me.GridMatInfo)
+            Me.LayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.LayoutControl1.Location = New System.Drawing.Point(0, 0)
+            Me.LayoutControl1.Name = "LayoutControl1"
+            Me.LayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(1173, 110, 375, 525)
+            Me.LayoutControl1.Root = Me.LayoutControlGroup1
+            Me.LayoutControl1.Size = New System.Drawing.Size(747, 312)
+            Me.LayoutControl1.TabIndex = 37
+            Me.LayoutControl1.Text = "LayoutControl1"
+            '
+            'LayoutControlGroup1
+            '
+            Me.LayoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
+            Me.LayoutControlGroup1.GroupBordersVisible = False
+            Me.LayoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.LayoutControlItem2, Me.EmptySpaceItem1})
+            Me.LayoutControlGroup1.Location = New System.Drawing.Point(0, 0)
+            Me.LayoutControlGroup1.Name = "Root"
+            Me.LayoutControlGroup1.OptionsItemText.TextToControlDistance = 5
+            Me.LayoutControlGroup1.Size = New System.Drawing.Size(747, 312)
+            Me.LayoutControlGroup1.TextVisible = False
+            '
+            'LayoutControlItem1
+            '
+            Me.LayoutControlItem1.Control = Me.GridMatInfo
+            Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 46)
+            Me.LayoutControlItem1.Name = "LayoutControlItem1"
+            Me.LayoutControlItem1.Size = New System.Drawing.Size(717, 236)
+            Me.LayoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
+            Me.LayoutControlItem1.TextVisible = False
+            '
+            'LayoutControlItem2
+            '
+            Me.LayoutControlItem2.Control = Me.btnClose
+            Me.LayoutControlItem2.Location = New System.Drawing.Point(572, 0)
+            Me.LayoutControlItem2.Name = "LayoutControlItem2"
+            Me.LayoutControlItem2.Size = New System.Drawing.Size(145, 46)
+            Me.LayoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
+            Me.LayoutControlItem2.TextVisible = False
+            '
+            'EmptySpaceItem1
+            '
+            Me.EmptySpaceItem1.AllowHotTrack = False
+            Me.EmptySpaceItem1.Location = New System.Drawing.Point(0, 0)
+            Me.EmptySpaceItem1.Name = "EmptySpaceItem1"
+            Me.EmptySpaceItem1.Size = New System.Drawing.Size(572, 46)
+            Me.EmptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
             '
             'frm_IVM_Popup_Material_Info
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(797, 371)
-            Me.Controls.Add(Me.btnClose)
-            Me.Controls.Add(Me.GridMatInfo)
+            Me.ClientSize = New System.Drawing.Size(747, 312)
+            Me.Controls.Add(Me.LayoutControl1)
             Me.MaximizeBox = False
             Me.MinimizeBox = False
             Me.Name = "frm_IVM_Popup_Material_Info"
@@ -189,6 +250,12 @@
             Me.Text = "รายละเอียด : วัตถุดิบ ในพื้นที่ "
             CType(Me.GridMatInfo, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.GridViewMatInfo, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
+            Me.LayoutControl1.ResumeLayout(False)
+            CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
 
         End Sub
@@ -200,6 +267,11 @@
         Private WithEvents GridViewMatInfo As DevExpress.XtraGrid.Views.Grid.GridView
         Friend WithEvents GridColumn5 As DevExpress.XtraGrid.Columns.GridColumn
         Friend WithEvents btnClose As DevExpress.XtraEditors.SimpleButton
+        Friend WithEvents LayoutControl1 As DevExpress.XtraLayout.LayoutControl
+        Friend WithEvents LayoutControlGroup1 As DevExpress.XtraLayout.LayoutControlGroup
+        Friend WithEvents LayoutControlItem1 As DevExpress.XtraLayout.LayoutControlItem
+        Friend WithEvents LayoutControlItem2 As DevExpress.XtraLayout.LayoutControlItem
+        Friend WithEvents EmptySpaceItem1 As DevExpress.XtraLayout.EmptySpaceItem
     End Class
 
 End Namespace

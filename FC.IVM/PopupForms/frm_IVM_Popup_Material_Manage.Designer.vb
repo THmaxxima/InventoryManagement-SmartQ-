@@ -21,13 +21,12 @@
         <System.Diagnostics.DebuggerStepThrough()>
         Private Sub InitializeComponent()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_IVM_Popup_Material_Manage))
-            Dim SerializableAppearanceObject5 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject6 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject7 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-            Dim SerializableAppearanceObject8 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject29 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject30 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject31 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+            Dim SerializableAppearanceObject32 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
             Me.RepositoryItemSpinEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit()
             Me.LayoutControlSouceData = New DevExpress.XtraLayout.LayoutControl()
-            Me.CheckShowAll = New DevExpress.XtraEditors.CheckEdit()
             Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
             Me.lblWeight = New DevExpress.XtraEditors.LabelControl()
             Me.txtquantity = New DevExpress.XtraEditors.TextEdit()
@@ -44,7 +43,11 @@
             Me.lblTruckProperties = New DevExpress.XtraEditors.LabelControl()
             Me.lblStroageName = New DevExpress.XtraEditors.LabelControl()
             Me.lblWeightTicket = New DevExpress.XtraEditors.LabelControl()
+            Me.lblCaptionPLW = New DevExpress.XtraEditors.LabelControl()
+            Me.lblPLWeight = New DevExpress.XtraEditors.LabelControl()
+            Me.CheckShowAll = New DevExpress.XtraEditors.CheckEdit()
             Me.GroupControl3 = New DevExpress.XtraEditors.GroupControl()
+            Me.lblNetAmount = New DevExpress.XtraEditors.LabelControl()
             Me.GridControlMoveMentDetail = New DevExpress.XtraGrid.GridControl()
             Me.GridViewMoveMentDetail = New DevExpress.XtraGrid.Views.Grid.GridView()
             Me.colCustomStorageID = New DevExpress.XtraGrid.Columns.GridColumn()
@@ -81,6 +84,9 @@
             Me.colCardPackageSize = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
             Me.layoutViewField_colCardPackageSize = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
             Me.LayoutViewCard1 = New DevExpress.XtraGrid.Views.Layout.LayoutViewCard()
+            Me.SimpleLabelItem1 = New DevExpress.XtraLayout.SimpleLabelItem()
+            Me.item13 = New DevExpress.XtraLayout.SimpleLabelItem()
+            Me.item12 = New DevExpress.XtraLayout.EmptySpaceItem()
             Me.GridControlWeightTicket = New DevExpress.XtraGrid.GridControl()
             Me.LayoutViewWeightTicket = New DevExpress.XtraGrid.Views.Layout.LayoutView()
             Me.LayoutViewColumn3 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
@@ -156,6 +162,8 @@
             Me.LayoutViewColumn9 = New DevExpress.XtraGrid.Columns.LayoutViewColumn()
             Me.LayoutViewField10 = New DevExpress.XtraGrid.Views.Layout.LayoutViewField()
             Me.LayoutViewCard4 = New DevExpress.XtraGrid.Views.Layout.LayoutViewCard()
+            Me.item22 = New DevExpress.XtraLayout.SimpleLabelItem()
+            Me.SimpleLabelItem2 = New DevExpress.XtraLayout.SimpleLabelItem()
             Me.TabNP_WP = New DevExpress.XtraBars.Navigation.TabNavigationPage()
             Me.GridControlWP = New DevExpress.XtraGrid.GridControl()
             Me.LayoutViewWP = New DevExpress.XtraGrid.Views.Layout.LayoutView()
@@ -168,7 +176,6 @@
             Me.lblContractorInfo = New DevExpress.XtraEditors.LabelControl()
             Me.lblMatNameInfo = New DevExpress.XtraEditors.LabelControl()
             Me.lblTicketID = New DevExpress.XtraEditors.LabelControl()
-            Me.lblNetAmount = New DevExpress.XtraEditors.LabelControl()
             Me.lblMatName = New DevExpress.XtraEditors.LabelControl()
             Me.lblMatID = New DevExpress.XtraEditors.LabelControl()
             Me.lblStroageID = New DevExpress.XtraEditors.LabelControl()
@@ -188,6 +195,7 @@
             Me.LayoutControlItem5 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.LayoutControlItem6 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.LayoutControlGroup1 = New DevExpress.XtraLayout.LayoutControlGroup()
+            Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.item3 = New DevExpress.XtraLayout.EmptySpaceItem()
             Me.repositoryItemTextEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemTextEdit()
             Me.repositoryItemPictureEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit()
@@ -211,17 +219,14 @@
             Me.EmptySpaceItem10 = New DevExpress.XtraLayout.EmptySpaceItem()
             Me.EmptySpaceItem15 = New DevExpress.XtraLayout.EmptySpaceItem()
             Me.LayoutControlGroup2 = New DevExpress.XtraLayout.LayoutControlGroup()
-            Me.lblCaptionPLW = New DevExpress.XtraEditors.LabelControl()
-            Me.lblPLWeight = New DevExpress.XtraEditors.LabelControl()
-            Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
             CType(Me.RepositoryItemSpinEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutControlSouceData, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.LayoutControlSouceData.SuspendLayout()
-            CType(Me.CheckShowAll.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.TableLayoutPanel1.SuspendLayout()
             CType(Me.txtquantity.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.SearchMaterial.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.SearchLookUpEdit1View, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.CheckShowAll.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.GroupControl3, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.GroupControl3.SuspendLayout()
             CType(Me.GridControlMoveMentDetail, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -246,6 +251,9 @@
             CType(Me.layoutViewField_colPlateLicense, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.layoutViewField_colCardPackageSize, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutViewCard1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.SimpleLabelItem1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.item13, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.item12, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.GridControlWeightTicket, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutViewWeightTicket, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.layoutViewField_LayoutViewColumn3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -297,6 +305,8 @@
             CType(Me.LayoutViewField9, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutViewField10, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutViewCard4, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.item22, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.SimpleLabelItem2, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.TabNP_WP.SuspendLayout()
             CType(Me.GridControlWP, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutViewWP, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -320,6 +330,7 @@
             CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.item3, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.repositoryItemTextEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.repositoryItemPictureEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -342,7 +353,6 @@
             CType(Me.EmptySpaceItem10, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.EmptySpaceItem15, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
             'RepositoryItemSpinEdit1
@@ -350,7 +360,7 @@
             Me.RepositoryItemSpinEdit1.AllowFocused = False
             Me.RepositoryItemSpinEdit1.AutoHeight = False
             Me.RepositoryItemSpinEdit1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D
-            Me.RepositoryItemSpinEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 5, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("RepositoryItemSpinEdit1.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, "", Nothing, Nothing, True)})
+            Me.RepositoryItemSpinEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 5, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("RepositoryItemSpinEdit1.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject29, "", Nothing, Nothing, True)})
             Me.RepositoryItemSpinEdit1.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D
             Me.RepositoryItemSpinEdit1.Name = "RepositoryItemSpinEdit1"
             '
@@ -363,7 +373,6 @@
             Me.LayoutControlSouceData.Controls.Add(Me.lblContractorInfo)
             Me.LayoutControlSouceData.Controls.Add(Me.lblMatNameInfo)
             Me.LayoutControlSouceData.Controls.Add(Me.lblTicketID)
-            Me.LayoutControlSouceData.Controls.Add(Me.lblNetAmount)
             Me.LayoutControlSouceData.Controls.Add(Me.lblMatName)
             Me.LayoutControlSouceData.Controls.Add(Me.lblMatID)
             Me.LayoutControlSouceData.Controls.Add(Me.lblStroageID)
@@ -373,58 +382,43 @@
             Me.LayoutControlSouceData.Name = "LayoutControlSouceData"
             Me.LayoutControlSouceData.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(273, 339, 375, 525)
             Me.LayoutControlSouceData.Root = Me.LayoutControlGroupSouceData
-            Me.LayoutControlSouceData.Size = New System.Drawing.Size(1293, 680)
+            Me.LayoutControlSouceData.Size = New System.Drawing.Size(1293, 844)
             Me.LayoutControlSouceData.TabIndex = 4
             Me.LayoutControlSouceData.Text = "LayoutControl2"
-            '
-            'CheckShowAll
-            '
-            Me.CheckShowAll.AllowDrop = True
-            Me.CheckShowAll.Location = New System.Drawing.Point(18, 18)
-            Me.CheckShowAll.Name = "CheckShowAll"
-            Me.CheckShowAll.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.CheckShowAll.Properties.Appearance.Options.UseFont = True
-            Me.CheckShowAll.Properties.AutoWidth = True
-            Me.CheckShowAll.Properties.Caption = "แสดงข้อมูลตั๋วชั่ง ทั้งหมด"
-            Me.CheckShowAll.Properties.CheckStyle = DevExpress.XtraEditors.Controls.CheckStyles.Style1
-            Me.CheckShowAll.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.[Default]
-            Me.CheckShowAll.Size = New System.Drawing.Size(273, 31)
-            Me.CheckShowAll.StyleController = Me.LayoutControlSouceData
-            Me.CheckShowAll.TabIndex = 0
             '
             'TableLayoutPanel1
             '
             Me.TableLayoutPanel1.AllowDrop = True
             Me.TableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
             Me.TableLayoutPanel1.ColumnCount = 4
-            Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.78961!))
-            Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.22956!))
-            Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.86643!))
-            Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.1144!))
+            Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.64481!))
+            Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.76503!))
+            Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.38797!))
+            Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.20219!))
             Me.TableLayoutPanel1.Controls.Add(Me.lblWeight, 1, 3)
             Me.TableLayoutPanel1.Controls.Add(Me.txtquantity, 1, 2)
-            Me.TableLayoutPanel1.Controls.Add(Me.LabelControl6, 0, 2)
             Me.TableLayoutPanel1.Controls.Add(Me.LabelControl1, 0, 3)
             Me.TableLayoutPanel1.Controls.Add(Me.LabelControl2, 1, 0)
             Me.TableLayoutPanel1.Controls.Add(Me.btnClose, 3, 0)
             Me.TableLayoutPanel1.Controls.Add(Me.btnSave, 3, 1)
-            Me.TableLayoutPanel1.Controls.Add(Me.btnProperties, 3, 2)
             Me.TableLayoutPanel1.Controls.Add(Me.SearchMaterial, 2, 0)
             Me.TableLayoutPanel1.Controls.Add(Me.lblTruckProperties, 2, 1)
             Me.TableLayoutPanel1.Controls.Add(Me.lblStroageName, 0, 0)
             Me.TableLayoutPanel1.Controls.Add(Me.lblWeightTicket, 0, 1)
             Me.TableLayoutPanel1.Controls.Add(Me.lblCaptionPLW, 0, 4)
             Me.TableLayoutPanel1.Controls.Add(Me.lblPLWeight, 1, 4)
-            Me.TableLayoutPanel1.Location = New System.Drawing.Point(523, 79)
+            Me.TableLayoutPanel1.Controls.Add(Me.btnProperties, 3, 2)
+            Me.TableLayoutPanel1.Controls.Add(Me.LabelControl6, 0, 2)
+            Me.TableLayoutPanel1.Location = New System.Drawing.Point(509, 65)
             Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
             Me.TableLayoutPanel1.RowCount = 6
             Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
             Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
             Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-            Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
-            Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
             Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-            Me.TableLayoutPanel1.Size = New System.Drawing.Size(733, 242)
+            Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+            Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+            Me.TableLayoutPanel1.Size = New System.Drawing.Size(761, 321)
             Me.TableLayoutPanel1.TabIndex = 47
             '
             'lblWeight
@@ -438,8 +432,9 @@
             Me.lblWeight.Appearance.Options.UseForeColor = True
             Me.lblWeight.Appearance.Options.UseTextOptions = True
             Me.lblWeight.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+            Me.lblWeight.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal
             Me.lblWeight.Dock = System.Windows.Forms.DockStyle.Top
-            Me.lblWeight.Location = New System.Drawing.Point(206, 147)
+            Me.lblWeight.Location = New System.Drawing.Point(228, 147)
             Me.lblWeight.Name = "lblWeight"
             Me.lblWeight.Size = New System.Drawing.Size(90, 39)
             Me.lblWeight.TabIndex = 13
@@ -449,8 +444,8 @@
             '
             Me.txtquantity.AllowDrop = True
             Me.txtquantity.Dock = System.Windows.Forms.DockStyle.Top
-            Me.txtquantity.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-            Me.txtquantity.Location = New System.Drawing.Point(206, 101)
+            Me.txtquantity.EditValue = "1,000.0"
+            Me.txtquantity.Location = New System.Drawing.Point(228, 101)
             Me.txtquantity.Name = "txtquantity"
             Me.txtquantity.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
             Me.txtquantity.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -473,18 +468,18 @@
             Me.txtquantity.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
             Me.txtquantity.Properties.EditFormat.FormatString = "{0:n1}"
             Me.txtquantity.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric
-            Me.txtquantity.Size = New System.Drawing.Size(120, 39)
+            Me.txtquantity.Size = New System.Drawing.Size(152, 38)
             Me.txtquantity.TabIndex = 12
             '
             'LabelControl6
             '
             Me.LabelControl6.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.LabelControl6.Appearance.Options.UseFont = True
-            Me.LabelControl6.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
+            Me.LabelControl6.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal
             Me.LabelControl6.Dock = System.Windows.Forms.DockStyle.Top
             Me.LabelControl6.Location = New System.Drawing.Point(3, 101)
             Me.LabelControl6.Name = "LabelControl6"
-            Me.LabelControl6.Size = New System.Drawing.Size(197, 34)
+            Me.LabelControl6.Size = New System.Drawing.Size(78, 34)
             Me.LabelControl6.TabIndex = 1
             Me.LabelControl6.Text = "จำนวน"
             '
@@ -492,11 +487,11 @@
             '
             Me.LabelControl1.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.LabelControl1.Appearance.Options.UseFont = True
-            Me.LabelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
+            Me.LabelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal
             Me.LabelControl1.Dock = System.Windows.Forms.DockStyle.Top
             Me.LabelControl1.Location = New System.Drawing.Point(3, 147)
             Me.LabelControl1.Name = "LabelControl1"
-            Me.LabelControl1.Size = New System.Drawing.Size(197, 34)
+            Me.LabelControl1.Size = New System.Drawing.Size(84, 34)
             Me.LabelControl1.TabIndex = 1
             Me.LabelControl1.Text = "น้ำหนัก"
             '
@@ -505,7 +500,7 @@
             Me.LabelControl2.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.LabelControl2.Appearance.Options.UseFont = True
             Me.LabelControl2.Dock = System.Windows.Forms.DockStyle.Right
-            Me.LabelControl2.Location = New System.Drawing.Point(244, 3)
+            Me.LabelControl2.Location = New System.Drawing.Point(298, 3)
             Me.LabelControl2.Name = "LabelControl2"
             Me.LabelControl2.Size = New System.Drawing.Size(82, 34)
             Me.LabelControl2.TabIndex = 16
@@ -518,14 +513,15 @@
             Me.btnClose.Appearance.Options.UseFont = True
             Me.btnClose.Appearance.Options.UseTextOptions = True
             Me.btnClose.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+            Me.btnClose.AutoSize = True
             Me.btnClose.Dock = System.Windows.Forms.DockStyle.Fill
             Me.btnClose.Image = CType(resources.GetObject("btnClose.Image"), System.Drawing.Image)
-            Me.btnClose.Location = New System.Drawing.Point(555, 3)
+            Me.btnClose.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+            Me.btnClose.Location = New System.Drawing.Point(675, 3)
             Me.btnClose.Margin = New System.Windows.Forms.Padding(0, 3, 3, 3)
             Me.btnClose.Name = "btnClose"
-            Me.btnClose.Size = New System.Drawing.Size(175, 46)
+            Me.btnClose.Size = New System.Drawing.Size(83, 46)
             Me.btnClose.TabIndex = 9
-            Me.btnClose.Text = "Close"
             '
             'btnSave
             '
@@ -534,38 +530,35 @@
             Me.btnSave.Appearance.Options.UseFont = True
             Me.btnSave.Appearance.Options.UseTextOptions = True
             Me.btnSave.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+            Me.btnSave.AutoSize = True
             Me.btnSave.Dock = System.Windows.Forms.DockStyle.Fill
             Me.btnSave.Image = CType(resources.GetObject("btnSave.Image"), System.Drawing.Image)
-            Me.btnSave.Location = New System.Drawing.Point(555, 55)
+            Me.btnSave.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+            Me.btnSave.Location = New System.Drawing.Point(675, 55)
             Me.btnSave.Margin = New System.Windows.Forms.Padding(0, 3, 3, 3)
             Me.btnSave.Name = "btnSave"
-            Me.btnSave.Size = New System.Drawing.Size(175, 40)
+            Me.btnSave.Size = New System.Drawing.Size(83, 40)
             Me.btnSave.TabIndex = 7
-            Me.btnSave.Text = "Save"
             '
             'btnProperties
             '
             Me.btnProperties.AllowDrop = True
             Me.btnProperties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.btnProperties.Appearance.Options.UseFont = True
-            Me.btnProperties.Appearance.Options.UseTextOptions = True
-            Me.btnProperties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
             Me.btnProperties.AutoSize = True
             Me.btnProperties.Dock = System.Windows.Forms.DockStyle.Fill
             Me.btnProperties.Image = CType(resources.GetObject("btnProperties.Image"), System.Drawing.Image)
-            Me.btnProperties.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft
-            Me.btnProperties.Location = New System.Drawing.Point(555, 101)
+            Me.btnProperties.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+            Me.btnProperties.Location = New System.Drawing.Point(675, 101)
             Me.btnProperties.Margin = New System.Windows.Forms.Padding(0, 3, 3, 3)
             Me.btnProperties.Name = "btnProperties"
-            Me.btnProperties.Size = New System.Drawing.Size(175, 40)
+            Me.btnProperties.Size = New System.Drawing.Size(83, 40)
             Me.btnProperties.TabIndex = 5
-            Me.btnProperties.Text = "Properties "
             '
             'SearchMaterial
             '
             Me.SearchMaterial.Dock = System.Windows.Forms.DockStyle.Top
             Me.SearchMaterial.EditValue = ""
-            Me.SearchMaterial.Location = New System.Drawing.Point(332, 3)
+            Me.SearchMaterial.Location = New System.Drawing.Point(386, 3)
             Me.SearchMaterial.Name = "SearchMaterial"
             Me.SearchMaterial.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.SearchMaterial.Properties.Appearance.ForeColor = System.Drawing.Color.Black
@@ -582,7 +575,7 @@
             Me.SearchMaterial.Properties.ShowFooter = False
             Me.SearchMaterial.Properties.ShowPopupShadow = False
             Me.SearchMaterial.Properties.View = Me.SearchLookUpEdit1View
-            Me.SearchMaterial.Size = New System.Drawing.Size(220, 46)
+            Me.SearchMaterial.Size = New System.Drawing.Size(286, 46)
             Me.SearchMaterial.TabIndex = 2
             '
             'SearchLookUpEdit1View
@@ -635,11 +628,12 @@
             Me.lblTruckProperties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
             Me.lblTruckProperties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
             Me.lblTruckProperties.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
-            Me.lblTruckProperties.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
-            Me.lblTruckProperties.Location = New System.Drawing.Point(332, 55)
+            Me.lblTruckProperties.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical
+            Me.lblTruckProperties.Dock = System.Windows.Forms.DockStyle.Top
+            Me.lblTruckProperties.Location = New System.Drawing.Point(386, 55)
             Me.lblTruckProperties.Name = "lblTruckProperties"
-            Me.TableLayoutPanel1.SetRowSpan(Me.lblTruckProperties, 5)
-            Me.lblTruckProperties.Size = New System.Drawing.Size(220, 206)
+            Me.TableLayoutPanel1.SetRowSpan(Me.lblTruckProperties, 4)
+            Me.lblTruckProperties.Size = New System.Drawing.Size(286, 0)
             Me.lblTruckProperties.TabIndex = 15
             '
             'lblStroageName
@@ -650,6 +644,7 @@
             Me.lblStroageName.Appearance.Options.UseForeColor = True
             Me.lblStroageName.Appearance.Options.UseTextOptions = True
             Me.lblStroageName.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+            Me.lblStroageName.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
             Me.lblStroageName.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal
             Me.lblStroageName.Dock = System.Windows.Forms.DockStyle.Left
             Me.lblStroageName.Location = New System.Drawing.Point(3, 3)
@@ -674,6 +669,56 @@
             Me.lblWeightTicket.TabIndex = 14
             Me.lblWeightTicket.Text = "ตั๋วชั่ง"
             '
+            'lblCaptionPLW
+            '
+            Me.lblCaptionPLW.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.lblCaptionPLW.Appearance.Options.UseFont = True
+            Me.lblCaptionPLW.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal
+            Me.lblCaptionPLW.Dock = System.Windows.Forms.DockStyle.Top
+            Me.lblCaptionPLW.Location = New System.Drawing.Point(3, 192)
+            Me.lblCaptionPLW.Name = "lblCaptionPLW"
+            Me.lblCaptionPLW.Size = New System.Drawing.Size(166, 34)
+            Me.lblCaptionPLW.TabIndex = 17
+            Me.lblCaptionPLW.Text = "น้ำหนักต้นทาง"
+            Me.lblCaptionPLW.Visible = False
+            '
+            'lblPLWeight
+            '
+            Me.lblPLWeight.AllowDrop = True
+            Me.lblPLWeight.Appearance.BackColor = System.Drawing.Color.Transparent
+            Me.lblPLWeight.Appearance.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.lblPLWeight.Appearance.ForeColor = System.Drawing.Color.Black
+            Me.lblPLWeight.Appearance.Options.UseBackColor = True
+            Me.lblPLWeight.Appearance.Options.UseFont = True
+            Me.lblPLWeight.Appearance.Options.UseForeColor = True
+            Me.lblPLWeight.Appearance.Options.UseTextOptions = True
+            Me.lblPLWeight.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+            Me.lblPLWeight.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Horizontal
+            Me.lblPLWeight.Dock = System.Windows.Forms.DockStyle.Top
+            Me.lblPLWeight.Location = New System.Drawing.Point(228, 192)
+            Me.lblPLWeight.Name = "lblPLWeight"
+            Me.lblPLWeight.Size = New System.Drawing.Size(90, 39)
+            Me.lblPLWeight.TabIndex = 18
+            Me.lblPLWeight.Text = "0.000"
+            Me.lblPLWeight.Visible = False
+            '
+            'CheckShowAll
+            '
+            Me.CheckShowAll.AllowDrop = True
+            Me.CheckShowAll.Enabled = False
+            Me.CheckShowAll.Location = New System.Drawing.Point(18, 18)
+            Me.CheckShowAll.Name = "CheckShowAll"
+            Me.CheckShowAll.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.CheckShowAll.Properties.Appearance.Options.UseFont = True
+            Me.CheckShowAll.Properties.AutoWidth = True
+            Me.CheckShowAll.Properties.Caption = "แสดงข้อมูลตั๋วชั่ง ทั้งหมด"
+            Me.CheckShowAll.Properties.CheckStyle = DevExpress.XtraEditors.Controls.CheckStyles.Style1
+            Me.CheckShowAll.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.[Default]
+            Me.CheckShowAll.Size = New System.Drawing.Size(273, 31)
+            Me.CheckShowAll.StyleController = Me.LayoutControlSouceData
+            Me.CheckShowAll.TabIndex = 0
+            Me.CheckShowAll.Visible = False
+            '
             'GroupControl3
             '
             Me.GroupControl3.Appearance.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -684,93 +729,72 @@
             Me.GroupControl3.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
             Me.GroupControl3.AppearanceCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
             Me.GroupControl3.CaptionLocation = DevExpress.Utils.Locations.Top
+            Me.GroupControl3.Controls.Add(Me.lblNetAmount)
             Me.GroupControl3.Controls.Add(Me.GridControlMoveMentDetail)
-            Me.GroupControl3.Location = New System.Drawing.Point(504, 346)
+            Me.GroupControl3.Location = New System.Drawing.Point(504, 397)
             Me.GroupControl3.Name = "GroupControl3"
-            Me.GroupControl3.Size = New System.Drawing.Size(771, 316)
+            Me.GroupControl3.Size = New System.Drawing.Size(771, 429)
             Me.GroupControl3.TabIndex = 5
             Me.GroupControl3.Text = "รายละเอียด พื้นที่ปลายทาง"
+            '
+            'lblNetAmount
+            '
+            Me.lblNetAmount.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
+            Me.lblNetAmount.Location = New System.Drawing.Point(6, 454)
+            Me.lblNetAmount.Name = "lblNetAmount"
+            Me.lblNetAmount.Size = New System.Drawing.Size(193, 53)
+            Me.lblNetAmount.TabIndex = 1
+            Me.lblNetAmount.Text = "lblNetAmount"
+            Me.lblNetAmount.Visible = False
             '
             'GridControlMoveMentDetail
             '
             Me.GridControlMoveMentDetail.AllowDrop = True
             Me.GridControlMoveMentDetail.Cursor = System.Windows.Forms.Cursors.Default
             Me.GridControlMoveMentDetail.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.GridControlMoveMentDetail.EmbeddedNavigator.Appearance.ForeColor = System.Drawing.Color.Black
+            Me.GridControlMoveMentDetail.EmbeddedNavigator.Appearance.Options.UseForeColor = True
             Me.GridControlMoveMentDetail.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.GridControlMoveMentDetail.Location = New System.Drawing.Point(3, 45)
             Me.GridControlMoveMentDetail.MainView = Me.GridViewMoveMentDetail
             Me.GridControlMoveMentDetail.Name = "GridControlMoveMentDetail"
             Me.GridControlMoveMentDetail.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.DeleteCustomRow, Me.EditRow, Me.RepositoryItemLookUpEdit1, Me.CalcEditBale})
-            Me.GridControlMoveMentDetail.Size = New System.Drawing.Size(765, 268)
+            Me.GridControlMoveMentDetail.Size = New System.Drawing.Size(765, 381)
             Me.GridControlMoveMentDetail.TabIndex = 2
             Me.GridControlMoveMentDetail.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewMoveMentDetail})
             '
             'GridViewMoveMentDetail
             '
-            Me.GridViewMoveMentDetail.Appearance.FocusedRow.BackColor = System.Drawing.Color.Transparent
-            Me.GridViewMoveMentDetail.Appearance.FocusedRow.ForeColor = System.Drawing.Color.Blue
-            Me.GridViewMoveMentDetail.Appearance.FocusedRow.Options.UseBackColor = True
-            Me.GridViewMoveMentDetail.Appearance.FocusedRow.Options.UseForeColor = True
-            Me.GridViewMoveMentDetail.Appearance.FooterPanel.BackColor = System.Drawing.Color.Transparent
-            Me.GridViewMoveMentDetail.Appearance.FooterPanel.BorderColor = System.Drawing.Color.Cyan
-            Me.GridViewMoveMentDetail.Appearance.FooterPanel.Font = New System.Drawing.Font("Tahoma", 14.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
-            Me.GridViewMoveMentDetail.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Black
-            Me.GridViewMoveMentDetail.Appearance.FooterPanel.Options.UseBackColor = True
-            Me.GridViewMoveMentDetail.Appearance.FooterPanel.Options.UseBorderColor = True
+            Me.GridViewMoveMentDetail.Appearance.FocusedCell.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
+            Me.GridViewMoveMentDetail.Appearance.FocusedCell.ForeColor = System.Drawing.Color.Black
+            Me.GridViewMoveMentDetail.Appearance.FocusedCell.Options.UseFont = True
+            Me.GridViewMoveMentDetail.Appearance.FocusedCell.Options.UseForeColor = True
+            Me.GridViewMoveMentDetail.Appearance.FooterPanel.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.GridViewMoveMentDetail.Appearance.FooterPanel.Options.UseFont = True
-            Me.GridViewMoveMentDetail.Appearance.FooterPanel.Options.UseForeColor = True
-            Me.GridViewMoveMentDetail.Appearance.FooterPanel.Options.UseTextOptions = True
-            Me.GridViewMoveMentDetail.Appearance.FooterPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
-            Me.GridViewMoveMentDetail.Appearance.GroupFooter.BackColor = System.Drawing.Color.Transparent
-            Me.GridViewMoveMentDetail.Appearance.GroupFooter.BorderColor = System.Drawing.Color.Cyan
-            Me.GridViewMoveMentDetail.Appearance.GroupFooter.Font = New System.Drawing.Font("Tahoma", 16.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
-            Me.GridViewMoveMentDetail.Appearance.GroupFooter.ForeColor = System.Drawing.Color.Black
-            Me.GridViewMoveMentDetail.Appearance.GroupFooter.Options.UseBackColor = True
-            Me.GridViewMoveMentDetail.Appearance.GroupFooter.Options.UseBorderColor = True
-            Me.GridViewMoveMentDetail.Appearance.GroupFooter.Options.UseFont = True
-            Me.GridViewMoveMentDetail.Appearance.GroupFooter.Options.UseForeColor = True
-            Me.GridViewMoveMentDetail.Appearance.HeaderPanel.BackColor = System.Drawing.SystemColors.Highlight
-            Me.GridViewMoveMentDetail.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.Cyan
             Me.GridViewMoveMentDetail.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 14.0!)
-            Me.GridViewMoveMentDetail.Appearance.HeaderPanel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-            Me.GridViewMoveMentDetail.Appearance.HeaderPanel.Options.UseBackColor = True
-            Me.GridViewMoveMentDetail.Appearance.HeaderPanel.Options.UseBorderColor = True
             Me.GridViewMoveMentDetail.Appearance.HeaderPanel.Options.UseFont = True
-            Me.GridViewMoveMentDetail.Appearance.HeaderPanel.Options.UseForeColor = True
             Me.GridViewMoveMentDetail.Appearance.HeaderPanel.Options.UseTextOptions = True
-            Me.GridViewMoveMentDetail.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-            Me.GridViewMoveMentDetail.Appearance.Row.BackColor = System.Drawing.Color.Transparent
-            Me.GridViewMoveMentDetail.Appearance.Row.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
+            Me.GridViewMoveMentDetail.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+            Me.GridViewMoveMentDetail.Appearance.HeaderPanel.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
+            Me.GridViewMoveMentDetail.Appearance.Row.Font = New System.Drawing.Font("Tahoma", 18.0!)
             Me.GridViewMoveMentDetail.Appearance.Row.ForeColor = System.Drawing.Color.Black
-            Me.GridViewMoveMentDetail.Appearance.Row.Options.UseBackColor = True
             Me.GridViewMoveMentDetail.Appearance.Row.Options.UseFont = True
             Me.GridViewMoveMentDetail.Appearance.Row.Options.UseForeColor = True
-            Me.GridViewMoveMentDetail.Appearance.Row.Options.UseTextOptions = True
-            Me.GridViewMoveMentDetail.Appearance.Row.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
             Me.GridViewMoveMentDetail.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colCustomStorageID, Me.colCustomStorageName, Me.colCustomMaterialID, Me.colCustomMaterialName, Me.colCustomQuantity, Me.colCustomAction, Me.GridColumn1, Me.colCustomPackageSize})
-            Me.GridViewMoveMentDetail.FixedLineWidth = 12
+            Me.GridViewMoveMentDetail.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
             Me.GridViewMoveMentDetail.GridControl = Me.GridControlMoveMentDetail
             Me.GridViewMoveMentDetail.Name = "GridViewMoveMentDetail"
             Me.GridViewMoveMentDetail.OptionsBehavior.EditingMode = DevExpress.XtraGrid.Views.Grid.GridEditingMode.EditForm
             Me.GridViewMoveMentDetail.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.Click
-            Me.GridViewMoveMentDetail.OptionsCustomization.AllowFilter = False
-            Me.GridViewMoveMentDetail.OptionsCustomization.AllowSort = False
             Me.GridViewMoveMentDetail.OptionsEditForm.EditFormColumnCount = 2
             Me.GridViewMoveMentDetail.OptionsEditForm.PopupEditFormWidth = 300
             Me.GridViewMoveMentDetail.OptionsEditForm.ShowOnDoubleClick = DevExpress.Utils.DefaultBoolean.[True]
             Me.GridViewMoveMentDetail.OptionsEditForm.ShowOnEnterKey = DevExpress.Utils.DefaultBoolean.[True]
-            Me.GridViewMoveMentDetail.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CellSelect
             Me.GridViewMoveMentDetail.OptionsSelection.ResetSelectionClickOutsideCheckboxSelector = True
-            Me.GridViewMoveMentDetail.OptionsSelection.UseIndicatorForSelection = False
             Me.GridViewMoveMentDetail.OptionsView.AnimationType = DevExpress.XtraGrid.Views.Base.GridAnimationType.NeverAnimate
-            Me.GridViewMoveMentDetail.OptionsView.RowAutoHeight = True
-            Me.GridViewMoveMentDetail.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never
             Me.GridViewMoveMentDetail.OptionsView.ShowFooter = True
             Me.GridViewMoveMentDetail.OptionsView.ShowGroupPanel = False
-            Me.GridViewMoveMentDetail.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.[False]
-            Me.GridViewMoveMentDetail.OptionsView.ShowIndicator = False
-            Me.GridViewMoveMentDetail.OptionsView.ShowVerticalLines = DevExpress.Utils.DefaultBoolean.[False]
-            Me.GridViewMoveMentDetail.RowHeight = 20
+            Me.GridViewMoveMentDetail.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.[True]
             '
             'colCustomStorageID
             '
@@ -778,8 +802,6 @@
             Me.colCustomStorageID.CustomizationCaption = "StorageID"
             Me.colCustomStorageID.FieldName = "GroupID"
             Me.colCustomStorageID.Name = "colCustomStorageID"
-            Me.colCustomStorageID.OptionsColumn.ReadOnly = True
-            Me.colCustomStorageID.OptionsEditForm.Visible = DevExpress.Utils.DefaultBoolean.[False]
             '
             'colCustomStorageName
             '
@@ -787,11 +809,9 @@
             Me.colCustomStorageName.CustomizationCaption = "StorageName"
             Me.colCustomStorageName.FieldName = "GroupName"
             Me.colCustomStorageName.Name = "colCustomStorageName"
-            Me.colCustomStorageName.OptionsColumn.ReadOnly = True
-            Me.colCustomStorageName.OptionsEditForm.Visible = DevExpress.Utils.DefaultBoolean.[False]
             Me.colCustomStorageName.Visible = True
             Me.colCustomStorageName.VisibleIndex = 2
-            Me.colCustomStorageName.Width = 477
+            Me.colCustomStorageName.Width = 323
             '
             'colCustomMaterialID
             '
@@ -799,38 +819,28 @@
             Me.colCustomMaterialID.CustomizationCaption = "MaterialID"
             Me.colCustomMaterialID.FieldName = "MaterialID"
             Me.colCustomMaterialID.Name = "colCustomMaterialID"
-            Me.colCustomMaterialID.OptionsColumn.ReadOnly = True
-            Me.colCustomMaterialID.OptionsEditForm.Visible = DevExpress.Utils.DefaultBoolean.[False]
+            Me.colCustomMaterialID.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.[True]
             '
             'colCustomMaterialName
             '
-            Me.colCustomMaterialName.Caption = "วัตถุดิบ"
-            Me.colCustomMaterialName.CustomizationCaption = "MaterialName"
+            Me.colCustomMaterialName.Caption = "Material Name"
             Me.colCustomMaterialName.FieldName = "MaterialName"
-            Me.colCustomMaterialName.MinWidth = 10
             Me.colCustomMaterialName.Name = "colCustomMaterialName"
-            Me.colCustomMaterialName.OptionsColumn.ReadOnly = True
-            Me.colCustomMaterialName.OptionsEditForm.Visible = DevExpress.Utils.DefaultBoolean.[False]
             '
             'colCustomQuantity
             '
             Me.colCustomQuantity.Caption = "จำนวน"
-            Me.colCustomQuantity.CustomizationCaption = "Quantity"
             Me.colCustomQuantity.DisplayFormat.FormatString = "{0:n1}"
             Me.colCustomQuantity.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
             Me.colCustomQuantity.FieldName = "Quantity"
             Me.colCustomQuantity.Name = "colCustomQuantity"
-            Me.colCustomQuantity.OptionsColumn.AllowFocus = False
-            Me.colCustomQuantity.OptionsEditForm.RowSpan = 2
             Me.colCustomQuantity.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "Quantity", "{0:n1}")})
             Me.colCustomQuantity.Visible = True
             Me.colCustomQuantity.VisibleIndex = 3
-            Me.colCustomQuantity.Width = 128
+            Me.colCustomQuantity.Width = 130
             '
             'colCustomAction
             '
-            Me.colCustomAction.AppearanceCell.Options.UseTextOptions = True
-            Me.colCustomAction.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
             Me.colCustomAction.Caption = "ลบ"
             Me.colCustomAction.ColumnEdit = Me.DeleteCustomRow
             Me.colCustomAction.FieldName = "colCustomAction"
@@ -842,18 +852,16 @@
             Me.colCustomAction.UnboundType = DevExpress.Data.UnboundColumnType.[Object]
             Me.colCustomAction.Visible = True
             Me.colCustomAction.VisibleIndex = 0
-            Me.colCustomAction.Width = 66
+            Me.colCustomAction.Width = 73
             '
             'DeleteCustomRow
             '
-            Me.DeleteCustomRow.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("DeleteCustomRow.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject6, "", "Remove", Nothing, True)})
+            Me.DeleteCustomRow.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("DeleteCustomRow.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject30, "", "Remove", Nothing, True)})
             Me.DeleteCustomRow.Name = "DeleteCustomRow"
             Me.DeleteCustomRow.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor
             '
             'GridColumn1
             '
-            Me.GridColumn1.AppearanceCell.Options.UseTextOptions = True
-            Me.GridColumn1.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
             Me.GridColumn1.Caption = "แก้ไข"
             Me.GridColumn1.ColumnEdit = Me.EditRow
             Me.GridColumn1.FieldName = "GridColumn1"
@@ -862,14 +870,15 @@
             Me.GridColumn1.OptionsEditForm.RowSpan = 2
             Me.GridColumn1.OptionsEditForm.Visible = DevExpress.Utils.DefaultBoolean.[False]
             Me.GridColumn1.OptionsEditForm.VisibleIndex = 2
+            Me.GridColumn1.ToolTip = "EditRow"
             Me.GridColumn1.UnboundType = DevExpress.Data.UnboundColumnType.[Object]
             Me.GridColumn1.Visible = True
             Me.GridColumn1.VisibleIndex = 1
-            Me.GridColumn1.Width = 90
+            Me.GridColumn1.Width = 86
             '
             'EditRow
             '
-            Me.EditRow.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("EditRow.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject7, "", Nothing, Nothing, True)})
+            Me.EditRow.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("EditRow.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject31, "", Nothing, Nothing, True)})
             Me.EditRow.Name = "EditRow"
             Me.EditRow.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor
             '
@@ -881,7 +890,7 @@
             Me.colCustomPackageSize.Name = "colCustomPackageSize"
             Me.colCustomPackageSize.Visible = True
             Me.colCustomPackageSize.VisibleIndex = 4
-            Me.colCustomPackageSize.Width = 97
+            Me.colCustomPackageSize.Width = 132
             '
             'RepositoryItemLookUpEdit1
             '
@@ -905,7 +914,7 @@
             Me.GroupControl1.Location = New System.Drawing.Point(18, 55)
             Me.GroupControl1.Name = "GroupControl1"
             Me.GroupControl1.ShowCaption = False
-            Me.GroupControl1.Size = New System.Drawing.Size(480, 607)
+            Me.GroupControl1.Size = New System.Drawing.Size(480, 771)
             Me.GroupControl1.TabIndex = 0
             '
             'TabPane1
@@ -924,9 +933,9 @@
             Me.TabPane1.Name = "TabPane1"
             Me.TabPane1.PageProperties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Text
             Me.TabPane1.Pages.AddRange(New DevExpress.XtraBars.Navigation.NavigationPageBase() {Me.TabNP_Souce, Me.TabNP_SouceGroup, Me.TabNP_SouceDetail, Me.TabNP_WP})
-            Me.TabPane1.RegularSize = New System.Drawing.Size(474, 601)
+            Me.TabPane1.RegularSize = New System.Drawing.Size(474, 765)
             Me.TabPane1.SelectedPage = Me.TabNP_Souce
-            Me.TabPane1.Size = New System.Drawing.Size(474, 601)
+            Me.TabPane1.Size = New System.Drawing.Size(474, 765)
             Me.TabPane1.TabIndex = 1
             '
             'TabNP_Souce
@@ -942,7 +951,7 @@
             Me.TabNP_Souce.Cursor = System.Windows.Forms.Cursors.Hand
             Me.TabNP_Souce.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.TabNP_Souce.Name = "TabNP_Souce"
-            Me.TabNP_Souce.Size = New System.Drawing.Size(448, 533)
+            Me.TabNP_Souce.Size = New System.Drawing.Size(448, 697)
             '
             'GridControlSouceArea
             '
@@ -951,7 +960,7 @@
             Me.GridControlSouceArea.Location = New System.Drawing.Point(0, 0)
             Me.GridControlSouceArea.MainView = Me.LayoutViewSouceArea
             Me.GridControlSouceArea.Name = "GridControlSouceArea"
-            Me.GridControlSouceArea.Size = New System.Drawing.Size(448, 533)
+            Me.GridControlSouceArea.Size = New System.Drawing.Size(448, 697)
             Me.GridControlSouceArea.TabIndex = 0
             Me.GridControlSouceArea.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.LayoutViewSouceArea})
             '
@@ -1013,7 +1022,7 @@
             Me.LayoutViewSouceArea.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
             Me.LayoutViewSouceArea.CardCaptionFormat = "{2}"
             Me.LayoutViewSouceArea.CardHorzInterval = 1
-            Me.LayoutViewSouceArea.CardMinSize = New System.Drawing.Size(317, 123)
+            Me.LayoutViewSouceArea.CardMinSize = New System.Drawing.Size(369, 184)
             Me.LayoutViewSouceArea.CardVertInterval = 1
             Me.LayoutViewSouceArea.Columns.AddRange(New DevExpress.XtraGrid.Columns.LayoutViewColumn() {Me.colCardStorageName, Me.colCardAreaID, Me.colCardMaterialName, Me.colCardQuantity, Me.colCardWeightADT, Me.colTicket, Me.colPlateLicense, Me.colCardPackageSize})
             Me.LayoutViewSouceArea.DetailAutoHeight = False
@@ -1057,7 +1066,7 @@
             Me.layoutViewField_colCardStorageName.Location = New System.Drawing.Point(0, 0)
             Me.layoutViewField_colCardStorageName.Name = "layoutViewField_colCardStorageName"
             Me.layoutViewField_colCardStorageName.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
-            Me.layoutViewField_colCardStorageName.Size = New System.Drawing.Size(354, 76)
+            Me.layoutViewField_colCardStorageName.Size = New System.Drawing.Size(309, 136)
             Me.layoutViewField_colCardStorageName.Spacing = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
             Me.layoutViewField_colCardStorageName.TextSize = New System.Drawing.Size(47, 19)
             '
@@ -1077,7 +1086,7 @@
             Me.layoutViewField_colCardAreaID.Location = New System.Drawing.Point(0, 0)
             Me.layoutViewField_colCardAreaID.Name = "layoutViewField_colCardAreaID"
             Me.layoutViewField_colCardAreaID.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
-            Me.layoutViewField_colCardAreaID.Size = New System.Drawing.Size(354, 76)
+            Me.layoutViewField_colCardAreaID.Size = New System.Drawing.Size(309, 136)
             Me.layoutViewField_colCardAreaID.Spacing = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
             Me.layoutViewField_colCardAreaID.TextSize = New System.Drawing.Size(88, 19)
             '
@@ -1088,17 +1097,18 @@
             Me.colCardMaterialName.LayoutViewField = Me.layoutViewField_colCardMaterialName
             Me.colCardMaterialName.Name = "colCardMaterialName"
             Me.colCardMaterialName.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.[False]
+            Me.colCardMaterialName.OptionsColumn.ReadOnly = True
             Me.colCardMaterialName.OptionsFilter.AllowFilter = False
             '
             'layoutViewField_colCardMaterialName
             '
-            Me.layoutViewField_colCardMaterialName.EditorPreferredWidth = 307
+            Me.layoutViewField_colCardMaterialName.EditorPreferredWidth = 359
             Me.layoutViewField_colCardMaterialName.Location = New System.Drawing.Point(0, 0)
             Me.layoutViewField_colCardMaterialName.MaxSize = New System.Drawing.Size(0, 46)
             Me.layoutViewField_colCardMaterialName.MinSize = New System.Drawing.Size(40, 46)
             Me.layoutViewField_colCardMaterialName.Name = "layoutViewField_colCardMaterialName"
             Me.layoutViewField_colCardMaterialName.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
-            Me.layoutViewField_colCardMaterialName.Size = New System.Drawing.Size(311, 46)
+            Me.layoutViewField_colCardMaterialName.Size = New System.Drawing.Size(363, 46)
             Me.layoutViewField_colCardMaterialName.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
             Me.layoutViewField_colCardMaterialName.Spacing = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
             Me.layoutViewField_colCardMaterialName.TextSize = New System.Drawing.Size(0, 0)
@@ -1114,17 +1124,21 @@
             Me.colCardQuantity.LayoutViewField = Me.layoutViewField_colCardQuantity
             Me.colCardQuantity.Name = "colCardQuantity"
             Me.colCardQuantity.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.[False]
+            Me.colCardQuantity.OptionsColumn.ReadOnly = True
             Me.colCardQuantity.OptionsFilter.AllowFilter = False
             '
             'layoutViewField_colCardQuantity
             '
-            Me.layoutViewField_colCardQuantity.EditorPreferredWidth = 73
-            Me.layoutViewField_colCardQuantity.Location = New System.Drawing.Point(0, 46)
+            Me.layoutViewField_colCardQuantity.EditorPreferredWidth = 220
+            Me.layoutViewField_colCardQuantity.Location = New System.Drawing.Point(139, 46)
             Me.layoutViewField_colCardQuantity.Name = "layoutViewField_colCardQuantity"
             Me.layoutViewField_colCardQuantity.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
-            Me.layoutViewField_colCardQuantity.Size = New System.Drawing.Size(113, 30)
+            Me.layoutViewField_colCardQuantity.Size = New System.Drawing.Size(224, 30)
             Me.layoutViewField_colCardQuantity.Spacing = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
-            Me.layoutViewField_colCardQuantity.TextSize = New System.Drawing.Size(35, 19)
+            Me.layoutViewField_colCardQuantity.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
+            Me.layoutViewField_colCardQuantity.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutViewField_colCardQuantity.TextToControlDistance = 0
+            Me.layoutViewField_colCardQuantity.TextVisible = False
             '
             'colCardWeightADT
             '
@@ -1134,17 +1148,21 @@
             Me.colCardWeightADT.LayoutViewField = Me.layoutViewField_colCardWeightADT
             Me.colCardWeightADT.Name = "colCardWeightADT"
             Me.colCardWeightADT.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.[False]
+            Me.colCardWeightADT.OptionsColumn.ReadOnly = True
             Me.colCardWeightADT.OptionsFilter.AllowFilter = False
             '
             'layoutViewField_colCardWeightADT
             '
-            Me.layoutViewField_colCardWeightADT.EditorPreferredWidth = 138
-            Me.layoutViewField_colCardWeightADT.Location = New System.Drawing.Point(113, 46)
+            Me.layoutViewField_colCardWeightADT.EditorPreferredWidth = 220
+            Me.layoutViewField_colCardWeightADT.Location = New System.Drawing.Point(139, 76)
             Me.layoutViewField_colCardWeightADT.Name = "layoutViewField_colCardWeightADT"
             Me.layoutViewField_colCardWeightADT.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
-            Me.layoutViewField_colCardWeightADT.Size = New System.Drawing.Size(198, 30)
+            Me.layoutViewField_colCardWeightADT.Size = New System.Drawing.Size(224, 50)
             Me.layoutViewField_colCardWeightADT.Spacing = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
-            Me.layoutViewField_colCardWeightADT.TextSize = New System.Drawing.Size(55, 19)
+            Me.layoutViewField_colCardWeightADT.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
+            Me.layoutViewField_colCardWeightADT.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutViewField_colCardWeightADT.TextToControlDistance = 0
+            Me.layoutViewField_colCardWeightADT.TextVisible = False
             '
             'colTicket
             '
@@ -1160,7 +1178,7 @@
             Me.layoutViewField_colTicket.Location = New System.Drawing.Point(0, 0)
             Me.layoutViewField_colTicket.Name = "layoutViewField_colTicket"
             Me.layoutViewField_colTicket.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
-            Me.layoutViewField_colTicket.Size = New System.Drawing.Size(354, 76)
+            Me.layoutViewField_colTicket.Size = New System.Drawing.Size(309, 136)
             Me.layoutViewField_colTicket.Spacing = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
             Me.layoutViewField_colTicket.TextSize = New System.Drawing.Size(48, 19)
             '
@@ -1178,7 +1196,7 @@
             Me.layoutViewField_colPlateLicense.Location = New System.Drawing.Point(0, 0)
             Me.layoutViewField_colPlateLicense.Name = "layoutViewField_colPlateLicense"
             Me.layoutViewField_colPlateLicense.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
-            Me.layoutViewField_colPlateLicense.Size = New System.Drawing.Size(354, 76)
+            Me.layoutViewField_colPlateLicense.Size = New System.Drawing.Size(309, 136)
             Me.layoutViewField_colPlateLicense.Spacing = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
             Me.layoutViewField_colPlateLicense.TextSize = New System.Drawing.Size(91, 19)
             '
@@ -1196,7 +1214,7 @@
             Me.layoutViewField_colCardPackageSize.Location = New System.Drawing.Point(0, 0)
             Me.layoutViewField_colCardPackageSize.Name = "layoutViewField_colCardPackageSize"
             Me.layoutViewField_colCardPackageSize.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
-            Me.layoutViewField_colCardPackageSize.Size = New System.Drawing.Size(354, 76)
+            Me.layoutViewField_colCardPackageSize.Size = New System.Drawing.Size(309, 136)
             Me.layoutViewField_colCardPackageSize.Spacing = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
             Me.layoutViewField_colCardPackageSize.TextSize = New System.Drawing.Size(91, 19)
             '
@@ -1204,11 +1222,44 @@
             '
             Me.LayoutViewCard1.CustomizationFormText = "TemplateCard"
             Me.LayoutViewCard1.HeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.AfterText
-            Me.LayoutViewCard1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutViewField_colCardMaterialName, Me.layoutViewField_colCardQuantity, Me.layoutViewField_colCardWeightADT})
+            Me.LayoutViewCard1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutViewField_colCardMaterialName, Me.layoutViewField_colCardWeightADT, Me.layoutViewField_colCardQuantity, Me.SimpleLabelItem1, Me.item13, Me.item12})
             Me.LayoutViewCard1.Name = "LayoutViewCard1"
             Me.LayoutViewCard1.OptionsItemText.TextToControlDistance = 1
             Me.LayoutViewCard1.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
             Me.LayoutViewCard1.Text = "TemplateCard"
+            '
+            'SimpleLabelItem1
+            '
+            Me.SimpleLabelItem1.AllowHotTrack = False
+            Me.SimpleLabelItem1.AppearanceItemCaption.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Bold)
+            Me.SimpleLabelItem1.AppearanceItemCaption.Options.UseFont = True
+            Me.SimpleLabelItem1.CustomizationFormText = "Bale"
+            Me.SimpleLabelItem1.Location = New System.Drawing.Point(0, 46)
+            Me.SimpleLabelItem1.Name = "SimpleLabelItem1"
+            Me.SimpleLabelItem1.Size = New System.Drawing.Size(139, 40)
+            Me.SimpleLabelItem1.Text = "Bale"
+            Me.SimpleLabelItem1.TextSize = New System.Drawing.Size(61, 34)
+            '
+            'item13
+            '
+            Me.item13.AllowHotTrack = False
+            Me.item13.AppearanceItemCaption.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Bold)
+            Me.item13.AppearanceItemCaption.Options.UseFont = True
+            Me.item13.CustomizationFormText = "Weight"
+            Me.item13.Location = New System.Drawing.Point(0, 86)
+            Me.item13.Name = "item13"
+            Me.item13.Size = New System.Drawing.Size(139, 40)
+            Me.item13.Text = "Weight"
+            Me.item13.TextSize = New System.Drawing.Size(102, 34)
+            '
+            'item12
+            '
+            Me.item12.AllowHotTrack = False
+            Me.item12.CustomizationFormText = "item12"
+            Me.item12.Location = New System.Drawing.Point(0, 126)
+            Me.item12.Name = "item12"
+            Me.item12.Size = New System.Drawing.Size(363, 10)
+            Me.item12.TextSize = New System.Drawing.Size(0, 0)
             '
             'GridControlWeightTicket
             '
@@ -1218,7 +1269,7 @@
             Me.GridControlWeightTicket.MainView = Me.LayoutViewWeightTicket
             Me.GridControlWeightTicket.Margin = New System.Windows.Forms.Padding(0)
             Me.GridControlWeightTicket.Name = "GridControlWeightTicket"
-            Me.GridControlWeightTicket.Size = New System.Drawing.Size(448, 533)
+            Me.GridControlWeightTicket.Size = New System.Drawing.Size(448, 697)
             Me.GridControlWeightTicket.TabIndex = 1
             Me.GridControlWeightTicket.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.LayoutViewWeightTicket})
             Me.GridControlWeightTicket.Visible = False
@@ -1305,8 +1356,9 @@
             Me.LayoutViewWeightTicket.OptionsCustomization.ShowGroupCardIndents = False
             Me.LayoutViewWeightTicket.OptionsCustomization.ShowGroupCards = False
             Me.LayoutViewWeightTicket.OptionsCustomization.ShowGroupFields = False
+            Me.LayoutViewWeightTicket.OptionsFind.AlwaysVisible = True
             Me.LayoutViewWeightTicket.OptionsItemText.AlignMode = DevExpress.XtraGrid.Views.Layout.FieldTextAlignMode.AutoSize
-            Me.LayoutViewWeightTicket.OptionsItemText.TextToControlDistance = 0
+            Me.LayoutViewWeightTicket.OptionsItemText.TextToControlDistance = 1
             Me.LayoutViewWeightTicket.OptionsLayout.Columns.AddNewColumns = False
             Me.LayoutViewWeightTicket.OptionsLayout.StoreAllOptions = True
             Me.LayoutViewWeightTicket.OptionsLayout.StoreAppearance = True
@@ -1316,7 +1368,6 @@
             Me.LayoutViewWeightTicket.OptionsView.AllowHotTrackFields = False
             Me.LayoutViewWeightTicket.OptionsView.AnimationType = DevExpress.XtraGrid.Views.Base.GridAnimationType.NeverAnimate
             Me.LayoutViewWeightTicket.OptionsView.CardArrangeRule = DevExpress.XtraGrid.Views.Layout.LayoutCardArrangeRule.AllowPartialCards
-            Me.LayoutViewWeightTicket.OptionsView.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.ShowOnlyInEditor
             Me.LayoutViewWeightTicket.OptionsView.ShowCardExpandButton = False
             Me.LayoutViewWeightTicket.OptionsView.ShowFieldHints = False
             Me.LayoutViewWeightTicket.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never
@@ -1358,6 +1409,7 @@
             Me.LayoutViewColumn5.FieldName = "ReceiveDate"
             Me.LayoutViewColumn5.LayoutViewField = Me.layoutViewField_LayoutViewColumn5
             Me.LayoutViewColumn5.Name = "LayoutViewColumn5"
+            Me.LayoutViewColumn5.OptionsColumn.ReadOnly = True
             '
             'layoutViewField_LayoutViewColumn5
             '
@@ -1412,6 +1464,7 @@
             Me.LayoutViewColumn12.FieldName = "MaterialName"
             Me.LayoutViewColumn12.LayoutViewField = Me.layoutViewField_LayoutViewColumn12
             Me.LayoutViewColumn12.Name = "LayoutViewColumn12"
+            Me.LayoutViewColumn12.OptionsColumn.ReadOnly = True
             '
             'layoutViewField_LayoutViewColumn12
             '
@@ -1448,6 +1501,7 @@
             Me.LayoutViewColumn14.FieldName = "SupplierName"
             Me.LayoutViewColumn14.LayoutViewField = Me.layoutViewField_LayoutViewColumn14
             Me.LayoutViewColumn14.Name = "LayoutViewColumn14"
+            Me.LayoutViewColumn14.OptionsColumn.ReadOnly = True
             '
             'layoutViewField_LayoutViewColumn14
             '
@@ -1489,6 +1543,7 @@
             Me.LayoutViewColumn16.FieldName = "MillWeight"
             Me.LayoutViewColumn16.LayoutViewField = Me.layoutViewField_LayoutViewColumn16
             Me.LayoutViewColumn16.Name = "LayoutViewColumn16"
+            Me.LayoutViewColumn16.OptionsColumn.ReadOnly = True
             '
             'layoutViewField_LayoutViewColumn16
             '
@@ -1564,6 +1619,7 @@
             Me.LayoutViewColumn20.FieldName = "PLWeight"
             Me.LayoutViewColumn20.LayoutViewField = Me.layoutViewField_LayoutViewColumn20
             Me.LayoutViewColumn20.Name = "LayoutViewColumn20"
+            Me.LayoutViewColumn20.OptionsColumn.ReadOnly = True
             Me.LayoutViewColumn20.UnboundType = DevExpress.Data.UnboundColumnType.[String]
             '
             'layoutViewField_LayoutViewColumn20
@@ -1701,7 +1757,7 @@
             Me.TabNP_SouceGroup.ItemShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Text
             Me.TabNP_SouceGroup.Name = "TabNP_SouceGroup"
             Me.TabNP_SouceGroup.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Text
-            Me.TabNP_SouceGroup.Size = New System.Drawing.Size(467, 533)
+            Me.TabNP_SouceGroup.Size = New System.Drawing.Size(448, 747)
             '
             'gridControlDestGroupArea
             '
@@ -1713,7 +1769,7 @@
             Me.gridControlDestGroupArea.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.gridControlDestGroupArea.Name = "gridControlDestGroupArea"
             Me.gridControlDestGroupArea.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemTextEdit3, Me.RepositoryItemPictureEdit3, Me.RepositoryItemHyperLinkEdit3, Me.RepositoryItemMemoEdit3, Me.RepositoryItemCheckEdit3})
-            Me.gridControlDestGroupArea.Size = New System.Drawing.Size(467, 533)
+            Me.gridControlDestGroupArea.Size = New System.Drawing.Size(448, 747)
             Me.gridControlDestGroupArea.TabIndex = 3
             Me.gridControlDestGroupArea.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.layoutViewDestGroupArea})
             '
@@ -1975,7 +2031,7 @@
             Me.LayoutViewCard2.CustomizationFormText = "layoutViewTemplateCard"
             Me.LayoutViewCard2.HeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.AfterText
             Me.LayoutViewCard2.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutViewField_colAmount, Me.layoutViewField_colIsFull, Me.item2, Me.item9})
-            Me.LayoutViewCard2.Name = "LayoutViewCard2"
+            Me.LayoutViewCard2.Name = "layoutViewTemplateCard"
             Me.LayoutViewCard2.OptionsItemText.TextAlignMode = DevExpress.XtraLayout.TextAlignModeGroup.CustomSize
             Me.LayoutViewCard2.OptionsItemText.TextToControlDistance = 1
             Me.LayoutViewCard2.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
@@ -2017,7 +2073,7 @@
             Me.TabNP_SouceDetail.ItemShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Text
             Me.TabNP_SouceDetail.Name = "TabNP_SouceDetail"
             Me.TabNP_SouceDetail.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Text
-            Me.TabNP_SouceDetail.Size = New System.Drawing.Size(467, 533)
+            Me.TabNP_SouceDetail.Size = New System.Drawing.Size(448, 747)
             '
             'GridControlDestSubArea
             '
@@ -2026,7 +2082,7 @@
             Me.GridControlDestSubArea.Location = New System.Drawing.Point(0, 0)
             Me.GridControlDestSubArea.MainView = Me.LayoutViewDestSubArea
             Me.GridControlDestSubArea.Name = "GridControlDestSubArea"
-            Me.GridControlDestSubArea.Size = New System.Drawing.Size(467, 533)
+            Me.GridControlDestSubArea.Size = New System.Drawing.Size(448, 747)
             Me.GridControlDestSubArea.TabIndex = 5
             Me.GridControlDestSubArea.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.LayoutViewDestSubArea})
             '
@@ -2073,7 +2129,8 @@
             Me.LayoutViewDestSubArea.Appearance.SelectedCardCaption.Options.UseTextOptions = True
             Me.LayoutViewDestSubArea.Appearance.SelectedCardCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
             Me.LayoutViewDestSubArea.CardCaptionFormat = "{2}"
-            Me.LayoutViewDestSubArea.CardMinSize = New System.Drawing.Size(282, 119)
+            Me.LayoutViewDestSubArea.CardHorzInterval = 4
+            Me.LayoutViewDestSubArea.CardMinSize = New System.Drawing.Size(311, 143)
             Me.LayoutViewDestSubArea.CardVertInterval = 1
             Me.LayoutViewDestSubArea.Columns.AddRange(New DevExpress.XtraGrid.Columns.LayoutViewColumn() {Me.LayoutViewColumn4, Me.LayoutViewColumn6, Me.LayoutViewColumn7, Me.LayoutViewColumn8, Me.LayoutViewColumn9})
             Me.LayoutViewDestSubArea.GridControl = Me.GridControlDestSubArea
@@ -2115,7 +2172,7 @@
             Me.LayoutViewField6.Location = New System.Drawing.Point(0, 0)
             Me.LayoutViewField6.Name = "LayoutViewField6"
             Me.LayoutViewField6.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
-            Me.LayoutViewField6.Size = New System.Drawing.Size(276, 66)
+            Me.LayoutViewField6.Size = New System.Drawing.Size(305, 110)
             Me.LayoutViewField6.Spacing = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
             Me.LayoutViewField6.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize
             Me.LayoutViewField6.TextLocation = DevExpress.Utils.Locations.Left
@@ -2138,7 +2195,7 @@
             Me.LayoutViewField7.Location = New System.Drawing.Point(0, 0)
             Me.LayoutViewField7.Name = "LayoutViewField7"
             Me.LayoutViewField7.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
-            Me.LayoutViewField7.Size = New System.Drawing.Size(276, 66)
+            Me.LayoutViewField7.Size = New System.Drawing.Size(305, 110)
             Me.LayoutViewField7.Spacing = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
             Me.LayoutViewField7.TextLocation = DevExpress.Utils.Locations.Left
             Me.LayoutViewField7.TextSize = New System.Drawing.Size(88, 19)
@@ -2154,11 +2211,11 @@
             '
             'LayoutViewField8
             '
-            Me.LayoutViewField8.EditorPreferredWidth = 272
+            Me.LayoutViewField8.EditorPreferredWidth = 301
             Me.LayoutViewField8.Location = New System.Drawing.Point(0, 0)
             Me.LayoutViewField8.Name = "LayoutViewField8"
             Me.LayoutViewField8.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
-            Me.LayoutViewField8.Size = New System.Drawing.Size(276, 30)
+            Me.LayoutViewField8.Size = New System.Drawing.Size(305, 30)
             Me.LayoutViewField8.Spacing = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
             Me.LayoutViewField8.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
             Me.LayoutViewField8.TextLocation = DevExpress.Utils.Locations.Left
@@ -2170,6 +2227,8 @@
             '
             Me.LayoutViewColumn8.Caption = "Bale"
             Me.LayoutViewColumn8.CustomizationCaption = "Bale"
+            Me.LayoutViewColumn8.DisplayFormat.FormatString = "{0:n1}"
+            Me.LayoutViewColumn8.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
             Me.LayoutViewColumn8.FieldName = "Quantity"
             Me.LayoutViewColumn8.LayoutViewField = Me.LayoutViewField9
             Me.LayoutViewColumn8.Name = "LayoutViewColumn8"
@@ -2179,16 +2238,17 @@
             '
             'LayoutViewField9
             '
-            Me.LayoutViewField9.EditorPreferredWidth = 75
-            Me.LayoutViewField9.Location = New System.Drawing.Point(0, 30)
+            Me.LayoutViewField9.EditorPreferredWidth = 160
+            Me.LayoutViewField9.Location = New System.Drawing.Point(141, 30)
             Me.LayoutViewField9.Name = "LayoutViewField9"
             Me.LayoutViewField9.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
-            Me.LayoutViewField9.Size = New System.Drawing.Size(119, 36)
+            Me.LayoutViewField9.Size = New System.Drawing.Size(164, 40)
             Me.LayoutViewField9.Spacing = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
             Me.LayoutViewField9.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
             Me.LayoutViewField9.TextLocation = DevExpress.Utils.Locations.Left
-            Me.LayoutViewField9.TextSize = New System.Drawing.Size(35, 19)
-            Me.LayoutViewField9.TextToControlDistance = 5
+            Me.LayoutViewField9.TextSize = New System.Drawing.Size(0, 0)
+            Me.LayoutViewField9.TextToControlDistance = 0
+            Me.LayoutViewField9.TextVisible = False
             '
             'LayoutViewColumn9
             '
@@ -2204,25 +2264,50 @@
             '
             'LayoutViewField10
             '
-            Me.LayoutViewField10.EditorPreferredWidth = 97
-            Me.LayoutViewField10.Location = New System.Drawing.Point(119, 30)
+            Me.LayoutViewField10.EditorPreferredWidth = 160
+            Me.LayoutViewField10.Location = New System.Drawing.Point(141, 70)
             Me.LayoutViewField10.Name = "LayoutViewField10"
             Me.LayoutViewField10.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
-            Me.LayoutViewField10.Size = New System.Drawing.Size(157, 36)
+            Me.LayoutViewField10.Size = New System.Drawing.Size(164, 40)
             Me.LayoutViewField10.Spacing = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
             Me.LayoutViewField10.TextLocation = DevExpress.Utils.Locations.Left
-            Me.LayoutViewField10.TextSize = New System.Drawing.Size(55, 19)
+            Me.LayoutViewField10.TextSize = New System.Drawing.Size(0, 0)
+            Me.LayoutViewField10.TextVisible = False
             '
             'LayoutViewCard4
             '
             Me.LayoutViewCard4.CustomizationFormText = "TemplateCard"
             Me.LayoutViewCard4.HeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.AfterText
-            Me.LayoutViewCard4.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutViewField9, Me.LayoutViewField10, Me.LayoutViewField8})
+            Me.LayoutViewCard4.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutViewField9, Me.LayoutViewField8, Me.item22, Me.LayoutViewField10, Me.SimpleLabelItem2})
             Me.LayoutViewCard4.Name = "LayoutViewCard4"
             Me.LayoutViewCard4.OptionsItemText.TextAlignMode = DevExpress.XtraLayout.TextAlignModeGroup.AlignWithChildren
             Me.LayoutViewCard4.OptionsItemText.TextToControlDistance = 1
             Me.LayoutViewCard4.Padding = New DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1)
             Me.LayoutViewCard4.Text = "TemplateCard"
+            '
+            'item22
+            '
+            Me.item22.AllowHotTrack = False
+            Me.item22.AppearanceItemCaption.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Bold)
+            Me.item22.AppearanceItemCaption.Options.UseFont = True
+            Me.item22.CustomizationFormText = "Bale"
+            Me.item22.Location = New System.Drawing.Point(0, 30)
+            Me.item22.Name = "item22"
+            Me.item22.Size = New System.Drawing.Size(141, 40)
+            Me.item22.Text = "Bale"
+            Me.item22.TextSize = New System.Drawing.Size(102, 34)
+            '
+            'SimpleLabelItem2
+            '
+            Me.SimpleLabelItem2.AllowHotTrack = False
+            Me.SimpleLabelItem2.AppearanceItemCaption.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Bold)
+            Me.SimpleLabelItem2.AppearanceItemCaption.Options.UseFont = True
+            Me.SimpleLabelItem2.CustomizationFormText = "Weight"
+            Me.SimpleLabelItem2.Location = New System.Drawing.Point(0, 70)
+            Me.SimpleLabelItem2.Name = "SimpleLabelItem2"
+            Me.SimpleLabelItem2.Size = New System.Drawing.Size(141, 40)
+            Me.SimpleLabelItem2.Text = "Weight"
+            Me.SimpleLabelItem2.TextSize = New System.Drawing.Size(102, 34)
             '
             'TabNP_WP
             '
@@ -2233,7 +2318,7 @@
             Me.TabNP_WP.ItemShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Text
             Me.TabNP_WP.Name = "TabNP_WP"
             Me.TabNP_WP.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Text
-            Me.TabNP_WP.Size = New System.Drawing.Size(467, 533)
+            Me.TabNP_WP.Size = New System.Drawing.Size(448, 747)
             '
             'GridControlWP
             '
@@ -2242,7 +2327,7 @@
             Me.GridControlWP.Location = New System.Drawing.Point(0, 0)
             Me.GridControlWP.MainView = Me.LayoutViewWP
             Me.GridControlWP.Name = "GridControlWP"
-            Me.GridControlWP.Size = New System.Drawing.Size(467, 533)
+            Me.GridControlWP.Size = New System.Drawing.Size(448, 747)
             Me.GridControlWP.TabIndex = 6
             Me.GridControlWP.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.LayoutViewWP})
             '
@@ -2399,16 +2484,6 @@
             Me.lblTicketID.Text = "LabelControl2"
             Me.lblTicketID.Visible = False
             '
-            'lblNetAmount
-            '
-            Me.lblNetAmount.Location = New System.Drawing.Point(23, 206)
-            Me.lblNetAmount.Name = "lblNetAmount"
-            Me.lblNetAmount.Size = New System.Drawing.Size(98, 19)
-            Me.lblNetAmount.StyleController = Me.LayoutControlSouceData
-            Me.lblNetAmount.TabIndex = 1
-            Me.lblNetAmount.Text = "LabelControl2"
-            Me.lblNetAmount.Visible = False
-            '
             'lblMatName
             '
             Me.lblMatName.Location = New System.Drawing.Point(171, 206)
@@ -2495,7 +2570,6 @@
             '
             'LayoutControlItem11
             '
-            Me.LayoutControlItem11.Control = Me.lblNetAmount
             Me.LayoutControlItem11.Location = New System.Drawing.Point(0, 188)
             Me.LayoutControlItem11.Name = "LayoutControlItem11"
             Me.LayoutControlItem11.OptionsTableLayoutItem.RowIndex = 4
@@ -2567,25 +2641,23 @@
             Me.LayoutControlGroupSouceData.Name = "Root"
             Me.LayoutControlGroupSouceData.OptionsItemText.TextAlignMode = DevExpress.XtraLayout.TextAlignModeGroup.CustomSize
             Me.LayoutControlGroupSouceData.OptionsItemText.TextToControlDistance = 5
-            Me.LayoutControlGroupSouceData.Size = New System.Drawing.Size(1293, 680)
+            Me.LayoutControlGroupSouceData.Size = New System.Drawing.Size(1293, 844)
             '
             'LayoutControlItem22
             '
             Me.LayoutControlItem22.Control = Me.GroupControl1
             Me.LayoutControlItem22.Location = New System.Drawing.Point(0, 37)
             Me.LayoutControlItem22.Name = "LayoutControlItem22"
-            Me.LayoutControlItem22.Size = New System.Drawing.Size(486, 613)
+            Me.LayoutControlItem22.Size = New System.Drawing.Size(486, 777)
             Me.LayoutControlItem22.TextSize = New System.Drawing.Size(0, 0)
             Me.LayoutControlItem22.TextVisible = False
             '
             'LayoutControlItem5
             '
             Me.LayoutControlItem5.Control = Me.GroupControl3
-            Me.LayoutControlItem5.Location = New System.Drawing.Point(486, 328)
-            Me.LayoutControlItem5.MinSize = New System.Drawing.Size(7, 7)
+            Me.LayoutControlItem5.Location = New System.Drawing.Point(486, 379)
             Me.LayoutControlItem5.Name = "LayoutControlItem5"
-            Me.LayoutControlItem5.Size = New System.Drawing.Size(777, 322)
-            Me.LayoutControlItem5.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
+            Me.LayoutControlItem5.Size = New System.Drawing.Size(777, 435)
             Me.LayoutControlItem5.TextSize = New System.Drawing.Size(0, 0)
             Me.LayoutControlItem5.TextVisible = False
             '
@@ -2600,6 +2672,7 @@
             '
             'LayoutControlGroup1
             '
+            Me.LayoutControlGroup1.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.[True]
             Me.LayoutControlGroup1.AppearanceGroup.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.LayoutControlGroup1.AppearanceGroup.Options.UseFont = True
             Me.LayoutControlGroup1.AppearanceGroup.Options.UseTextOptions = True
@@ -2610,9 +2683,19 @@
             Me.LayoutControlGroup1.Location = New System.Drawing.Point(486, 0)
             Me.LayoutControlGroup1.Name = "LayoutControlGroup1"
             Me.LayoutControlGroup1.OptionsItemText.TextToControlDistance = 5
-            Me.LayoutControlGroup1.Size = New System.Drawing.Size(777, 328)
+            Me.LayoutControlGroup1.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
+            Me.LayoutControlGroup1.Size = New System.Drawing.Size(777, 379)
             Me.LayoutControlGroup1.StartNewLine = True
             Me.LayoutControlGroup1.Text = "ข้อมูลวัตถุดิบ"
+            '
+            'LayoutControlItem2
+            '
+            Me.LayoutControlItem2.Control = Me.TableLayoutPanel1
+            Me.LayoutControlItem2.Location = New System.Drawing.Point(0, 0)
+            Me.LayoutControlItem2.Name = "LayoutControlItem2"
+            Me.LayoutControlItem2.Size = New System.Drawing.Size(767, 327)
+            Me.LayoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
+            Me.LayoutControlItem2.TextVisible = False
             '
             'item3
             '
@@ -2739,7 +2822,7 @@
             Me.RepositoryItemSpinEdit2.AllowFocused = False
             Me.RepositoryItemSpinEdit2.AutoHeight = False
             Me.RepositoryItemSpinEdit2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D
-            Me.RepositoryItemSpinEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 5, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("RepositoryItemSpinEdit2.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject8, "", Nothing, Nothing, True)})
+            Me.RepositoryItemSpinEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 5, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, CType(resources.GetObject("RepositoryItemSpinEdit2.Buttons"), System.Drawing.Image), New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject32, "", Nothing, Nothing, True)})
             Me.RepositoryItemSpinEdit2.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D
             Me.RepositoryItemSpinEdit2.Name = "RepositoryItemSpinEdit2"
             '
@@ -2782,64 +2865,26 @@
             Me.LayoutControlGroup2.OptionsItemText.TextToControlDistance = 5
             Me.LayoutControlGroup2.Size = New System.Drawing.Size(411, 75)
             '
-            'lblCaptionPLW
-            '
-            Me.lblCaptionPLW.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.lblCaptionPLW.Appearance.Options.UseFont = True
-            Me.lblCaptionPLW.Dock = System.Windows.Forms.DockStyle.Top
-            Me.lblCaptionPLW.Location = New System.Drawing.Point(3, 197)
-            Me.lblCaptionPLW.Name = "lblCaptionPLW"
-            Me.lblCaptionPLW.Size = New System.Drawing.Size(166, 34)
-            Me.lblCaptionPLW.TabIndex = 17
-            Me.lblCaptionPLW.Text = "น้ำหนักต้นทาง"
-            Me.lblCaptionPLW.Visible = False
-            '
-            'lblPLWeight
-            '
-            Me.lblPLWeight.AllowDrop = True
-            Me.lblPLWeight.Appearance.BackColor = System.Drawing.Color.Transparent
-            Me.lblPLWeight.Appearance.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.lblPLWeight.Appearance.ForeColor = System.Drawing.Color.Black
-            Me.lblPLWeight.Appearance.Options.UseBackColor = True
-            Me.lblPLWeight.Appearance.Options.UseFont = True
-            Me.lblPLWeight.Appearance.Options.UseForeColor = True
-            Me.lblPLWeight.Appearance.Options.UseTextOptions = True
-            Me.lblPLWeight.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-            Me.lblPLWeight.Dock = System.Windows.Forms.DockStyle.Top
-            Me.lblPLWeight.Location = New System.Drawing.Point(206, 197)
-            Me.lblPLWeight.Name = "lblPLWeight"
-            Me.lblPLWeight.Size = New System.Drawing.Size(90, 39)
-            Me.lblPLWeight.TabIndex = 18
-            Me.lblPLWeight.Text = "0.000"
-            Me.lblPLWeight.Visible = False
-            '
-            'LayoutControlItem2
-            '
-            Me.LayoutControlItem2.Control = Me.TableLayoutPanel1
-            Me.LayoutControlItem2.Location = New System.Drawing.Point(0, 0)
-            Me.LayoutControlItem2.Name = "LayoutControlItem2"
-            Me.LayoutControlItem2.Size = New System.Drawing.Size(739, 248)
-            Me.LayoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
-            Me.LayoutControlItem2.TextVisible = False
-            '
             'frm_IVM_Popup_Material_Manage
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(1293, 680)
+            Me.ClientSize = New System.Drawing.Size(1293, 844)
+            Me.ControlBox = False
             Me.Controls.Add(Me.LayoutControlSouceData)
+            Me.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow
+            Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
             Me.Name = "frm_IVM_Popup_Material_Manage"
             Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-            Me.Text = "IMV"
             CType(Me.RepositoryItemSpinEdit1, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutControlSouceData, System.ComponentModel.ISupportInitialize).EndInit()
             Me.LayoutControlSouceData.ResumeLayout(False)
-            CType(Me.CheckShowAll.Properties, System.ComponentModel.ISupportInitialize).EndInit()
             Me.TableLayoutPanel1.ResumeLayout(False)
             Me.TableLayoutPanel1.PerformLayout()
             CType(Me.txtquantity.Properties, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.SearchMaterial.Properties, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.SearchLookUpEdit1View, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.CheckShowAll.Properties, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.GroupControl3, System.ComponentModel.ISupportInitialize).EndInit()
             Me.GroupControl3.ResumeLayout(False)
             CType(Me.GridControlMoveMentDetail, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2865,6 +2910,9 @@
             CType(Me.layoutViewField_colPlateLicense, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.layoutViewField_colCardPackageSize, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutViewCard1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.SimpleLabelItem1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.item13, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.item12, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.GridControlWeightTicket, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutViewWeightTicket, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.layoutViewField_LayoutViewColumn3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2916,6 +2964,8 @@
             CType(Me.LayoutViewField9, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutViewField10, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutViewCard4, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.item22, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.SimpleLabelItem2, System.ComponentModel.ISupportInitialize).EndInit()
             Me.TabNP_WP.ResumeLayout(False)
             CType(Me.GridControlWP, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutViewWP, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2939,6 +2989,7 @@
             CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.item3, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.repositoryItemTextEdit1, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.repositoryItemPictureEdit1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2961,7 +3012,6 @@
             CType(Me.EmptySpaceItem10, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.EmptySpaceItem15, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
 
         End Sub
@@ -3016,16 +3066,8 @@
         Private WithEvents RepositoryItemPictureEdit3 As DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit
         Private WithEvents RepositoryItemHyperLinkEdit3 As DevExpress.XtraEditors.Repository.RepositoryItemHyperLinkEdit
         Private WithEvents GridControlMoveMentDetail As DevExpress.XtraGrid.GridControl
-        Private WithEvents colCustomStorageID As DevExpress.XtraGrid.Columns.GridColumn
-        Private WithEvents colCustomStorageName As DevExpress.XtraGrid.Columns.GridColumn
-        Private WithEvents colCustomMaterialID As DevExpress.XtraGrid.Columns.GridColumn
-        Private WithEvents colCustomMaterialName As DevExpress.XtraGrid.Columns.GridColumn
-        Private WithEvents colCustomQuantity As DevExpress.XtraGrid.Columns.GridColumn
-        Private WithEvents colCustomAction As DevExpress.XtraGrid.Columns.GridColumn
         Friend WithEvents DeleteCustomRow As DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit
-        Private WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
         Friend WithEvents EditRow As DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit
-        Private WithEvents colCustomPackageSize As DevExpress.XtraGrid.Columns.GridColumn
         Friend WithEvents RepositoryItemLookUpEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
         Private WithEvents GridControlDestSubArea As DevExpress.XtraGrid.GridControl
         Friend WithEvents LayoutViewDestSubArea As DevExpress.XtraGrid.Views.Layout.LayoutView
@@ -3099,15 +3141,6 @@
         Friend WithEvents btnProperties As DevExpress.XtraEditors.SimpleButton
         Friend WithEvents LayoutControlItem5 As DevExpress.XtraLayout.LayoutControlItem
         Friend WithEvents LayoutControlItem6 As DevExpress.XtraLayout.LayoutControlItem
-        Friend WithEvents layoutViewField_colCardStorageName As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_colCardAreaID As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_colCardMaterialName As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_colCardQuantity As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_colCardWeightADT As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_colTicket As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_colPlateLicense As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents layoutViewField_colCardPackageSize As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents LayoutViewCard1 As DevExpress.XtraGrid.Views.Layout.LayoutViewCard
         Friend WithEvents LayoutViewField1 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
         Friend WithEvents LayoutViewField2 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
         Friend WithEvents LayoutViewCard3 As DevExpress.XtraGrid.Views.Layout.LayoutViewCard
@@ -3137,12 +3170,6 @@
         Friend WithEvents item16 As DevExpress.XtraLayout.SimpleLabelItem
         Friend WithEvents item14 As DevExpress.XtraLayout.EmptySpaceItem
         Friend WithEvents lblTruckProperties As DevExpress.XtraEditors.LabelControl
-        Friend WithEvents LayoutViewField6 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents LayoutViewField7 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents LayoutViewField8 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents LayoutViewField9 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents LayoutViewField10 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
-        Friend WithEvents LayoutViewCard4 As DevExpress.XtraGrid.Views.Layout.LayoutViewCard
         Friend WithEvents layoutViewField_colStorageName As DevExpress.XtraGrid.Views.Layout.LayoutViewField
         Friend WithEvents layoutViewField_colYear As DevExpress.XtraGrid.Views.Layout.LayoutViewField
         Friend WithEvents layoutViewField_colPlotoutLine As DevExpress.XtraGrid.Views.Layout.LayoutViewField
@@ -3156,6 +3183,34 @@
         Friend WithEvents lblCaptionPLW As DevExpress.XtraEditors.LabelControl
         Private WithEvents lblPLWeight As DevExpress.XtraEditors.LabelControl
         Friend WithEvents LayoutControlItem2 As DevExpress.XtraLayout.LayoutControlItem
+        Friend WithEvents layoutViewField_colCardStorageName As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents layoutViewField_colCardAreaID As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents layoutViewField_colCardMaterialName As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents layoutViewField_colCardQuantity As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents layoutViewField_colCardWeightADT As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents layoutViewField_colTicket As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents layoutViewField_colPlateLicense As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents layoutViewField_colCardPackageSize As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewCard1 As DevExpress.XtraGrid.Views.Layout.LayoutViewCard
+        Friend WithEvents SimpleLabelItem1 As DevExpress.XtraLayout.SimpleLabelItem
+        Friend WithEvents item13 As DevExpress.XtraLayout.SimpleLabelItem
+        Friend WithEvents item12 As DevExpress.XtraLayout.EmptySpaceItem
+        Friend WithEvents LayoutViewField6 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewField7 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewField8 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewField9 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewField10 As DevExpress.XtraGrid.Views.Layout.LayoutViewField
+        Friend WithEvents LayoutViewCard4 As DevExpress.XtraGrid.Views.Layout.LayoutViewCard
+        Friend WithEvents item22 As DevExpress.XtraLayout.SimpleLabelItem
+        Friend WithEvents SimpleLabelItem2 As DevExpress.XtraLayout.SimpleLabelItem
+        Friend WithEvents colCustomStorageID As DevExpress.XtraGrid.Columns.GridColumn
+        Friend WithEvents colCustomStorageName As DevExpress.XtraGrid.Columns.GridColumn
+        Friend WithEvents colCustomMaterialName As DevExpress.XtraGrid.Columns.GridColumn
+        Friend WithEvents colCustomQuantity As DevExpress.XtraGrid.Columns.GridColumn
+        Friend WithEvents colCustomAction As DevExpress.XtraGrid.Columns.GridColumn
+        Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
+        Friend WithEvents colCustomPackageSize As DevExpress.XtraGrid.Columns.GridColumn
+        Friend WithEvents colCustomMaterialID As DevExpress.XtraGrid.Columns.GridColumn
     End Class
 
 End Namespace

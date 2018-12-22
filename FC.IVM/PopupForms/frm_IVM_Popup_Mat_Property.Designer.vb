@@ -209,11 +209,7 @@
             Me.GridViewWedge.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.GridViewWedge.Appearance.HeaderPanel.Options.UseFont = True
             Me.GridViewWedge.Appearance.Row.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.GridViewWedge.Appearance.Row.ForeColor = System.Drawing.Color.Black
             Me.GridViewWedge.Appearance.Row.Options.UseFont = True
-            Me.GridViewWedge.Appearance.Row.Options.UseForeColor = True
-            Me.GridViewWedge.Appearance.ViewCaption.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.GridViewWedge.Appearance.ViewCaption.Options.UseFont = True
             Me.GridViewWedge.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
             Me.GridViewWedge.Name = "GridViewWedge"
             Me.GridViewWedge.OptionsSelection.EnableAppearanceFocusedCell = False
@@ -221,7 +217,7 @@
             '
             'GridLookUpEditTruckCondition
             '
-            Me.GridLookUpEditTruckCondition.Location = New System.Drawing.Point(501, 150)
+            Me.GridLookUpEditTruckCondition.Location = New System.Drawing.Point(501, 144)
             Me.GridLookUpEditTruckCondition.Name = "GridLookUpEditTruckCondition"
             Me.GridLookUpEditTruckCondition.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.GridLookUpEditTruckCondition.Properties.Appearance.ForeColor = System.Drawing.Color.Black
@@ -290,7 +286,7 @@
             Me.LabelControl4.Name = "LabelControl4"
             Me.LabelControl4.Size = New System.Drawing.Size(116, 52)
             Me.LabelControl4.TabIndex = 14
-            Me.LabelControl4.Text = "TruckCondition"
+            Me.LabelControl4.Text = "สภาพรถ"
             '
             'LabelControl5
             '
@@ -318,8 +314,7 @@
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.AutoSize = True
-            Me.ClientSize = New System.Drawing.Size(880, 232)
+            Me.ClientSize = New System.Drawing.Size(880, 219)
             Me.ControlBox = False
             Me.Controls.Add(Me.LabelControl6)
             Me.Controls.Add(Me.LabelControl5)
@@ -335,7 +330,8 @@
             Me.Controls.Add(Me.btnClose)
             Me.Controls.Add(Me.GridLookUpTransferPoint)
             Me.Controls.Add(Me.GridLookUpEditWedge)
-            Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+            Me.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow
+            Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
             Me.MaximizeBox = False
             Me.MinimizeBox = False
             Me.Name = "frm_IVM_Popup_Mat_Properties"

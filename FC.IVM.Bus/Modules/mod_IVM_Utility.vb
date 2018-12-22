@@ -18,6 +18,8 @@ Namespace Modules
         Public tmpContractorProperties As String = ""
         Public tmpTruckConditionProperties As String = ""
         Public tmpWedgeProperties As String = ""
+        Public tmpIsClose As Boolean = False
+        Public tmpBeginQTY As Decimal = 0
 
         Public ReadOnly Property FontsCollection() As Dictionary(Of String, Font)
             Get

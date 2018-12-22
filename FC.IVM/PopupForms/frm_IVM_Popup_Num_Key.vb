@@ -28,10 +28,8 @@ Namespace PopupForms
         Implements IChildOfMainForm
         Public Event OnPassData As IChildOfMainForm.OnPassDataEventHandler Implements IChildOfMainForm.OnPassData
         Public Sub OnBeforeFormLoad(param As Object) Implements IChildOfMainForm.OnBeforeFormLoad
-
         End Sub
         Public Sub OnClickClear(ByRef Optional showMessageType As EnumMainFormShowMessageType = EnumMainFormShowMessageType.None, ByRef Optional customMessage As String = "", ByRef Optional customCaption As String = "") Implements IChildOfMainForm.OnClickClear
-
         End Sub
         Public Sub OnClickCustomButton(customButtonName As String, ByRef Optional showMessageType As EnumMainFormShowMessageType = EnumMainFormShowMessageType.None, ByRef Optional customMessage As String = "", ByRef Optional customCaption As String = "") Implements IChildOfMainForm.OnClickCustomButton
         End Sub
@@ -40,18 +38,17 @@ Namespace PopupForms
         Public Sub OnClickSave(ByRef Optional showMessageType As EnumMainFormShowMessageType = EnumMainFormShowMessageType.None, ByRef Optional customMessage As String = "", ByRef Optional customCaption As String = "") Implements IChildOfMainForm.OnClickSave
         End Sub
         Public MatQTY As Decimal = 0
-        Private tmpBeginQTY As Decimal = 0
 
         Sub New()
             InitializeComponent()
-            Me.FormBorderStyle = FormBorderStyle.None
+            'Me.FormBorderStyle = FormBorderStyle.None
         End Sub
 
         Private Sub frm_IVM_Popup_Num_Key_Load(sender As Object, e As EventArgs) Handles Me.Load
             Try
-                txtQTY.EditValue = MatQTY.ToString("##0.0")
-                tmpBeginQTY = MatQTY
+                txtQTY.EditValue = MatQTY
                 txtQTY.Focus()
+                txtQTY.ReadOnly = True
             Catch ex As Exception
 
             End Try
@@ -59,9 +56,16 @@ Namespace PopupForms
 
         Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
             Try
-                tmpUnloadQuantity = CType(txtQTY.EditValue, Decimal)
-                isEdit = False
-                Me.Close()
+                If (CType(txtQTY.EditValue, Decimal) <= 0) Then
+                    WinUtil.ShowWarningBox("จำนวนวัตถุดิบที่แก้ไขต้องมีค่า มากกว่า (0)", "กรุณาตรวจสอบข้อมูล")
+                    txtQTY.EditValue = MatQTY
+                    isEdit = False
+                Else
+                    tmpUnloadQuantity = CType(txtQTY.EditValue, Decimal)
+                    isEdit = False
+                    Me.Close()
+                End If
+
             Catch ex As Exception
 
             End Try
@@ -72,54 +76,35 @@ Namespace PopupForms
                 btn = CType(sender, DevExpress.XtraEditors.SimpleButton)
 
                 If (txtQTY.Text = "0") Then
-                    txtQTY.EditValue = String.Empty
+                    txtQTY.Text = String.Empty
                 End If
-
                 If (btn.Text = ".") Then
-
                     If (txtQTY.Text.Contains(".") = False) Then
                         txtQTY.Text &= btn.Text
                     End If
-
                 ElseIf (btn.Text = "C") Then
-                    txtQTY.EditValue = CDbl(0).ToString
+                    txtQTY.Text = CDbl(0).ToString
                 ElseIf (isEdit = True) Then
-                    txtQTY.EditValue = CType(txtQTY.EditValue, String) & btn.Text
-                    txtQTY.Focus()
+                    txtQTY.Text &= btn.Text
+                    isEdit = True
                 Else
-                    txtQTY.EditValue = btn.Text
-                    txtQTY.Focus()
+                    txtQTY.Text = btn.Text
                     isEdit = True
                 End If
                 btnUpdate.Focus()
             Catch ex As Exception
-                MsgBox("press_num" & ex.Message)
+
             Finally
 
             End Try
         End Sub
         Private Sub frm_IVM_Popup_Num_Key_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+            e.Cancel = False
+            tmpUnloadQuantity = CDec(txtQTY.Text)
             isEdit = False
         End Sub
         Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
-            isEdit = False
-            tmpUnloadQuantity = tmpBeginQTY
             Me.Close()
-        End Sub
-
-        Private Sub txtQTY_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles txtQTY.Validating
-            Try
-                Dim QTY As Decimal = CDec(CType(sender, DevExpress.XtraEditors.TextEdit).EditValue)
-                If (QTY <= 0) Then e.Cancel = True
-            Catch ex As Exception
-                MsgBox("txtQTY_Validating : " & ex.Message)
-            End Try
-        End Sub
-
-        Private Sub txtQTY_InvalidValue(sender As Object, e As InvalidValueExceptionEventArgs) Handles txtQTY.InvalidValue
-            WinUtil.ShowErrorBox("จำนวนวัตถุดิบที่แก้ไข ต้องมีจำนวน มากกว่า 0 !", "ผิดพลาด")
-            isEdit = False
-            e.ExceptionMode = ExceptionMode.Ignore
         End Sub
 
     End Class

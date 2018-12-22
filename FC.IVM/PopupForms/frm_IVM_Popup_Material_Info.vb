@@ -5,6 +5,7 @@ Imports FC.M.BLL_Util
 Imports FC.M.PSL_Win.Classes_Helper
 Imports System.Windows.Documents
 Imports System.Windows.Forms
+Imports DevExpress.Xpf.Editors
 
 Namespace PopupForms
     ''' <summary>หน้าจอสำหรับแสดงรายละเอียดของวัตถุดิบ ที่จัดเก็บไว้ในพื้นที่</summary>
@@ -14,6 +15,7 @@ Namespace PopupForms
 
         ''' <exclude />
         Private _GroupID As Integer
+        Private _SiteID As Integer
         ''' <exclude />
         Private _DT_MatInfo As DataTable
         ''' <exclude />
@@ -34,10 +36,11 @@ Namespace PopupForms
         Public Sub OnClickSave(ByRef Optional showMessageType As EnumMainFormShowMessageType = EnumMainFormShowMessageType.None, ByRef Optional customMessage As String = "", ByRef Optional customCaption As String = "") Implements IChildOfMainForm.OnClickSave
         End Sub
         ''' <exclude />
-        Public Sub setParam(ByVal GroupID As Integer, ByVal DT_MatInfo As DataTable)
+        Public Sub setParam(ByVal GroupID As Integer, ByVal DT_MatInfo As DataTable, ByVal SiteID As Integer)
             Try
                 _GroupID = GroupID
                 _DT_MatInfo = DT_MatInfo
+                _SiteID = SiteID
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name)
                 Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [setParam]")
@@ -58,9 +61,17 @@ Namespace PopupForms
                         Next
                     End If
                     GridMatInfo.DataSource = _DT_MatInfo
-                Else
-                    Dim GroupName As String = "ไม่พบข้อมูลวัตถุดิบ!"
-                    Me.Text &= " [" & GroupName & " #" & _GroupID & "]"
+                    Dim GroupNameInfo As String = "รายละเอียดวัตถุดิบในพื้นที่ : "
+                    lblAreaInfo.Text = GroupNameInfo
+
+                    Dim lookupGroupArea As DevExpress.XtraEditors.LookUpEditBase
+                    lookupGroupArea = CType(LookUpEditGroupArea, DevExpress.XtraEditors.LookUpEditBase)
+                    Dim DT_GroupName As DataTable = func_IVM_Get_Area_Info(_SiteID).Tables(0)
+                    lookupGroupArea.Properties.DataSource = DT_GroupName
+                    lookupGroupArea.Properties.ValueMember = "GroupID"
+                    lookupGroupArea.Properties.DisplayMember = "GroupName"
+                    lookupGroupArea.EditValue = _GroupID
+
                 End If
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
@@ -72,5 +83,6 @@ Namespace PopupForms
         Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
             Me.Close()
         End Sub
+
     End Class
 End Namespace

@@ -50,7 +50,6 @@ Namespace PopupForms
         ''' <exclude />
         Public Sub OnClickSave(ByRef Optional showMessageType As EnumMainFormShowMessageType = EnumMainFormShowMessageType.None, ByRef Optional customMessage As String = "", ByRef Optional customCaption As String = "") Implements IChildOfMainForm.OnClickSave
         End Sub
-
         Public _ToDo As String = ""
         Public _PUserID As String = ""
         Public _fieldID As String = ""
@@ -58,7 +57,7 @@ Namespace PopupForms
         Public _materialTypeId As Integer
         Public _MaterialSourceID As Integer
         Public _GroupID As Integer
-
+        Public _IsClose As Boolean = False
         Dim ds As New DataSet()
         Dim DT As New DataTable()
         Dim DTWP As New DataTable()
@@ -69,8 +68,8 @@ Namespace PopupForms
         Dim _isEdit As Boolean = False
         Public dt_Destination As New DataTable
         Private weight As Double = 0
-        Private WeightPUnit As Double = 0
-
+        Private WeightPUnit As Decimal = 0
+        Dim IsSave As Boolean = False
         Declare Function Wow64DisableWow64FsRedirection Lib "kernel32" (ByRef oldvalue As Long) As Boolean
         Declare Function Wow64EnableWow64FsRedirection Lib "kernel32" (ByRef oldvalue As Long) As Boolean
         Private osk As String = "C:\Windows\System32\osk.exe"
@@ -84,13 +83,11 @@ Namespace PopupForms
             SetGridFont(GridControlWP, New Font("Tahoma", 16, FontStyle.Bold))
             CheckShowAll.Visible = False
             lblStroageID.Text = String.Empty
-            'lblStroageName.Text = String.Empty
             lblMatID.Text = String.Empty
             lblMatName.Text = String.Empty
-            'lblWeight.Text = String.Empty
             txtquantity.EditValue = 0
-            lblNetAmount.Text = "0"
-
+            txtquantity.Enabled = False
+            lblNetAmount.Text = "0.0"
             lblCaptionPLW.Visible = False
             lblPLWeight.Visible = False
         End Sub
@@ -168,18 +165,14 @@ Namespace PopupForms
                         lblCaptionPLW.Visible = False
                         lblPLWeight.Visible = False
                     End If
-
-                    '++++++++++ กรณี Unload จะไม่สามารถเลือก W.P. ได้ ++++++++++
-                    txtquantity.ReadOnly = False
                 Else
                     GridControlSouceArea.DataSource = GetSubAreaINVDataSet()
                     GridControlWeightTicket.Visible = False
                     GridControlSouceArea.Visible = True
                     '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                    Me.CheckShowAll.Visible = False
-                    Me.btnProperties.Enabled = False
+                    lblStroageName.Text = "พื้นที่ต้นทาง"
+                    btnProperties.Enabled = False
                     '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                    txtquantity.ReadOnly = True
                     lblCaptionPLW.Visible = True
                     lblPLWeight.Visible = True
 
@@ -193,33 +186,32 @@ Namespace PopupForms
         Private Sub LayoutViewSouceArea_CardClick(sender As Object, e As CardClickEventArgs) Handles LayoutViewSouceArea.CardClick
 
             Try
-                'rowind = CType(LayoutViewSouceArea.FocusedRowHandle, String)
                 Dim rowind As String
-                Dim quantity As Double
+                Dim quantity As Decimal
                 Dim areaid As String
                 Dim matid As String
                 Dim matname As String
                 Dim areaname As String
-                Dim weight As Double
+                Dim weight As Decimal
 
                 rowind = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewSouceArea.FocusedRowHandle, 0)
                 areaid = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewSouceArea.GetFocusedRowCellValue("StorageID"), 0)
                 areaname = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewSouceArea.GetFocusedRowCellValue("StorageName"), 0)
                 matid = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewSouceArea.GetFocusedRowCellValue("MaterialID"), 0)
                 matname = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewSouceArea.GetFocusedRowCellValue("MaterialName"), 0)
-                quantity = DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewSouceArea.GetFocusedRowCellValue("Quantity"), 0)
-                weight = DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewSouceArea.GetFocusedRowCellValue("WeightADT"), 0)
+                quantity = DataHelper.DBNullOrNothingTo(Of Decimal)(LayoutViewSouceArea.GetFocusedRowCellValue("Quantity"), 0)
+                weight = DataHelper.DBNullOrNothingTo(Of Decimal)(LayoutViewSouceArea.GetFocusedRowCellValue("WeightADT"), 0)
                 'DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewSouceArea.GetFocusedRowCellValue("MillWeight"), 0)
                 '+++++ If not unload must to clear value ++++++
                 lblTicketID.Text = String.Empty
                 '++++++++++++++++++++++++++++++++++++++++++++++
-                lblStroageID.Text = areaid
-                lblStroageName.Text = areaname
-                lblWeight.Text = weight.ToString("0.000")
-                txtquantity.EditValue = quantity.ToString("0.0")
-                lblNetAmount.Text = quantity.ToString
+                lblStroageID.Text = DataHelper.DBNullOrNothingTo(Of String)(areaid, "-1")
+                lblStroageName.Text = DataHelper.DBNullOrNothingTo(Of String)(areaname, "-")
+                lblWeight.Text = DataHelper.DBNullOrNothingTo(Of String)(weight, "0.000")
+                txtquantity.EditValue = DataHelper.DBNullOrNothingTo(Of Decimal)(quantity, 0)
+                lblNetAmount.Text = DataHelper.DBNullOrNothingTo(Of String)(quantity, "0")
                 '+++++++ Cal weight per unit +++++
-                WeightPUnit = weight / quantity
+                WeightPUnit = DataHelper.DBNullOrNothingTo(Of Decimal)((weight / quantity), 0)
                 '+++++++++++++++++++ Binding Search lookupedit Mat +++++++++++++++++++++++++++
                 BindingSearchMaterial()
                 '+++++++++++++ Lock object ++++++++++++++++++++
@@ -253,10 +245,10 @@ Namespace PopupForms
                 Else
                     LayoutViewRename = LayoutViewSouceArea
                 End If
-                searchlookupmat.EditValue = LayoutViewRename.GetFocusedRowCellValue("MaterialID")
-                searchlookupmat.SelectedText = LayoutViewRename.GetFocusedRowCellValue("MaterialName").ToString
-                matid = CType(searchlookupmat.EditValue, String)
-                matname = searchlookupmat.SelectedText
+                searchlookupmat.EditValue = DataHelper.DBNullOrNothingTo(Of Integer)(LayoutViewRename.GetFocusedRowCellValue("MaterialID"), 0)
+                searchlookupmat.SelectedText = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewRename.GetFocusedRowCellValue("MaterialName"), "")
+                matid = DataHelper.DBNullOrNothingTo(Of String)(searchlookupmat.EditValue, "0")
+                matname = DataHelper.DBNullOrNothingTo(Of String)(searchlookupmat.SelectedText, "-")
                 lblMatID.Text = matid
                 lblMatName.Text = matname
                 '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -267,127 +259,79 @@ Namespace PopupForms
                 ModMainApp.Log.Log4N("BindingSearchMaterial [Catch]").DebugFormat("Err := {0} ", ex.Message)
             End Try
         End Sub
-        Function GetGroupAreaInfo(ByVal FieldID As Integer) As DataTable
-            Try
-                'SetWaitDialogCaption(My.Resources.LoadingTables)
-                ModMainApp.Log.Log4N("GetGroupAreaInfo [Before]").DebugFormat("Call := proc_IVM_PrimaryStorage_1664 {0}",
-                  String.Format("Proc param := {0}", DataHelper.ToSqlValue(FieldID)))
-
-                '******************************************************
-                DS_Area_Data = func_IVM_Get_Area_Info(FieldID)
-                DT = DS_Area_Data.Tables(0)
-                '******************************************************
-
-                ModMainApp.Log.Log4N("GetGroupAreaInfo [Return]").DebugFormat("1664 Return data table rows count := {0} ",
-                  DT.Rows.Count.ToString)
-            Catch ex As Exception
-                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
-                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [GetGroupAreaInfo]")
-                Infolog.ShowExMessage(ex, FC.M.PSL_Win.MessageType.ErrorMessage)
-
-                ModMainApp.Log.Log4N("GetGroupAreaInfo [Catch]").DebugFormat("Err := {0} ", ex.Message)
-            End Try
-            Return DT
-        End Function
 
         Function GetWPInfo(ByVal FieldID As Integer) As DataTable
             Try
-                'SetWaitDialogCaption(My.Resources.LoadingTables)
-                ModMainApp.Log.Log4N("GetGroupAreaInfo [Before]").DebugFormat("Call := proc_IVM_PrimaryStorage_1664 {0}",
-                  String.Format("Proc param := {0}", DataHelper.ToSqlValue(FieldID)))
-
                 '******************************************************
                 DTWP = func_IVM_Get_WP_Info(FieldID)
                 '******************************************************
-
-                ModMainApp.Log.Log4N("GetWPInfo [Return]").DebugFormat("1664 Return data table rows count := {0} ",
-                  DTWP.Rows.Count.ToString)
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
                 Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [GetWPInfo]")
                 Infolog.ShowExMessage(ex, FC.M.PSL_Win.MessageType.ErrorMessage)
-
-                'ModMainApp.Log.Log4N("GetWPInfo [Catch]").DebugFormat("Err := {0} ", ex.MGetTarketSubAreaDataSetessage)
             End Try
             Return DTWP
         End Function
         Function GetSubAreaINVDataSet() As DataTable
-            'Dim tmpDT_Area_Data As DataTable
+            Dim Res_DT As New DataTable()
             Try
-                Dim foundRow As DataRow()
+                Dim DataView As New DataView()
+                Dim SiteNo As String = "ลาน" & _fieldID
 
                 If (_GroupID > 0 And (_siteName = "Unload")) Then
-
-                    DT_Area_Data = New DataTable
-                    DT_Area_Data = func_IVM_Get_WeightTicketData(_materialTypeId, _PUserID)
+                    DT_Area_Data = New DataTable()
+                    DT_Area_Data = func_IVM_Get_WeightTicketData(DataHelper.DBNullOrNothingTo(Of Integer)(1, 0), _PUserID) 'Fix Material Type=1 in proc
+                    DataView = DT_Area_Data.DefaultView()
 
                     If (CheckShowAll.Checked = True) Then
-
-                        foundRow = DT_Area_Data.Select("MaterialSource='Import'")
+                        DataView.RowFilter = ("MaterialSource LIKE '%Local%'")
+                        If (DataView.Count > 0) Then
+                            Res_DT = DataView.ToTable
+                            Res_DT.AcceptChanges()
+                        End If
                     Else
-                        'Dim tmpConditionString As String = "MaterialSource = """Import""" And UnloadStation Not Like """%ลาน1%"
-                        'foundRow = DT_Area_Data.Select("MaterialSource='Import' AND UnloadStation Not Like '%ลาน1%'")
-                        foundRow = DT_Area_Data.Select("MaterialSource = 'Import'")
-                    End If
 
-                    If foundRow.Count > 0 Then
-                        'For Each row As DataRow In foundRow
-                        '    row.Delete()
-                        'Next
-                        For iRow As Integer = 0 To foundRow.Count - 1
-                            DT_Area_Data.Rows.Remove(foundRow(iRow))
-                            DT_Area_Data.AcceptChanges()
-                        Next
-
+                        DataView.RowFilter = "MaterialSource LIKE '%Local%' and UnloadStation LIKE '%" & SiteNo & "%'"
+                        If (DataView.Count > 0) Then
+                            Res_DT = DataView.ToTable
+                            Res_DT.AcceptChanges()
+                        End If
                     End If
 
                 ElseIf (_GroupID > 0 And (_siteName = "UnloadImport")) Then
-                    DT_Area_Data = New DataTable
-                    DT_Area_Data = func_IVM_Get_WeightTicketData(_materialTypeId, _PUserID)
-
+                    DT_Area_Data = New DataTable()
+                    DT_Area_Data = func_IVM_Get_WeightTicketData(DataHelper.DBNullOrNothingTo(Of Integer)(1, 0), _PUserID) 'Fix Material Type=1 in proc
+                    DataView = DT_Area_Data.DefaultView()
                     If (CheckShowAll.Checked = True) Then
-                        foundRow = DT_Area_Data.Select("MaterialSource = 'Local'")
+                        DataView.RowFilter = ("MaterialSource LIKE '%Import%'")
+                        If (DataView.Count > 0) Then
+                            Res_DT = DataView.ToTable
+                            Res_DT.AcceptChanges()
+                        End If
                     Else
-                        'foundRow = DT_Area_Data.Select("MaterialSource = 'Local' And UnloadStation NOT LIKE '%ลาน1%'")
-                        foundRow = DT_Area_Data.Select("MaterialSource = 'Local'")
-                    End If
-
-                    If foundRow.Count > 0 Then
-                        'For Each row As DataRow In foundRow
-                        '    row.Delete()
-                        'Next
-                        For iRow As Integer = 0 To foundRow.Count - 1
-                            DT_Area_Data.Rows.Remove(foundRow(iRow))
-                            DT_Area_Data.AcceptChanges()
-                        Next
-
+                        DataView.RowFilter = "MaterialSource LIKE '%Import%' and UnloadStation LIKE '%" & SiteNo & "%'"
+                        If (DataView.Count > 0) Then
+                            Res_DT = DataView.ToTable
+                            Res_DT.AcceptChanges()
+                        End If
                     End If
 
                 Else
-                    DT_Area_Data = New DataTable
+                    DT_Area_Data = New DataTable()
                     DT_Area_Data = func_IVM_Get_ChildStorageData(_GroupID, CInt(_fieldID))
-                    foundRow = DT_Area_Data.Select("MaterialID IS NULL")
-                    If foundRow.Count > 0 Then
-                        'For Each row As DataRow In foundRow
-                        '    row.Delete()
-                        'Next
-                        For iRow As Integer = 0 To foundRow.Count - 1
-                            DT_Area_Data.Rows.Remove(foundRow(iRow))
-                            DT_Area_Data.AcceptChanges()
-                        Next
-
+                    DataView = DT_Area_Data.DefaultView()
+                    DataView.RowFilter = ("MaterialID IS NOT NULL")
+                    If (DataView.Count > 0) Then
+                        Res_DT = DataView.ToTable
+                        Res_DT.AcceptChanges()
                     End If
-
                 End If
-
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
                 Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [GetSubAreaINVDataSet]")
                 Infolog.ShowExMessage(ex, FC.M.PSL_Win.MessageType.ErrorMessage)
             End Try
-
-            Return DT_Area_Data
-
+            Return Res_DT
         End Function
         ''' <exclude />
         Private Sub frm_IVM_Popup_Material_Manage_Load(sender As Object, e As EventArgs) Handles Me.Load
@@ -401,14 +345,16 @@ Namespace PopupForms
                 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                 AddHandler GridViewMoveMentDetail.ShowingPopupEditForm, AddressOf GridViewMoveMentDetail_ShowingPopupEditForm
                 GridViewMoveMentDetail.OptionsBehavior.EditingMode = GridEditingMode.EditForm
-                initLookupMaterial()
 
+                AddHandler GridViewMoveMentDetail.EditFormShowing, AddressOf OnEditFormShowing
+
+                initLookupMaterial()
                 Dim find As FindControl = TryCast(LayoutViewSouceArea.GridControl.Controls.Find("FindControl", True)(0), FindControl)
                 find.FindEdit.Focus()
                 find.FocusFindEdit()
 
                 If (_ToDo = "Unload" Or _ToDo = "UnloadImport") Then
-                    UnLockObject()
+                    'UnLockObject()
                     TabNP_WP.PageVisible = False
                     lblWeightTicket.Visible = True
                     If (_ToDo = "Unload") Then
@@ -419,18 +365,17 @@ Namespace PopupForms
                         lblPLWeight.Visible = False
                     End If
                     LayoutViewWeightTicket.Focus()
-
+                    SearchMaterial.ReadOnly = True
+                    CheckShowAll.Visible = True
+                    CheckShowAll.Enabled = True
                 Else
                     LockObject()
                     TabNP_WP.PageVisible = True
                     lblWeightTicket.Visible = False
                     lblCaptionPLW.Visible = False
                     lblPLWeight.Visible = False
-
                     LayoutViewSouceArea.Focus()
                 End If
-
-                Me.Text = "Storage area information := " & _siteName & " [ " & _fieldID & " ] [ " & _ToDo & " ]"
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
                 Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [frm_IVM_Popup_Material_Manage_Load]")
@@ -439,33 +384,55 @@ Namespace PopupForms
                 WinDevHelper.CloseWaitForm()
             End Try
         End Sub
+        Private Sub OnEditFormShowing(sender As Object, e As EditFormShowingEventArgs)
+            Try
+                Dim view As GridView = TryCast(sender, GridView)
+                If view Is Nothing Then
+                    Return
+                End If
+                If (IsSave = True) Then e.Allow = False
+            Catch ex As Exception
+                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [OnEditFormShowing]")
+                Infolog.ShowExMessage(ex, FC.M.PSL_Win.MessageType.ErrorMessage)
+            End Try
+
+        End Sub
         ''' <exclude />
         Private Sub GridViewMoveMentDetail_ValidateRow(ByVal sender As Object,
                 ByVal e As DevExpress.XtraGrid.Views.Base.ValidateRowEventArgs) _
                 Handles GridViewMoveMentDetail.ValidateRow
             Try
                 Dim View As GridView = CType(sender, GridView)
-                Dim Quantity As GridColumn = View.Columns("Quantity")
-                Dim matBalance As Decimal = CType(lblNetAmount.Text, Decimal)
-                Dim moveQuantity As Decimal = CType(View.GetRowCellValue(e.RowHandle, Quantity), Decimal)
+                Dim Quantity As GridColumn = DataHelper.DBNullOrNothingTo(Of GridColumn)(View.Columns("Quantity"), 0)
+                Dim matBalance As Decimal = DataHelper.DBNullOrNothingTo(Of Decimal)(lblNetAmount.Text, 0)
+                Dim moveQuantity As Decimal = DataHelper.DBNullOrNothingTo(Of Decimal)(View.GetRowCellValue(e.RowHandle, Quantity), 0)
                 Dim sum_QTY As Decimal = 0
                 '++++++++++++++++++++++++++++++++++++++++++
                 For i As Integer = 0 To GridViewMoveMentDetail.DataRowCount - 1
-                    sum_QTY += CType(GridViewMoveMentDetail.GetRowCellValue(i, "Quantity"), Decimal)
+                    sum_QTY += DataHelper.DBNullOrNothingTo(Of Decimal)(GridViewMoveMentDetail.GetRowCellValue(i, "Quantity"), 0)
                 Next i
                 If (GridViewMoveMentDetail.IsNewItemRow(GridViewMoveMentDetail.FocusedRowHandle) = True) Then
-                    sum_QTY += moveQuantity
+                    sum_QTY += DataHelper.DBNullOrNothingTo(Of Decimal)(moveQuantity, 0)
                 End If
                 '++++++++++++++++++++++++++++++++++++++++++
                 'Validity criterion
-                If (((sum_QTY) > matBalance) Or (moveQuantity < 0)) Then
+                If (sum_QTY > matBalance) Then
                     e.Valid = False
                     'Set errors with specific descriptions for the columns
                     View.SetColumnError(Quantity, "จำนวนวัตถุดิบไม่เพียงพอ!")
+                    isEdit = False
+                ElseIf (moveQuantity <= 0 And sum_QTY >= 0) Then
+                    e.Valid = False
+                    View.SetColumnError(Quantity, "จำนวนวัตถุดิบต้องมากกว่า 0!")
+                    isEdit = False
                 Else
                     isEdit = True
-                    txtquantity.EditValue = (matBalance - sum_QTY).ToString("##0.0")
-                    lblWeight.Text = (CType(txtquantity.EditValue, Decimal) * WeightPUnit).ToString("##0.000")
+                    txtquantity.EditValue = DataHelper.DBNullOrNothingTo(Of Decimal)((matBalance - sum_QTY), 0)
+                    lblWeight.Text = DataHelper.DBNullOrNothingTo(Of Decimal)(CDec(txtquantity.EditValue) * WeightPUnit, 0).ToString("##0.000")
+                    'If (DataHelper.DBNullOrNothingTo(Of Decimal)(txtquantity.EditValue, 0) <= 0) Then
+                    '    txtquantity.Enabled = False
+                    'End If
                 End If
                 '+++++++++++++++++++++++++++++++++++++++++++++++++++
             Catch ex As Exception
@@ -478,7 +445,10 @@ Namespace PopupForms
         Private Sub GridViewMoveMentDetail_InvalidRowException(ByVal sender As Object,
             ByVal e As DevExpress.XtraGrid.Views.Base.InvalidRowExceptionEventArgs) _
             Handles GridViewMoveMentDetail.InvalidRowException
-            WinUtil.ShowWarningBox("จำนวนวัตถุดิบไม่เพียงพอ!", "กรุณาตรวจสอบจำนวนวัตถุดิบที่มี")
+            Dim View As GridView = CType(sender, GridView)
+            Dim Quantity As GridColumn = DataHelper.DBNullOrNothingTo(Of GridColumn)(View.Columns("Quantity"), 0)
+            Dim GridQTYMessage As String = CType(View.GetColumnError(Quantity), String)
+            WinUtil.ShowWarningBox("ระบุจำนวนวัตถุดิบผิดพลาด := " & GridQTYMessage, "กรุณาตรวจสอบข้อมูล")
             e.ExceptionMode = ExceptionMode.NoAction
         End Sub
         Private Sub GetData()
@@ -490,21 +460,20 @@ Namespace PopupForms
                 '+++++++++++++++Prepare destination inventory grid+++++++++++++++++++++
                 GridViewMoveMentDetail.AddNewRow()
                 If (TabPane1.SelectedPageIndex = 3) Then
-                    GridViewMoveMentDetail.SetFocusedRowCellValue("Quantity", CDec(txtquantity.EditValue))
-                    GridViewMoveMentDetail.SetFocusedRowCellValue("GroupID", LayoutViewWP.GetFocusedRowCellValue("StorageID"))
-                    GridViewMoveMentDetail.SetFocusedRowCellValue("GroupName", LayoutViewWP.GetFocusedRowCellValue("StorageName"))
+                    GridViewMoveMentDetail.SetFocusedRowCellValue("Quantity", DataHelper.DBNullOrNothingTo(Of Decimal)(txtquantity.EditValue, 0))
+                    GridViewMoveMentDetail.SetFocusedRowCellValue("GroupID", DataHelper.DBNullOrNothingTo(Of Integer)(LayoutViewWP.GetFocusedRowCellValue("StorageID"), 0))
+                    GridViewMoveMentDetail.SetFocusedRowCellValue("GroupName", DataHelper.DBNullOrNothingTo(Of String)(LayoutViewWP.GetFocusedRowCellValue("StorageName"), "-"))
                     GridViewMoveMentDetail.SetFocusedRowCellValue("MaterialID", "0")
                     GridViewMoveMentDetail.SetFocusedRowCellValue("MaterialName", String.Empty)
                     GridViewMoveMentDetail.SetFocusedRowCellValue("PackageSize", "A")
                 Else
-                    GridViewMoveMentDetail.SetFocusedRowCellValue("Quantity", CDec(txtquantity.EditValue))
-                    GridViewMoveMentDetail.SetFocusedRowCellValue("GroupID", LayoutViewDestSubArea.GetFocusedRowCellValue("StorageID"))
-                    GridViewMoveMentDetail.SetFocusedRowCellValue("GroupName", LayoutViewDestSubArea.GetFocusedRowCellValue("StorageName"))
-                    GridViewMoveMentDetail.SetFocusedRowCellValue("MaterialID", LayoutViewDestSubArea.GetFocusedRowCellValue("MaterialID"))
-                    GridViewMoveMentDetail.SetFocusedRowCellValue("MaterialName", LayoutViewDestSubArea.GetFocusedRowCellValue("MaterialName"))
+                    GridViewMoveMentDetail.SetFocusedRowCellValue("Quantity", DataHelper.DBNullOrNothingTo(Of Decimal)(txtquantity.EditValue, 0))
+                    GridViewMoveMentDetail.SetFocusedRowCellValue("GroupID", DataHelper.DBNullOrNothingTo(Of Integer)(LayoutViewDestSubArea.GetFocusedRowCellValue("StorageID"), 0))
+                    GridViewMoveMentDetail.SetFocusedRowCellValue("GroupName", DataHelper.DBNullOrNothingTo(Of String)(LayoutViewDestSubArea.GetFocusedRowCellValue("StorageName"), "-"))
+                    GridViewMoveMentDetail.SetFocusedRowCellValue("MaterialID", DataHelper.DBNullOrNothingTo(Of Integer)(LayoutViewDestSubArea.GetFocusedRowCellValue("MaterialID"), 0))
+                    GridViewMoveMentDetail.SetFocusedRowCellValue("MaterialName", DataHelper.DBNullOrNothingTo(Of String)(LayoutViewDestSubArea.GetFocusedRowCellValue("MaterialName"), "-"))
                     GridViewMoveMentDetail.SetFocusedRowCellValue("PackageSize", "A")
                 End If
-
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
                 Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [GetData]")
@@ -515,27 +484,24 @@ Namespace PopupForms
             Dim dataTable = New DataTable()
             dataTable.Columns.Add("PackageName", GetType(String))
             dataTable.Columns.Add("PackageFullName", GetType(String))
-            dataTable.Rows.Add("A", "Package Size A")
-            dataTable.Rows.Add("B", "Package Size B")
-            dataTable.Rows.Add("C", "Package Size C")
-            dataTable.Rows.Add("D", "Package Size D")
-            dataTable.Rows.Add("E", "Package Size E")
-            dataTable.Rows.Add("F", "Package Size F")
+            dataTable.Rows.Add("A", "Size A")
+            dataTable.Rows.Add("B", "Size B")
+            dataTable.Rows.Add("C", "Size C")
+            dataTable.Rows.Add("D", "Size D")
+            dataTable.Rows.Add("E", "Size E")
+            dataTable.Rows.Add("F", "Size F")
             Return dataTable
         End Function
         Private Sub initLookupMaterial()
             AddHandler SearchMaterial.EditValueChanged, AddressOf SearchMaterial_EditValueChanged
             Dim DT_GetMaterial As DataTable = func_IVM_Getmaterial()
-            SearchMaterial.Properties.NullText = "(เลือก ข้อมูล)"
             SearchMaterial.Properties.DataSource = DT_GetMaterial
             SearchMaterial.Properties.ValueMember = "ID"
             SearchMaterial.Properties.DisplayMember = "Name"
             SearchMaterial.Properties.DisplayMember = SearchMaterial.Properties.DisplayMember
             SearchMaterial.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard
             SearchMaterial.Properties.ShowClearButton = False
-
         End Sub
-
         ''' <exclude />
         Private Sub SearchMaterial_EditValueChanged(ByVal sender As Object, ByVal e As EventArgs)
             'Display lookup editor's current value.
@@ -548,8 +514,8 @@ Namespace PopupForms
             If lookupEditor.EditValue Is Nothing Then
                 label.Text = "แก้ไขวัตถุดิบ"
             Else
-                label.Text = lookupEditor.EditValue.ToString()
-                lblMatName.Text = lookupEditor.Text.ToString()
+                label.Text = DataHelper.DBNullOrNothingTo(Of String)(lookupEditor.EditValue, "-")
+                lblMatName.Text = DataHelper.DBNullOrNothingTo(Of String)(lookupEditor.Text, "-")
             End If
         End Sub
         Private labelDictionaryCore As Dictionary(Of LookUpEditBase, LabelControl)
@@ -567,16 +533,16 @@ Namespace PopupForms
                 Dim View As LayoutView = TryCast(sender, LayoutView)
                 Dim isFull As String = CType(View.GetFocusedRowCellValue("IsFull"), String)
                 If (CType(isFull, Boolean) = True) Then
-                    WinUtil.ShowInfoBox("ไม่สามารถนำเข้าวัตถุดิบได้ เนื่องจากพื้นที่เต็ม! ", "พื้นที่เต็ม")
+                    WinUtil.ShowWarningBox("ไม่สามารถนำเข้าวัตถุดิบได้ เนื่องจากพื้นที่เต็ม!", "พื้นที่กองเก็บเต็ม")
                     Return
                 Else
                     Dim rowind As String
                     Dim areaid As String
                     Dim areaname As String
-                    rowind = CType(layoutViewDestGroupArea.FocusedRowHandle, String)
-                    areaid = CType(layoutViewDestGroupArea.GetFocusedRowCellValue("GroupID"), String)
-                    areaname = CType(layoutViewDestGroupArea.GetFocusedRowCellValue("GroupName"), String)
-                    GetTarketSubAreaDataSet(areaid, CInt(_fieldID))
+                    rowind = DataHelper.DBNullOrNothingTo(Of String)(layoutViewDestGroupArea.FocusedRowHandle, "0")
+                    areaid = DataHelper.DBNullOrNothingTo(Of String)(layoutViewDestGroupArea.GetFocusedRowCellValue("GroupID"), "0")
+                    areaname = DataHelper.DBNullOrNothingTo(Of String)(layoutViewDestGroupArea.GetFocusedRowCellValue("GroupName"), "0")
+                    GetTarketSubAreaDataSet(areaid, DataHelper.DBNullOrNothingTo(Of Integer)(_fieldID, -1))
                     Me.TabPane1.SelectNextPage()
                     Me.LayoutViewDestSubArea.Focus()
                 End If
@@ -590,17 +556,11 @@ Namespace PopupForms
             Dim DS_Tarket_Area_Data As New DataSet
             Dim DT_Tarket_Area_Data As New DataTable
             Try
-                ModMainApp.Log.Log4N("GetTarketSubAreaDataSet [Before]").DebugFormat("Call := proc_IVM_ChildStorageData_1726 {0}",
-                 String.Format("Proc param := {0}", DataHelper.ToSqlValue(FieldID)))
-
                 DT_Tarket_Area_Data = func_IVM_Get_ChildStorageData(CInt(GroupID), FieldID)
                 DT_Tarket_Area_Data.TableName = "TarketSubAreaData"
                 DS_Tarket_Area_Data.Tables.Add(DT_Tarket_Area_Data)
                 DS_Tarket_Area_Data.DataSetName = "TarketSubAreaData"
                 GridControlDestSubArea.DataSource = DS_Tarket_Area_Data.Tables("TarketSubAreaData")
-
-                ModMainApp.Log.Log4N("GetTarketSubAreaDataSet [Return]").DebugFormat("1726 Return data table rows count := {0} ",
-                                DT_Tarket_Area_Data.Rows.Count.ToString)
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
                 Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [GetTarketSubAreaDataSet]")
@@ -612,7 +572,6 @@ Namespace PopupForms
         Private Sub GridViewMoveMentDetail_EditFormPrepared(sender As Object, e As EditFormPreparedEventArgs) Handles GridViewMoveMentDetail.EditFormPrepared
             Try
                 TryCast(e.Panel.Parent, Form).StartPosition = FormStartPosition.CenterScreen
-
                 isEdit = False
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
@@ -623,7 +582,9 @@ Namespace PopupForms
         ''' <exclude />
         Private Sub RemoveRow(sender As Object, e As ButtonPressedEventArgs) Handles DeleteCustomRow.ButtonClick
             Dim View As GridView = TryCast(GridViewMoveMentDetail, GridView)
-            Dim storageID As String = ""
+            If (IsSave = True) Then
+                Return
+            End If
             If CType(e.Button.Tag, String) = "Remove" Then
                 View.DeleteSelectedRows()
             Else
@@ -636,8 +597,7 @@ Namespace PopupForms
             Dim icountGridRow As Integer = 0
             Try
                 If (ViewData.RowCount > 0) Then
-                    Dim summaryValue As Decimal = CDec(GridViewMoveMentDetail.Columns(4).SummaryItem.SummaryValue)
-
+                    Dim summaryValue As Decimal = DataHelper.DBNullOrNothingTo(Of Decimal)(GridViewMoveMentDetail.Columns(4).SummaryItem.SummaryValue, 0)
                     If (((_ToDo = "Unload" Or _ToDo = "UnloadImport") And CDec(txtquantity.EditValue) = 0)) Then
                         If (lblTruckProperties.Text = "") Then
                             WinUtil.ShowWarningBox("กรุณาระบุ ตรวจสอบ Properties ในการตรวรับ ก่อนการบันทึกข้อมูล", "ผลการตรวจสอบ")
@@ -647,30 +607,43 @@ Namespace PopupForms
                                 WinUtil.ShowWarningBox("กรุณาระบุ Properties ในการตรวรับ ให้ครบถ้วน ก่อนการบันทึกข้อมูล", "ผลการตรวจสอบ")
                             Else
                                 '+++++++++++++++++++++++++Call proc to save data +++++++++++++++++++++++++
-                                res = CType(func_IVM_UnloadTruckToTemp_1859(lblTicketID.Text,
-                             summaryValue, CInt(lblMatID.Text), tmpContractorProperties, CInt(_PUserID), ViewData,
-                             tmpMatProperties, tmpBalingSealProperties, tmpTransferPointProperties), String)
+                                res = CType(func_IVM_UnloadTruckToTemp_1859(DataHelper.DBNullOrNothingTo(Of String)(lblTicketID.Text, "-"),
+                                DataHelper.DBNullOrNothingTo(Of Decimal)(summaryValue, 0),
+                                DataHelper.DBNullOrNothingTo(Of Integer)(lblMatID.Text, -1),
+                                DataHelper.DBNullOrNothingTo(Of String)(tmpContractorProperties, "-"),
+                                DataHelper.DBNullOrNothingTo(Of Integer)(_PUserID, 0),
+                                ViewData,
+                                DataHelper.DBNullOrNothingTo(Of String)(tmpMatProperties, "-"),
+                                DataHelper.DBNullOrNothingTo(Of String)(tmpBalingSealProperties, "-"),
+                                DataHelper.DBNullOrNothingTo(Of String)(tmpTransferPointProperties, "-"),
+                                DataHelper.DBNullOrNothingTo(Of String)(tmpWedgeProperties, "-"),
+                                DataHelper.DBNullOrNothingTo(Of String)(tmpTruckConditionProperties, "-")), String)
                                 '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
                                 If (res = "-1") Then
                                     '+++++++++++++++++++++++++++++++++
                                     btnSave.Enabled = False
                                     Me.TabPane1.Pages(1).Select()
                                     '+++++++++++++++++++++++++++++++++
-                                    WinUtil.ShowInfoBox("บันทึกข้อมูล " & _ToDo &
-                            " [" & lblTicketID.Text & " ] เรียบร้อย", "ผลการทำงาน" & _ToDo)
+                                    WinDevHelper.ShowAlertWindowSaveCompleted(Me, "เสร็จสมบูรณ์", "Saved Successfully.")
+                                    btnProperties.Enabled = False
+                                    btnSave.Enabled = False
+                                    SearchMaterial.ReadOnly = True
+                                    IsSave = True
+
+                                    'Dim edit As New RepositoryItemButtonEdit
+                                    'edit = CType(EditRow, RepositoryItemButtonEdit)
+
 
                                 End If
                             End If
                         End If
                     ElseIf (_ToDo = "MoveInv") Then
-
                         For icountGridRow = 0 To ViewData.RowCount - 1
                             Dim SouceAreaID As Integer = DataHelper.DBNullOrNothingTo(Of Integer)(ViewData.GetRowCellValue(icountGridRow, "GroupID"), 0)
                             Dim MatID As Integer = DataHelper.DBNullOrNothingTo(Of Integer)(lblMatID.Text, 0) ' CType(lblMatID.Text, Integer)
-                            Dim Amount As Double = DataHelper.DBNullOrNothingTo(Of Double)(ViewData.GetRowCellValue(icountGridRow, "Quantity"), 0) 'CType(ViewData.GetRowCellValue(icountGridRow, "Quantity"), Double)
-                            res = func_IVM_MoveStockTemp(CInt(lblStroageID.Text), SouceAreaID, MatID, Amount,
-                                                             CType(_PUserID, Integer)).ToString
+                            Dim Amount As Decimal = DataHelper.DBNullOrNothingTo(Of Decimal)(ViewData.GetRowCellValue(icountGridRow, "Quantity"), 0) 'CType(ViewData.GetRowCellValue(icountGridRow, "Quantity"), Double)
+                            res = func_IVM_MoveStockTemp(DataHelper.DBNullOrNothingTo(Of Integer)(lblStroageID.Text, 0), SouceAreaID, MatID, Amount,
+                                  DataHelper.DBNullOrNothingTo(Of Integer)(_PUserID, 0)).ToString
                         Next
 
                         If (res = "-1") Then
@@ -678,13 +651,17 @@ Namespace PopupForms
                             btnSave.Enabled = False
                             Me.TabPane1.Pages(1).Select()
                             '+++++++++++++++++++++++++++++++++
-
-                            WinUtil.ShowInfoBox("บันทึกข้อมูลการย้ายวัตถุดิบ เรียบร้อย", "ผลการทำงาน" & _ToDo)
+                            WinDevHelper.ShowAlertWindowSaveCompleted(Me, "เสร็จสมบูรณ์", "Saved Successfully.")
+                            btnProperties.Enabled = False
+                            btnSave.Enabled = False
+                            IsSave = True
                         End If
-
                     Else
                         WinUtil.ShowInfoBox("จำนวนวัตถุดิบยังคงเหลืออยู่ หากต้องการบันทึกข้อมูล" & vbCrLf & " กรุณาแก้ไขจำนวนวัตถุดิบให้ถูกต้องก่อน ทำรายการ",
                                             "กรุณาตรวจสอบข้อมูล" & _ToDo)
+                        btnProperties.Enabled = True
+                        btnSave.Enabled = True
+                        IsSave = False
                     End If
                 End If
             Catch ex As Exception
@@ -693,19 +670,27 @@ Namespace PopupForms
                 Infolog.ShowExMessage(ex, FC.M.PSL_Win.MessageType.ErrorMessage)
             End Try
         End Sub
+
         ''' <exclude />
         Private Sub GridViewMoveMentDetail_ShowingEditor(sender As Object, e As CancelEventArgs) Handles GridViewMoveMentDetail.ShowingEditor
             Dim gv As GridView = CType(sender, GridView)
             Dim Quantity As GridColumn = gv.Columns("Quantity")
+            'Dim DelRow As GridColumn = gv.Columns("GridColumn1")
             Dim FRow As Integer = gv.FocusedRowHandle
             Try
+
+                'Dim CellValue As String = gv.GetFocusedRowCellValue(DelRow).ToString()
+                'If CellValue = "GridColumn1" Then e.Cancel = True
+
+                If (IsSave = True) Then
+                    Return
+                End If
                 If gv.FocusedColumn.FieldName = "colCustomAction" Then
                     e.Cancel = True
-                    'Dim moveQuantity As Integer = CType(gv.GetRowCellValue(FRow, "Quantity"), Integer)
-                    Dim moveQuantity As Decimal = CType(gv.GetRowCellValue(FRow, "Quantity"), Decimal)
+                    Dim moveQuantity As Decimal = DataHelper.DBNullOrNothingTo(Of Decimal)(gv.GetRowCellValue(FRow, "Quantity"), 0)
                     gv.DeleteSelectedRows()
-                    txtquantity.EditValue = (CDec(txtquantity.EditValue) + moveQuantity)
-                    lblWeight.Text = (CType(txtquantity.EditValue, Decimal) * WeightPUnit).ToString("##0.000")
+                    txtquantity.EditValue = DataHelper.DBNullOrNothingTo(Of Decimal)(CDec(txtquantity.EditValue) + moveQuantity, 0)
+                    lblWeight.Text = DataHelper.DBNullOrNothingTo(Of Decimal)(CDec(txtquantity.EditValue) * WeightPUnit, 0).ToString("##0.000")
                     isEdit = False
                 End If
             Catch ex As Exception
@@ -722,19 +707,17 @@ Namespace PopupForms
             SearchMaterialLocat = New Point(6, 63)
             '+++++++++++++ Lock object ++++++++++++++++++++
             SearchMaterial.ReadOnly = False
-            txtquantity.ReadOnly = False
             lblMatNameInfo.Location = lblLocat
             SearchMaterial.Location = SearchMaterialLocat
             CheckShowAll.Visible = True
-            btnProperties.Enabled = True
             lblTruckProperties.Visible = True
-            'lblWeightTicket.Visible = True
+            btnProperties.Enabled = True
+            btnSave.Enabled = True
             '++++++++++++++++++++++++++++++++++++++++++++++
         End Sub
         Private Sub LockObject()
             Dim lblLocat As Point
             Dim SearchMaterialLocat As Point
-
             GridViewMoveMentDetail.Columns("PackageSize").Visible = False
             lblLocat = New Point(120, 64)
             SearchMaterialLocat = New Point(115, 63)
@@ -742,16 +725,19 @@ Namespace PopupForms
             SearchMaterial.ReadOnly = True
             lblContractorInfo.Visible = False
             lblMatNameInfo.Location = lblLocat
-            txtquantity.ReadOnly = True
             SearchMaterial.Location = SearchMaterialLocat
             CheckShowAll.Visible = False
-            btnProperties.Enabled = False
+            CheckShowAll.Enabled = False
             lblTruckProperties.Visible = False
-            'lblWeightTicket.Visible = False
+            btnProperties.Enabled = False
+            btnSave.Enabled = False
             '++++++++++++++++++++++++++++++++++++++++++++++
         End Sub
         Private Sub LayoutViewDestSubArea_CardClick(sender As Object, e As CardClickEventArgs) Handles LayoutViewDestSubArea.CardClick
             Try
+                If (CDec(txtquantity.EditValue) <= 0) Then Return
+                If (IsSave = True) Then Return
+
                 Dim View As LayoutView = TryCast(sender, LayoutView)
                 '++++++++++++++++++ Prepare data for popup customform +++++++++++++++++
                 list.Clear()
@@ -760,7 +746,7 @@ Namespace PopupForms
                 Dim item As IVMClass.Item = New IVMClass.Item()
                 item.AutoNumber = False
                 item.ColumnName = "Quantity"
-                item.ColumnName2 = CType(txtquantity.EditValue, Decimal).ToString("##0.0")
+                item.ColumnName2 = DataHelper.DBNullOrNothingTo(Of Decimal)(txtquantity.EditValue, 0).ToString
                 item.PackageSize = "PackageSize"
                 item.DataType = 1
                 item.ID = 0
@@ -769,9 +755,9 @@ Namespace PopupForms
                 list.Add(item)
                 '++++++++++++++++++ Register custom edit form +++++++++++++++++++++++++
                 GridViewMoveMentDetail.OptionsEditForm.CustomEditFormLayout = New frm_IVM_Custom_Form_Num_Key(list, strings,
-                                                    GridViewMoveMentDetail.Appearance.Row.Font, GetDataTable())
+                GridViewMoveMentDetail.Appearance.Row.Font, GetDataTable())
                 '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                Dim storageID As String = View.GetFocusedRowCellValue("StorageID").ToString
+                Dim storageID As String = DataHelper.DBNullOrNothingTo(Of String)(View.GetFocusedRowCellValue("StorageID"), "0")
                 If (storageID <> lblStroageID.Text) Then
                     GetData()
                     SearchMaterial.Focus()
@@ -791,8 +777,14 @@ Namespace PopupForms
             Try
                 If (GridViewMoveMentDetail.RowCount > 0) Then
                     btnSave.Enabled = True
+                    txtquantity.Enabled = False
+                    SearchMaterial.ReadOnly = True
                 Else
                     btnSave.Enabled = False
+                    If (tmpUnloadQuantity > 0 And (_ToDo = "Unload" Or _ToDo = "UnloadImport")) Then
+                        txtquantity.Enabled = True
+                        SearchMaterial.ReadOnly = False
+                    End If
                 End If
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
@@ -802,9 +794,6 @@ Namespace PopupForms
         End Sub
         Private Sub CheckShowAll_EditValueChanged(sender As Object, e As EventArgs) Handles CheckShowAll.EditValueChanged
             Try
-                'InitData()
-                'GridControlSouceArea.DataSource = GetSubAreaINVDataSet()
-                'LayoutViewDestSubArea.RefreshData()
                 GridControlWeightTicket.DataSource = GetSubAreaINVDataSet()
                 LayoutViewWeightTicket.RefreshData()
             Catch ex As Exception
@@ -823,7 +812,7 @@ Namespace PopupForms
                 Dim item As IVMClass.Item = New IVMClass.Item()
                 item.AutoNumber = False
                 item.ColumnName = "Quantity"
-                item.ColumnName2 = CType(txtquantity.EditValue, Decimal).ToString()
+                item.ColumnName2 = DataHelper.DBNullOrNothingTo(Of Decimal)(txtquantity.EditValue, 0).ToString
                 item.PackageSize = "PackageSize"
                 item.DataType = 1
                 item.ID = 0
@@ -832,15 +821,15 @@ Namespace PopupForms
                 list.Add(item)
                 '++++++++++++++++++ Register custom edit form +++++++++++++++++++++++++
                 GridViewMoveMentDetail.OptionsEditForm.CustomEditFormLayout = New frm_IVM_Custom_Form_Num_Key(list, strings,
-                                                    GridViewMoveMentDetail.Appearance.Row.Font, GetDataTable())
+                GridViewMoveMentDetail.Appearance.Row.Font, GetDataTable())
                 '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                Dim storageID As String = View.GetFocusedRowCellValue("StorageID").ToString
-                If (storageID <> lblStroageID.Text) Then
+                Dim storageID As String = DataHelper.DBNullOrNothingTo(Of String)(View.GetFocusedRowCellValue("StorageID"), "0")
+                If (Not (DataHelper.DBNullOrNothingTo(Of Integer)(storageID, 0)) = DataHelper.DBNullOrNothingTo(Of Integer)(lblStroageID.Text, -1)) Then
                     GetData()
                     SearchMaterial.Focus()
                     GridViewMoveMentDetail.ShowEditForm()
                 Else
-                    WinUtil.ShowWarningBox("ไม่สามารถย้ายวัตถุดิบเข้าสู่พื้นที่เดียวกันได้", "กรุณาตรวจสอบข้อมูล พีื้นที่")
+                    WinDevHelper.ShowAlertWindowSaveCompleted(Me, "กรุณาตรวจสอบข้อมูล พีื้นที่", "ไม่สามารถย้ายวัตถุดิบเข้าสู่พื้นที่เดียวกันได้")
                     Return
                 End If
             Catch ex As Exception
@@ -854,7 +843,7 @@ Namespace PopupForms
                 'LayoutControl1.ShowCustomizationForm()
                 If (((_ToDo = "Unload" Or _ToDo = "UnloadImport") And CDec(txtquantity.EditValue) > 0)) Then
                     Dim frmPopupNumkey As New frm_IVM_Popup_Num_Key
-                    frmPopupNumkey.MatQTY = CDec(txtquantity.EditValue)
+                    frmPopupNumkey.MatQTY = DataHelper.DBNullOrNothingTo(Of Decimal)(txtquantity.EditValue, 0)
                     frmPopupNumkey.Show()
                     AddHandler frmPopupNumkey.FormClosed, AddressOf frmPopupNumKey_FormClosed
                 End If
@@ -866,31 +855,14 @@ Namespace PopupForms
         ''' <exclude />
         Private Sub frmPopupNumKey_FormClosed(sender As Object, e As FormClosedEventArgs)
             Try
-                txtquantity.EditValue = tmpUnloadQuantity.ToString("##0.0")
-                lblNetAmount.Text = tmpUnloadQuantity.ToString("##0.0")
+                txtquantity.EditValue = DataHelper.DBNullOrNothingTo(Of Decimal)(tmpUnloadQuantity, 0)
+                lblNetAmount.Text = DataHelper.DBNullOrNothingTo(Of String)(tmpUnloadQuantity, "0")
+                'lblWeight.Text = (CType(txtquantity.EditValue, Decimal) * WeightPUnit).ToString("##0.000")
+                lblWeight.Text = DataHelper.DBNullOrNothingTo(Of Decimal)(CDec(txtquantity.EditValue) * WeightPUnit, 0).ToString("##0.000")
                 layoutViewDestGroupArea.Focus()
+                gridControlDestGroupArea.Focus()
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
-            End Try
-        End Sub
-        Private Sub txtquantity_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs)
-            Try
-                Dim QTY As Decimal = CDec(CType(sender, DevExpress.XtraEditors.TextEdit).EditValue)
-
-                If (QTY < 0) Then
-                    e.Cancel = True
-                    isEdit = False
-                End If
-            Catch ex As Exception
-                MsgBox("txtquantity_Validating : " & ex.Message)
-            End Try
-        End Sub
-        Private Sub txtquantity_InvalidValue(sender As Object, e As InvalidValueExceptionEventArgs)
-            Try
-                WinUtil.ShowWarningBox("จำนวนวัตถุดิบที่แก้ไข ต้องมีจำนวน มากกว่า 0 !", "ผิดพลาด")
-                e.ExceptionMode = ExceptionMode.NoAction
-            Catch ex As Exception
-
             End Try
         End Sub
 
@@ -944,23 +916,35 @@ Namespace PopupForms
         ''' <exclude />
         Private Sub frm_IVM_Popup_Mat_Properties_FormClosed(sender As Object, e As FormClosedEventArgs)
             Try
-                If (tmpBalingSealProperties = "") Then
+                If (tmpIsClose = True) Then
                     Return
-                End If
-                If (tmpMatProperties = "") Then
-                    Return
-                End If
-                If (tmpTransferPointProperties = "") Then
-                    Return
-                End If
-                If (tmpContractorProperties = "") Then
-                    Return
+                Else
+                    tmpIsClose = False
+
+                    If (tmpBalingSealProperties = "") Then
+                        Return
+                    End If
+                    If (tmpMatProperties = "") Then
+                        Return
+                    End If
+                    If (tmpTransferPointProperties = "") Then
+                        Return
+                    End If
+                    If (tmpContractorProperties = "") Then
+                        Return
+                    End If
+                    If (tmpTruckConditionProperties = "") Then
+                        Return
+                    End If
+                    If (tmpWedgeProperties = "") Then
+                        Return
+                    End If
+                    lblTruckProperties.Text = "" &
+                        "ซีลโรงอัด : " & tmpBalingSealProperties & vbCrLf & "จุดขนถ่าย : " & tmpTransferPointProperties & vbCrLf &
+                        "ชนิดวัตถุดิบ : " & tmpMatProperties & vbCrLf & "ผู้รับเหมา : " & tmpContractorProperties & vbCrLf &
+                        "สภาพรถ : " & tmpTruckConditionProperties & vbCrLf & "การใช้ลิ่ม : " & tmpWedgeProperties
                 End If
 
-                lblTruckProperties.Text = "" &
-                    "ซีลโรงอัด : " & tmpBalingSealProperties & " จุดขนถ่าย : " & tmpTransferPointProperties &
-                    "ชนิดวัตถุดิบ : " & tmpMatProperties & vbCrLf & " ผู้รับเหมา : " & tmpContractorProperties &
-                    "TruckCond : " & tmpTruckConditionProperties & " การใช้ลิ่ม : " & tmpWedgeProperties
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
             End Try
@@ -980,7 +964,7 @@ Namespace PopupForms
 
         Private Sub LayoutViewWeightTicket_CardClick(sender As Object, e As CardClickEventArgs) Handles LayoutViewWeightTicket.CardClick
             Dim rowind As String
-            Dim quantity As Decimal
+            Dim quantity As Decimal = 0
             Dim PLWeight As Double = 0
             Dim Ticket As String
             Dim ReceiveDate As DateTime
@@ -988,35 +972,33 @@ Namespace PopupForms
             Dim SupplierName As String
 
             Try
-                'rowind = CType(LayoutViewWeightTicket.FocusedRowHandle, String)
                 rowind = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewWeightTicket.FocusedRowHandle, "0")
-
                 Ticket = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewWeightTicket.GetFocusedRowCellValue("Ticket"), "-")
                 PlateLicense = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewWeightTicket.GetFocusedRowCellValue("PlateLicense"), "-")
                 ReceiveDate = DataHelper.DBNullOrNothingTo(Of DateTime)(LayoutViewWeightTicket.GetFocusedRowCellValue("ReceiveDate"), "000-00-00 00:00:00")
                 SupplierName = DataHelper.DBNullOrNothingTo(Of String)(LayoutViewWeightTicket.GetFocusedRowCellValue("SupplierName"), "-")
-
-                'ReceiveDate = CType(LayoutViewWeightTicket.GetFocusedRowCellValue("ReceiveDate"), DateTime)
                 '+++++++++++++++++++ Binding Search lookupedit Mat +++++++++++++++++++++++++++
                 BindingSearchMaterial()
                 '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                 quantity = DataHelper.DBNullOrNothingTo(Of Decimal)(LayoutViewWeightTicket.GetFocusedRowCellValue("Quantity"), 0)
-                weight = DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewWeightTicket.GetFocusedRowCellValue("MillWeight"), 0)
+                weight = DataHelper.DBNullOrNothingTo(Of Decimal)(LayoutViewWeightTicket.GetFocusedRowCellValue("MillWeight"), 0)
                 lblWeightTicket.Text = Ticket
+                tmpBeginQTY = quantity
                 '++++++++++ Use for debug only +++++++++++++
-                'Must to get ID from database.
                 lblStroageID.Text = _MaterialSourceID.ToString
                 '+++++++++++++++++++++++++++++++++++++++++++
-                lblTicketID.Text = Ticket
-                lblStroageName.Text = PlateLicense
-                lblWeight.Text = weight.ToString("0.000")
-                lblPLWeight.Text = DataHelper.DBNullOrNothingTo(Of Double)(LayoutViewWeightTicket.GetFocusedRowCellValue("PLWeight"), 0).ToString("##0.000")
-                txtquantity.EditValue = quantity
-                lblNetAmount.Text = quantity.ToString
+                lblTicketID.Text = DataHelper.DBNullOrNothingTo(Of String)(Ticket, "-")
+                lblStroageName.Text = DataHelper.DBNullOrNothingTo(Of String)(PlateLicense, "-")
+                lblWeight.Text = DataHelper.DBNullOrNothingTo(Of Decimal)(weight, 0).ToString("##0.000")
+                lblPLWeight.Text = DataHelper.DBNullOrNothingTo(Of Decimal)(LayoutViewWeightTicket.GetFocusedRowCellValue("PLWeight"), 0).ToString("##0.000")
+                txtquantity.EditValue = DataHelper.DBNullOrNothingTo(Of Decimal)(quantity, 0)
+                lblNetAmount.Text = DataHelper.DBNullOrNothingTo(Of String)(quantity, "0")
                 '+++++++ Cal weight per unit +++++
-                WeightPUnit = weight / quantity
+                WeightPUnit = DataHelper.DBNullOrNothingTo(Of Decimal)((weight / quantity), 0)
                 '+++++++++++++ Lock object ++++++++++++++++++++
                 UnLockObject()
+                txtquantity.Enabled = True
+                btnSave.Enabled = False
                 '++++++++++++++++++++++++++++++++++++++++++++++
                 '++++++++++++++++++++ Clear ข้อมูล grid ก่อนการเลือกพื้นที่ใหม่ ++++++++++++++++++
                 If (GridViewMoveMentDetail.RowCount > 0) Then
@@ -1032,6 +1014,18 @@ Namespace PopupForms
                 Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [LayoutViewWeightTicket_CardClick]")
                 Infolog.ShowExMessage(ex, FC.M.PSL_Win.MessageType.ErrorMessage)
             End Try
+        End Sub
+
+        Private Sub txtquantity_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtquantity.KeyPress
+            txtquantity.ReadOnly = True
+        End Sub
+
+        Private Sub txtquantity_MouseUp(sender As Object, e As MouseEventArgs) Handles txtquantity.MouseUp
+            lblNetAmount.Text = DataHelper.DBNullOrNothingTo(Of String)(tmpBeginQTY, "0")
+        End Sub
+
+        Private Sub frm_IVM_Popup_Material_Manage_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+            IsSave = False
         End Sub
 
     End Class

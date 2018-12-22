@@ -331,10 +331,16 @@ Namespace Forms
                                     item.Fill = colors_ST(linearizedPower)
                                     item.HighlightedFill = Color.LightGray
                                 Else
-                                    If (CType(item.Attributes("Label").Value, String) = "Other") Then
-                                        item.Fill = Color.Gray
+                                    If (CType(item.Attributes("Name").Value, String) = "Other" _
+                                        Or CType(item.Attributes("Name").Value, String) = "Share Area") Then
+                                        item.Fill = Color.Violet
+                                        If (CType(item.Attributes("Name").Value, String) = "Share Area") Then
+                                            Dim RemoveAtt_Label = (item.Attributes("Label"))
+                                            item.Attributes.Remove(CType(RemoveAtt_Label, MapItemAttribute))
+                                            item.Attributes.Add(New MapItemAttribute() With {.Name = "Label", .Value = "Share", .Type = GetType(String)})
+                                        End If
                                     Else
-                                        item.Fill = colors_ST(linearizedPower)
+                                            item.Fill = colors_ST(linearizedPower)
                                     End If
                                 End If
 
@@ -367,7 +373,7 @@ Namespace Forms
                 layername = CType(e.Item.Layer.Name, String)
                 If (CType(e.Item.Layer.Name, String) = "vectorItemsLayer") Then
 
-                    AreaName = DataHelper.DBNullOrNothingTo(Of String)(e.Item.Attributes("Label").Value, "")
+                    AreaName = DataHelper.DBNullOrNothingTo(Of String)(e.Item.Attributes("Name").Value, "")
 
                     iRowArea = DT_Area_Info.Rows.Count
                     If (iRowArea > 0) Then
@@ -376,8 +382,8 @@ Namespace Forms
                             Dim AName As String = ""
                             AName = DT_Area_Info.Rows(iCount).Item("GroupName").ToString
 
-                            If (AreaName = "Other") Then
-                                e.Item.Fill = Color.Gray
+                            If (AreaName = "Other" Or AreaName = "Share Area") Then
+                                e.Item.Fill = Color.Violet
                             End If
 
                             If (AreaName = AName) Then
@@ -524,10 +530,11 @@ Namespace Forms
                                             str = prePareInfo(tmp_area_name, CDbl(tmp_sumcapacity)).ToString
                                             '+++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                             If (iIndex_detail = tmpid) Then
+
                                                 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                                 Vitem.Attributes("Label").Value = str
-                                                '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                                            End If
+                                                    '++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                End If
                                         Next icount1
 
                                     End If
@@ -565,9 +572,12 @@ Namespace Forms
 
                                             If Not (String.IsNullOrEmpty(Vitem.Attributes("Name").Value.ToString)) Then
                                                 name = CType(Vitem.Attributes("Name").Value, String)
+                                                If (name = "Share Area") Then
+                                                    name = "Share"
+                                                End If
                                             End If
 
-                                            If (zoom_lavel < 6.5) Then
+                                                If (zoom_lavel < 6.5) Then
                                                 If (Vitem.Attributes("Label").Value.ToString <> Vitem.Attributes("Name").Value.ToString) Then
                                                     Vitem.Attributes("Label").Value = name
                                                 End If
@@ -696,6 +706,9 @@ Namespace Forms
 
                                             If Not (String.IsNullOrEmpty(Vitem.Attributes("Name").Value.ToString)) Then
                                                 name = CType(Vitem.Attributes("Name").Value, String)
+                                                If (name = "Share Area") Then
+                                                    name = "Share"
+                                                End If
                                             End If
                                             If (Vitem.Attributes("Label").Value.ToString <> Vitem.Attributes("Name").Value.ToString) Then
                                                 Vitem.Attributes("Label").Value = name
@@ -818,6 +831,9 @@ Namespace Forms
 
                                             If Not (String.IsNullOrEmpty(Vitem.Attributes("Name").Value.ToString)) Then
                                                 name = CType(Vitem.Attributes("Name").Value, String)
+                                                If (name = "Share Area") Then
+                                                    name = "Share"
+                                                End If
                                             End If
                                             If (Vitem.Attributes("Label").Value.ToString <> Vitem.Attributes("Name").Value.ToString) Then
                                                 Vitem.Attributes("Label").Value = name
@@ -908,7 +924,7 @@ Namespace Forms
                     Dim frmPopupSubArea As New PopupForms.frm_IVM_Popup_Material_Manage
                     frmPopupSubArea._PUserID = CType(UID, String)
                     '++++++++++++++Use for debug only+++++++++++
-                    frmPopupSubArea._MaterialSourceID = UnloadLocalTypeID
+                    frmPopupSubArea._MaterialSourceID = UnloadImportTypeID
                     frmPopupSubArea._materialTypeId = MatTypeID
                     frmPopupSubArea._fieldID = idOfField.ToString
                     frmPopupSubArea._GroupID = AID
@@ -921,8 +937,12 @@ Namespace Forms
                 ElseIf (AID >= 0 And AName = "MatInfoIcon") Then
                     Dim DT_StorageInfo As New DataTable
                     DT_StorageInfo = func_IVM_Get_ChildStorageData(AID, idOfField)
+                    If (DT_StorageInfo.Rows.Count <= 0) Then
+                        WinUtil.ShowWarningBox("ไม่พบข้อมูลการจัดเก็บวัตถุดิบในพื้นที่", "ไม่พบข้อมูล")
+                        Return
+                    End If
                     Dim Popup_MatInfo = New PopupForms.frm_IVM_Popup_Material_Info
-                    Popup_MatInfo.setParam(AID, DT_StorageInfo)
+                    Popup_MatInfo.setParam(AID, DT_StorageInfo, idOfField)
                     Popup_MatInfo.ShowDialog()
                     Return
                 ElseIf (AID >= 0 And (AName <> "Unload" Or AName <> "UnloadImport")) Then
@@ -999,7 +1019,7 @@ Namespace Forms
         Private Sub mapControl1_MapItemClick(sender As Object, e As MapItemClickEventArgs) Handles mapControl1.MapItemClick
             tmpMapItemForStatus = (CType(e.Item, MapItem))
             tmpIDForStatus = CInt(e.Item.Attributes("ID").Value)
-            If (tmpIDForStatus = 1 Or tmpIDForStatus = 2) Then
+            If (tmpIDForStatus = 0 Or tmpIDForStatus = 999999 Or tmpIDForStatus = 1 Or tmpIDForStatus = 2 Or tmpIDForStatus = 3) Then
                 Return
             Else
                 CreateMenu(e)
@@ -1056,12 +1076,13 @@ Namespace Forms
             If clickedItem Is backImage_Renamed Then
                 DefaultZoomLevel()
                 GetDataFromDB()
-                mapControl1.Refresh()
+                'mapControl1.Refresh()
             ElseIf clickedItem Is closeImage_Renamed Then
                 Me.Close()
             ElseIf clickedItem Is rollbackImage_Renamed Then
                 Dim frmPopupRollback As New Forms.frm_IVM_Rollback
                 frmPopupRollback._fieldID = idOfField.ToString
+                AddHandler frmPopupRollback.FormClosed, AddressOf frmPopupSubArea_FormClosed
                 frmPopupRollback.ShowDialog()
             End If
 
@@ -1146,6 +1167,7 @@ Namespace Forms
                 UpdateItemMap()
                 AreaWeight = GetSumAreaWeight(idOfField)
                 PAreaWeight = GetPAreaWeight(idOfField)
+                mapControl1.Refresh()
             Catch ex As Exception
                 Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, frm_Name & Me.Name.ToString & "]")
                 Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [GetDataFromDB]")
@@ -1279,6 +1301,8 @@ Namespace Forms
             tmpBalingSealProperties = ""
             tmpTransferPointProperties = ""
             tmpContractorProperties = ""
+            tmpTruckConditionProperties = ""
+            tmpWedgeProperties = ""
         End Sub
 
     End Class

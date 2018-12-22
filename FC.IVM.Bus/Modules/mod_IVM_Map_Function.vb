@@ -381,7 +381,7 @@ Namespace Modules
                 '+++++++++++++++++++++++++++++++++++++++Rollback icon+++++++++++++++++++++++++++++++++++++++++++++
                 Dim overlayWithTextRollback As MapOverlay = New MapOverlay With
                     {.Alignment = ContentAlignment.BottomRight, .JoiningOrientation = Orientation.Horizontal,
-                    .Margin = New Padding(0, 0, 20, -55), .Padding = New Padding(1)}
+                    .Margin = New Padding(0, 0, 20, -40), .Padding = New Padding(1)}
                 Dim image_Rollback As Bitmap = CType(ModMainApp.GetResourceObject(Of Image)("RollbackForm"), Bitmap)
                 rollbackImage_Renamed = New MapOverlayImageItem() With {.Padding = New Padding(5), .Image = image_Rollback}
                 mapcontrolRollback_Form = New MapOverlayTextItem() With {.Text = "Rollback", .TextAlignment = ContentAlignment.MiddleLeft, .Alignment = ContentAlignment.MiddleRight}

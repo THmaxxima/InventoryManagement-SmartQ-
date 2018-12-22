@@ -66,6 +66,10 @@ Namespace Modules
             Try
                 Dim Dt_Area As New DataTable
                 ModMainSQL.SQL.FillDataTable(Dt_Area, String.Format("proc_IVM_ChildStorageData_1726 {0},{1}", DataHelper.ToSqlValue(GroupID), DataHelper.ToSqlValue(FieldID)))
+
+                ModMainApp.Log.Log4N("proc_IVM_ChildStorageData_1726").DebugFormat("GroupID := {0},FieldID := {1}, Count res := {2}",
+                  GroupID, FieldID, Dt_Area.Rows.Count.ToString)
+
                 Return Dt_Area
             Catch ex As Exception
                 Throw New Exception("Error : func_IVM_Get_ChildStorageData ", ex)
@@ -103,7 +107,7 @@ Namespace Modules
         Public Function func_IVM_Getmaterial() As DataTable
             Try
                 Dim Dt_Material As New DataTable
-                ModMainSQL.SQL.FillDataTable(Dt_Material, "SELECT ID,Name FROM MT_Material ")
+                ModMainSQL.SQL.FillDataTable(Dt_Material, "SELECT ID,Name FROM MT_Material WHERE TypeID in (1,3)")
                 Return Dt_Material
             Catch ex As Exception
                 Throw New Exception("Error : func_IVM_Getmaterial ", ex)
@@ -121,8 +125,8 @@ Namespace Modules
             Dim Res As String = ""
             Try
                 Res = ModMainSQL.SQL.ExecuteNonQuery(String.Format("proc_IVM_MoveStockTemp_1847 {0},{1},{2},{3},{4}",
-            DataHelper.ToSqlValue(SourceTypeID), DataHelper.ToSqlValue(DestTypeID), DataHelper.ToSqlValue(MaterialID),
-                                DataHelper.ToSqlValue(Amount), DataHelper.ToSqlValue(UserID))).ToString
+                DataHelper.ToSqlValue(SourceTypeID), DataHelper.ToSqlValue(DestTypeID), DataHelper.ToSqlValue(MaterialID),
+                DataHelper.ToSqlValue(Amount), DataHelper.ToSqlValue(UserID))).ToString
 
             Catch ex As Exception
                 Throw New Exception("Error : func_IVM_MoveStockTemp ", ex)
@@ -141,9 +145,10 @@ Namespace Modules
         ''' <param name="MatCategory">กลุ่มวัตถุดิบ</param>
         ''' <param name="BalingSeal">Balingseal status</param>
         ''' <param name="TransferPoint">จุดขนส่ง</param>
-        Public Function func_IVM_UnloadTruckToTemp_1859(ByVal Ticket As String, ByVal Amount As Decimal,
+        Public Function func_IVM_UnloadTruckToTemp_1859(ByVal Ticket As String, ByVal Amount As Double,
                 ByVal MatID As Integer, ByVal ContractName As String, ByVal UserID As Integer,
-                ByVal viewUnloadData As GridView, ByVal MatCategory As String, ByVal BalingSeal As String, ByVal TransferPoint As String) As String
+                ByVal viewUnloadData As GridView, ByVal MatCategory As String, ByVal BalingSeal As String,
+                ByVal TransferPoint As String, ByVal WedgeProperties As String, ByVal TruckConditionProperties As String) As String
 
             Dim Res As String = ""
             'Declare @Mtabletype contactType 
@@ -187,6 +192,14 @@ Namespace Modules
                 dataTransferPoint.DataType = System.Type.GetType("System.String")
                 TblTicket.Columns.Add(dataTransferPoint)
 
+                Dim dataWedgeProperties As DataColumn = New DataColumn("UseWedge")
+                dataWedgeProperties.DataType = System.Type.GetType("System.String")
+                TblTicket.Columns.Add(dataWedgeProperties)
+
+                Dim dataTruckConditionProperties As DataColumn = New DataColumn("TruckConditionPass")
+                dataTruckConditionProperties.DataType = System.Type.GetType("System.String")
+                TblTicket.Columns.Add(dataTruckConditionProperties)
+
                 'declaring a new row
                 TblTicketRow = TblTicket.NewRow()
                 'filling the row with values. Item property is used to set the field value.
@@ -198,8 +211,12 @@ Namespace Modules
                 TblTicketRow.Item("MaterialCategory") = MatCategory
                 TblTicketRow.Item("BalingSealValidity") = BalingSeal
                 TblTicketRow.Item("TransferPoint") = TransferPoint
+                TblTicketRow.Item("UseWedge") = WedgeProperties
+                TblTicketRow.Item("TruckConditionPass") = TruckConditionProperties
                 TblTicket.Rows.Add(TblTicketRow)
                 '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                ModMainApp.Log.Log4N("User defined table TblTicket").DebugFormat("Ticket := {0},MaterialID := {1}, BaleAmount := {2}, ContractorName := {3}, MaterialCategory := {4}, BalingSealValidity := {5}, TransferPoint := {6} ",
+                  Ticket, MatID.ToString, Amount.ToString, ContractName, MatCategory, BalingSeal, TransferPoint)
 
                 '[DestinationStorageID]
                 Dim dataColDest As DataColumn = New DataColumn("DestinationStorageID")
@@ -222,6 +239,10 @@ Namespace Modules
                     TblUnloadRow.Item("Amount") = CType(viewUnloadData.GetRowCellValue(iGridRow, "Quantity"), Decimal)
                     TblUnloadRow.Item("PackageName") = CType(viewUnloadData.GetRowCellValue(iGridRow, "PackageSize"), String)
                     TblUnloadFromTruck.Rows.Add(TblUnloadRow)
+                    '+++++++++++++++++++++++++++++++++++++ Insert to log  +++++++++++++++++++++++++++++++
+                    ModMainApp.Log.Log4N("User defined table TblUnloadFromTruck").DebugFormat("Row := {0},DestinationStorageID := {1}, Amount := {2}, PackageName := {3} ",
+                  iGridRow, viewUnloadData.GetRowCellValue(iGridRow, "GroupID").ToString, viewUnloadData.GetRowCellValue(iGridRow, "Quantity").ToString, viewUnloadData.GetRowCellValue(iGridRow, "PackageSize"))
+                    '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                 Next
                 '+++++++++++++++++++++++++++++++++++++ Insert to userdefind table +++++++++++++++++++++++++++++++
                 Using cnn As SqlConnection = ModMainSQL.SQL.CreateConnection
@@ -252,6 +273,9 @@ Namespace Modules
                             .Parameters.AddWithValue("@UserID", UserID)
                         End With
                         Res = cmd.ExecuteNonQuery().ToString
+
+                        ModMainApp.Log.Log4N("Call proc_IVM_UnloadTruckToTemp_1859").DebugFormat("Datatable TblTicket rows count := {0},Datatable TblUnloadFromTruck rows count := {1}, Proc return := {2} ",
+                  TblTicket.Rows.Count.ToString, TblUnloadFromTruck.Rows.Count.ToString, Res)
                         'cnn.Close()
                     Catch ex As Exception
                         Throw New Exception("Error : proc_IVM_UnloadTruckToTemp_1859 ", ex)
@@ -308,18 +332,24 @@ Namespace Modules
         End Function
         ''' <summary>Function use to get material properties</summary>
         ''' <returns>Datatable : Material properties</returns>
-        Public Function func_IVM_Get_Material_Properties() As DataTable
-
+        Public Function func_IVM_Get_Material_Properties(ByVal param As String) As DataTable
+            Dim Dt_Property As New DataTable
             Try
-                Dim Dt_Property As New DataTable
+
                 Dim sql As String = "SELECT  * FROM View_IVM_TruckProperties_2456 "
 
                 ModMainSQL.SQL.FillDataTable(Dt_Property, sql)
-                Return Dt_Property
+                Dim foundRow As DataRow() = Nothing
+                foundRow = Dt_Property.Select("Category <> '" & param & "'")
+                If foundRow.Count > 0 Then
+                    For Each row As DataRow In foundRow
+                        row.Delete()
+                    Next
+                End If
             Catch ex As Exception
                 Throw New Exception("Error : View_IVM_TruckProperties_2456 ", ex)
             End Try
-
+            Return Dt_Property
         End Function
         ''' <summary>Function use to get tentative transaction data</summary>
         ''' <returns>Datatable : Tentative data</returns>
@@ -399,6 +429,30 @@ Namespace Modules
                 Throw New Exception("Error : View_IVM_TruckProperties_2456 ", ex)
             End Try
 
+        End Function
+        Public Function GetGroupAreaInfo(ByVal FieldID As Integer) As DataTable
+            Dim DS_Area_Data As DataSet
+            Dim DT As New DataTable
+            Try
+                'SetWaitDialogCaption(My.Resources.LoadingTables)
+                'ModMainApp.Log.Log4N("GetGroupAreaInfo [Before]").DebugFormat("Call := proc_IVM_PrimaryStorage_1664 {0}",
+                '  String.Format("Proc param := {0}", DataHelper.ToSqlValue(FieldID)))
+
+                '******************************************************
+                DS_Area_Data = func_IVM_Get_Area_Info(FieldID)
+                DT = DS_Area_Data.Tables(0)
+                '******************************************************
+
+                'ModMainApp.Log.Log4N("GetGroupAreaInfo [Return]").DebugFormat("1664 Return data table rows count := {0} ",
+                '  DT.Rows.Count.ToString)
+            Catch ex As Exception
+                Dim parentId As Integer = Infolog.AddMessage(0, FC.M.PSL_Win.MessageType.ErrorMessage, "mod_IVM_DB")
+                Infolog.AddMessage(parentId, FC.M.PSL_Win.MessageType.ErrorMessage, "Fnc := [GetGroupAreaInfo]")
+                Infolog.ShowExMessage(ex, FC.M.PSL_Win.MessageType.ErrorMessage)
+
+                ModMainApp.Log.Log4N("GetGroupAreaInfo [Catch]").DebugFormat("Err := {0} ", ex.Message)
+            End Try
+            Return DT
         End Function
     End Module
 

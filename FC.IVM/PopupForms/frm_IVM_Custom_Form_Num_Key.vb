@@ -36,7 +36,6 @@ Namespace PopupForms
                                , Optional inEditorHeight As Integer = 90)
             '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             InitializeComponent()
-            Me.BorderStyle = BorderStyle.None
 
             inDefaultFont = FontsCollection("mainArea")
             'lookUpEdit1.Properties.AppearanceDropDown.Font = New Font(lookUpEdit1.Properties.AppearanceDropDown.Font.FontFamily, 16)
@@ -44,7 +43,9 @@ Namespace PopupForms
             lookUpEdit1.Properties.ValueMember = "PackageName"
             lookUpEdit1.Properties.DisplayMember = "PackageFullName"
             lookUpEdit1.Properties.AppearanceDropDown.Font = inDefaultFont
-            lookUpEdit1.Properties.PopupWidth = 300
+            lookUpEdit1.Properties.PopupWidth = 200
+            lookUpEdit1.Properties.ShowFooter = False
+            lookUpEdit1.Properties.Appearance.TextOptions.HAlignment = HorzAlignment.Far
 
             AddHandler lookUpEdit1.EditValueChanged, AddressOf lookUpEdit1_EditValueChanged
             '------------------------------------------------------------------
@@ -88,13 +89,15 @@ Namespace PopupForms
                                 .AppearanceItemCaption.Font = inDefaultFont
                             End With
 
+                            Me.textEdit.ReadOnly = True
+                            Me.textEdit.Properties.AllowFocused = False
                             Me.textEdit.Properties.Mask.UseMaskAsDisplayFormat = True
                             Me.textEdit.Font = inDefaultFont
                             Me.textEdit.Properties.Appearance.TextOptions.HAlignment = HorzAlignment.Far
                             'Set Binding datasouce
                             Me.SetBoundFieldName(textEdit, AColumn.ColumnName)
+                            Me.SetBoundPropertyName(textEdit, "EditValue")
                             'Set display format to 1 decimal
-                            Me.textEdit.Properties.Mask.EditMask = "N"
                             Me.textEdit.Properties.DisplayFormat.FormatType = FormatType.Numeric
                             Me.textEdit.Properties.DisplayFormat.FormatString = "{0:n1}"
 
@@ -115,6 +118,7 @@ Namespace PopupForms
                         lookUpEdit1.EditValue = "A"
                     Else
                         lookUpEdit1.ReadOnly = True
+                        lookUpEdit1.EditValue = ""
                     End If
                 Next
 
@@ -149,7 +153,7 @@ Namespace PopupForms
                 End If
 
             Catch ex As Exception
-                MsgBox("press_num" & ex.Message)
+                'MsgBox("press_num" & ex.Message)
             Finally
                 'isEdit = False
             End Try
@@ -159,11 +163,11 @@ Namespace PopupForms
         ''' <summary>Set material package size.</summary>
         Private Sub lookUpEdit1_EditValueChanged(ByVal sender As Object, ByVal e As EventArgs)
             mod_IVM_Utility.tmpUnloadPackSize = lookUpEdit1.EditValue.ToString
-
-            Me.TextEdit.Focus()
-
+            'Me.TextEdit.Focus()
         End Sub
         Private Sub textEdit_EditValueChanged(ByVal sender As Object, ByVal e As EventArgs)
+            Me.textEdit.Properties.DisplayFormat.FormatType = FormatType.Numeric
+            Me.textEdit.Properties.DisplayFormat.FormatString = "{0:n1}"
             lookUpEdit1.Enabled = True
         End Sub
 
@@ -346,6 +350,7 @@ Namespace PopupForms
             'frm_IVM_Custom_Form_Num_Key
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
+            Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
             Me.Controls.Add(Me.btnClear)
             Me.Controls.Add(Me.lblNetamount)
             Me.Controls.Add(Me.btnP)
@@ -360,11 +365,10 @@ Namespace PopupForms
             Me.Controls.Add(Me.btn1)
             Me.Controls.Add(Me.btn0)
             Me.Name = "frm_IVM_Custom_Form_Num_Key"
-            Me.Size = New System.Drawing.Size(453, 473)
+            Me.Size = New System.Drawing.Size(480, 471)
             Me.ResumeLayout(False)
 
         End Sub
-
 
         Friend WithEvents btnClear As SimpleButton
         Friend WithEvents lblNetamount As LabelControl

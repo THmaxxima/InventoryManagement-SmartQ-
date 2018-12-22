@@ -21,12 +21,12 @@
         <System.Diagnostics.DebuggerStepThrough()>
         Private Sub InitializeComponent()
             Me.components = New System.ComponentModel.Container()
-            Dim MapItemAttributeMapping13 As DevExpress.XtraMap.MapItemAttributeMapping = New DevExpress.XtraMap.MapItemAttributeMapping()
-            Dim MapItemAttributeMapping14 As DevExpress.XtraMap.MapItemAttributeMapping = New DevExpress.XtraMap.MapItemAttributeMapping()
-            Dim MapItemAttributeMapping15 As DevExpress.XtraMap.MapItemAttributeMapping = New DevExpress.XtraMap.MapItemAttributeMapping()
-            Dim MapItemAttributeMapping16 As DevExpress.XtraMap.MapItemAttributeMapping = New DevExpress.XtraMap.MapItemAttributeMapping()
-            Dim MapItemAttributeMapping17 As DevExpress.XtraMap.MapItemAttributeMapping = New DevExpress.XtraMap.MapItemAttributeMapping()
-            Dim MapItemAttributeMapping18 As DevExpress.XtraMap.MapItemAttributeMapping = New DevExpress.XtraMap.MapItemAttributeMapping()
+            Dim MapItemAttributeMapping25 As DevExpress.XtraMap.MapItemAttributeMapping = New DevExpress.XtraMap.MapItemAttributeMapping()
+            Dim MapItemAttributeMapping26 As DevExpress.XtraMap.MapItemAttributeMapping = New DevExpress.XtraMap.MapItemAttributeMapping()
+            Dim MapItemAttributeMapping27 As DevExpress.XtraMap.MapItemAttributeMapping = New DevExpress.XtraMap.MapItemAttributeMapping()
+            Dim MapItemAttributeMapping28 As DevExpress.XtraMap.MapItemAttributeMapping = New DevExpress.XtraMap.MapItemAttributeMapping()
+            Dim MapItemAttributeMapping29 As DevExpress.XtraMap.MapItemAttributeMapping = New DevExpress.XtraMap.MapItemAttributeMapping()
+            Dim MapItemAttributeMapping30 As DevExpress.XtraMap.MapItemAttributeMapping = New DevExpress.XtraMap.MapItemAttributeMapping()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_IVM_Area_Layout))
             Me.mapControl1 = New DevExpress.XtraMap.MapControl()
             Me.vectorItemsLayer = New DevExpress.XtraMap.VectorItemsLayer()
@@ -76,25 +76,25 @@
             '
             'ListSourceDataAdapter1
             '
-            MapItemAttributeMapping13.Member = "Tag"
-            MapItemAttributeMapping13.Name = "ColorProp"
-            MapItemAttributeMapping14.Member = "Label"
-            MapItemAttributeMapping14.Name = "Label"
-            MapItemAttributeMapping14.ValueType = DevExpress.XtraMap.FieldValueType.[String]
-            MapItemAttributeMapping15.Member = "ID"
-            MapItemAttributeMapping15.Name = "ID"
-            MapItemAttributeMapping16.Member = "Capacity"
-            MapItemAttributeMapping16.Name = "Capacity"
-            MapItemAttributeMapping17.Member = "Name"
-            MapItemAttributeMapping17.Name = "Name"
-            MapItemAttributeMapping18.Member = "Font"
-            MapItemAttributeMapping18.Name = "Font"
-            Me.ListSourceDataAdapter1.AttributeMappings.Add(MapItemAttributeMapping13)
-            Me.ListSourceDataAdapter1.AttributeMappings.Add(MapItemAttributeMapping14)
-            Me.ListSourceDataAdapter1.AttributeMappings.Add(MapItemAttributeMapping15)
-            Me.ListSourceDataAdapter1.AttributeMappings.Add(MapItemAttributeMapping16)
-            Me.ListSourceDataAdapter1.AttributeMappings.Add(MapItemAttributeMapping17)
-            Me.ListSourceDataAdapter1.AttributeMappings.Add(MapItemAttributeMapping18)
+            MapItemAttributeMapping25.Member = "Tag"
+            MapItemAttributeMapping25.Name = "ColorProp"
+            MapItemAttributeMapping26.Member = "Label"
+            MapItemAttributeMapping26.Name = "Label"
+            MapItemAttributeMapping26.ValueType = DevExpress.XtraMap.FieldValueType.[String]
+            MapItemAttributeMapping27.Member = "ID"
+            MapItemAttributeMapping27.Name = "ID"
+            MapItemAttributeMapping28.Member = "Capacity"
+            MapItemAttributeMapping28.Name = "Capacity"
+            MapItemAttributeMapping29.Member = "Name"
+            MapItemAttributeMapping29.Name = "Name"
+            MapItemAttributeMapping30.Member = "Font"
+            MapItemAttributeMapping30.Name = "Font"
+            Me.ListSourceDataAdapter1.AttributeMappings.Add(MapItemAttributeMapping25)
+            Me.ListSourceDataAdapter1.AttributeMappings.Add(MapItemAttributeMapping26)
+            Me.ListSourceDataAdapter1.AttributeMappings.Add(MapItemAttributeMapping27)
+            Me.ListSourceDataAdapter1.AttributeMappings.Add(MapItemAttributeMapping28)
+            Me.ListSourceDataAdapter1.AttributeMappings.Add(MapItemAttributeMapping29)
+            Me.ListSourceDataAdapter1.AttributeMappings.Add(MapItemAttributeMapping30)
             Me.ListSourceDataAdapter1.DefaultMapItemType = DevExpress.XtraMap.MapItemType.Rectangle
             Me.ListSourceDataAdapter1.Mappings.Latitude = "Lat"
             Me.ListSourceDataAdapter1.Mappings.Longitude = "Lon"
